@@ -1,10 +1,14 @@
 # aws-solutions-architect
 aws-solutions-architect
+
 Pergunta 1: Quais são os casos em que a federação de identidades é especialmente útil na AWS?
 
 a) Quando você precisa criar um novo diretório corporativo compatível com SAML 2.0.
+
 b) Quando você deseja gerenciar usuários através de um provedor de identidades externo.
+
 c) Quando você precisa acessar o AWS Management Console usando identidades da Internet.
+
 d) Todas as respostas acima.
 
 Pergunta 2: Como você pode fornecer acesso de logon único (SSO) ao AWS Management Console para usuários que já existem em um diretório corporativo compatível com SAML 2.0?
