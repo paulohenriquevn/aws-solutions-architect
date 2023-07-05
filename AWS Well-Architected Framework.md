@@ -1,5 +1,7 @@
 ## AWS Well-Architected Framework
 
+O AWS Well-Architected Framework ajuda a compreender as vantagens e desvantagens das decisões tomadas durante a criação de sistemas na AWS
+
 # Excelência operacional
 O pilar Excelência operacional tem como foco a execução e monitoramento de sistemas para entregar valor empresarial e melhorar continuamente processos e procedimentos. 
 
