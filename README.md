@@ -1,9 +1,4 @@
 ### Questão 1
-
-**Texto original:**  
-A company collects data for temperature, humidity, and atmospheric pressure in cities across multiple...
-
-**Tradução:**  
 Uma empresa coleta dados de temperatura, umidade e pressão atmosférica em cidades de vários continentes. O volume médio de dados coletados diariamente de cada local é de 500 GB. Cada local possui uma conexão de Internet de alta velocidade.  
 A empresa deseja agregar os dados de todos esses locais globais o mais rápido possível em um único bucket do Amazon S3. A solução deve minimizar a complexidade operacional.  
 
@@ -21,11 +16,6 @@ A empresa deseja agregar os dados de todos esses locais globais o mais rápido p
 
 ---
 ### Questão 2
-
-**Texto original:**  
-A company needs the ability to analyze the log files of its proprietary application. The logs are stored in...
-
-**Tradução:**  
 Uma empresa precisa analisar os arquivos de log de sua aplicação proprietária. Os logs estão armazenados no formato JSON em um bucket do Amazon S3. As consultas serão simples e executadas sob demanda.  
 
 **Resposta correta:**  
@@ -43,11 +33,6 @@ Uma empresa precisa analisar os arquivos de log de sua aplicação proprietária
 ---
 
 ### Questão 3
-
-**Texto original:**  
-A company uses AWS Organizations to manage multiple AWS accounts for different departments. The management...
-
-**Tradução:**  
 Uma empresa usa AWS Organizations para gerenciar várias contas AWS de diferentes departamentos. A conta de gerenciamento possui um bucket do Amazon S3 contendo relatórios de projetos.  
 
 **Resposta correta:**  
@@ -65,11 +50,6 @@ Uma empresa usa AWS Organizations para gerenciar várias contas AWS de diferente
 ---
 
 ### Questão 4
-
-**Texto original:**  
-An application runs on an Amazon EC2 instance in a VPC. The application processes logs that are stored in...
-
-**Tradução:**  
 Uma aplicação roda em uma instância Amazon EC2 em uma VPC. A aplicação processa logs armazenados em um bucket do Amazon S3.  
 
 **Resposta correta:**  
@@ -87,11 +67,6 @@ Uma aplicação roda em uma instância Amazon EC2 em uma VPC. A aplicação proc
 ---
 
 ### Questão 5
-
-**Texto original:**  
-A company is hosting a web application on AWS using a single Amazon EC2 instance that stores user-uploaded...
-
-**Tradução:**  
 Uma empresa hospeda uma aplicação web no AWS usando uma instância Amazon EC2 que armazena documentos enviados por usuários.  
 
 **Resposta correta:**  
@@ -109,11 +84,6 @@ Uma empresa hospeda uma aplicação web no AWS usando uma instância Amazon EC2 
 ---
 
 ### Questão 6
-
-**Texto original:**  
-A company uses NFS to store large video files in on-premises network attached storage. Each video file ranges...
-
-**Tradução:**  
 Uma empresa usa NFS para armazenar vídeos grandes em um NAS local. Cada vídeo varia de 1 MB a 500 GB.  
 
 **Resposta correta:**  
@@ -129,14 +99,7 @@ Uma empresa usa NFS para armazenar vídeos grandes em um NAS local. Cada vídeo 
   - **D:** Direct Connect exige mais tempo para configuração e custos contínuos.  
 
 ---
-
-Deseja continuar para as próximas questões?
 ### Questão 7
-
-**Texto original:**  
-A company has an application that ingests incoming messages. Dozens of other applications and microservices...
-
-**Tradução:**  
 Uma empresa possui uma aplicação que consome mensagens recebidas. Dezenas de outras aplicações e microsserviços consomem essas mensagens rapidamente.
 
 **Resposta correta:**  
@@ -154,11 +117,6 @@ Uma empresa possui uma aplicação que consome mensagens recebidas. Dezenas de o
 ---
 
 ### Questão 8
-
-**Texto original:**  
-A company is migrating a distributed application to AWS. The application serves variable workloads. The legacy...
-
-**Tradução:**  
 Uma empresa está migrando uma aplicação distribuída para a AWS. A aplicação possui cargas de trabalho variáveis.
 
 **Resposta correta:**  
@@ -176,11 +134,6 @@ Uma empresa está migrando uma aplicação distribuída para a AWS. A aplicaçã
 ---
 
 ### Questão 9
-
-**Texto original:**  
-A company is running an SMB file server in its data center. The file server stores large files that are accessed...
-
-**Tradução:**  
 Uma empresa opera um servidor de arquivos SMB em seu data center. Os arquivos são acessados frequentemente nos primeiros 7 dias após a criação.  
 
 **Resposta correta:**  
@@ -198,11 +151,6 @@ Uma empresa opera um servidor de arquivos SMB em seu data center. Os arquivos s�
 ---
 
 ### Questão 10
-
-**Texto original:**  
-A company is building an ecommerce web application on AWS. The application sends information about new orders...
-
-**Tradução:**  
 Uma empresa está construindo uma aplicação de ecommerce que envia informações de pedidos para uma API REST do Amazon API Gateway.
 
 **Resposta correta:**  
@@ -220,11 +168,6 @@ Uma empresa está construindo uma aplicação de ecommerce que envia informaçõ
 ---
 
 ### Questão 11
-
-**Texto original:**  
-A company has an application that runs on Amazon EC2 instances and uses an Amazon Aurora database. The EC2...
-
-**Tradução:**  
 Uma empresa possui uma aplicação que roda em instâncias Amazon EC2 e usa um banco de dados Amazon Aurora.
 
 **Resposta correta:**  
@@ -241,13 +184,7 @@ Uma empresa possui uma aplicação que roda em instâncias Amazon EC2 e usa um b
 
 ---
 
-Deseja continuar processando as próximas questões?
 ### Questão 12
-
-**Texto original:**  
-A global company hosts its web application on Amazon EC2 instances behind an Application Load Balancer...
-
-**Tradução:**  
 Uma empresa global hospeda sua aplicação web em instâncias Amazon EC2 atrás de um Application Load Balancer (ALB).
 
 **Resposta correta:**  
@@ -265,11 +202,6 @@ Uma empresa global hospeda sua aplicação web em instâncias Amazon EC2 atrás 
 ---
 
 ### Questão 13
-
-**Texto original:**  
-A company performs monthly maintenance on its AWS infrastructure. During these maintenance activities...
-
-**Tradução:**  
 Uma empresa realiza manutenção mensal em sua infraestrutura AWS. Durante essas atividades, as credenciais RDS devem ser rotacionadas.
 
 **Resposta correta:**  
@@ -287,11 +219,6 @@ Uma empresa realiza manutenção mensal em sua infraestrutura AWS. Durante essas
 ---
 
 ### Questão 14
-
-**Texto original:**  
-A company runs an ecommerce application on Amazon EC2 instances behind an Application Load Balancer...
-
-**Tradução:**  
 Uma empresa opera uma aplicação de ecommerce em instâncias Amazon EC2 atrás de um ALB. O banco de dados é MySQL.
 
 **Resposta correta:**  
@@ -309,11 +236,6 @@ Uma empresa opera uma aplicação de ecommerce em instâncias Amazon EC2 atrás 
 ---
 
 ### Questão 15
-
-**Texto original:**  
-A company recently migrated to AWS and wants to implement a solution to protect the traffic that flows...
-
-**Tradução:**  
 Uma empresa recentemente migrou para a AWS e deseja inspecionar e filtrar o tráfego na VPC de produção.
 
 **Resposta correta:**  
@@ -331,11 +253,6 @@ Uma empresa recentemente migrou para a AWS e deseja inspecionar e filtrar o trá
 ---
 
 ### Questão 16
-
-**Texto original:**  
-A company hosts a data lake on AWS. The data lake consists of data in Amazon S3 and Amazon RDS for PostgreSQL...
-
-**Tradução:**  
 Uma empresa hospeda um data lake no AWS com dados no Amazon S3 e no RDS PostgreSQL.
 
 **Resposta correta:**  
@@ -353,11 +270,6 @@ Uma empresa hospeda um data lake no AWS com dados no Amazon S3 e no RDS PostgreS
 ---
 
 ### Questão 17
-
-**Texto original:**  
-A company is implementing a new business application. The application runs on two Amazon EC2 instances...
-
-**Tradução:**  
 Uma empresa implementa uma nova aplicação que roda em duas instâncias Amazon EC2 e usa um bucket do Amazon S3.
 
 **Resposta correta:**  
@@ -375,11 +287,6 @@ Uma empresa implementa uma nova aplicação que roda em duas instâncias Amazon 
 ---
 
 ### Questão 18
-
-**Texto original:**  
-An application development team is designing a microservice that will convert large images to smaller...
-
-**Tradução:**  
 Uma equipe de desenvolvimento está projetando um microsserviço para converter imagens grandes em versões compactadas.
 
 **Resposta correta:**  
@@ -397,11 +304,6 @@ Uma equipe de desenvolvimento está projetando um microsserviço para converter 
 ---
 
 ### Questão 19
-
-**Texto original:**  
-A company has a three-tier web application that is deployed on AWS. The web servers are deployed in a public...
-
-**Tradução:**  
 Uma empresa possui uma aplicação web de três camadas implantada no AWS com um appliance de firewall virtual.
 
 **Resposta correta:**  
@@ -418,11 +320,6 @@ Uma empresa possui uma aplicação web de três camadas implantada no AWS com um
 ---
 
 ### Questão 20
-
-**Texto original:**  
-A company wants to improve its ability to clone large amounts of production data into a test environment...
-
-**Tradução:**  
 Uma empresa deseja clonar grandes volumes de dados de produção para um ambiente de teste na mesma região AWS.
 
 **Resposta correta:**  
@@ -438,13 +335,7 @@ Uma empresa deseja clonar grandes volumes de dados de produção para um ambient
 
 ---
 
-Deseja continuar para as próximas 30 questões?
 ### Questão 21
-
-**Texto original:**  
-A company wants to launch a one-deal-a-day website on AWS. Each day will feature exactly one product...
-
-**Tradução:**  
 Uma empresa quer lançar um site com uma promoção por dia na AWS, lidando com milhões de requisições por hora.
 
 **Resposta correta:**  
@@ -462,11 +353,6 @@ Uma empresa quer lançar um site com uma promoção por dia na AWS, lidando com 
 ---
 
 ### Questão 22
-
-**Texto original:**  
-A solutions architect is using Amazon S3 to design the storage architecture of a new digital media application...
-
-**Tradução:**  
 Um arquiteto de soluções está projetando a arquitetura de armazenamento para uma aplicação de mídia digital no Amazon S3.
 
 **Resposta correta:**  
@@ -484,11 +370,6 @@ Um arquiteto de soluções está projetando a arquitetura de armazenamento para 
 ---
 
 ### Questão 23
-
-**Texto original:**  
-A company is storing backup files by using Amazon S3 Standard storage. The files are accessed frequently for...
-
-**Tradução:**  
 Uma empresa armazena backups no S3 Standard e precisa de uma solução econômica para dados raramente acessados.
 
 **Resposta correta:**  
@@ -505,11 +386,6 @@ Uma empresa armazena backups no S3 Standard e precisa de uma solução econômic
 ---
 
 ### Questão 24
-
-**Texto original:**  
-A company observes an increase in Amazon EC2 costs in its most recent bill. The billing team notices...
-
-**Tradução:**  
 Uma empresa observa um aumento nos custos do Amazon EC2 devido a escalonamento vertical indesejado.
 
 **Resposta correta:**  
@@ -527,11 +403,6 @@ Uma empresa observa um aumento nos custos do Amazon EC2 devido a escalonamento v
 ---
 
 ### Questão 25
-
-**Texto original:**  
-A company is designing an application. The application uses an AWS Lambda function to receive information...
-
-**Tradução:**  
 Uma empresa está projetando uma aplicação que usa AWS Lambda para processar dados em alta escala e armazená-los no Amazon Aurora.
 
 **Resposta correta:**  
@@ -549,11 +420,6 @@ Uma empresa está projetando uma aplicação que usa AWS Lambda para processar d
 ---
 
 ### Questão 26
-
-**Texto original:**  
-A company needs to review its AWS Cloud deployment to ensure that its Amazon S3 buckets do not have unauthorized...
-
-**Tradução:**  
 Uma empresa precisa revisar sua implantação na AWS para evitar alterações não autorizadas em seus buckets do S3.
 
 **Resposta correta:**  
@@ -571,11 +437,6 @@ Uma empresa precisa revisar sua implantação na AWS para evitar alterações n�
 ---
 
 ### Questão 27
-
-**Texto original:**  
-A company is launching a new application and will display application metrics on an Amazon CloudWatch...
-
-**Tradução:**  
 Uma empresa quer disponibilizar um dashboard do CloudWatch para um gerente de produto sem conta AWS.
 
 **Resposta correta:**  
@@ -593,11 +454,6 @@ Uma empresa quer disponibilizar um dashboard do CloudWatch para um gerente de pr
 ---
 
 ### Questão 28
-
-**Texto original:**  
-A company is migrating applications to AWS. The applications are deployed in different accounts...
-
-**Tradução:**  
 Uma empresa está migrando aplicativos para AWS e precisa de SSO entre contas usando Active Directory local.
 
 **Resposta correta:**  
@@ -615,11 +471,6 @@ Uma empresa está migrando aplicativos para AWS e precisa de SSO entre contas us
 ---
 
 ### Questão 29
-
-**Texto original:**  
-A company provides a Voice over Internet Protocol (VoIP) service that uses UDP connections. The service...
-
-**Tradução:**  
 Uma empresa oferece serviços VoIP usando UDP e precisa de roteamento baseado em menor latência.
 
 **Resposta correta:**  
@@ -637,11 +488,6 @@ Uma empresa oferece serviços VoIP usando UDP e precisa de roteamento baseado em
 ---
 
 ### Questão 30
-
-**Texto original:**  
-A development team runs monthly resource-intensive tests on its general purpose Amazon RDS for MySQL DB...
-
-**Tradução:**  
 Uma equipe executa testes intensivos mensais em um banco RDS MySQL e deseja reduzir custos.
 
 **Resposta correta:**  
@@ -658,13 +504,7 @@ Uma equipe executa testes intensivos mensais em um banco RDS MySQL e deseja redu
 
 ---
 
-Deseja continuar para mais 30 questões?
 ### Questão 31
-
-**Texto original:**  
-A company that hosts its web application on AWS wants to ensure all Amazon EC2 instances. Amazon RDS DB...
-
-**Tradução:**  
 Uma empresa deseja garantir que todas as instâncias Amazon EC2, Amazon RDS e clusters Amazon Redshift sejam configurados com tags.
 
 **Resposta correta:**  
@@ -681,11 +521,6 @@ Uma empresa deseja garantir que todas as instâncias Amazon EC2, Amazon RDS e cl
 ---
 
 ### Questão 32
-
-**Texto original:**  
-A development team needs to host a website that will be accessed by other teams. The website contents consist...
-
-**Tradução:**  
 Uma equipe de desenvolvimento precisa hospedar um site acessado por outras equipes, com HTML, CSS, JavaScript e imagens.
 
 **Resposta correta:**  
@@ -703,11 +538,6 @@ Uma equipe de desenvolvimento precisa hospedar um site acessado por outras equip
 ---
 
 ### Questão 33
-
-**Texto original:**  
-A company runs an online marketplace web application on AWS. The application serves hundreds of thousands...
-
-**Tradução:**  
 Uma empresa opera um marketplace online e precisa processar milhões de transações financeiras quase em tempo real.
 
 **Resposta correta:**  
@@ -724,11 +554,6 @@ Uma empresa opera um marketplace online e precisa processar milhões de transaç
 ---
 
 ### Questão 34
-
-**Texto original:**  
-A company hosts its multi-tier applications on AWS. For compliance, governance, auditing, and security...
-
-**Tradução:**  
 Uma empresa hospeda aplicações em várias camadas na AWS e precisa rastrear mudanças de configuração e histórico de chamadas de API.
 
 **Resposta correta:**  
@@ -745,11 +570,6 @@ Uma empresa hospeda aplicações em várias camadas na AWS e precisa rastrear mu
 ---
 
 ### Questão 35
-
-**Texto original:**  
-A company is preparing to launch a public-facing web application in the AWS Cloud. The architecture consists...
-
-**Tradução:**  
 Uma empresa está lançando uma aplicação pública na AWS e precisa se proteger contra ataques DDoS em grande escala.
 
 **Resposta correta:**  
@@ -766,11 +586,6 @@ Uma empresa está lançando uma aplicação pública na AWS e precisa se protege
 ---
 
 ### Questão 36
-
-**Texto original:**  
-A company is building an application in the AWS Cloud. The application will store data in Amazon S3 buckets in two...
-
-**Tradução:**  
 Uma empresa precisa armazenar dados criptografados em buckets S3 em duas regiões, usando a mesma chave KMS.
 
 **Resposta correta:**  
@@ -787,11 +602,6 @@ Uma empresa precisa armazenar dados criptografados em buckets S3 em duas regiõe
 ---
 
 ### Questão 37
-
-**Texto original:**  
-A company recently launched a variety of new workloads on Amazon EC2 instances in its AWS account...
-
-**Tradução:**  
 Uma empresa precisa acessar e administrar instâncias EC2 de forma remota e segura, seguindo o AWS Well-Architected Framework.
 
 **Resposta correta:**  
@@ -809,11 +619,6 @@ Uma empresa precisa acessar e administrar instâncias EC2 de forma remota e segu
 ---
 
 ### Questão 38
-
-**Texto original:**  
-A company is hosting a static website on Amazon S3 and is using Amazon Route 53 for DNS. The website is...
-
-**Tradução:**  
 Uma empresa hospeda um site estático no S3 e deseja reduzir a latência global para os usuários.
 
 **Resposta correta:**  
@@ -831,11 +636,6 @@ Uma empresa hospeda um site estático no S3 e deseja reduzir a latência global 
 ---
 
 ### Questão 39
-
-**Texto original:**  
-A company maintains a searchable repository of items on its website. The data is stored in an Amazon RDS for...
-
-**Tradução:**  
 Uma empresa armazena dados em um banco RDS MySQL, enfrentando problemas de performance para inserções.
 
 **Resposta correta:**  
@@ -852,11 +652,6 @@ Uma empresa armazena dados em um banco RDS MySQL, enfrentando problemas de perfo
 ---
 
 ### Questão 40
-
-**Texto original:**  
-A company has thousands of edge devices that collectively generate 1 TB of status alerts each day...
-
-**Tradução:**  
 Uma empresa precisa ingerir e armazenar 1 TB diário de alertas de status, mantendo 14 dias disponíveis para análise.
 
 **Resposta correta:**  
@@ -873,13 +668,7 @@ Uma empresa precisa ingerir e armazenar 1 TB diário de alertas de status, mante
 
 ---
 
-Deseja que continue com as próximas 30 questões?
 ### Questão 41
-
-**Texto original:**  
-A company’s application integrates with multiple software-as-a-service (SaaS) sources for data collection...
-
-**Tradução:**  
 Uma aplicação da empresa integra-se a várias fontes SaaS para coleta de dados e enfrenta lentidão de desempenho.
 
 **Resposta correta:**  
@@ -896,11 +685,6 @@ Uma aplicação da empresa integra-se a várias fontes SaaS para coleta de dados
 ---
 
 ### Questão 42
-
-**Texto original:**  
-A company runs a highly available image-processing application on Amazon EC2 instances in a single VPC...
-
-**Tradução:**  
 Uma empresa opera uma aplicação de processamento de imagens em EC2, enfrentando custos elevados de transferência de dados.
 
 **Resposta correta:**  
@@ -918,11 +702,6 @@ Uma empresa opera uma aplicação de processamento de imagens em EC2, enfrentand
 ---
 
 ### Questão 43
-
-**Texto original:**  
-A company has an on-premises application that generates a large amount of time-sensitive data...
-
-**Tradução:**  
 Uma empresa precisa fazer backup de grandes volumes de dados no S3 sem impactar a conectividade local.
 
 **Resposta correta:**  
@@ -940,11 +719,6 @@ Uma empresa precisa fazer backup de grandes volumes de dados no S3 sem impactar 
 ---
 
 ### Questão 44
-
-**Texto original:**  
-A company has an Amazon S3 bucket that contains critical data. The company must protect the data from...
-
-**Tradução:**  
 Uma empresa deve proteger dados críticos em um bucket S3 contra exclusão acidental.
 
 **Resposta correta:**  
@@ -961,11 +735,6 @@ Uma empresa deve proteger dados críticos em um bucket S3 contra exclusão acide
 ---
 
 ### Questão 45
-
-**Texto original:**  
-A company has a data ingestion workflow that consists of an Amazon SNS topic and an AWS Lambda function...
-
-**Tradução:**  
 Uma empresa possui um fluxo de ingestão de dados com SNS e Lambda que falha devido a problemas de conectividade.
 
 **Resposta correta:**  
@@ -982,11 +751,6 @@ Uma empresa possui um fluxo de ingestão de dados com SNS e Lambda que falha dev
 ---
 
 ### Questão 46
-
-**Texto original:**  
-A company has an application that provides marketing services to stores. The stores upload transaction data...
-
-**Tradução:**  
 Uma empresa processa dados de transações e precisa detectar automaticamente informações sensíveis (PII).
 
 **Resposta correta:**  
@@ -1003,11 +767,6 @@ Uma empresa processa dados de transações e precisa detectar automaticamente in
 ---
 
 ### Questão 47
-
-**Texto original:**  
-A company needs guaranteed Amazon EC2 capacity in three specific Availability Zones in a specific AWS Region...
-
-**Tradução:**  
 Uma empresa precisa garantir capacidade EC2 em três zonas de disponibilidade específicas.
 
 **Resposta correta:**  
@@ -1024,11 +783,6 @@ Uma empresa precisa garantir capacidade EC2 em três zonas de disponibilidade es
 ---
 
 ### Questão 48
-
-**Texto original:**  
-A company’s website uses an Amazon EC2 instance store for its catalog of items. The company wants to make...
-
-**Tradução:**  
 Uma empresa precisa garantir alta disponibilidade e durabilidade para o catálogo de seu site.
 
 **Resposta correta:**  
@@ -1046,11 +800,6 @@ Uma empresa precisa garantir alta disponibilidade e durabilidade para o catálog
 ---
 
 ### Questão 49
-
-**Texto original:**  
-A company stores call transcript files on a monthly basis. Users access the files randomly within 1 year of the call...
-
-**Tradução:**  
 Uma empresa armazena transcrições de chamadas, acessadas com frequência no primeiro ano e raramente após isso.
 
 **Resposta correta:**  
@@ -1067,11 +816,6 @@ Uma empresa armazena transcrições de chamadas, acessadas com frequência no pr
 ---
 
 ### Questão 50
-
-**Texto original:**  
-A company has a production workload that runs on 1,000 Amazon EC2 Linux instances. The workload is powered...
-
-**Tradução:**  
 Uma empresa precisa aplicar patches críticos de software em 1.000 instâncias EC2 rapidamente.
 
 **Resposta correta:**  
@@ -1088,11 +832,6 @@ Uma empresa precisa aplicar patches críticos de software em 1.000 instâncias E
 
 ---
 ### Questão 51
-
-**Texto original:**  
-A company is developing an application that provides order shipping statistics for retrieval by a REST API. The company wants to extract the shipping statistics, organize the data into an easy-to-read HTML format, and send the report to several email addresses at the same time every morning.
-
-**Tradução:**  
 Uma empresa está desenvolvendo uma aplicação que fornece estatísticas de envio de pedidos, acessíveis por uma API REST. A empresa quer extrair as estatísticas, organizá-las em um formato HTML de fácil leitura e enviar o relatório para vários endereços de e-mail no mesmo horário todas as manhãs.
 
 **Resposta correta:**  
@@ -1111,14 +850,7 @@ Uma empresa está desenvolvendo uma aplicação que fornece estatísticas de env
 
 ---
 
-Se preferir, posso continuar a partir desta correção com mais 30 questões no próximo bloco. Confirme, por favor!
-
 ### Questão 52
-
-**Texto original:**  
-A company is migrating its application from an on-premises environment to AWS. The application includes a shared...
-
-**Tradução:**  
 Uma empresa está migrando uma aplicação com um sistema de arquivos compartilhado usado por múltiplos servidores.
 
 **Resposta correta:**  
@@ -1135,11 +867,6 @@ Uma empresa está migrando uma aplicação com um sistema de arquivos compartilh
 
 ---
 ### Questão 53
-
-**Texto original:**  
-A company needs to store its accounting records in Amazon S3. The records must be immediately accessible for 1 year and then must be archived for an additional 9 years. No one at the company, including administrative users and root users, can delete the records during the entire 10-year period. The records must be stored with maximum resiliency.
-
-**Tradução:**  
 Uma empresa precisa armazenar registros contábeis no Amazon S3. Os registros devem estar imediatamente acessíveis por 1 ano e depois arquivados por mais 9 anos. Ninguém na empresa, incluindo usuários administrativos e root, pode excluir os registros durante o período de 10 anos. Os registros devem ser armazenados com resiliência máxima.
 
 **Resposta correta:**  
@@ -1157,11 +884,6 @@ Uma empresa precisa armazenar registros contábeis no Amazon S3. Os registros de
 ---
 
 ### Questão 54
-
-**Texto original:**  
-A company runs multiple Windows workloads on AWS. The company's employees use Windows file shares that are hosted on two Amazon EC2 instances. The file shares synchronize data between themselves and maintain duplicate copies. The company wants a highly available and durable storage solution that preserves how users currently access the files.
-
-**Tradução:**  
 Uma empresa executa várias cargas de trabalho Windows na AWS. Os funcionários usam compartilhamentos de arquivos Windows hospedados em duas instâncias Amazon EC2. A empresa quer uma solução de armazenamento altamente disponível e durável que preserve como os usuários acessam os arquivos.
 
 **Resposta correta:**  
@@ -1179,11 +901,6 @@ Uma empresa executa várias cargas de trabalho Windows na AWS. Os funcionários 
 ---
 
 ### Questão 55
-
-**Texto original:**  
-A solutions architect is developing a VPC architecture that includes multiple subnets. The architecture will host applications that use Amazon EC2 instances and Amazon RDS DB instances...
-
-**Tradução:**  
 Um arquiteto de soluções está desenvolvendo uma arquitetura VPC com múltiplas sub-redes para hospedar aplicações que usam instâncias EC2 e bancos RDS.
 
 **Resposta correta:**  
@@ -1201,11 +918,6 @@ Um arquiteto de soluções está desenvolvendo uma arquitetura VPC com múltipla
 ---
 
 ### Questão 56
-
-**Texto original:**  
-A company has registered its domain name with Amazon Route 53. The company uses Amazon API Gateway...
-
-**Tradução:**  
 Uma empresa registrou seu domínio no Route 53 e usa o API Gateway como interface pública para APIs de microsserviços.
 
 **Resposta correta:**  
@@ -1222,11 +934,6 @@ Uma empresa registrou seu domínio no Route 53 e usa o API Gateway como interfac
 ---
 
 ### Questão 57
-
-**Texto original:**  
-A company is running a popular social media website. The website gives users the ability to upload images to share with other users...
-
-**Tradução:**  
 Uma empresa administra um site de rede social popular e quer garantir que imagens carregadas pelos usuários não contenham conteúdo impróprio.
 
 **Resposta correta:**  
@@ -1243,11 +950,6 @@ Uma empresa administra um site de rede social popular e quer garantir que imagen
 ---
 
 ### Questão 58
-
-**Texto original:**  
-A company wants to run its critical applications in containers to meet requirements for scalability and availability...
-
-**Tradução:**  
 Uma empresa deseja executar aplicações críticas em containers, atendendo requisitos de escalabilidade e disponibilidade, sem gerenciar infraestrutura.
 
 **Resposta correta:**  
@@ -1265,11 +967,6 @@ Uma empresa deseja executar aplicações críticas em containers, atendendo requ
 
 Deseja que continue com mais questões?
 ### Questão 59
-
-**Texto original:**  
-A company hosts more than 300 global websites and applications. The company requires a platform to analyze more than 30 TB of clickstream data each day.
-
-**Tradução:**  
 Uma empresa hospeda mais de 300 sites e aplicativos globais. A empresa precisa de uma plataforma para analisar mais de 30 TB de dados de clickstream diariamente.
 
 **Resposta correta:**  
@@ -1287,11 +984,6 @@ Uma empresa hospeda mais de 300 sites e aplicativos globais. A empresa precisa d
 ---
 
 ### Questão 60
-
-**Texto original:**  
-A company has a website hosted on AWS. The website is behind an Application Load Balancer (ALB) that is configured to handle HTTP and HTTPS separately. The company wants to forward all requests to the website so that the requests will use HTTPS.
-
-**Tradução:**  
 Uma empresa tem um site hospedado na AWS. O site está atrás de um Application Load Balancer (ALB) configurado para lidar separadamente com HTTP e HTTPS. A empresa deseja que todas as solicitações sejam redirecionadas para HTTPS.
 
 **Resposta correta:**  
@@ -1309,11 +1001,6 @@ Uma empresa tem um site hospedado na AWS. O site está atrás de um Application 
 ---
 
 ### Questão 61
-
-**Texto original:**  
-A company is developing a two-tier web application on AWS. The company's developers have deployed the application on an Amazon EC2 instance that connects directly to a backend Amazon RDS database...
-
-**Tradução:**  
 Uma empresa está desenvolvendo uma aplicação web de duas camadas na AWS. A aplicação conecta diretamente a um banco de dados RDS.
 
 **Resposta correta:**  
@@ -1331,11 +1018,6 @@ Uma empresa está desenvolvendo uma aplicação web de duas camadas na AWS. A ap
 ---
 
 ### Questão 62
-
-**Texto original:**  
-A company is deploying a new public web application to AWS. The application will run behind an Application Load Balancer (ALB). The application needs to be encrypted at the edge with an SSL/TLS certificate that is issued by an external certificate authority (CA)...
-
-**Tradução:**  
 Uma empresa está implementando uma aplicação web pública na AWS, que será executada atrás de um ALB. A aplicação precisa ser criptografada na borda com um certificado SSL/TLS emitido por uma autoridade certificadora externa (CA).
 
 **Resposta correta:**  
@@ -1352,11 +1034,6 @@ Uma empresa está implementando uma aplicação web pública na AWS, que será e
 ---
 
 ### Questão 63
-
-**Texto original:**  
-A company runs its infrastructure on AWS and has a registered base of 700,000 users for its document management application...
-
-**Tradução:**  
 Uma empresa opera sua infraestrutura na AWS e tem 700.000 usuários registrados em seu aplicativo de gerenciamento de documentos.
 
 **Resposta correta:**  
@@ -1372,13 +1049,7 @@ Uma empresa opera sua infraestrutura na AWS e tem 700.000 usuários registrados 
 
 ---
 
-Deseja que continue para mais questões?
 ### Questão 64
-
-**Texto original:**  
-A company has more than 5 TB of file data on Windows file servers that run on premises. Users and applications interact with the data each day. The company is moving its Windows workloads to AWS...
-
-**Tradução:**  
 Uma empresa possui mais de 5 TB de dados em servidores de arquivos Windows locais. A empresa está migrando cargas de trabalho para AWS, mas precisa manter o acesso aos arquivos com baixa latência tanto no local quanto na nuvem.
 
 **Resposta correta:**  
@@ -1395,11 +1066,6 @@ Uma empresa possui mais de 5 TB de dados em servidores de arquivos Windows locai
 ---
 
 ### Questão 65
-
-**Texto original:**  
-A hospital recently deployed a RESTful API with Amazon API Gateway and AWS Lambda. The hospital uses API Gateway and Lambda to upload reports that are in PDF format and JPEG format...
-
-**Tradução:**  
 Um hospital usa API Gateway e Lambda para carregar relatórios em formatos PDF e JPEG. Eles precisam identificar informações protegidas de saúde (PHI) nos relatórios com o menor esforço operacional.
 
 **Resposta correta:**  
@@ -1416,11 +1082,6 @@ Um hospital usa API Gateway e Lambda para carregar relatórios em formatos PDF e
 ---
 
 ### Questão 66
-
-**Texto original:**  
-A company has an application that generates a large number of files, each approximately 5 MB in size. The files are stored in Amazon S3...
-
-**Tradução:**  
 Uma empresa precisa armazenar arquivos em S3 com acessibilidade imediata por 4 anos. Os arquivos são acessados com frequência nos primeiros 30 dias e raramente depois disso.
 
 **Resposta correta:**  
@@ -1438,11 +1099,6 @@ Uma empresa precisa armazenar arquivos em S3 com acessibilidade imediata por 4 a
 ---
 
 ### Questão 67
-
-**Texto original:**  
-A company hosts an application on multiple Amazon EC2 instances. The application processes messages from an Amazon SQS queue...
-
-**Tradução:**  
 Uma aplicação processa mensagens de uma fila SQS e grava em um banco de dados RDS. Mensagens duplicadas são registradas ocasionalmente no banco.
 
 **Resposta correta:**  
@@ -1460,11 +1116,6 @@ Uma aplicação processa mensagens de uma fila SQS e grava em um banco de dados 
 ---
 
 ### Questão 68
-
-**Texto original:**  
-A solutions architect is designing a new hybrid architecture to extend a company's on-premises infrastructure to AWS...
-
-**Tradução:**  
 Uma empresa requer uma conexão híbrida altamente disponível e com latência consistente para a AWS, aceitando tráfego mais lento em caso de falha da conexão primária.
 
 **Resposta correta:**  
@@ -1481,13 +1132,7 @@ Uma empresa requer uma conexão híbrida altamente disponível e com latência c
 
 ---
 
-Deseja continuar para mais questões?
 ### Questão 69
-
-**Texto original:**  
-A company is running a business-critical web application on Amazon EC2 instances behind an Application Load Balancer. The EC2 instances are in an Auto Scaling group. The application uses an Amazon Aurora PostgreSQL database that is deployed in a single Availability Zone. The company wants the application to be highly available with minimum downtime and minimum loss of data.
-
-**Tradução:**  
 Uma empresa está executando uma aplicação web crítica em instâncias Amazon EC2 atrás de um Application Load Balancer. As instâncias estão em um Auto Scaling Group e usam um banco Aurora PostgreSQL implantado em uma única zona de disponibilidade. A empresa precisa garantir alta disponibilidade com mínimo tempo de inatividade e mínima perda de dados.
 
 **Resposta correta:**  
@@ -1505,11 +1150,6 @@ Uma empresa está executando uma aplicação web crítica em instâncias Amazon 
 ---
 
 ### Questão 70
-
-**Texto original:**  
-A company's HTTP application is behind a Network Load Balancer (NLB). The NLB's target group is configured to use an Amazon EC2 Auto Scaling group with multiple EC2 instances that run the web service.
-
-**Tradução:**  
 A aplicação HTTP de uma empresa está atrás de um Network Load Balancer (NLB). O grupo de destino do NLB usa um Auto Scaling Group com várias instâncias EC2 executando o serviço web.
 
 **Resposta correta:**  
@@ -1527,11 +1167,6 @@ A aplicação HTTP de uma empresa está atrás de um Network Load Balancer (NLB)
 ---
 
 ### Questão 71
-
-**Texto original:**  
-A company runs a shopping application that uses Amazon DynamoDB to store customer information. In case of data corruption, a solutions architect needs to design a solution that meets a recovery point objective (RPO) of 15 minutes and a recovery time objective (RTO) of 1 hour.
-
-**Tradução:**  
 Uma empresa opera uma aplicação de compras que usa DynamoDB para armazenar informações de clientes. Em caso de corrupção de dados, é necessário atender a um RPO de 15 minutos e um RTO de 1 hora.
 
 **Resposta correta:**  
@@ -1548,13 +1183,7 @@ Uma empresa opera uma aplicação de compras que usa DynamoDB para armazenar inf
 
 ---
 
-Deseja continuar com mais questões?
 ### Questão 72
-
-**Texto original:**  
-A company runs a photo processing application that needs to frequently upload and download pictures from Amazon S3 buckets that are located in the same AWS Region. A solutions architect has noticed an increased cost in data transfer fees and needs to implement a solution to reduce these costs.
-
-**Tradução:**  
 Uma empresa executa uma aplicação de processamento de fotos que precisa carregar e baixar fotos frequentemente de buckets S3 na mesma região da AWS. Um arquiteto de soluções notou um aumento nos custos de transferência de dados e precisa implementar uma solução para reduzir esses custos.
 
 **Resposta correta:**  
@@ -1571,11 +1200,6 @@ Uma empresa executa uma aplicação de processamento de fotos que precisa carreg
 ---
 
 ### Questão 73
-
-**Texto original:**  
-A company recently launched Linux-based application instances on Amazon EC2 in a private subnet and launched a Linux-based bastion host on an Amazon EC2 instance in a public subnet of a VPC...
-
-**Tradução:**  
 Uma empresa lançou instâncias de aplicação baseadas em Linux no EC2 em uma sub-rede privada e um bastion host em uma sub-rede pública de uma VPC. O arquiteto precisa configurar os grupos de segurança para permitir acesso seguro.
 
 **Resposta correta:**  
@@ -1591,11 +1215,6 @@ Uma empresa lançou instâncias de aplicação baseadas em Linux no EC2 em uma s
 ---
 
 ### Questão 74
-
-**Texto original:**  
-A solutions architect is designing a two-tier web application. The application consists of a public-facing web tier hosted on Amazon EC2 in public subnets...
-
-**Tradução:**  
 Um arquiteto está projetando uma aplicação web de duas camadas com o front-end em sub-redes públicas e o banco de dados SQL Server em uma sub-rede privada.
 
 **Resposta correta:**  
@@ -1611,11 +1230,6 @@ Um arquiteto está projetando uma aplicação web de duas camadas com o front-en
 ---
 
 ### Questão 75
-
-**Texto original:**  
-A company wants to move a multi-tiered application from on premises to the AWS Cloud to improve the application's performance...
-
-**Tradução:**  
 Uma empresa quer migrar uma aplicação multi-camadas para a AWS para melhorar o desempenho e modernizar a aplicação.
 
 **Resposta correta:**  
@@ -1631,11 +1245,6 @@ Uma empresa quer migrar uma aplicação multi-camadas para a AWS para melhorar o
 ---
 
 ### Questão 76
-
-**Texto original:**  
-A company receives 10 TB of instrumentation data each day from several machines located at a single factory...
-
-**Tradução:**  
 Uma empresa recebe 10 TB de dados de instrumentação por dia de máquinas localizadas em uma única fábrica. Eles precisam transferir esses dados para o S3 com segurança.
 
 **Resposta correta:**  
@@ -1650,13 +1259,7 @@ Uma empresa recebe 10 TB de dados de instrumentação por dia de máquinas local
 
 ---
 
-Confirma a continuidade a partir da **Questão 77**?
 ### Questão 77
-
-**Texto original:**  
-A company needs to configure a real-time data ingestion architecture for its application. The company needs an API, a process that transforms data as the data is streamed, and a storage solution for the data.
-
-**Tradução:**  
 Uma empresa precisa configurar uma arquitetura de ingestão de dados em tempo real para sua aplicação. A empresa precisa de uma API, um processo para transformar dados enquanto são transmitidos, e uma solução de armazenamento para os dados.
 
 **Resposta correta:**  
@@ -1674,11 +1277,6 @@ Uma empresa precisa configurar uma arquitetura de ingestão de dados em tempo re
 ---
 
 ### Questão 78
-
-**Texto original:**  
-A company needs to keep user transaction data in an Amazon DynamoDB table. The company must retain the data for 7 years. 
-
-**Tradução:**  
 Uma empresa precisa manter dados de transações de usuários em uma tabela DynamoDB. Os dados devem ser retidos por 7 anos.
 
 **Resposta correta:**  
@@ -1696,11 +1294,6 @@ Uma empresa precisa manter dados de transações de usuários em uma tabela Dyna
 ---
 
 ### Questão 79
-
-**Texto original:**  
-A company is planning to use an Amazon DynamoDB table for data storage. The company is concerned about cost optimization. The table will not be used on most mornings. In the evenings, the read and write traffic will often be unpredictable. When traffic spikes occur, they will happen very quickly.
-
-**Tradução:**  
 Uma empresa planeja usar uma tabela DynamoDB para armazenamento de dados. A empresa está preocupada com a otimização de custos. A tabela não será usada na maioria das manhãs, mas o tráfego de leitura e escrita será imprevisível durante as noites. Quando ocorrerem picos de tráfego, eles acontecerão muito rapidamente.
 
 **Resposta correta:**  
@@ -1718,11 +1311,6 @@ Uma empresa planeja usar uma tabela DynamoDB para armazenamento de dados. A empr
 ---
 
 ### Questão 80
-
-**Texto original:**  
-A company recently signed a contract with an AWS Managed Service Provider (MSP) Partner for help with an application migration initiative. A solutions architect needs to share an Amazon Machine Image (AMI) from an existing AWS account with the MSP Partner's AWS account. The AMI is backed by Amazon Elastic Block Store (Amazon EBS) and uses an AWS Key Management Service (AWS KMS) customer managed key to encrypt EBS volume snapshots.
-
-**Tradução:**  
 Uma empresa recentemente assinou um contrato com um parceiro AWS MSP para ajudar com a migração de uma aplicação. Um arquiteto de soluções precisa compartilhar uma Amazon Machine Image (AMI) de uma conta AWS existente com a conta AWS do parceiro MSP. A AMI é suportada por volumes EBS criptografados com uma chave gerenciada pelo AWS KMS.
 
 **Resposta correta:**  
@@ -1741,11 +1329,6 @@ Uma empresa recentemente assinou um contrato com um parceiro AWS MSP para ajudar
 
 Deseja que continue com mais questões?
 ### Questão 81
-
-**Texto original:**  
-A solutions architect is designing the cloud architecture for a new application being deployed on AWS. The process should run in parallel while adding and removing application nodes as needed based on the number of jobs to be processed. The processor application is stateless. The solutions architect must ensure that the application is loosely coupled and the job items are durably stored.
-
-**Tradução:**  
 Um arquiteto de soluções está projetando a arquitetura em nuvem para uma nova aplicação. O processo deve ser executado em paralelo, adicionando e removendo nós conforme necessário, com base no número de trabalhos a serem processados. A aplicação de processamento é sem estado. O arquiteto precisa garantir que a aplicação seja desacoplada e os itens de trabalho sejam armazenados de forma durável.
 
 **Resposta correta:**  
@@ -1763,11 +1346,6 @@ Um arquiteto de soluções está projetando a arquitetura em nuvem para uma nova
 ---
 
 ### Questão 82
-
-**Texto original:**  
-A company hosts its web applications in the AWS Cloud. The company configures Elastic Load Balancers to use certificates that are imported into AWS Certificate Manager (ACM). The company's security team must be notified 30 days before the expiration of each certificate.
-
-**Tradução:**  
 A empresa hospeda suas aplicações web na nuvem AWS. A empresa configura Elastic Load Balancers para usar certificados importados no AWS Certificate Manager (ACM). A equipe de segurança da empresa precisa ser notificada 30 dias antes do vencimento de cada certificado.
 
 **Resposta correta:**  
@@ -1785,11 +1363,6 @@ A empresa hospeda suas aplicações web na nuvem AWS. A empresa configura Elasti
 ---
 
 ### Questão 83
-
-**Texto original:**  
-A company's dynamic website is hosted using on-premises servers in the United States. The company is launching its product in Europe, and it wants to optimize site loading times for new European users. The site's backend must remain in the United States. The product is being launched in a few days, and an immediate solution is needed.
-
-**Tradução:**  
 O site dinâmico de uma empresa está hospedado em servidores locais nos Estados Unidos. A empresa está lançando seu produto na Europa e quer otimizar o tempo de carregamento do site para os novos usuários europeus. O backend do site deve permanecer nos Estados Unidos. O produto será lançado em poucos dias, e uma solução imediata é necessária.
 
 **Resposta correta:**  
@@ -1806,11 +1379,6 @@ O site dinâmico de uma empresa está hospedado em servidores locais nos Estados
 ---
 
 ### Questão 84
-
-**Texto original:**  
-A company wants to reduce the cost of its existing three-tier web architecture. The web, application, and database servers are running on Amazon EC2 instances for the development, test, and production environments. The EC2 instances average 30% CPU utilization during peak hours and 10% CPU utilization during non-peak hours.
-
-**Tradução:**  
 Uma empresa quer reduzir os custos de sua arquitetura web de três camadas existente. Os servidores de web, aplicação e banco de dados estão sendo executados em instâncias Amazon EC2 para os ambientes de desenvolvimento, teste e produção.
 
 **Resposta correta:**  
@@ -1826,11 +1394,6 @@ Uma empresa quer reduzir os custos de sua arquitetura web de três camadas exist
 ---
 
 ### Questão 85
-
-**Texto original:**  
-A company has a production web application in which users upload documents through a web interface or a mobile app. According to a new regulatory requirement, new documents cannot be modified or deleted after they are stored.
-
-**Tradução:**  
 Uma empresa tem uma aplicação web de produção onde os usuários carregam documentos por meio de uma interface web ou aplicativo móvel. De acordo com uma nova exigência regulatória, novos documentos não podem ser modificados ou excluídos depois de armazenados.
 
 **Resposta correta:**  
@@ -1849,11 +1412,6 @@ Uma empresa tem uma aplicação web de produção onde os usuários carregam doc
 
 Se deseja que eu continue para mais questões, por favor, avise!
 ### Questão 86
-
-**Texto original:**  
-A company has several web servers that need to frequently access a common Amazon RDS MySQL Multi-AZ DB instance. The company wants a secure method for the web servers to connect to the database while meeting a security requirement to rotate user credentials frequently.
-
-**Tradução:**  
 Uma empresa possui vários servidores web que precisam acessar com frequência uma instância Amazon RDS MySQL Multi-AZ. A empresa deseja um método seguro para que os servidores web se conectem ao banco de dados, atendendo à exigência de segurança para rotacionar credenciais de usuário com frequência.
 
 **Resposta correta:**  
@@ -1871,11 +1429,6 @@ Uma empresa possui vários servidores web que precisam acessar com frequência u
 ---
 
 ### Questão 87
-
-**Texto original:**  
-A company hosts an application on AWS Lambda functions that are invoked by an Amazon API Gateway API. The Lambda functions save customer data to an Amazon Aurora MySQL database. Whenever the company upgrades the database, the Lambda functions fail to establish database connections until the upgrade is complete.
-
-**Tradução:**  
 Uma empresa hospeda uma aplicação em funções AWS Lambda invocadas por uma API do Amazon API Gateway. As funções Lambda salvam dados de clientes em um banco de dados Amazon Aurora MySQL. Sempre que a empresa atualiza o banco de dados, as funções Lambda falham ao estabelecer conexões com o banco até que a atualização seja concluída.
 
 **Resposta correta:**  
@@ -1893,11 +1446,6 @@ Uma empresa hospeda uma aplicação em funções AWS Lambda invocadas por uma AP
 ---
 
 ### Questão 88
-
-**Texto original:**  
-A survey company has gathered data for several years from areas in the United States. The company hosts the data in an Amazon S3 bucket that is 3 TB in size and growing. The company has started to share the data with a European marketing firm that has S3 buckets. The company wants to ensure that its data transfer costs remain as low as possible.
-
-**Tradução:**  
 Uma empresa de pesquisa reuniu dados por vários anos de áreas nos Estados Unidos. A empresa hospeda os dados em um bucket S3 de 3 TB e em crescimento. A empresa começou a compartilhar os dados com uma firma de marketing europeia que possui buckets S3. A empresa deseja garantir que seus custos de transferência de dados permaneçam o mais baixo possível.
 
 **Resposta correta:**  
@@ -1915,11 +1463,6 @@ Uma empresa de pesquisa reuniu dados por vários anos de áreas nos Estados Unid
 ---
 
 ### Questão 89
-
-**Texto original:**  
-A company uses Amazon S3 to store its confidential audit documents. The S3 bucket uses bucket policies to restrict access to audit team IAM user credentials according to the principle of least privilege. Company managers are worried about accidental deletion of documents in the S3 bucket and want a more secure solution.
-
-**Tradução:**  
 Uma empresa usa o Amazon S3 para armazenar seus documentos confidenciais de auditoria. O bucket S3 usa políticas de bucket para restringir o acesso às credenciais de usuário IAM da equipe de auditoria conforme o princípio do menor privilégio. Os gerentes da empresa estão preocupados com a exclusão acidental de documentos no bucket S3 e desejam uma solução mais segura.
 
 **Resposta correta:**  
@@ -1937,11 +1480,6 @@ Uma empresa usa o Amazon S3 para armazenar seus documentos confidenciais de audi
 ---
 
 ### Questão 90
-
-**Texto original:**  
-A company is using a SQL database to store movie data that is publicly accessible. The database runs on an Amazon RDS Single-AZ DB instance. A script runs queries at random intervals each day to record the number of new movies that have been added to the database. The script must report a final total during business hours.
-
-**Tradução:**  
 Uma empresa usa um banco de dados SQL para armazenar dados de filmes acessíveis publicamente. O banco de dados está em uma instância Amazon RDS Single-AZ. Um script executa consultas aleatórias todos os dias para registrar o número de novos filmes adicionados ao banco de dados.
 
 **Resposta correta:**  
@@ -1958,14 +1496,7 @@ Uma empresa usa um banco de dados SQL para armazenar dados de filmes acessíveis
 
 ---
 
-Se precisar de mais detalhes ou continuar com o processamento das próximas questões, avise-me!
 ### Questão 91
-
-**Texto original:**  
-A company has applications that run on Amazon EC2 instances in a VPC. One of the applications needs to call the Amazon S3 API to store and read objects. According to the company's security regulations, no traffic from the applications is allowed to travel across the internet.  
-Which solution will meet these requirements?
-
-**Tradução:**  
 Uma empresa tem aplicações que rodam em instâncias Amazon EC2 em uma VPC. Uma das aplicações precisa chamar a API do Amazon S3 para armazenar e ler objetos. De acordo com as regulamentações de segurança da empresa, nenhum tráfego das aplicações pode viajar pela internet.  
 Qual solução atenderá a esses requisitos?
 
@@ -1983,14 +1514,7 @@ Qual solução atenderá a esses requisitos?
 
 ---
 
-Deseja que eu continue para a **questão 92**?  
 ### Questão 92
-
-**Texto original:**  
-A company is storing sensitive user information in an Amazon S3 bucket. The company wants to provide secure access to this bucket from the application tier running on Amazon EC2 instances inside a VPC.  
-Which combination of steps should a solutions architect take to accomplish this? (Choose two.)
-
-**Tradução:**  
 Uma empresa está armazenando informações sensíveis de usuários em um bucket Amazon S3. A empresa deseja fornecer acesso seguro a esse bucket a partir da camada de aplicação que está sendo executada em instâncias Amazon EC2 dentro de uma VPC.  
 Qual combinação de etapas um arquiteto de soluções deve tomar para realizar isso? (Escolha duas.)
 
@@ -2011,14 +1535,6 @@ Qual combinação de etapas um arquiteto de soluções deve tomar para realizar 
 
 Deseja que eu continue com a **questão 93**?
 ### Questão 93
-
-**Texto original:**  
-A company runs an on-premises application that is powered by a MySQL database. The company is migrating the application to AWS to increase the application's elasticity and availability.  
-The current architecture shows heavy read activity on the database during times of normal operation. Every 4 hours, the company's development team pulls a full export of the production database to populate a database in the staging environment. During this period, users experience unacceptable application latency. The development team is unable to use the staging environment until the procedure completes.  
-A solutions architect must recommend replacement architecture that alleviates the application latency issue. The replacement architecture also must give the development team the ability to continue using the staging environment without delay.  
-Which solution meets these requirements?
-
-**Tradução:**  
 Uma empresa executa uma aplicação local que é alimentada por um banco de dados MySQL. A empresa está migrando a aplicação para a AWS para aumentar a elasticidade e a disponibilidade da aplicação.  
 A arquitetura atual mostra alta atividade de leitura no banco de dados durante os períodos de operação normal. A cada 4 horas, a equipe de desenvolvimento da empresa faz uma exportação completa do banco de dados de produção para popular um banco de dados no ambiente de teste. Durante esse período, os usuários experimentam latência inaceitável na aplicação. A equipe de desenvolvimento não consegue usar o ambiente de teste até que o procedimento seja concluído.  
 Um arquiteto de soluções deve recomendar uma arquitetura substituta que alivie o problema de latência da aplicação. A arquitetura substituta também deve dar à equipe de desenvolvimento a capacidade de continuar usando o ambiente de teste sem demora.  
@@ -2040,13 +1556,6 @@ Qual solução atende a esses requisitos?
 
 Devo continuar com a **questão 94**?  
 ### Questão 94
-
-**Texto original:**  
-A company is designing an application where users upload small files into Amazon S3. After a user uploads a file, the file requires one-time simple processing to transform the data and save the data in JSON format for later analysis.  
-Each file must be processed as quickly as possible after it is uploaded. Demand will vary. On some days, users will upload a high number of files. On other days, users will upload a few files or no files.  
-Which solution meets these requirements with the LEAST operational overhead?
-
-**Tradução:**  
 Uma empresa está projetando uma aplicação onde os usuários carregam pequenos arquivos no Amazon S3. Após o carregamento de um arquivo, é necessário um processamento simples para transformar os dados e salvar em formato JSON para análise posterior.  
 Cada arquivo deve ser processado o mais rápido possível após o upload. A demanda variará. Em alguns dias, os usuários carregarão um grande número de arquivos. Em outros dias, os usuários carregarão poucos ou nenhum arquivo.  
 Qual solução atende a esses requisitos com o MENOR overhead operacional?
@@ -2066,12 +1575,6 @@ Qual solução atende a esses requisitos com o MENOR overhead operacional?
 ---
 
 ### Questão 95
-
-**Texto original:**  
-An application allows users at a company's headquarters to access product data. The product data is stored in an Amazon RDS MySQL DB instance. The operations team has isolated an application performance slowdown and wants to separate read traffic from write traffic. A solutions architect needs to optimize the application's performance quickly.  
-What should the solutions architect recommend?
-
-**Tradução:**  
 Uma aplicação permite que usuários na sede da empresa acessem dados de produto. Os dados do produto estão armazenados em uma instância Amazon RDS MySQL. A equipe de operações isolou uma desaceleração de desempenho da aplicação e deseja separar o tráfego de leitura do tráfego de escrita. O arquiteto de soluções precisa otimizar o desempenho da aplicação rapidamente.  
 O que o arquiteto de soluções deve recomendar?
 
@@ -2089,12 +1592,6 @@ O que o arquiteto de soluções deve recomendar?
 ---
 
 ### Questão 96
-
-**Texto original:**  
-An Amazon EC2 administrator created the following policy associated with an IAM group containing several users:  
-What is the effect of this policy?
-
-**Tradução:**  
 Um administrador do Amazon EC2 criou a seguinte política associada a um grupo IAM contendo vários usuários:  
 Qual é o efeito dessa política?
 
@@ -2113,12 +1610,6 @@ Qual é o efeito dessa política?
 ---
 
 ### Questão 97
-
-**Texto original:**  
-A company has a large Microsoft SharePoint deployment running on-premises that requires Microsoft Windows shared file storage. The company wants to migrate this workload to the AWS Cloud and is considering various storage options. The storage solution must be highly available and integrated with Active Directory for access control.  
-Which solution will satisfy these requirements?
-
-**Tradução:**  
 Uma empresa tem uma grande implantação do Microsoft SharePoint em servidores locais, que requer armazenamento compartilhado de arquivos Windows. A empresa deseja migrar essa carga de trabalho para a AWS e está considerando várias opções de armazenamento. A solução de armazenamento deve ser altamente disponível e integrada ao Active Directory para controle de acesso.  
 Qual solução atenderá a esses requisitos?
 
@@ -2137,13 +1628,6 @@ Qual solução atenderá a esses requisitos?
 ---
 
 ### Questão 98
-
-**Texto original:**  
-An image-processing company has a web application that users use to upload images. The application uploads the images into an Amazon S3 bucket. The company has set up S3 event notifications to publish the object creation events to an Amazon Simple Queue Service (Amazon SQS) standard queue. The SQS queue serves as the event source for an AWS Lambda function that processes the images and sends the results to users through email.  
-Users report that they are receiving multiple email messages for every uploaded image. A solutions architect determines that SQS messages are invoking the Lambda function more than once, resulting in multiple email messages.  
-What should the solutions architect do to resolve this issue with the LEAST operational overhead?
-
-**Tradução:**  
 Uma empresa de processamento de imagens tem uma aplicação web que os usuários utilizam para carregar imagens. A aplicação carrega as imagens em um bucket Amazon S3. A empresa configurou notificações de eventos S3 para publicar os eventos de criação de objetos em uma fila padrão do Amazon SQS. A fila SQS serve como fonte de eventos para uma função AWS Lambda que processa as imagens e envia os resultados aos usuários por email.  
 Os usuários relatam que estão recebendo várias mensagens de email para cada imagem carregada. Um arquiteto de soluções determina que as mensagens SQS estão invocando a função Lambda mais de uma vez, resultando em mensagens duplicadas.  
 O que o arquiteto de soluções deve fazer para resolver esse problema com o MENOR overhead operacional?
@@ -2164,12 +1648,6 @@ O que o arquiteto de soluções deve fazer para resolver esse problema com o MEN
 
 Posso continuar com mais questões ou fornecer mais detalhes?
 ### Questão 99
-
-**Texto original:**  
-A company is implementing a shared storage solution for a gaming application that is hosted in an on-premises data center. The company needs the ability to use Lustre clients to access data. The solution must be fully managed.  
-Which solution meets these requirements?
-
-**Tradução:**  
 Uma empresa está implementando uma solução de armazenamento compartilhado para uma aplicação de jogos que está hospedada em um data center local. A empresa precisa da capacidade de usar clientes Lustre para acessar dados. A solução deve ser totalmente gerenciada.  
 Qual solução atende a esses requisitos?
 
@@ -2188,12 +1666,6 @@ Qual solução atende a esses requisitos?
 ---
 
 ### Questão 100
-
-**Texto original:**  
-A company's containerized application runs on an Amazon EC2 instance. The application needs to download security certificates before it can communicate with other business applications. The company wants a highly secure solution to encrypt and decrypt the certificates in near real time. The solution also needs to store data in highly available storage after the data is encrypted.  
-Which solution will meet these requirements with the LEAST operational overhead?
-
-**Tradução:**  
 A aplicação conteinerizada de uma empresa está sendo executada em uma instância Amazon EC2. A aplicação precisa baixar certificados de segurança antes que possa se comunicar com outros aplicativos de negócios. A empresa deseja uma solução altamente segura para criptografar e descriptografar os certificados em tempo real. A solução também precisa armazenar dados em armazenamento altamente disponível após a criptografia.  
 Qual solução atenderá a esses requisitos com o MENOR overhead operacional?
 
@@ -2212,12 +1684,6 @@ Qual solução atenderá a esses requisitos com o MENOR overhead operacional?
 ---
 
 ### Questão 101
-
-**Texto original:**  
-A company's containerized application runs on Amazon EC2 instances. The application needs to download security certificates before it can communicate with other business applications. The company wants a highly secure solution to encrypt and decrypt the certificates in near real time. The solution also needs to store data in highly available storage after the data is encrypted.  
-Which solution will meet these requirements with the LEAST operational overhead?
-
-**Tradução:**  
 A aplicação conteinerizada de uma empresa está sendo executada em instâncias Amazon EC2. A aplicação precisa baixar certificados de segurança antes que possa se comunicar com outros aplicativos de negócios. A empresa deseja uma solução altamente segura para criptografar e descriptografar os certificados em tempo real. A solução também precisa armazenar dados em armazenamento altamente disponível após a criptografia.  
 Qual solução atenderá a esses requisitos com o MENOR overhead operacional?
 
@@ -2236,12 +1702,6 @@ Qual solução atenderá a esses requisitos com o MENOR overhead operacional?
 ---
 
 ### Questão 102
-
-**Texto original:**  
-A company wants to migrate an on-premises data center to AWS. The data center hosts an SFTP server that stores its data on an NFS-based file system. The server holds 200 GB of data that needs to be transferred. The server must be hosted on an Amazon EC2 instance that uses an Amazon Elastic File System (Amazon EFS) file system.  
-Which combination of steps should a solutions architect take to automate this task? (Choose two.)
-
-**Tradução:**  
 Uma empresa deseja migrar um data center local para a AWS. O data center hospeda um servidor SFTP que armazena seus dados em um sistema de arquivos baseado em NFS. O servidor possui 200 GB de dados que precisam ser transferidos. O servidor deve ser hospedado em uma instância Amazon EC2 que usa um sistema de arquivos Amazon Elastic File System (Amazon EFS).  
 Qual combinação de etapas um arquiteto de soluções deve tomar para automatizar essa tarefa? (Escolha duas.)
 
@@ -2260,12 +1720,6 @@ Qual combinação de etapas um arquiteto de soluções deve tomar para automatiz
 ---
 
 ### Questão 103
-
-**Texto original:**  
-A company has an AWS Glue extract, transform, and load (ETL) job that runs every day at the same time. The job processes XML data that is in an Amazon S3 bucket. New data is added to the S3 bucket every day. A solutions architect notices that AWS Glue is processing all the data during each run.  
-What should the solutions architect do to prevent AWS Glue from reprocessing old data?
-
-**Tradução:**  
 Uma empresa tem um trabalho AWS Glue de extração, transformação e carga (ETL) que é executado todos os dias no mesmo horário. O trabalho processa dados XML que estão em um bucket Amazon S3. Novos dados são adicionados ao bucket S3 todos os dias. Um arquiteto de soluções percebe que o AWS Glue está processando todos os dados durante cada execução.  
 O que o arquiteto de soluções deve fazer para evitar que o AWS Glue reprocessamento dados antigos?
 
@@ -2285,12 +1739,6 @@ O que o arquiteto de soluções deve fazer para evitar que o AWS Glue reprocessa
 
 Se desejar, posso continuar processando as próximas questões.
 ### Questão 104
-
-**Texto original:**  
-A solutions architect must design a highly available infrastructure for a website. The website is powered by Windows web servers that run on Amazon EC2 instances. The solutions architect must implement a solution that can mitigate a large-scale DDoS attack that originates from thousands of IP addresses. Downtime is not acceptable for the website.  
-Which actions should the solutions architect take to protect the website from such an attack? (Choose two.)
-
-**Tradução:**  
 Um arquiteto de soluções deve projetar uma infraestrutura altamente disponível para um site. O site é alimentado por servidores web Windows que rodam em instâncias Amazon EC2. O arquiteto de soluções deve implementar uma solução que possa mitigar um ataque DDoS em grande escala que se origina de milhares de endereços IP. O tempo de inatividade não é aceitável para o site.  
 Quais ações o arquiteto de soluções deve tomar para proteger o site contra tal ataque? (Escolha duas.)
 
@@ -2310,12 +1758,6 @@ Quais ações o arquiteto de soluções deve tomar para proteger o site contra t
 ---
 
 ### Questão 105
-
-**Texto original:**  
-A company is preparing to deploy a new serverless workload. A solutions architect must use the principle of least privilege to configure permissions that will be used to run an AWS Lambda function. An Amazon EventBridge (Amazon CloudWatch Events) rule will invoke the function.  
-Which solution meets these requirements?
-
-**Tradução:**  
 Uma empresa está se preparando para implantar uma nova carga de trabalho serverless. Um arquiteto de soluções deve usar o princípio do menor privilégio para configurar permissões que serão usadas para executar uma função AWS Lambda. Uma regra do Amazon EventBridge (Amazon CloudWatch Events) invocará a função.  
 Qual solução atende a esses requisitos?
 
@@ -2333,12 +1775,6 @@ Qual solução atende a esses requisitos?
 ---
 
 ### Questão 106
-
-**Texto original:**  
-A company is preparing to store confidential data in Amazon S3. For compliance reasons, the data must be encrypted at rest. Encryption key usage must be logged for auditing purposes. Keys must be rotated every year.  
-Which solution meets these requirements and is the MOST operationally efficient?
-
-**Tradução:**  
 Uma empresa está se preparando para armazenar dados confidenciais no Amazon S3. Por razões de conformidade, os dados devem ser criptografados em repouso. O uso das chaves de criptografia deve ser registrado para fins de auditoria. As chaves devem ser rotacionadas a cada ano.  
 Qual solução atende a esses requisitos e é a MAIS eficiente operacionalmente?
 
@@ -2356,12 +1792,6 @@ Qual solução atende a esses requisitos e é a MAIS eficiente operacionalmente?
 ---
 
 ### Questão 107
-
-**Texto original:**  
-A bicycle sharing company is developing a multi-tier architecture to track the location of its bicycles during peak operating hours. The company wants to use these data points in its existing analytics platform. A solutions architect must determine the most viable multi-tier option to support this architecture. The data points must be accessible from the REST API.  
-Which action meets these requirements for storing and retrieving location data?
-
-**Tradução:**  
 Uma empresa de compartilhamento de bicicletas está desenvolvendo uma arquitetura de várias camadas para rastrear a localização de suas bicicletas durante os horários de pico. A empresa deseja usar esses pontos de dados em sua plataforma de análise existente. Um arquiteto de soluções deve determinar a opção de múltiplas camadas mais viável para apoiar essa arquitetura. Os pontos de dados devem ser acessíveis pela API REST.  
 Qual ação atende a esses requisitos para armazenar e recuperar dados de localização?
 
@@ -2380,12 +1810,6 @@ Qual ação atende a esses requisitos para armazenar e recuperar dados de locali
 ---
 
 ### Questão 108
-
-**Texto original:**  
-A company has an automobile sales website that stores its listings in a database on Amazon RDS. When an automobile is sold, the listing needs to be removed from the website and the data must be sent to multiple target systems.  
-Which design should a solutions architect recommend?
-
-**Tradução:**  
 Uma empresa tem um site de vendas de automóveis que armazena seus anúncios em um banco de dados no Amazon RDS. Quando um automóvel é vendido, o anúncio precisa ser removido do site e os dados devem ser enviados para vários sistemas de destino.  
 Qual design um arquiteto de soluções deve recomendar?
 
@@ -2402,14 +1826,7 @@ Qual design um arquiteto de soluções deve recomendar?
 
 ---
 
-Se precisar de mais detalhes ou continuar com mais questões, é só avisar!
 ### Questão 109
-
-**Texto original:**  
-A company needs to store data in Amazon S3 and must prevent the data from being changed. The company wants new objects that are uploaded to Amazon S3 to remain unchangeable for a nonspecific amount of time until the company decides to modify the objects. Only specific users in the company's AWS account can have the ability to delete the objects.  
-What should a solutions architect do to meet these requirements?
-
-**Tradução:**  
 Uma empresa precisa armazenar dados no Amazon S3 e deve impedir que os dados sejam alterados. A empresa deseja que novos objetos carregados no Amazon S3 permaneçam imutáveis por um período de tempo não especificado até que a empresa decida modificar os objetos. Somente usuários específicos na conta AWS da empresa devem ter a capacidade de excluir os objetos.  
 O que um arquiteto de soluções deve fazer para atender a esses requisitos?
 
@@ -2428,13 +1845,6 @@ O que um arquiteto de soluções deve fazer para atender a esses requisitos?
 ---
 
 ### Questão 110
-
-**Texto original:**  
-A social media company allows users to upload images to its website. The website runs on Amazon EC2 instances. During upload requests, the website resizes the images to a standard size and stores the resized images in Amazon S3. Users are experiencing slow upload requests to the website.  
-The company needs to reduce coupling within the application and improve website performance. A solutions architect must design the most operationally efficient process for image uploads.  
-Which combination of actions should the solutions architect take to meet these requirements? (Choose two.)
-
-**Tradução:**  
 Uma empresa de mídia social permite que os usuários carreguem imagens para o seu site. O site está hospedado em instâncias Amazon EC2. Durante os pedidos de upload, o site redimensiona as imagens para um tamanho padrão e armazena as imagens redimensionadas no Amazon S3. Os usuários estão experimentando pedidos de upload lentos para o site.  
 A empresa precisa reduzir o acoplamento dentro da aplicação e melhorar o desempenho do site. Um arquiteto de soluções deve projetar o processo mais eficiente operacionalmente para uploads de imagens.  
 Qual combinação de ações o arquiteto de soluções deve tomar para atender a esses requisitos? (Escolha duas.)
@@ -2455,12 +1865,6 @@ Qual combinação de ações o arquiteto de soluções deve tomar para atender a
 ---
 
 ### Questão 111
-
-**Texto original:**  
-A company recently migrated a message processing system to AWS. The system receives messages into an ActiveMQ queue running on an Amazon EC2 instance. Messages are processed by a consumer application running on Amazon EC2. The consumer application processes the messages and writes results to a MySQL database running on Amazon EC2. The company wants this application to be highly available with low operational complexity.  
-Which architecture offers the HIGHEST availability?
-
-**Tradução:**  
 Uma empresa migrou recentemente um sistema de processamento de mensagens para a AWS. O sistema recebe mensagens em uma fila ActiveMQ executada em uma instância Amazon EC2. As mensagens são processadas por uma aplicação consumidora executada em Amazon EC2. A aplicação consumidora processa as mensagens e escreve os resultados em um banco de dados MySQL executado no Amazon EC2. A empresa deseja que essa aplicação tenha alta disponibilidade com baixa complexidade operacional.  
 Qual arquitetura oferece a MAIOR disponibilidade?
 
@@ -2478,12 +1882,6 @@ Qual arquitetura oferece a MAIOR disponibilidade?
 ---
 
 ### Questão 112
-
-**Texto original:**  
-A company hosts a containerized web application on a fleet of on-premises servers that process incoming requests. The number of requests is growing quickly. The on-premises servers cannot handle the increased number of requests. The company wants to move the application to AWS with minimum code changes and minimum development effort.  
-Which solution will meet these requirements with the LEAST operational overhead?
-
-**Tradução:**  
 Uma empresa hospeda uma aplicação web conteinerizada em um conjunto de servidores locais que processam as requisições recebidas. O número de requisições está crescendo rapidamente. Os servidores locais não conseguem lidar com o aumento do número de requisições. A empresa deseja mover a aplicação para a AWS com o mínimo de mudanças de código e o mínimo de esforço de desenvolvimento.  
 Qual solução atenderá a esses requisitos com o MENOR overhead operacional?
 
@@ -2502,13 +1900,6 @@ Qual solução atenderá a esses requisitos com o MENOR overhead operacional?
 ---
 
 ### Questão 113
-
-**Texto original:**  
-A company uses 50 TB of data for reporting. The company wants to move this data from on premises to AWS. A custom application in the company’s data center runs a weekly data transformation job. The company plans to pause the application until the data transfer is complete and needs to begin the transfer process as soon as possible.  
-The data center does not have any available network bandwidth for additional workloads. A solutions architect must transfer the data and must configure the transformation job to continue to run in the AWS Cloud.  
-Which solution will meet these requirements with the LEAST operational overhead?
-
-**Tradução:**  
 Uma empresa usa 50 TB de dados para relatórios. A empresa deseja mover esses dados de seu local para a AWS. Uma aplicação personalizada no data center da empresa executa um trabalho de transformação de dados semanal. A empresa planeja pausar a aplicação até que a transferência de dados seja concluída e precisa iniciar o processo de transferência o mais rápido possível.  
 O data center não tem largura de banda de rede disponível para cargas de trabalho adicionais. Um arquiteto de soluções deve transferir os dados e deve configurar o trabalho de transformação para continuar a ser executado na AWS Cloud.  
 Qual solução atenderá a esses requisitos com o MENOR overhead operacional?
@@ -2527,15 +1918,7 @@ Qual solução atenderá a esses requisitos com o MENOR overhead operacional?
 
 ---
 
-Essas foram as respostas até a **questão 113**. Se desejar continuar, posso seguir com as próximas questões!
 ### Questão 114
-
-**Texto original:**  
-A company has created an image analysis application in which users can upload photos and add photo frames to their images. The users upload images and metadata to indicate which photo frames they want to add to their images. The application uses a single Amazon EC2 instance and Amazon DynamoDB to store the metadata.  
-The application is becoming more popular, and the number of users is increasing. The company expects the number of concurrent users to vary significantly depending on the time of day and day of week. The company must ensure that the application can scale to meet the needs of the growing user base.  
-Which solution meets these requirements?
-
-**Tradução:**  
 Uma empresa criou uma aplicação de análise de imagens onde os usuários podem enviar fotos e adicionar molduras às imagens. Os usuários carregam imagens e metadados para indicar quais molduras querem adicionar às suas imagens. A aplicação usa uma única instância Amazon EC2 e o Amazon DynamoDB para armazenar os metadados.  
 A aplicação está se tornando mais popular, e o número de usuários está aumentando. A empresa espera que o número de usuários simultâneos varie significativamente dependendo do horário do dia e do dia da semana. A empresa deve garantir que a aplicação possa escalar para atender às necessidades da base de usuários crescente.  
 Qual solução atende a esses requisitos?
@@ -2553,13 +1936,6 @@ Qual solução atende a esses requisitos?
 ---
 
 ### Questão 115
-
-**Texto original:**  
-A medical records company is hosting an application on Amazon EC2 instances. The application processes customer data files that are stored on Amazon S3. The EC2 instances are hosted in public subnets. The EC2 instances access Amazon S3 over the internet, but they do not require any other network access.  
-A new requirement mandates that the network traffic for file transfers take a private route and not be sent over the internet.  
-Which change to the network architecture should a solutions architect recommend to meet this requirement?
-
-**Tradução:**  
 Uma empresa de registros médicos está hospedando uma aplicação em instâncias Amazon EC2. A aplicação processa arquivos de dados de clientes que estão armazenados no Amazon S3. As instâncias EC2 estão hospedadas em sub-redes públicas. As instâncias EC2 acessam o Amazon S3 pela internet, mas não requerem nenhum outro acesso à rede.  
 Um novo requisito exige que o tráfego de rede para transferências de arquivos tome uma rota privada e não seja enviado pela internet.  
 Qual alteração na arquitetura de rede um arquiteto de soluções deve recomendar para atender a esse requisito?
@@ -2578,12 +1954,6 @@ Qual alteração na arquitetura de rede um arquiteto de soluções deve recomend
 ---
 
 ### Questão 116
-
-**Texto original:**  
-A company uses a popular content management system (CMS) for its corporate website. However, the required patching and maintenance are burdensome. The company is redesigning its website and wants a new solution. The website will be updated four times a year and does not need to have any dynamic content available. The solution must provide high scalability and enhanced security.  
-Which combination of changes will meet these requirements with the LEAST operational overhead? (Choose two.)
-
-**Tradução:**  
 Uma empresa usa um sistema de gerenciamento de conteúdo (CMS) popular para seu site corporativo. No entanto, a manutenção e atualização exigem muito esforço. A empresa está redesenhando seu site e quer uma nova solução. O site será atualizado quatro vezes por ano e não precisa de conteúdo dinâmico disponível. A solução deve fornecer alta escalabilidade e segurança aprimorada.  
 Qual combinação de alterações atenderá a esses requisitos com o MENOR overhead operacional? (Escolha duas.)
 
@@ -2602,12 +1972,6 @@ Qual combinação de alterações atenderá a esses requisitos com o MENOR overh
 ---
 
 ### Questão 117
-
-**Texto original:**  
-A company stores its application logs in an Amazon CloudWatch Logs log group. A new policy requires the company to store all application logs in Amazon OpenSearch Service (Amazon Elasticsearch Service) in near-real time.  
-Which solution will meet this requirement with the LEAST operational overhead?
-
-**Tradução:**  
 Uma empresa armazena seus logs de aplicação em um grupo de logs do Amazon CloudWatch Logs. Uma nova política exige que a empresa armazene todos os logs de aplicação no Amazon OpenSearch Service (Amazon Elasticsearch Service) em tempo quase real.  
 Qual solução atenderá a esse requisito com o MENOR overhead operacional?
 
@@ -2625,12 +1989,6 @@ Qual solução atenderá a esse requisito com o MENOR overhead operacional?
 ---
 
 ### Questão 118
-
-**Texto original:**  
-A company is building a web-based application running on Amazon EC2 instances in multiple Availability Zones. The web application will provide access to a repository of text documents totaling about 900 TB in size. The company anticipates that the web application will experience periods of high demand. A solutions architect must ensure that the storage component for the text documents can scale to meet the demand of the application at all times. The company is concerned about the overall cost of the solution.  
-Which storage solution meets these requirements MOST cost-effectively?
-
-**Tradução:**  
 Uma empresa está construindo uma aplicação web baseada em EC2 em várias zonas de disponibilidade. A aplicação web fornecerá acesso a um repositório de documentos de texto totalizando cerca de 900 TB de tamanho. A empresa prevê que a aplicação web terá períodos de alta demanda. Um arquiteto de soluções deve garantir que o componente de armazenamento dos documentos de texto possa escalar para atender à demanda da aplicação o tempo todo. A empresa está preocupada com o custo geral da solução.  
 Qual solução de armazenamento atende a esses requisitos da maneira MAIS econômica?
 
@@ -2645,14 +2003,7 @@ Qual solução de armazenamento atende a esses requisitos da maneira MAIS econô
 
 ---
 
-Se precisar de mais detalhes ou continuar com mais questões, posso seguir com a sequência.
 ### Questão 119
-
-**Texto original:**  
-A global company is using Amazon API Gateway to design REST APIs for its loyalty club users in the us-east-1 Region and the ap-southeast-2 Region. A solutions architect must design a solution to protect these API Gateway managed REST APIs across multiple accounts from SQL injection and cross-site scripting attacks.  
-Which solution will meet these requirements with the LEAST amount of administrative effort?
-
-**Tradução:**  
 Uma empresa global está usando o Amazon API Gateway para projetar APIs REST para seus usuários de clube de fidelidade nas regiões us-east-1 e ap-southeast-2. Um arquiteto de soluções deve projetar uma solução para proteger essas APIs REST gerenciadas pelo API Gateway em várias contas contra injeção de SQL e ataques de cross-site scripting.  
 Qual solução atenderá a esses requisitos com o MENOR esforço administrativo?
 
@@ -2670,12 +2021,6 @@ Qual solução atenderá a esses requisitos com o MENOR esforço administrativo?
 ---
 
 ### Questão 120
-
-**Texto original:**  
-A company has implemented a self-managed DNS solution on three Amazon EC2 instances behind a Network Load Balancer (NLB) in the us-west-2 Region. Most of the company's users are located in the United States and Europe. The company wants to improve the performance and availability of the solution. The company launches and configures three EC2 instances in the eu-west-1 Region and adds the EC2 instances as targets for a new NLB.  
-Which solution can the company use to route traffic to all the EC2 instances?
-
-**Tradução:**  
 Uma empresa implementou uma solução DNS autogerida em três instâncias Amazon EC2 atrás de um Network Load Balancer (NLB) na região us-west-2. A maioria dos usuários da empresa está localizada nos Estados Unidos e na Europa. A empresa deseja melhorar o desempenho e a disponibilidade da solução. A empresa lança e configura três instâncias EC2 na região eu-west-1 e adiciona as instâncias EC2 como destinos para um novo NLB.  
 Qual solução a empresa pode usar para rotear o tráfego para todas as instâncias EC2?
 
@@ -2693,12 +2038,6 @@ Qual solução a empresa pode usar para rotear o tráfego para todas as instânc
 ---
 
 ### Questão 121
-
-**Texto original:**  
-A company is running an online transaction processing (OLTP) workload on AWS. This workload uses an unencrypted Amazon RDS DB instance in a Multi-AZ deployment. Daily database snapshots are taken from this instance.  
-What should a solutions architect do to ensure the database and snapshots are always encrypted moving forward?
-
-**Tradução:**  
 Uma empresa está executando uma carga de trabalho de processamento de transações online (OLTP) na AWS. Essa carga de trabalho usa uma instância Amazon RDS DB não criptografada em uma implantação Multi-AZ. Instantâneos diários do banco de dados são feitos dessa instância.  
 O que um arquiteto de soluções deve fazer para garantir que o banco de dados e os instantâneos sejam sempre criptografados daqui para frente?
 
@@ -2717,12 +2056,6 @@ O que um arquiteto de soluções deve fazer para garantir que o banco de dados e
 ---
 
 ### Questão 122
-
-**Texto original:**  
-A company wants to build a scalable key management infrastructure to support developers who need to encrypt data in their applications.  
-What should a solutions architect do to reduce the operational burden?
-
-**Tradução:**  
 Uma empresa deseja construir uma infraestrutura escalável de gerenciamento de chaves para apoiar desenvolvedores que precisam criptografar dados em suas aplicações.  
 O que um arquiteto de soluções deve fazer para reduzir o ônus operacional?
 
@@ -2741,13 +2074,6 @@ O que um arquiteto de soluções deve fazer para reduzir o ônus operacional?
 ---
 
 ### Questão 123
-
-**Texto original:**  
-A company has a dynamic web application hosted on two Amazon EC2 instances. The company has its own SSL certificate, which is on each instance to perform SSL termination.  
-There has been an increase in traffic recently, and the operations team determined that SSL encryption and decryption is causing the compute capacity of the web servers to reach their maximum limit.  
-What should a solutions architect do to increase the application's performance?
-
-**Tradução:**  
 Uma empresa tem uma aplicação web dinâmica hospedada em duas instâncias Amazon EC2. A empresa tem seu próprio certificado SSL, que está em cada instância para realizar a terminação SSL.  
 Houve um aumento no tráfego recentemente, e a equipe de operações determinou que a criptografia e descriptografia SSL estão causando o limite máximo da capacidade computacional dos servidores web.  
 O que um arquiteto de soluções deve fazer para aumentar o desempenho da aplicação?
@@ -2764,14 +2090,7 @@ O que um arquiteto de soluções deve fazer para aumentar o desempenho da aplica
 
 ---
 
-Essas são as questões 119 a 123. Se desejar continuar, posso seguir com as próximas questões!
 ### Questão 124
-
-**Texto original:**  
-A company has a highly dynamic batch processing job that uses many Amazon EC2 instances to complete it. The job is stateless in nature, can be started and stopped at any given time with no negative impact, and typically takes upwards of 60 minutes total to complete. The company has asked a solutions architect to design a scalable and cost-effective solution that meets the requirements of the job.  
-What should the solutions architect recommend?
-
-**Tradução:**  
 Uma empresa tem um trabalho de processamento em lote altamente dinâmico que usa muitas instâncias Amazon EC2 para completá-lo. O trabalho é sem estado, pode ser iniciado e interrompido a qualquer momento sem impacto negativo, e normalmente leva mais de 60 minutos para ser concluído. A empresa pediu a um arquiteto de soluções para projetar uma solução escalável e custo-efetiva que atenda aos requisitos do trabalho.  
 O que o arquiteto de soluções deve recomendar?
 
@@ -2791,11 +2110,6 @@ O que o arquiteto de soluções deve recomendar?
 ### Questão 125
 
 **Texto original:**  
-A company runs its two-tier ecommerce website on AWS. The web tier consists of a load balancer that sends traffic to Amazon EC2 instances. The database tier uses an Amazon RDS DB instance. The EC2 instances and the RDS DB instance should not be exposed to the public internet.  
-The EC2 instances require internet access to complete payment processing of orders through a third-party web service. The application must be highly available.  
-Which combination of configuration options will meet these requirements? (Choose two.)
-
-**Tradução:**  
 Uma empresa executa seu site de ecommerce de duas camadas na AWS. A camada web consiste em um balanceador de carga que envia tráfego para instâncias Amazon EC2. A camada de banco de dados usa uma instância Amazon RDS DB. As instâncias EC2 e a instância DB RDS não devem ser expostas à internet pública.  
 As instâncias EC2 requerem acesso à internet para concluir o processamento de pagamentos de pedidos por meio de um serviço web de terceiros. A aplicação deve ser altamente disponível.  
 Qual combinação de opções de configuração atenderá a esses requisitos? (Escolha duas.)
@@ -2814,12 +2128,6 @@ Qual combinação de opções de configuração atenderá a esses requisitos? (E
 ---
 
 ### Questão 126
-
-**Texto original:**  
-A solutions architect needs to implement a solution to reduce a company's storage costs. All the company's data is in the Amazon S3 Standard storage class. The company must keep all data for at least 25 years. Data from the most recent 2 years must be highly available and immediately retrievable.  
-Which solution will meet these requirements?
-
-**Tradução:**  
 Um arquiteto de soluções precisa implementar uma solução para reduzir os custos de armazenamento de uma empresa. Todos os dados da empresa estão na classe de armazenamento Amazon S3 Standard. A empresa deve manter todos os dados por pelo menos 25 anos. Os dados dos últimos 2 anos devem ser altamente disponíveis e imediatamente recuperáveis.  
 Qual solução atenderá a esses requisitos?
 
@@ -2837,12 +2145,6 @@ Qual solução atenderá a esses requisitos?
 ---
 
 ### Questão 127
-
-**Texto original:**  
-A media company is evaluating the possibility of moving its systems to the AWS Cloud. The company needs at least 10 TB of storage with the maximum possible I/O performance for video processing, 300 TB of very durable storage for storing media content, and 900 TB of storage to meet requirements for archival media that is not in use anymore.  
-Which set of services should a solutions architect recommend to meet these requirements?
-
-**Tradução:**  
 Uma empresa de mídia está avaliando a possibilidade de mover seus sistemas para a AWS Cloud. A empresa precisa de pelo menos 10 TB de armazenamento com o máximo desempenho de I/O possível para processamento de vídeo, 300 TB de armazenamento altamente durável para armazenar conteúdo de mídia, e 900 TB de armazenamento para atender aos requisitos de mídia arquivada que não está mais em uso.  
 Qual conjunto de serviços um arquiteto de soluções deve recomendar para atender a esses requisitos?
 
@@ -2860,12 +2162,6 @@ Qual conjunto de serviços um arquiteto de soluções deve recomendar para atend
 ---
 
 ### Questão 128
-
-**Texto original:**  
-A company wants to run applications in containers in the AWS Cloud. These applications are stateless and can tolerate disruptions within the underlying infrastructure. The company needs a solution that minimizes cost and operational overhead.  
-What should a solutions architect do to meet these requirements?
-
-**Tradução:**  
 Uma empresa deseja executar aplicações em contêineres na AWS Cloud. Essas aplicações são sem estado e podem tolerar interrupções na infraestrutura subjacente. A empresa precisa de uma solução que minimize os custos e a sobrecarga operacional.  
 O que um arquiteto de soluções deve fazer para atender a esses requisitos?
 
@@ -2882,14 +2178,7 @@ O que um arquiteto de soluções deve fazer para atender a esses requisitos?
 
 ---
 
-Se precisar de mais detalhes ou continuar com as questões restantes, posso seguir com a sequência.
 ### Questão 129
-
-**Texto original:**  
-A company is running a multi-tier web application on premises. The web application is containerized and runs on a number of Linux hosts connected to a PostgreSQL database that contains user records. The operational overhead of maintaining the infrastructure and capacity planning is limiting the company's growth. A solutions architect must improve the application's infrastructure.  
-Which combination of actions should the solutions architect take to accomplish this? (Choose two.)
-
-**Tradução:**  
 Uma empresa está executando uma aplicação web de múltiplas camadas no local. A aplicação web está conteinerizada e roda em diversos hosts Linux conectados a um banco de dados PostgreSQL que contém registros de usuários. O overhead operacional de manter a infraestrutura e o planejamento de capacidade está limitando o crescimento da empresa. Um arquiteto de soluções deve melhorar a infraestrutura da aplicação.  
 Qual combinação de ações o arquiteto de soluções deve tomar para alcançar isso? (Escolha duas.)
 
@@ -2909,12 +2198,6 @@ Qual combinação de ações o arquiteto de soluções deve tomar para alcançar
 ---
 
 ### Questão 130
-
-**Texto original:**  
-An application runs on Amazon EC2 instances across multiple Availability Zonas. The instances run in an Amazon EC2 Auto Scaling group behind an Application Load Balancer. The application performs best when the CPU utilization of the EC2 instances is at or near 40%.  
-What should a solutions architect do to maintain the desired performance across all instances in the group?
-
-**Tradução:**  
 Uma aplicação roda em instâncias Amazon EC2 em várias Zonas de Disponibilidade. As instâncias rodam em um grupo Auto Scaling do Amazon EC2 atrás de um Application Load Balancer. A aplicação tem o melhor desempenho quando a utilização da CPU das instâncias EC2 está em 40% ou perto disso.  
 O que um arquiteto de soluções deve fazer para manter o desempenho desejado em todas as instâncias do grupo?
 
@@ -2932,12 +2215,6 @@ O que um arquiteto de soluções deve fazer para manter o desempenho desejado em
 ---
 
 ### Questão 131
-
-**Texto original:**  
-A company is developing a file-sharing application that will use an Amazon S3 bucket for storage. The company wants to serve all the files through an Amazon CloudFront distribution. The company does not want the files to be accessible through direct navigation to the S3 URL.  
-What should a solutions architect do to meet these requirements?
-
-**Tradução:**  
 Uma empresa está desenvolvendo uma aplicação de compartilhamento de arquivos que usará um bucket Amazon S3 para armazenamento. A empresa deseja servir todos os arquivos por meio de uma distribuição do Amazon CloudFront. A empresa não deseja que os arquivos sejam acessíveis por navegação direta na URL do S3.  
 O que um arquiteto de soluções deve fazer para atender a esses requisitos?
 
@@ -2955,12 +2232,6 @@ O que um arquiteto de soluções deve fazer para atender a esses requisitos?
 ---
 
 ### Questão 132
-
-**Texto original:**  
-A company’s website provides users with downloadable historical performance reports. The website needs a solution that will scale to meet the company’s website demands globally. The solution should be cost-effective, limit the provisioning of infrastructure resources, and provide the fastest possible response time.  
-Which combination should a solutions architect recommend to meet these requirements?
-
-**Tradução:**  
 O site de uma empresa fornece aos usuários relatórios históricos de desempenho para download. O site precisa de uma solução que possa escalar para atender às demandas globais do site da empresa. A solução deve ser econômica, limitar o provisionamento de recursos de infraestrutura e fornecer o tempo de resposta mais rápido possível.  
 Qual combinação o arquiteto de soluções deve recomendar para atender a esses requisitos?
 
@@ -2977,15 +2248,7 @@ Qual combinação o arquiteto de soluções deve recomendar para atender a esses
 
 ---
 
-Essas foram as respostas para as questões de 129 a 132. Se precisar de mais detalhes ou continuar com mais questões, posso prosseguir!
 ### Questão 134
-
-**Texto original:**  
-A company wants to move its application to a serverless solution. The serverless solution needs to analyze existing and new data by using SL.  
-The company stores the data in an Amazon S3 bucket. The data requires encryption and must be replicated to a different AWS Region.  
-Which solution will meet these requirements with the LEAST operational overhead?
-
-**Tradução:**  
 Uma empresa deseja mover sua aplicação para uma solução serverless. A solução serverless precisa analisar dados existentes e novos usando SL.  
 A empresa armazena os dados em um bucket Amazon S3. Os dados requerem criptografia e devem ser replicados para uma região da AWS diferente.  
 Qual solução atenderá a esses requisitos com o MENOR overhead operacional?
@@ -3004,12 +2267,6 @@ Qual solução atenderá a esses requisitos com o MENOR overhead operacional?
 ---
 
 ### Questão 135
-
-**Texto original:**  
-A company runs workloads on AWS. The company needs to connect to a service from an external provider. The service is hosted in the provider's VPC. According to the company’s security team, the connectivity must be private and must be restricted to the target service. The connection must be initiated only from the company’s VPC.  
-Which solution will meet these requirements?
-
-**Tradução:**  
 Uma empresa executa cargas de trabalho na AWS. A empresa precisa se conectar a um serviço de um provedor externo. O serviço está hospedado no VPC do provedor. De acordo com a equipe de segurança da empresa, a conectividade deve ser privada e restrita ao serviço de destino. A conexão deve ser iniciada apenas do VPC da empresa.  
 Qual solução atenderá a esses requisitos?
 
@@ -3028,12 +2285,6 @@ Qual solução atenderá a esses requisitos?
 ---
 
 ### Questão 136
-
-**Texto original:**  
-A company is migrating its on-premises PostgreSQL database to Amazon Aurora PostgreSQL. The on-premises database must remain online and accessible during the migration. The Aurora database must remain synchronized with the on-premises database.  
-Which combination of actions must a solutions architect take to meet these requirements? (Choose two.)
-
-**Tradução:**  
 Uma empresa está migrando seu banco de dados PostgreSQL local para o Amazon Aurora PostgreSQL. O banco de dados local deve permanecer online e acessível durante a migração. O banco de dados Aurora deve permanecer sincronizado com o banco de dados local.  
 Qual combinação de ações um arquiteto de soluções deve tomar para atender a esses requisitos? (Escolha duas.)
 
@@ -3053,12 +2304,6 @@ Qual combinação de ações um arquiteto de soluções deve tomar para atender 
 ---
 
 ### Questão 137
-
-**Texto original:**  
-A company uses AWS Organizations to create dedicated AWS accounts for each business unit to manage each business unit's account independently upon request. The root email recipient missed a notification that was sent to the root user email address of one account. The company wants to ensure that all future notifications are not missed. Future notifications must be limited to account administrators.  
-Which solution will meet these requirements?
-
-**Tradução:**  
 Uma empresa usa o AWS Organizations para criar contas dedicadas AWS para cada unidade de negócios, para gerenciar as contas de cada unidade de negócios de forma independente, conforme solicitado. O destinatário do e-mail da raiz perdeu uma notificação enviada para o endereço de e-mail do usuário root de uma conta. A empresa quer garantir que todas as futuras notificações não sejam perdidas. As futuras notificações devem ser limitadas aos administradores da conta.  
 Qual solução atenderá a esses requisitos?
 
@@ -3075,17 +2320,7 @@ Qual solução atenderá a esses requisitos?
   - **D:** Usar o mesmo endereço de e-mail para todas as contas pode não ser prático e dificulta a organização.
 
 ---
-
-Essas foram as questões 134 a 137. Se precisar de mais detalhes ou continuar com mais questões, posso seguir com a sequência!
-
 ### Questão 138
-
-**Texto original:**  
-A company runs its ecommerce application on AWS. Every new order is published as a message in a RabbitMQ queue that runs on an Amazon EC2 instance in a single Availability Zone. These messages are processed by a different application that runs on a separate EC2 instance. This application stores the details in a PostgreSQL database on another EC2 instance. All the EC2 instances are in the same Availability Zone.  
-The company needs to redesign its architecture to provide the highest availability with the least operational overhead.  
-What should a solutions architect do to meet these requirements?
-
-**Tradução:**  
 Uma empresa executa sua aplicação de comércio eletrônico na AWS. Cada novo pedido é publicado como uma mensagem em uma fila RabbitMQ que é executada em uma instância EC2 em uma única Zona de Disponibilidade. Essas mensagens são processadas por outra aplicação que roda em uma instância EC2 separada. Esta aplicação armazena os detalhes em um banco de dados PostgreSQL em outra instância EC2. Todas as instâncias EC2 estão na mesma Zona de Disponibilidade.  
 A empresa precisa redesenhar sua arquitetura para fornecer a maior disponibilidade com o menor esforço operacional.  
 O que um arquiteto de soluções deve fazer para atender a esses requisitos?
@@ -3103,13 +2338,6 @@ O que um arquiteto de soluções deve fazer para atender a esses requisitos?
   - **D:** Criar três grupos de Auto Scaling aumenta a complexidade e os custos sem fornecer benefícios adicionais significativos.
 
 ### Questão 139
-
-**Texto original:**  
-A reporting team receives files each day in an Amazon S3 bucket. The reporting team manually reviews and copies the files from this initial S3 bucket to an analysis S3 bucket each day at the same time to use with Amazon QuickSight. Additional teams are starting to send more files in larger sizes to the initial S3 bucket.  
-The reporting team wants to move the files automatically to the analysis S3 bucket as the files enter the initial S3 bucket. The reporting team also wants to use AWS Lambda functions to run pattern-matching code on the copied data. In addition, the reporting team wants to send the data files to a pipeline in Amazon SageMaker Pipelines.  
-What should a solutions architect do to meet these requirements with the LEAST operational overhead?
-
-**Tradução:**  
 Uma equipe de relatórios recebe arquivos diariamente em um bucket do Amazon S3. A equipe analisa e copia manualmente os arquivos desse bucket inicial para um bucket de análise do S3 todos os dias no mesmo horário para uso com o Amazon QuickSight. Outras equipes estão começando a enviar mais arquivos, em tamanhos maiores, para o bucket inicial do S3.  
 A equipe de relatórios quer mover automaticamente os arquivos para o bucket de análise assim que forem enviados ao bucket inicial. Além disso, quer usar funções AWS Lambda para executar código de correspondência de padrões nos dados copiados. A equipe também deseja enviar os arquivos de dados para um pipeline no Amazon SageMaker Pipelines.  
 O que um arquiteto de soluções deve fazer para atender a esses requisitos com o MENOR esforço operacional?
@@ -3127,13 +2355,6 @@ O que um arquiteto de soluções deve fazer para atender a esses requisitos com 
   - **D:** Configurar replicação do S3 e EventBridge adiciona redundância desnecessária e aumenta a complexidade sem benefícios claros.
 
 ### Questão 139
-
-**Texto original:**  
-A reporting team receives files each day in an Amazon S3 bucket. The reporting team manually reviews and copies the files from this initial S3 bucket to an analysis S3 bucket each day at the same time to use with Amazon QuickSight. Additional teams are starting to send more files in larger sizes to the initial S3 bucket.  
-The reporting team wants to move the files automatically to the analysis S3 bucket as the files enter the initial S3 bucket. The reporting team also wants to use AWS Lambda functions to run pattern-matching code on the copied data. In addition, the reporting team wants to send the data files to a pipeline in Amazon SageMaker Pipelines.  
-What should a solutions architect do to meet these requirements with the LEAST operational overhead?
-
-**Tradução:**  
 Uma equipe de relatórios recebe arquivos diariamente em um bucket do Amazon S3. A equipe analisa e copia manualmente os arquivos desse bucket inicial para um bucket de análise do S3 todos os dias no mesmo horário para uso com o Amazon QuickSight. Outras equipes estão começando a enviar mais arquivos, em tamanhos maiores, para o bucket inicial do S3.  
 A equipe de relatórios quer mover automaticamente os arquivos para o bucket de análise assim que forem enviados ao bucket inicial. Além disso, quer usar funções AWS Lambda para executar código de correspondência de padrões nos dados copiados. A equipe também deseja enviar os arquivos de dados para um pipeline no Amazon SageMaker Pipelines.  
 O que um arquiteto de soluções deve fazer para atender a esses requisitos com o MENOR esforço operacional?
@@ -3151,13 +2372,6 @@ O que um arquiteto de soluções deve fazer para atender a esses requisitos com 
   - **D:** Configurar replicação do S3 e EventBridge adiciona redundância desnecessária e aumenta a complexidade sem benefícios claros.
 
 ### Questão 140
-
-**Texto original:**  
-A solutions architect needs to help a company optimize the cost of running an application on AWS. The application will use Amazon EC2 instances, AWS Fargate, and AWS Lambda for compute within the architecture.  
-The EC2 instances will run the data ingestion layer of the application. EC2 usage will be sporadic and unpredictable. Workloads that run on EC2 instances can be interrupted at any time. The application front end will run on Fargate, and Lambda will serve the API layer. The front-end utilization and API layer utilization will be predictable over the course of the next year.  
-Which combination of purchasing options will provide the MOST cost-effective solution for hosting this application? (Choose two.)
-
-**Tradução:**  
 Um arquiteto de soluções precisa ajudar uma empresa a otimizar o custo de execução de uma aplicação na AWS. A aplicação usará instâncias Amazon EC2, AWS Fargate e AWS Lambda para computação na arquitetura.  
 As instâncias EC2 executarão a camada de ingestão de dados da aplicação. O uso do EC2 será esporádico e imprevisível. As cargas de trabalho que rodam nas instâncias EC2 podem ser interrompidas a qualquer momento. A interface da aplicação será executada no Fargate, e o Lambda servirá como camada de API. O uso da interface e da camada de API será previsível ao longo do próximo ano.  
 Quais combinações de opções de compra fornecerão a solução MAIS econômica para hospedar essa aplicação? (Escolha duas.)
@@ -3179,12 +2393,6 @@ Quais combinações de opções de compra fornecerão a solução MAIS econômic
 ---
 
 ### Questão 141
-
-**Texto original:**  
-A company runs a web-based portal that provides users with global breaking news, local alerts, and weather updates. The portal delivers each user a personalized view by using a mixture of static and dynamic content. Content is served over HTTPS through an API server running on an Amazon EC2 instance behind an Application Load Balancer (ALB). The company wants the portal to provide this content to its users across the world as quickly as possible.  
-How should a solutions architect design the application to ensure the LEAST amount of latency for all users?
-
-**Tradução:**  
 Uma empresa opera um portal baseado na web que fornece aos usuários notícias globais de última hora, alertas locais e atualizações meteorológicas. O portal entrega uma visão personalizada para cada usuário usando uma mistura de conteúdo estático e dinâmico. O conteúdo é servido via HTTPS por meio de um servidor de API rodando em uma instância Amazon EC2 atrás de um Application Load Balancer (ALB). A empresa quer fornecer esse conteúdo aos seus usuários em todo o mundo da maneira mais rápida possível.  
 Como um arquiteto de soluções deve projetar a aplicação para garantir a MENOR latência para todos os usuários?
 
@@ -3205,10 +2413,6 @@ Como um arquiteto de soluções deve projetar a aplicação para garantir a MENO
 ### Questão 142
 
 **Texto original:**  
-A gaming company is designing a highly available architecture. The application runs on a modified Linux kernel and supports only UDP-based traffic. The company needs the front-end tier to provide the best possible user experience. That tier must have low latency, route traffic to the nearest edge location, and provide static IP addresses for entry into the application endpoints.  
-What should a solutions architect do to meet these requirements?
-
-**Tradução:**  
 Uma empresa de jogos está projetando uma arquitetura altamente disponível. A aplicação roda em um kernel Linux modificado e suporta apenas tráfego baseado em UDP. A empresa precisa que a camada de front-end forneça a melhor experiência possível ao usuário. Essa camada deve ter baixa latência, rotear tráfego para o local de borda mais próximo e fornecer endereços IP estáticos para entrada nos endpoints da aplicação.  
 O que um arquiteto de soluções deve fazer para atender a esses requisitos?
 
@@ -3225,12 +2429,6 @@ O que um arquiteto de soluções deve fazer para atender a esses requisitos?
 ---
 
 ### Questão 143
-
-**Texto original:**  
-A company wants to migrate its existing on-premises monolithic application to AWS. The company wants to keep as much of the front-end code and the backend code as possible. However, the company wants to break the application into smaller applications. A different team will manage each application. The company needs a highly scalable solution that minimizes operational overhead.  
-Which solution will meet these requirements?
-
-**Tradução:**  
 Uma empresa quer migrar sua aplicação monolítica on-premises para a AWS. A empresa quer manter o máximo possível do código front-end e back-end. No entanto, a empresa quer dividir a aplicação em aplicações menores. Equipes diferentes irão gerenciar cada aplicação. A empresa precisa de uma solução altamente escalável que minimize o esforço operacional.  
 Qual solução atenderá a esses requisitos?
 
@@ -3247,14 +2445,7 @@ Qual solução atenderá a esses requisitos?
 
 ---
 
-As demais questões (144 a 149) serão processadas na sequência.
 ### Questão 144
-
-**Texto original:**  
-A company recently started using Amazon Aurora as the data store for its global ecommerce application. When large reports are run, developers report that the ecommerce application is performing poorly. After reviewing metrics in Amazon CloudWatch, a solutions architect finds that the ReadIOPS and CPUUtilization metrics are spiking when monthly reports run.  
-What is the MOST cost-effective solution?
-
-**Tradução:**  
 Uma empresa começou recentemente a usar o Amazon Aurora como armazenamento de dados para sua aplicação global de comércio eletrônico. Quando relatórios grandes são executados, os desenvolvedores relatam que a aplicação apresenta baixo desempenho. Após revisar métricas no Amazon CloudWatch, um arquiteto de soluções identifica picos nas métricas de ReadIOPS e CPUUtilization durante a execução dos relatórios mensais.  
 Qual é a solução MAIS econômica?
 
@@ -3273,12 +2464,6 @@ Qual é a solução MAIS econômica?
 ---
 
 ### Questão 145
-
-**Texto original:**  
-A company hosts a website analytics application on a single Amazon EC2 On-Demand Instance. The analytics software is written in PHP and uses a MySQL database. The analytics software, the web server that provides PHP, and the database server are all hosted on the EC2 instance. The application is showing signs of performance degradation during busy times and is presenting 5xx errors. The company needs to make the application scale seamlessly.  
-Which solution will meet these requirements MOST cost-effectively?
-
-**Tradução:**  
 Uma empresa hospeda uma aplicação de análise de sites em uma única instância Amazon EC2 On-Demand. O software de análise é escrito em PHP e utiliza um banco de dados MySQL. O software de análise, o servidor web que fornece o PHP e o banco de dados estão todos hospedados na instância EC2. A aplicação apresenta sinais de degradação de desempenho em momentos de pico e erros 5xx. A empresa precisa que a aplicação escale de forma transparente.  
 Qual solução atenderá a esses requisitos da maneira MAIS econômica?
 
@@ -3297,13 +2482,6 @@ Qual solução atenderá a esses requisitos da maneira MAIS econômica?
 ---
 
 ### Questão 146
-
-**Texto original:**  
-A company runs a stateless web application in production on a group of Amazon EC2 On-Demand Instances behind an Application Load Balancer. The application experiences heavy usage during an 8-hour period each business day. Application usage is moderate and steady overnight. Application usage is low during weekends.  
-The company wants to minimize its EC2 costs without affecting the availability of the application.  
-Which solution will meet these requirements?
-
-**Tradução:**  
 Uma empresa executa uma aplicação web stateless em produção em um grupo de instâncias Amazon EC2 On-Demand atrás de um Application Load Balancer. A aplicação experimenta uso intenso durante um período de 8 horas em dias úteis. O uso da aplicação é moderado e estável durante a noite, e baixo nos fins de semana.  
 A empresa quer minimizar os custos do EC2 sem afetar a disponibilidade da aplicação.  
 Qual solução atenderá a esses requisitos?
@@ -3323,12 +2501,6 @@ Qual solução atenderá a esses requisitos?
 ---
 
 ### Questão 147
-
-**Texto original:**  
-A company needs to retain application log files for a critical application for 10 years. The application team regularly accesses logs from the past month for troubleshooting, but logs older than 1 month are rarely accessed. The application generates more than 10 TB of logs per month.  
-Which storage option meets these requirements MOST cost-effectively?
-
-**Tradução:**  
 Uma empresa precisa reter arquivos de log de uma aplicação crítica por 10 anos. A equipe de aplicação acessa regularmente logs do último mês para solução de problemas, mas logs mais antigos raramente são acessados. A aplicação gera mais de 10 TB de logs por mês.  
 Qual opção de armazenamento atende a esses requisitos da maneira MAIS econômica?
 
@@ -3346,15 +2518,6 @@ Qual opção de armazenamento atende a esses requisitos da maneira MAIS econômi
 ---
 
 ### Questão 148
-
-**Texto original:**  
-A company has a data ingestion workflow that includes the following components:  
-- An Amazon SNS topic that receives notifications about new data deliveries.  
-- An AWS Lambda function that processes and stores the data.  
-The ingestion workflow occasionally fails because of network connectivity issues. When failure occurs, the corresponding data is not ingested unless the company manually reruns the job.  
-What should a solutions architect do to ensure that all notifications are eventually processed?
-
-**Tradução:**  
 Uma empresa possui um fluxo de ingestão de dados com os seguintes componentes:  
 - Um tópico Amazon SNS que recebe notificações sobre novas entregas de dados.  
 - Uma função AWS Lambda que processa e armazena os dados.  
@@ -3375,12 +2538,6 @@ O que um arquiteto de soluções deve fazer para garantir que todas as notifica�
 ---
 
 ### Questão 149
-
-**Texto original:**  
-A company has a service that produces event data. The company wants to use AWS to process the event data as it is received. The data is written in a specific order that must be maintained throughout processing. The company wants to implement a solution that minimizes operational overhead.  
-How should a solutions architect accomplish this?
-
-**Tradução:**  
 Uma empresa possui um serviço que produz dados de eventos. A empresa quer usar a AWS para processar os dados de eventos conforme são recebidos. Os dados são gravados em uma ordem específica que deve ser mantida durante o processamento. A empresa quer implementar uma solução que minimize o esforço operacional.  
 Como um arquiteto de soluções deve fazer isso?
 
@@ -3396,12 +2553,6 @@ Como um arquiteto de soluções deve fazer isso?
   - **C:** Fila padrão do SQS não mantém a ordem necessária.
 
 ### Questão 150
-
-**Texto original:**  
-A company is migrating an application from on-premises servers to Amazon EC2 instances. As part of the migration design requirements, a solutions architect must implement infrastructure metric alarms. The company does not need to take action if CPU utilization increases to more than 50% for a short burst of time. However, if the CPU utilization increases to more than 50% and read IOPS on the disk are high at the same time, the company needs to act as soon as possible. The solutions architect also must reduce false alarms.  
-What should the solutions architect do to meet these requirements?
-
-**Tradução:**  
 Uma empresa está migrando uma aplicação de servidores on-premises para instâncias Amazon EC2. Como parte dos requisitos de design da migração, um arquiteto de soluções deve implementar alarmes de métricas de infraestrutura. A empresa não precisa agir se a utilização de CPU aumentar para mais de 50% por um curto período. No entanto, se a utilização de CPU aumentar para mais de 50% e os IOPS de leitura no disco também forem altos, a empresa precisa agir imediatamente. O arquiteto também deve reduzir alarmes falsos.  
 O que o arquiteto de soluções deve fazer para atender a esses requisitos?
 
@@ -3420,12 +2571,6 @@ O que o arquiteto de soluções deve fazer para atender a esses requisitos?
 ---
 
 ### Questão 151
-
-**Texto original:**  
-A company wants to migrate its on-premises data center to AWS. According to the company's compliance requirements, the company can use only the ap-northeast-3 Region. Company administrators are not permitted to connect VPCs to the internet.  
-Which solutions will meet these requirements? (Choose two.)
-
-**Tradução:**  
 Uma empresa quer migrar seu data center on-premises para a AWS. De acordo com os requisitos de conformidade da empresa, ela pode usar apenas a região ap-northeast-3. Os administradores da empresa não têm permissão para conectar VPCs à internet.  
 Quais soluções atenderão a esses requisitos? (Escolha duas.)
 
@@ -3443,12 +2588,6 @@ Quais soluções atenderão a esses requisitos? (Escolha duas.)
 ---
 
 ### Questão 152
-
-**Texto original:**  
-A company uses a three-tier web application to provide training to new employees. The application is accessed for only 12 hours every day. The company is using an Amazon RDS for MySQL DB instance to store information and wants to minimize costs.  
-What should a solutions architect do to meet these requirements?
-
-**Tradução:**  
 Uma empresa usa uma aplicação web de três camadas para fornecer treinamento a novos funcionários. A aplicação é acessada apenas 12 horas por dia. A empresa está usando uma instância Amazon RDS para MySQL para armazenar informações e quer minimizar os custos.  
 O que um arquiteto de soluções deve fazer para atender a esses requisitos?
 
@@ -3465,12 +2604,6 @@ O que um arquiteto de soluções deve fazer para atender a esses requisitos?
 ---
 
 ### Questão 153
-
-**Texto original:**  
-A company sells ringtones created from clips of popular songs. The files containing the ringtones are stored in Amazon S3 Standard and are at least 128 KB in size. The company has millions of files, but downloads are infrequent for ringtones older than 90 days. The company needs to save money on storage while keeping the most accessed files readily available for its users.  
-Which action should the company take to meet these requirements MOST cost-effectively?
-
-**Tradução:**  
 Uma empresa vende toques criados a partir de trechos de músicas populares. Os arquivos contendo os toques estão armazenados no Amazon S3 Standard e têm pelo menos 128 KB de tamanho. A empresa tem milhões de arquivos, mas downloads são raros para toques com mais de 90 dias. A empresa precisa economizar no armazenamento enquanto mantém os arquivos mais acessados disponíveis para seus usuários.  
 Qual ação a empresa deve tomar para atender a esses requisitos da maneira MAIS econômica?
 
@@ -3487,12 +2620,6 @@ Qual ação a empresa deve tomar para atender a esses requisitos da maneira MAIS
 ---
 
 ### Questão 154
-
-**Texto original:**  
-A company needs to save the results from a medical trial to an Amazon S3 repository. The repository must allow a few scientists to add new files and must restrict all other users to read-only access. No users can have the ability to modify or delete any files in the repository. The company must keep every file in the repository for a minimum of 1 year after its creation date.  
-Which solution will meet these requirements?
-
-**Tradução:**  
 Uma empresa precisa salvar os resultados de um teste médico em um repositório Amazon S3. O repositório deve permitir que alguns cientistas adicionem novos arquivos e restringir todos os outros usuários ao acesso somente leitura. Nenhum usuário deve ter a capacidade de modificar ou excluir arquivos no repositório. A empresa deve manter cada arquivo no repositório por pelo menos 1 ano após sua criação.  
 Qual solução atenderá a esses requisitos?
 
@@ -3509,12 +2636,6 @@ Qual solução atenderá a esses requisitos?
 ---
 
 ### Questão 155
-
-**Texto original:**  
-A large media company hosts a web application on AWS. The company wants to start caching confidential media files so that users around the world will have reliable access to the files. The content is stored in Amazon S3 buckets. The company must deliver the content quickly, regardless of where the requests originate geographically.  
-Which solution will meet these requirements?
-
-**Tradução:**  
 Uma grande empresa de mídia hospeda uma aplicação web na AWS. A empresa quer começar a armazenar em cache arquivos de mídia confidenciais para que usuários ao redor do mundo tenham acesso confiável aos arquivos. O conteúdo está armazenado em buckets do Amazon S3. A empresa deve entregar o conteúdo rapidamente, independentemente de onde as solicitações se originem geograficamente.  
 Qual solução atenderá a esses requisitos?
 
@@ -3529,12 +2650,6 @@ Qual solução atenderá a esses requisitos?
   - **A/B/D:** Não oferecem caching global eficiente e seguro para mídia armazenada no S3.
 
 ### Questão 156
-
-**Texto original:**  
-A company produces batch data that comes from different databases. The company also produces live stream data from network sensors and application APIs. The company needs to consolidate all the data into one place for business analytics. The company needs to process the incoming data and then stage the data in different Amazon S3 buckets. Teams will later run one-time queries and import the data into a business intelligence tool to show key performance indicators (KPIs).  
-Which combination of steps will meet these requirements with the LEAST operational overhead? (Choose two.)
-
-**Tradução:**  
 Uma empresa produz dados em lote de diferentes bancos de dados. A empresa também produz dados de streaming ao vivo de sensores de rede e APIs de aplicações. A empresa precisa consolidar todos os dados em um único local para análises empresariais. A empresa precisa processar os dados recebidos e então organizá-los em diferentes buckets do Amazon S3. As equipes posteriormente executarão consultas pontuais e importarão os dados para uma ferramenta de inteligência empresarial para exibir indicadores-chave de desempenho (KPIs).  
 Quais combinações de etapas atenderão a esses requisitos com o MENOR esforço operacional? (Escolha duas.)
 
@@ -3554,12 +2669,6 @@ Quais combinações de etapas atenderão a esses requisitos com o MENOR esforço
 ---
 
 ### Questão 157
-
-**Texto original:**  
-A company stores data in an Amazon Aurora PostgreSQL DB cluster. The company must store all the data for 5 years and must delete all the data after 5 years. The company also must indefinitely keep audit logs of actions that are performed within the database. Currently, the company has automated backups configured for Aurora.  
-Which combination of steps should a solutions architect take to meet these requirements? (Choose two.)
-
-**Tradução:**  
 Uma empresa armazena dados em um cluster Amazon Aurora PostgreSQL. A empresa deve armazenar todos os dados por 5 anos e excluí-los após esse período. A empresa também deve manter indefinidamente logs de auditoria de ações realizadas no banco de dados. Atualmente, a empresa possui backups automáticos configurados para o Aurora.  
 Quais combinações de etapas um arquiteto de soluções deve realizar para atender a esses requisitos? (Escolha duas.)
 
@@ -3578,12 +2687,6 @@ Quais combinações de etapas um arquiteto de soluções deve realizar para aten
 ---
 
 ### Questão 158
-
-**Texto original:**  
-A solutions architect is optimizing a website for an upcoming musical event. Videos of the performances will be streamed in real time and then will be available on demand. The event is expected to attract a global online audience.  
-Which service will improve the performance of both the real-time and on-demand streaming?
-
-**Tradução:**  
 Um arquiteto de soluções está otimizando um site para um evento musical que se aproxima. Vídeos das apresentações serão transmitidos em tempo real e, posteriormente, estarão disponíveis sob demanda. Espera-se que o evento atraia um público global online.  
 Qual serviço melhorará o desempenho tanto do streaming em tempo real quanto sob demanda?
 
@@ -3600,12 +2703,6 @@ Qual serviço melhorará o desempenho tanto do streaming em tempo real quanto so
 ---
 
 ### Questão 159
-
-**Texto original:**  
-A company is running a publicly accessible serverless application that uses Amazon API Gateway and AWS Lambda. The application’s traffic recently spiked due to fraudulent requests from botnets.  
-Which steps should a solutions architect take to block requests from unauthorized users? (Choose two.)
-
-**Tradução:**  
 Uma empresa está executando uma aplicação serverless publicamente acessível que usa o Amazon API Gateway e o AWS Lambda. O tráfego da aplicação recentemente disparou devido a solicitações fraudulentas de botnets.  
 Quais etapas um arquiteto de soluções deve realizar para bloquear solicitações de usuários não autorizados? (Escolha duas.)
 
@@ -3625,12 +2722,6 @@ Quais etapas um arquiteto de soluções deve realizar para bloquear solicitaçõ
 ---
 
 ### Questão 160
-
-**Texto original:**  
-An ecommerce company hosts its analytics application in the AWS Cloud. The application generates about 300 MB of data each month. The data is stored in JSON format. The company is evaluating a disaster recovery solution to back up the data. The data must be accessible in milliseconds if it is needed, and the data must be kept for 30 days.  
-Which solution meets these requirements MOST cost-effectively?
-
-**Tradução:**  
 Uma empresa de comércio eletrônico hospeda sua aplicação de análise na nuvem AWS. A aplicação gera cerca de 300 MB de dados por mês. Os dados são armazenados no formato JSON. A empresa está avaliando uma solução de recuperação de desastres para fazer backup dos dados. Os dados devem ser acessíveis em milissegundos, se necessário, e devem ser mantidos por 30 dias.  
 Qual solução atende a esses requisitos da maneira MAIS econômica?
 
@@ -3645,12 +2736,6 @@ Qual solução atende a esses requisitos da maneira MAIS econômica?
   - **A/B/D:** Alternativas mais caras ou inadequadas para os requisitos de acesso e retenção.
 
 ### Questão 161
-
-**Texto original:**  
-A company has a small Python application that processes JSON documents and outputs the results to an on-premises SQL database. The application runs thousands of times each day. The company wants to move the application to the AWS Cloud. The company needs a highly available solution that maximizes scalability and minimizes operational overhead.  
-Which solution will meet these requirements?
-
-**Tradução:**  
 Uma empresa tem uma pequena aplicação em Python que processa documentos JSON e envia os resultados para um banco de dados SQL on-premises. A aplicação é executada milhares de vezes por dia. A empresa quer migrar a aplicação para a nuvem AWS. A empresa precisa de uma solução altamente disponível que maximize a escalabilidade e minimize o esforço operacional.  
 Qual solução atenderá a esses requisitos?
 
@@ -3667,12 +2752,6 @@ Qual solução atenderá a esses requisitos?
 ---
 
 ### Questão 162
-
-**Texto original:**  
-A company wants to use high performance computing (HPC) infrastructure on AWS for financial risk modeling. The company’s HPC workloads run on Linux. Each HPC workflow runs on hundreds of Amazon EC2 Spot Instances, is short-lived, and generates thousands of output files that are ultimately stored in persistent storage for analytics and long-term future use.  
-Which combination of AWS services meets these requirements?
-
-**Tradução:**  
 Uma empresa quer usar infraestrutura de computação de alto desempenho (HPC) na AWS para modelagem de risco financeiro. As cargas de trabalho HPC da empresa rodam no Linux. Cada fluxo de trabalho HPC executa centenas de instâncias Spot do Amazon EC2, é de curta duração e gera milhares de arquivos de saída que são armazenados em um armazenamento persistente para análises e uso futuro a longo prazo.  
 Qual combinação de serviços AWS atende a esses requisitos?
 
@@ -3689,12 +2768,6 @@ Qual combinação de serviços AWS atende a esses requisitos?
 ---
 
 ### Questão 163
-
-**Texto original:**  
-A company is building a containerized application on premises and decides to move the application to AWS. The application will have thousands of users soon after it is deployed. The company is unsure how to manage the deployment of containers at scale.  
-Which solution will meet these requirements?
-
-**Tradução:**  
 Uma empresa está construindo uma aplicação conteinerizada on-premises e decide migrar a aplicação para a AWS. A aplicação terá milhares de usuários logo após ser implantada. A empresa não tem certeza de como gerenciar a implantação de contêineres em escala.  
 Qual solução atenderá a esses requisitos?
 
@@ -3711,12 +2784,6 @@ Qual solução atenderá a esses requisitos?
 ---
 
 ### Questão 164
-
-**Texto original:**  
-A company has two applications: a sender application that sends messages with payloads to be processed and a processing application intended to receive the messages. The company wants to implement an AWS service to handle messages between the two applications.  
-Which solution meets these requirements and is the MOST operationally efficient?
-
-**Tradução:**  
 Uma empresa tem duas aplicações: uma aplicação remetente que envia mensagens com cargas úteis para serem processadas e uma aplicação de processamento destinada a receber as mensagens. A empresa quer implementar um serviço AWS para gerenciar as mensagens entre as duas aplicações.  
 Qual solução atende a esses requisitos e é a MAIS eficiente operacionalmente?
 
@@ -3733,12 +2800,6 @@ Qual solução atende a esses requisitos e é a MAIS eficiente operacionalmente?
 ---
 
 ### Questão 165
-
-**Texto original:**  
-A solutions architect must design a solution that uses Amazon CloudFront with an Amazon S3 origin to store a static website. The company’s security policy requires that all website traffic be inspected by AWS WAF.  
-How should the solutions architect comply with these requirements?
-
-**Tradução:**  
 Um arquiteto de soluções deve projetar uma solução que use o Amazon CloudFront com um bucket Amazon S3 como origem para armazenar um site estático. A política de segurança da empresa exige que todo o tráfego do site seja inspecionado pelo AWS WAF.  
 Como o arquiteto de soluções deve cumprir esses requisitos?
 
@@ -3753,12 +2814,6 @@ Como o arquiteto de soluções deve cumprir esses requisitos?
   - **A/B/C:** Não oferecem a mesma segurança integrada e controle de acesso.
 
 ### Questão 166
-
-**Texto original:**  
-Organizers for a global event want to put daily reports online as static HTML pages. The pages are expected to generate millions of views from users around the world. The files are stored in an Amazon S3 bucket. A solutions architect has been asked to design an efficient and effective solution.  
-Which action should the solutions architect take to accomplish this?
-
-**Tradução:**  
 Organizadores de um evento global querem colocar relatórios diários online como páginas HTML estáticas. Espera-se que as páginas gerem milhões de visualizações de usuários em todo o mundo. Os arquivos estão armazenados em um bucket Amazon S3. Um arquiteto de soluções foi solicitado para projetar uma solução eficiente e eficaz.  
 Qual ação o arquiteto de soluções deve tomar para realizar isso?
 
@@ -3777,12 +2832,6 @@ Qual ação o arquiteto de soluções deve tomar para realizar isso?
 ---
 
 ### Questão 167
-
-**Texto original:**  
-A company runs a production application on a fleet of Amazon EC2 instances. The application reads the data from an Amazon SQS queue and processes the messages in parallel. The message volume is unpredictable and often has intermittent traffic. This application should continually process messages without any downtime.  
-Which solution meets these requirements MOST cost-effectively?
-
-**Tradução:**  
 Uma empresa executa uma aplicação de produção em um conjunto de instâncias Amazon EC2. A aplicação lê os dados de uma fila Amazon SQS e processa as mensagens em paralelo. O volume de mensagens é imprevisível e frequentemente apresenta tráfego intermitente. Esta aplicação deve processar mensagens continuamente sem tempo de inatividade.  
 Qual solução atende a esses requisitos da maneira MAIS econômica?
 
@@ -3800,12 +2849,6 @@ Qual solução atende a esses requisitos da maneira MAIS econômica?
 ---
 
 ### Questão 168
-
-**Texto original:**  
-A security team wants to limit access to specific services or actions in all of the team’s AWS accounts. All accounts belong to a large organization in AWS Organizations. The solution must be scalable, and there must be a single point where permissions can be maintained.  
-What should a solutions architect do to accomplish this?
-
-**Tradução:**  
 Uma equipe de segurança quer limitar o acesso a serviços ou ações específicas em todas as contas da equipe na AWS. Todas as contas pertencem a uma organização grande no AWS Organizations. A solução deve ser escalável e ter um único ponto onde as permissões possam ser mantidas.  
 O que um arquiteto de soluções deve fazer para realizar isso?
 
@@ -3823,12 +2866,6 @@ O que um arquiteto de soluções deve fazer para realizar isso?
 ---
 
 ### Questão 169
-
-**Texto original:**  
-A company is concerned about the security of its public web application due to recent web attacks. The application uses an Application Load Balancer (ALB). A solutions architect must reduce the risk of DDoS attacks against the application.  
-What should the solutions architect do to meet this requirement?
-
-**Tradução:**  
 Uma empresa está preocupada com a segurança de sua aplicação web pública devido a recentes ataques na web. A aplicação usa um Application Load Balancer (ALB). Um arquiteto de soluções deve reduzir o risco de ataques DDoS contra a aplicação.  
 O que o arquiteto de soluções deve fazer para atender a esse requisito?
 
@@ -3845,12 +2882,6 @@ O que o arquiteto de soluções deve fazer para atender a esse requisito?
 ---
 
 ### Questão 170
-
-**Texto original:**  
-A company’s web application is running on Amazon EC2 instances behind an Application Load Balancer. The company recently changed its policy, which now requires the application to be accessed from one specific country only.  
-Which configuration will meet this requirement?
-
-**Tradução:**  
 Uma aplicação web de uma empresa está rodando em instâncias Amazon EC2 atrás de um Application Load Balancer. A empresa recentemente alterou sua política, que agora exige que a aplicação seja acessada apenas de um país específico.  
 Qual configuração atenderá a esse requisito?
 
@@ -3866,14 +2897,7 @@ Qual configuração atenderá a esse requisito?
 
 ---
 
-Caso deseje, posso continuar com mais questões. Avise-me!  
 ### Question #171
-
-**Texto original:**  
-A company provides an API to its users that automates inquiries for tax computations based on item prices. The company experiences a larger number of inquiries during the holiday season only that cause slower response times. A solutions architect needs to design a solution that is scalable and elastic.  
-What should the solutions architect do to accomplish this?
-
-**Tradução:**  
 Uma empresa fornece uma API para seus usuários que automatiza consultas para cálculos de impostos com base nos preços dos itens. Durante a temporada de férias, a empresa experimenta um aumento no número de consultas, resultando em tempos de resposta mais lentos. Um arquiteto de soluções precisa projetar uma solução escalável e elástica.  
 O que o arquiteto de soluções deve fazer para atingir esse objetivo?
 
@@ -3889,12 +2913,6 @@ O que o arquiteto de soluções deve fazer para atingir esse objetivo?
 ---
 
 ### Question #172
-
-**Texto original:**  
-A solutions architect is creating a new Amazon CloudFront distribution for an application. Some of the information submitted by users is sensitive. The application uses HTTPS but needs another layer of security. The sensitive information should be protected throughout the entire application stack, and access to the information should be restricted to certain applications.  
-Which action should the solutions architect take?
-
-**Tradução:**  
 Um arquiteto de soluções está criando uma nova distribuição Amazon CloudFront para uma aplicação. Algumas das informações enviadas pelos usuários são sensíveis. A aplicação usa HTTPS, mas precisa de outra camada de segurança. As informações sensíveis devem ser protegidas em toda a pilha da aplicação, e o acesso às informações deve ser restrito a certas aplicações.  
 Qual ação o arquiteto de soluções deve tomar?
 
@@ -3910,13 +2928,6 @@ Qual ação o arquiteto de soluções deve tomar?
 ---
 
 ### Question #173
-
-**Texto original:**  
-A gaming company hosts a browser-based application on AWS. The users of the application consume a large number of videos and images that are stored in Amazon S3. This content is the same for all users.  
-The application has increased in popularity, and millions of users worldwide accessing these media files. The company wants to provide the files to the users while reducing the load on the origin.  
-Which solution meets these requirements MOST cost-effectively?
-
-**Tradução:**  
 Uma empresa de jogos hospeda uma aplicação baseada em navegador na AWS. Os usuários da aplicação consomem um grande número de vídeos e imagens armazenados no Amazon S3. Este conteúdo é o mesmo para todos os usuários.  
 A aplicação aumentou em popularidade, com milhões de usuários em todo o mundo acessando esses arquivos de mídia. A empresa deseja fornecer os arquivos aos usuários enquanto reduz a carga na origem.  
 Qual solução atende a esses requisitos da maneira MAIS econômica?
@@ -3933,12 +2944,6 @@ Qual solução atende a esses requisitos da maneira MAIS econômica?
 ---
 
 ### Question #174
-
-**Texto original:**  
-A company has a multi-tier application that runs six front-end web servers in an Amazon EC2 Auto Scaling group in a single Availability Zone behind an Application Load Balancer (ALB). A solutions architect needs to modify the infrastructure to be highly available without modifying the application.  
-Which architecture should the solutions architect choose that provides high availability?
-
-**Tradução:**  
 Uma empresa tem uma aplicação de múltiplas camadas que executa seis servidores web front-end em um grupo de Auto Scaling Amazon EC2 em uma única Zona de Disponibilidade atrás de um Application Load Balancer (ALB). Um arquiteto de soluções precisa modificar a infraestrutura para ser altamente disponível sem modificar a aplicação.  
 Qual arquitetura o arquiteto de soluções deve escolher para fornecer alta disponibilidade?
 
@@ -3954,13 +2959,6 @@ Qual arquitetura o arquiteto de soluções deve escolher para fornecer alta disp
 ---
 
 ### Question #175
-
-**Texto original:**  
-An ecommerce company has an order-processing application that uses Amazon API Gateway and an AWS Lambda function. The application stores data in an Amazon Aurora PostgreSQL database. During a recent sales event, a sudden surge in customer orders occurred. Some customers experienced timeouts, and the application did not process the orders of those customers.  
-A solutions architect determined that the CPU utilization and memory utilization were high on the database because of a large number of open connections. The solutions architect needs to prevent the timeout errors while making the least possible changes to the application.  
-Which solution will meet these requirements?  
-
-**Tradução:**  
 Uma empresa de comércio eletrônico possui uma aplicação de processamento de pedidos que utiliza o Amazon API Gateway e uma função AWS Lambda. A aplicação armazena dados em um banco de dados Amazon Aurora PostgreSQL. Durante um recente evento de vendas, houve um aumento repentino nos pedidos de clientes. Alguns clientes experimentaram erros de timeout, e a aplicação não processou os pedidos desses clientes.  
 Um arquiteto de soluções determinou que a utilização de CPU e memória estava alta no banco de dados devido a um grande número de conexões abertas. O arquiteto de soluções precisa evitar os erros de timeout fazendo as menores alterações possíveis na aplicação.  
 Qual solução atenderá a esses requisitos?  
@@ -3979,12 +2977,6 @@ Qual solução atenderá a esses requisitos?
 **Fonte:** Arquivo exam_formatted-138-250.txt&#8203;:contentReference[oaicite:0]{index=0}.
 
 ### Question #176
-
-**Texto original:**  
-An application runs on Amazon EC2 instances in private subnets. The application needs to access an Amazon DynamoDB table.  
-What is the MOST secure way to access the table while ensuring that the traffic does not leave the AWS network?  
-
-**Tradução:**  
 Uma aplicação é executada em instâncias Amazon EC2 em sub-redes privadas. A aplicação precisa acessar uma tabela Amazon DynamoDB.  
 Qual é a forma MAIS segura de acessar a tabela garantindo que o tráfego não saia da rede AWS?
 
@@ -4000,12 +2992,6 @@ Qual é a forma MAIS segura de acessar a tabela garantindo que o tráfego não s
 ---
 
 ### Question #177
-
-**Texto original:**  
-An entertainment company is using Amazon DynamoDB to store media metadata. The application is read-intensive and experiencing delays. The company does not have staff to handle additional operational overhead and needs to improve the performance efficiency of DynamoDB without reconfiguring the application.  
-What should a solutions architect recommend to meet this requirement?  
-
-**Tradução:**  
 Uma empresa de entretenimento está usando o Amazon DynamoDB para armazenar metadados de mídia. A aplicação é intensiva em leitura e está enfrentando atrasos. A empresa não possui equipe para lidar com o overhead operacional adicional e precisa melhorar a eficiência do desempenho do DynamoDB sem reconfigurar a aplicação.  
 O que um arquiteto de soluções deve recomendar para atender a esse requisito?
 
@@ -4022,12 +3008,6 @@ O que um arquiteto de soluções deve recomendar para atender a esse requisito?
 ---
 
 ### Question #178
-
-**Texto original:**  
-A company’s infrastructure consists of Amazon EC2 instances and an Amazon RDS DB instance in a single AWS Region. The company wants to back up its data in a separate Region.  
-Which solution will meet these requirements with the LEAST operational overhead?  
-
-**Tradução:**  
 A infraestrutura de uma empresa consiste em instâncias Amazon EC2 e uma instância Amazon RDS em uma única região AWS. A empresa deseja fazer backup de seus dados em uma região separada.  
 Qual solução atenderá a esses requisitos com o MENOR esforço operacional?
 
@@ -4043,12 +3023,6 @@ Qual solução atenderá a esses requisitos com o MENOR esforço operacional?
 ---
 
 ### Question #179
-
-**Texto original:**  
-A solutions architect needs to securely store a database user name and password that an application uses to access an Amazon RDS DB instance. The application that accesses the database runs on an Amazon EC2 instance. The solutions architect wants to create a secure parameter in AWS Systems Manager Parameter Store.  
-What should the solutions architect do to meet this requirement?
-
-**Tradução:**  
 Um arquiteto de soluções precisa armazenar com segurança um nome de usuário e senha de banco de dados que uma aplicação usa para acessar uma instância Amazon RDS. A aplicação que acessa o banco de dados é executada em uma instância Amazon EC2. O arquiteto deseja criar um parâmetro seguro no AWS Systems Manager Parameter Store.  
 O que o arquiteto deve fazer para atender a esse requisito?
 
@@ -4064,12 +3038,6 @@ O que o arquiteto deve fazer para atender a esse requisito?
 ---
 
 ### Question #180
-
-**Texto original:**  
-A company is designing a cloud communications platform that is driven by APIs. The application is hosted on Amazon EC2 instances behind a Network Load Balancer (NLB). The company uses Amazon API Gateway to provide external users with access to the application through APIs. The company wants to protect the platform against web exploits like SQL injection and also wants to detect and mitigate large, sophisticated DDoS attacks.  
-Which combination of solutions provides the MOST protection? (Choose two.)  
-
-**Tradução:**  
 Uma empresa está projetando uma plataforma de comunicações na nuvem baseada em APIs. A aplicação está hospedada em instâncias Amazon EC2 atrás de um Network Load Balancer (NLB). A empresa usa o Amazon API Gateway para fornecer aos usuários externos acesso à aplicação por meio de APIs. A empresa quer proteger a plataforma contra explorações na web, como injeção de SQL, e também detectar e mitigar grandes ataques DDoS sofisticados.  
 Qual combinação de soluções fornece a MAIOR proteção? (Escolha duas.)  
 
@@ -4085,14 +3053,12 @@ Qual combinação de soluções fornece a MAIOR proteção? (Escolha duas.)
 - **Por que as outras opções não são adequadas?**  
   - **A:** Proteger o NLB com WAF não oferece a mesma proteção granular para APIs.  
   - **D/E:** Shield Standard não detecta ou mitiga ataques sofisticados como o Shield Advanced.
+---
+
+
 ### Question #181
 
 **Texto original:**  
-A company has a legacy data processing application that runs on Amazon EC2 instances. Data is processed sequentially, but the order of results does not matter. The application uses a monolithic architecture. The only way that the company can scale the application to meet increased demand is to increase the size of the instances.  
-The company’s developers have decided to rewrite the application to use a microservices architecture on Amazon Elastic Container Service (Amazon ECS).  
-What should a solutions architect recommend for communication between the microservices?
-
-**Tradução:**  
 Uma empresa tem uma aplicação legada de processamento de dados que roda em instâncias Amazon EC2. Os dados são processados sequencialmente, mas a ordem dos resultados não importa. A aplicação usa uma arquitetura monolítica. A única forma que a empresa encontrou para escalar a aplicação é aumentar o tamanho das instâncias.  
 Os desenvolvedores decidiram reescrever a aplicação usando uma arquitetura de microsserviços no Amazon Elastic Container Service (Amazon ECS).  
 O que um arquiteto de soluções deve recomendar para a comunicação entre os microsserviços?
@@ -4111,12 +3077,6 @@ O que um arquiteto de soluções deve recomendar para a comunicação entre os m
 ---
 
 ### Question #182
-
-**Texto original:**  
-A company wants to migrate its MySQL database from on premises to AWS. The company recently experienced a database outage that significantly impacted the business. To ensure this does not happen again, the company wants a reliable database solution on AWS that minimizes data loss and stores every transaction on at least two nodes.  
-Which solution meets these requirements?
-
-**Tradução:**  
 Uma empresa deseja migrar seu banco de dados MySQL do ambiente local para a AWS. Recentemente, a empresa enfrentou uma interrupção no banco de dados que impactou significativamente os negócios. Para garantir que isso não aconteça novamente, a empresa quer uma solução confiável na AWS que minimize a perda de dados e armazene todas as transações em pelo menos dois nós.  
 Qual solução atende a esses requisitos?
 
@@ -4134,12 +3094,6 @@ Qual solução atende a esses requisitos?
 ---
 
 ### Question #183
-
-**Texto original:**  
-A company is building a new dynamic ordering website. The company wants to minimize server maintenance and patching. The website must be highly available and must scale read and write capacity as quickly as possible to meet changes in user demand.  
-Which solution will meet these requirements?
-
-**Tradução:**  
 Uma empresa está construindo um novo site de pedidos dinâmicos. A empresa deseja minimizar a manutenção e atualização de servidores. O site deve ser altamente disponível e escalar a capacidade de leitura e escrita o mais rápido possível para atender às mudanças na demanda dos usuários.  
 Qual solução atenderá a esses requisitos?
 
@@ -4153,14 +3107,9 @@ Qual solução atenderá a esses requisitos?
   - **B:** Aurora pode introduzir atrasos na escalabilidade comparado ao DynamoDB com on-demand capacity.  
   - **C/D:** Usar EC2 exige mais esforço de manutenção e escalabilidade manual.
 
+---
+
 ### Question #184
-
-**Texto original:**  
-A company has an AWS account used for software engineering. The AWS account has access to the company’s on-premises data center through a pair of AWS Direct Connect connections. All non-VPC traffic routes to the virtual private gateway.  
-A development team recently created an AWS Lambda function through the console. The development team needs to allow the function to access a database that runs in a private subnet in the company’s data center.  
-Which solution will meet these requirements?
-
-**Tradução:**  
 Uma empresa possui uma conta AWS usada para engenharia de software. A conta AWS tem acesso ao data center on-premises da empresa por meio de duas conexões AWS Direct Connect. Todo o tráfego não pertencente à VPC é roteado para o gateway privado virtual.  
 Uma equipe de desenvolvimento criou recentemente uma função AWS Lambda por meio do console. A equipe precisa permitir que a função acesse um banco de dados que roda em uma sub-rede privada no data center da empresa.  
 Qual solução atenderá a esses requisitos?
@@ -4179,12 +3128,6 @@ Qual solução atenderá a esses requisitos?
 ---
 
 ### Question #185
-
-**Texto original:**  
-A company runs an application using Amazon ECS. The application creates resized versions of an original image and then makes Amazon S3 API calls to store the resized images in Amazon S3.  
-How can a solutions architect ensure that the application has permission to access Amazon S3?
-
-**Tradução:**  
 Uma empresa executa uma aplicação usando Amazon ECS. A aplicação cria versões redimensionadas de uma imagem original e faz chamadas de API Amazon S3 para armazenar as imagens redimensionadas no Amazon S3.  
 Como um arquiteto de soluções pode garantir que a aplicação tenha permissão para acessar o Amazon S3?
 
@@ -4202,12 +3145,6 @@ Como um arquiteto de soluções pode garantir que a aplicação tenha permissão
 ---
 
 ### Question #186
-
-**Texto original:**  
-A company has a Windows-based application that must be migrated to AWS. The application requires the use of a shared Windows file system attached to multiple Amazon EC2 Windows instances that are deployed across multiple Availability Zones.  
-What should a solutions architect do to meet this requirement?
-
-**Tradução:**  
 Uma empresa possui uma aplicação baseada em Windows que deve ser migrada para a AWS. A aplicação requer o uso de um sistema de arquivos Windows compartilhado anexado a várias instâncias Amazon EC2 Windows implantadas em várias Zonas de Disponibilidade.  
 O que um arquiteto de soluções deve fazer para atender a esse requisito?
 
@@ -4223,12 +3160,6 @@ O que um arquiteto de soluções deve fazer para atender a esse requisito?
   - **D:** O Amazon EBS não suporta anexos simultâneos entre várias instâncias.
 
 ### Question #187
-
-**Texto original:**  
-A company is developing an ecommerce application that will consist of a load-balanced front end, a container-based application, and a relational database. A solutions architect needs to create a highly available solution that operates with as little manual intervention as possible.  
-Which solutions meet these requirements? (Choose two.)  
-
-**Tradução:**  
 Uma empresa está desenvolvendo uma aplicação de comércio eletrônico que consistirá em um front-end balanceado, uma aplicação baseada em contêineres e um banco de dados relacional. Um arquiteto de soluções precisa criar uma solução altamente disponível que opere com o mínimo de intervenção manual possível.  
 Quais soluções atendem a esses requisitos? (Escolha duas.)
 
@@ -4248,12 +3179,6 @@ Quais soluções atendem a esses requisitos? (Escolha duas.)
 ---
 
 ### Question #188
-
-**Texto original:**  
-A company uses Amazon S3 as its data lake. The company has a new partner that must use SFTP to upload data files. A solutions architect needs to implement a highly available SFTP solution that minimizes operational overhead.  
-Which solution will meet these requirements?
-
-**Tradução:**  
 Uma empresa usa o Amazon S3 como seu data lake. A empresa tem um novo parceiro que deve usar SFTP para enviar arquivos de dados. Um arquiteto de soluções precisa implementar uma solução SFTP altamente disponível que minimize o esforço operacional.  
 Qual solução atenderá a esses requisitos?
 
@@ -4269,12 +3194,6 @@ Qual solução atenderá a esses requisitos?
 ---
 
 ### Question #189
-
-**Texto original:**  
-A company needs to store contract documents. A contract lasts for 5 years. During the 5-year period, the company must ensure that the documents cannot be overwritten or deleted. The company needs to encrypt the documents at rest and rotate the encryption keys automatically every year.  
-Which combination of steps should a solutions architect take to meet these requirements with the LEAST operational overhead? (Choose two.)
-
-**Tradução:**  
 Uma empresa precisa armazenar documentos de contrato. Um contrato dura 5 anos. Durante o período de 5 anos, a empresa deve garantir que os documentos não possam ser sobrescritos ou excluídos. A empresa precisa criptografar os documentos em repouso e rodar as chaves de criptografia automaticamente a cada ano.  
 Quais combinações de etapas um arquiteto de soluções deve realizar para atender a esses requisitos com o MENOR esforço operacional? (Escolha duas.)
 
@@ -4291,11 +3210,6 @@ Quais combinações de etapas um arquiteto de soluções deve realizar para aten
   - **A/C/E:** Não atendem a todos os requisitos ou requerem maior esforço operacional.
 
 ### Question #190
-
-**Texto original:**  
-A company has a web application that is based on Java and PHP. The company plans to move the application from on premises to AWS. The company needs the ability to test new site features frequently. The company also needs a highly available and managed solution that requires minimum operational overhead.  
-
-**Tradução:**  
 Uma empresa tem um aplicativo web baseado em Java e PHP. A empresa planeja mover o aplicativo de um ambiente local para a AWS. A empresa precisa da capacidade de testar novos recursos do site frequentemente. A solução deve ser altamente disponível e gerenciada, com o mínimo de sobrecarga operacional.  
 Qual solução atenderá a esses requisitos?  
 A. Criar um bucket Amazon S3. Habilitar hospedagem estática no bucket. Fazer upload do conteúdo estático para o bucket. Usar AWS Lambda para processar todo o conteúdo dinâmico.  
@@ -4316,11 +3230,6 @@ D. Containerizar o aplicativo web. Implantar o aplicativo em instâncias Amazon 
   - **D:** Containerizar a aplicação adiciona complexidade e não fornece o gerenciamento simplificado que o Elastic Beanstalk oferece.
 
 ### Question #191
-
-**Texto original:**  
-A company has an ordering application that stores customer information in Amazon RDS for MySQL. During regular business hours, employees run one-time queries for reporting purposes. Timeouts are occurring during order processing because the reporting queries are taking a long time to run. The company needs to eliminate the timeouts without preventing employees from performing queries.
-
-**Tradução:**  
 Uma empresa tem um aplicativo de pedidos que armazena informações de clientes em Amazon RDS para MySQL. Durante o horário comercial, os funcionários executam consultas únicas para relatórios, causando timeouts. A empresa precisa eliminar os timeouts sem impedir os funcionários de realizar consultas.  
 O que um arquiteto de soluções deve fazer para atender a esses requisitos?  
 A. Criar uma réplica de leitura. Mover consultas de relatório para a réplica.  
@@ -4343,12 +3252,6 @@ D. Agendar as consultas de relatório para horários fora de pico.
 ---
 
 ### Question #192
-
-**Texto original:**  
-A hospital wants to create digital copies for its large collection of historical written records. The hospital will continue to add hundreds of new documents each day. The hospital’s data team will scan the documents and will upload the documents to the AWS Cloud.  
-A solutions architect must implement a solution to analyze the documents, extract the medical information, and store the documents so that an application can run SQL queries on the data. The solution must maximize scalability and operational efficiency.
-
-**Tradução:**  
 Um hospital deseja criar cópias digitais de registros históricos e continuará adicionando centenas de novos documentos diariamente. A equipe de dados do hospital escaneará os documentos e os carregará para a AWS Cloud.  
 Um arquiteto de soluções deve implementar uma solução para analisar os documentos, extrair as informações médicas e armazená-los para que um aplicativo possa executar consultas SQL nos dados. A solução deve maximizar a escalabilidade e a eficiência operacional.  
 Qual combinação de etapas deve ser adotada? (Escolha duas.)  
@@ -4375,11 +3278,6 @@ E. Criar uma função AWS Lambda para processar documentos carregados e usar Ama
 ---
 
 ### Question #193
-
-**Texto original:**  
-A company is running a batch application on Amazon EC2 instances. The application consists of a backend with multiple Amazon RDS databases. The application is causing a high number of reads on the databases. A solutions architect must reduce the number of database reads while ensuring high availability.
-
-**Tradução:**  
 Uma empresa está executando um aplicativo em lote em instâncias Amazon EC2. O aplicativo consiste em um backend com vários bancos de dados Amazon RDS. O aplicativo está causando um alto número de leituras nos bancos de dados. Um arquiteto de soluções deve reduzir o número de leituras no banco de dados enquanto garante alta disponibilidade.  
 O que o arquiteto de soluções deve fazer para atender a este requisito?  
 A. Adicionar réplicas de leitura no Amazon RDS.  
@@ -4401,13 +3299,7 @@ D. Usar o Amazon ElastiCache para Memcached.
 
 ---
 
-Posso continuar processando as próximas questões. Por favor, avise-me!```
 ### Question #194
-
-**Texto original:**  
-A company needs to run a critical application on AWS. The company needs to use Amazon EC2 for the application’s database. The database must be highly available and must fail over automatically if a disruptive event occurs.
-
-**Tradução:**  
 Uma empresa precisa executar um aplicativo crítico na AWS. A empresa precisa usar Amazon EC2 para o banco de dados do aplicativo. O banco de dados deve ter alta disponibilidade e deve alternar automaticamente em caso de evento disruptivo.  
 Qual solução atenderá a esses requisitos?  
 A. Iniciar duas instâncias EC2, cada uma em uma Zona de Disponibilidade diferente, na mesma região da AWS. Instalar o banco de dados em ambas as instâncias e configurá-las como um cluster com replicação.  
@@ -4430,11 +3322,6 @@ D. Iniciar uma instância EC2 em uma Zona de Disponibilidade. Instalar o banco d
 ---
 
 ### Question #195
-
-**Texto original:**  
-A company’s order system sends requests from clients to Amazon EC2 instances. The EC2 instances process the orders and then store the orders in a database on Amazon RDS. Users report that they must reprocess orders when the system fails. The company wants a resilient solution that can process orders automatically if a system outage occurs.
-
-**Tradução:**  
 O sistema de pedidos de uma empresa envia requisições de clientes para instâncias Amazon EC2. As instâncias EC2 processam os pedidos e os armazenam em um banco de dados no Amazon RDS. Os usuários relatam que precisam reprocessar pedidos quando o sistema falha. A empresa quer uma solução resiliente que possa processar pedidos automaticamente em caso de falha do sistema.  
 O que um arquiteto de soluções deve fazer para atender a esses requisitos?  
 A. Mover as instâncias EC2 para um grupo de Auto Scaling. Criar uma regra Amazon EventBridge que aponte para uma tarefa do Amazon ECS.  
@@ -4457,11 +3344,6 @@ D. Criar um tópico Amazon Simple Notification Service (Amazon SNS). Criar uma f
 ---
 
 ### Question #196
-
-**Texto original:**  
-A company runs an application on a large fleet of Amazon EC2 instances. The application reads and writes entries into an Amazon DynamoDB table. The size of the DynamoDB table continuously grows, but the application needs only data from the last 30 days. The company needs a solution that minimizes cost and development effort.
-
-**Tradução:**  
 Uma empresa executa um aplicativo em uma grande frota de instâncias Amazon EC2. O aplicativo lê e grava entradas em uma tabela do Amazon DynamoDB. O tamanho da tabela aumenta continuamente, mas o aplicativo precisa apenas dos dados dos últimos 30 dias. A empresa precisa de uma solução que minimize os custos e o esforço de desenvolvimento.  
 Qual solução atende a esses requisitos?  
 A. Usar um template do AWS CloudFormation para implantar toda a solução. Reimplantar o stack do CloudFormation a cada 30 dias e excluir o stack original.  
@@ -4483,13 +3365,7 @@ D. Estender o aplicativo para adicionar um atributo com o timestamp atual + 30 d
 
 ---
 
-Caso queira, posso continuar com mais questões. Avise-me!```
 ### Question #197
-
-**Texto original:**  
-A company has a Microsoft .NET application that runs on an on-premises Windows Server. The application stores data by using an Oracle Database Standard Edition server. The company is planning a migration to AWS and wants to minimize development changes while moving the application. The AWS application environment should be highly available.
-
-**Tradução:**  
 Uma empresa possui um aplicativo Microsoft .NET que é executado em um servidor Windows no local. O aplicativo armazena dados usando um Oracle Database Standard Edition. A empresa está planejando uma migração para a AWS e deseja minimizar as alterações de desenvolvimento durante a migração. O ambiente da aplicação na AWS deve ser altamente disponível.  
 Quais ações combinadas a empresa deve realizar para atender a esses requisitos? (Escolha duas.)  
 A. Refatorar o aplicativo como serverless com funções AWS Lambda executando .NET Core.  
@@ -4515,11 +3391,6 @@ E. Usar o AWS Database Migration Service (AWS DMS) para migrar do banco de dados
 ---
 
 ### Question #198
-
-**Texto original:**  
-A company runs a containerized application on a Kubernetes cluster in an on-premises data center. The company is using a MongoDB database for data storage. The company wants to migrate some of these environments to AWS, but no code changes or deployment method changes are possible at this time. The company needs a solution that minimizes operational overhead.
-
-**Tradução:**  
 Uma empresa executa um aplicativo containerizado em um cluster Kubernetes em um data center local. A empresa utiliza um banco de dados MongoDB para armazenamento. A empresa deseja migrar alguns desses ambientes para a AWS, mas não pode alterar o código ou o método de implantação no momento. A solução deve minimizar a sobrecarga operacional.  
 Qual solução atenderá a esses requisitos?  
 A. Usar o Amazon Elastic Container Service (Amazon ECS) com nós de trabalho Amazon EC2 para computação e MongoDB no EC2 para armazenamento.  
@@ -4542,11 +3413,6 @@ D. Usar o Amazon Elastic Kubernetes Service (Amazon EKS) com AWS Fargate para co
 ---
 
 ### Question #199
-
-**Texto original:**  
-A telemarketing company is designing its customer call center functionality on AWS. The company needs a solution that provides multiple speaker recognition and generates transcript files. The company wants to query the transcript files to analyze the business patterns. The transcript files must be stored for 7 years for auditing purposes.
-
-**Tradução:**  
 Uma empresa de telemarketing está projetando a funcionalidade do seu call center de atendimento ao cliente na AWS. A empresa precisa de uma solução que ofereça reconhecimento de múltiplos locutores e gere arquivos de transcrição. A empresa deseja consultar os arquivos de transcrição para analisar padrões de negócios. Os arquivos de transcrição devem ser armazenados por 7 anos para fins de auditoria.  
 Qual solução atenderá a esses requisitos?  
 A. Usar Amazon Rekognition para reconhecimento de múltiplos locutores. Armazenar os arquivos de transcrição no Amazon S3. Usar modelos de machine learning para análise dos arquivos de transcrição.  
@@ -4568,13 +3434,7 @@ D. Usar Amazon Rekognition para reconhecimento de múltiplos locutores. Armazena
 
 ---
 
-Caso queira, posso continuar com mais questões. Por favor, avise-me!```
 ### Question #200
-
-**Texto original:**  
-A company hosts its application on AWS. The company uses Amazon Cognito to manage users. When users log in to the application, the application fetches required data from Amazon DynamoDB by using a REST API that is hosted in Amazon API Gateway. The company wants an AWS managed solution that will control access to the REST API to reduce development efforts.
-
-**Tradução:**  
 Uma empresa hospeda seu aplicativo na AWS. A empresa usa o Amazon Cognito para gerenciar usuários. Quando os usuários fazem login no aplicativo, este busca os dados necessários no Amazon DynamoDB usando uma API REST hospedada no Amazon API Gateway. A empresa quer uma solução gerenciada pela AWS que controle o acesso à API REST para reduzir o esforço de desenvolvimento.  
 Qual solução atenderá a esses requisitos com o MENOR esforço operacional?  
 A. Configurar uma função AWS Lambda como autorizador no API Gateway para validar qual usuário fez a solicitação.  
@@ -4597,11 +3457,6 @@ D. Configurar um autorizador do Amazon Cognito no API Gateway para permitir que 
 ---
 
 ### Question #201
-
-**Texto original:**  
-A company is developing a marketing communications service that targets mobile app users. The company needs to send confirmation messages with Short Message Service (SMS) to its users. The users must be able to reply to the SMS messages. The company must store the responses for a year for analysis.
-
-**Tradução:**  
 Uma empresa está desenvolvendo um serviço de comunicação de marketing que tem como alvo usuários de aplicativos móveis. A empresa precisa enviar mensagens de confirmação via SMS para seus usuários. Os usuários devem poder responder às mensagens SMS. A empresa deve armazenar as respostas por um ano para análise.  
 O que um arquiteto de soluções deve fazer para atender a esses requisitos?  
 A. Criar um fluxo de contato no Amazon Connect para enviar as mensagens SMS. Usar o AWS Lambda para processar as respostas.  
@@ -4624,11 +3479,6 @@ D. Criar um tópico FIFO do Amazon Simple Notification Service (Amazon SNS). Ins
 ---
 
 ### Question #202
-
-**Texto original:**  
-A company is planning to move its data to an Amazon S3 bucket. The data must be encrypted when it is stored in the S3 bucket. Additionally, the encryption key must be automatically rotated every year.
-
-**Tradução:**  
 Uma empresa está planejando mover seus dados para um bucket Amazon S3. Os dados devem ser criptografados quando armazenados no bucket S3. Além disso, a chave de criptografia deve ser automaticamente rodada a cada ano.  
 Qual solução atenderá a esses requisitos com o MENOR esforço operacional?  
 A. Mover os dados para o bucket S3. Usar criptografia do lado do servidor com chaves de criptografia gerenciadas pelo Amazon S3 (SSE-S3). Usar o comportamento de rotação de chave embutido do SSE-S3.  
@@ -4650,14 +3500,7 @@ D. Criptografar os dados com material de chave gerenciado pelo cliente antes de 
 
 ---
 
-Posso continuar com mais questões, avise-me!```
 ### Question #203
-
-**Texto original:**  
-The customers of a finance company request appointments with financial advisors by sending text messages. A web application that runs on Amazon EC2 instances accepts the appointment requests. The text messages are published to an Amazon Simple Queue Service (Amazon SQS) queue through the web application. Another application that runs on EC2 instances then sends meeting invitations and meeting confirmation email messages to the customers. After successful scheduling, this application stores the meeting information in an Amazon DynamoDB database.  
-As the company expands, customers report that their meeting invitations are taking longer to arrive.
-
-**Tradução:**  
 Os clientes de uma empresa financeira solicitam compromissos com consultores financeiros enviando mensagens de texto. Um aplicativo web, executado em instâncias Amazon EC2, aceita as solicitações de compromissos. As mensagens de texto são publicadas em uma fila do Amazon Simple Queue Service (Amazon SQS) através do aplicativo web. Outro aplicativo, também executado em instâncias EC2, envia convites para reuniões e e-mails de confirmação para os clientes. Após o agendamento bem-sucedido, esse aplicativo armazena as informações das reuniões em um banco de dados Amazon DynamoDB.  
 Com a expansão da empresa, os clientes relatam que os convites para reuniões estão demorando mais para chegar.  
 O que um arquiteto de soluções deve recomendar para resolver esse problema?  
@@ -4681,12 +3524,6 @@ D. Adicionar um grupo de Auto Scaling para o aplicativo que envia os convites. C
 ---
 
 ### Question #204
-
-**Texto original:**  
-An online retail company has more than 50 million active customers and receives more than 25,000 orders each day. The company collects purchase data for customers and stores this data in Amazon S3. Additional customer data is stored in Amazon RDS.  
-The company wants to make all the data available to various teams so that the teams can perform analytics. The solution must provide the ability to manage fine-grained permissions for the data and must minimize operational overhead.
-
-**Tradução:**  
 Uma empresa de varejo online possui mais de 50 milhões de clientes ativos e recebe mais de 25.000 pedidos por dia. A empresa coleta dados de compras de clientes e armazena esses dados no Amazon S3. Dados adicionais de clientes são armazenados no Amazon RDS.  
 A empresa deseja tornar todos os dados disponíveis para várias equipes, permitindo que realizem análises. A solução deve fornecer a capacidade de gerenciar permissões detalhadas para os dados e minimizar a sobrecarga operacional.  
 Qual solução atenderá a esses requisitos?  
@@ -4710,12 +3547,6 @@ D. Criar um cluster Amazon Redshift. Agendar uma função AWS Lambda para copiar
 ---
 
 ### Question #205
-
-**Texto original:**  
-A company hosts a marketing website in an on-premises data center. The website consists of static documents and runs on a single server. An administrator updates the website content infrequently and uses an SFTP client to upload new documents.  
-The company decides to host its website on AWS and to use Amazon CloudFront. The company’s solutions architect creates a CloudFront distribution. The solutions architect must design the most cost-effective and resilient architecture for website hosting to serve as the CloudFront origin.
-
-**Tradução:**  
 Uma empresa hospeda um site de marketing em um data center local. O site consiste em documentos estáticos e é executado em um único servidor. Um administrador atualiza o conteúdo do site ocasionalmente e usa um cliente SFTP para fazer upload de novos documentos.  
 A empresa decide hospedar seu site na AWS e usar o Amazon CloudFront. O arquiteto de soluções da empresa cria uma distribuição CloudFront. O arquiteto deve projetar a arquitetura mais econômica e resiliente para hospedagem do site, que servirá como origem do CloudFront.  
 Qual solução atenderá a esses requisitos?  
@@ -4738,13 +3569,7 @@ D. Criar um bucket Amazon S3 público. Configurar o AWS Transfer for SFTP. Confi
 
 ---
 
-Se quiser, posso continuar com mais questões. Avise-me!```
 ### Question #206
-
-**Texto original:**  
-A company wants to manage Amazon Machine Images (AMIs). The company currently copies AMIs to the same AWS Region where the AMIs were created. The company needs to design an application that captures AWS API calls and sends alerts whenever the Amazon EC2 CreateImage API operation is called within the company’s account.
-
-**Tradução:**  
 Uma empresa deseja gerenciar Amazon Machine Images (AMIs). Atualmente, a empresa copia AMIs para a mesma região da AWS onde elas foram criadas. A empresa precisa projetar um aplicativo que capture chamadas de API da AWS e envie alertas sempre que a operação CreateImage da API do Amazon EC2 for chamada na conta da empresa.  
 Qual solução atenderá a esses requisitos com o MENOR esforço operacional?  
 A. Criar uma função AWS Lambda para consultar os logs do AWS CloudTrail e enviar um alerta quando uma chamada CreateImage for detectada.  
@@ -4767,12 +3592,6 @@ D. Configurar uma fila FIFO do Amazon SQS como destino para os logs do AWS Cloud
 ---
 
 ### Question #207
-
-**Texto original:**  
-A company owns an asynchronous API that is used to ingest user requests and, based on the request type, dispatch requests to the appropriate microservice for processing. The company is using Amazon API Gateway to deploy the API front end, and an AWS Lambda function that invokes Amazon DynamoDB to store user requests before dispatching them to the processing microservices.  
-The company provisioned as much DynamoDB throughput as its budget allows, but the company is still experiencing availability issues and is losing user requests.
-
-**Tradução:**  
 Uma empresa possui uma API assíncrona usada para ingerir solicitações de usuários e, com base no tipo de solicitação, encaminhá-las para o microserviço apropriado para processamento. A empresa está usando o Amazon API Gateway para implantar a interface da API e uma função AWS Lambda que invoca o Amazon DynamoDB para armazenar solicitações de usuários antes de encaminhá-las aos microserviços de processamento.  
 A empresa provisionou tanto throughput do DynamoDB quanto seu orçamento permite, mas ainda está enfrentando problemas de disponibilidade e perdendo solicitações de usuários.  
 O que um arquiteto de soluções deve fazer para resolver esse problema sem impactar os usuários existentes?  
@@ -4796,11 +3615,6 @@ D. Usar o Amazon Simple Queue Service (Amazon SQS) e Lambda para armazenar em bu
 ---
 
 ### Question #208
-
-**Texto original:**  
-A company needs to move data from an Amazon EC2 instance to an Amazon S3 bucket. The company must ensure that no API calls and no data are routed through public internet routes. Only the EC2 instance can have access to upload data to the S3 bucket.
-
-**Tradução:**  
 Uma empresa precisa mover dados de uma instância Amazon EC2 para um bucket Amazon S3. A empresa deve garantir que nenhuma chamada de API e nenhum dado sejam roteados por rotas públicas na internet. Apenas a instância EC2 pode ter acesso para fazer upload de dados para o bucket S3.  
 Qual solução atenderá a esses requisitos?  
 A. Criar um endpoint de VPC do tipo interface para o Amazon S3 na sub-rede onde a instância EC2 está localizada. Anexar uma política de recurso ao bucket S3 para permitir apenas o acesso da função IAM da instância EC2.  
@@ -4821,13 +3635,7 @@ D. Usar o arquivo público `ip-ranges.json` da AWS para obter o endereço IP pri
 
 ---
 
-Posso continuar com mais questões, avise-me!```
 ### Question #209
-
-**Texto original:**  
-A solutions architect is designing the architecture of a new application being deployed to the AWS Cloud. The application will run on Amazon EC2 On-Demand Instances and will automatically scale across multiple Availability Zones. The EC2 instances will scale up and down frequently throughout the day. An Application Load Balancer (ALB) will handle the load distribution. The architecture needs to support distributed session data management.
-
-**Tradução:**  
 Um arquiteto de soluções está projetando a arquitetura de um novo aplicativo sendo implantado na AWS Cloud. O aplicativo será executado em instâncias Amazon EC2 sob demanda e escalará automaticamente em várias Zonas de Disponibilidade. As instâncias EC2 aumentarão e diminuirão frequentemente ao longo do dia. Um Application Load Balancer (ALB) gerenciará a distribuição de carga. A arquitetura precisa oferecer suporte ao gerenciamento de dados de sessão distribuídos.  
 O que o arquiteto de soluções deve fazer para garantir que a arquitetura ofereça suporte ao gerenciamento de dados de sessão distribuídos?  
 A. Usar o Amazon ElastiCache para gerenciar e armazenar dados de sessão.  
@@ -4850,14 +3658,6 @@ D. Usar a operação GetSessionToken da AWS Security Token Service (AWS STS) par
 ---
 
 ### Question #210
-
-**Texto original:**  
-A company offers a food delivery service that is growing rapidly. Because of the growth, the company’s order processing system is experiencing scaling problems during peak traffic hours. The current architecture includes the following:
-• A group of Amazon EC2 instances that run in an Amazon EC2 Auto Scaling group to collect orders from the application  
-• Another group of EC2 instances that run in an Amazon EC2 Auto Scaling group to fulfill orders  
-The order collection process occurs quickly, but the order fulfillment process can take longer. Data must not be lost because of a scaling event.
-
-**Tradução:**  
 Uma empresa oferece um serviço de entrega de alimentos que está crescendo rapidamente. Por causa do crescimento, o sistema de processamento de pedidos da empresa está enfrentando problemas de escalabilidade durante as horas de pico. A arquitetura atual inclui:  
 - Um grupo de instâncias Amazon EC2 em um grupo de Auto Scaling para coletar pedidos do aplicativo.  
 - Outro grupo de instâncias EC2 em um grupo de Auto Scaling para processar os pedidos.  
@@ -4883,11 +3683,6 @@ D. Provisionar duas filas do Amazon Simple Queue Service (Amazon SQS): uma para 
 ---
 
 ### Question #211
-
-**Texto original:**  
-A company hosts multiple production applications. One of the applications consists of resources from Amazon EC2, AWS Lambda, Amazon RDS, Amazon Simple Notification Service (Amazon SNS), and Amazon Simple Queue Service (Amazon SQS) across multiple AWS Regions. All company resources are tagged with a tag name of “application” and a value that corresponds to each application. A solutions architect must provide the quickest solution for identifying all of the tagged components.
-
-**Tradução:**  
 Uma empresa hospeda vários aplicativos de produção. Um dos aplicativos consiste em recursos do Amazon EC2, AWS Lambda, Amazon RDS, Amazon Simple Notification Service (Amazon SNS) e Amazon Simple Queue Service (Amazon SQS) em várias regiões da AWS. Todos os recursos da empresa são marcados com a tag “application” e um valor correspondente a cada aplicativo.  
 O arquiteto de soluções deve fornecer a solução mais rápida para identificar todos os componentes marcados.  
 Qual solução atenderá a esses requisitos?  
@@ -4910,13 +3705,7 @@ D. Executar uma consulta no AWS Resource Groups Tag Editor para relatar globalme
 
 ---
 
-Posso continuar com mais questões. Avise-me!```
 ### Question #212
-
-**Texto original:**  
-A company needs to export its database once a day to Amazon S3 for other teams to access. The exported object size varies between 2 GB and 5 GB. The S3 access pattern for the data is variable and changes rapidly. The data must be immediately available and must remain accessible for up to 3 months. The company needs the most cost-effective solution that will not increase retrieval time.
-
-**Tradução:**  
 Uma empresa precisa exportar seu banco de dados uma vez por dia para o Amazon S3 para que outras equipes possam acessá-lo. O tamanho do objeto exportado varia entre 2 GB e 5 GB. O padrão de acesso ao S3 é variável e muda rapidamente. Os dados devem estar imediatamente disponíveis e permanecer acessíveis por até 3 meses. A empresa precisa da solução mais econômica que não aumente o tempo de recuperação.  
 Qual classe de armazenamento do S3 deve ser usada para atender a esses requisitos?  
 A. S3 Intelligent-Tiering  
@@ -4939,11 +3728,6 @@ D. S3 Standard-Infrequent Access (S3 Standard-IA)
 ---
 
 ### Question #213
-
-**Texto original:**  
-A company is developing a new mobile app. The company must implement proper traffic filtering to protect its Application Load Balancer (ALB) against common application-level attacks, such as cross-site scripting or SQL injection. The company has minimal infrastructure and operational staff. The company needs to reduce its share of the responsibility in managing, updating, and securing servers for its AWS environment.
-
-**Tradução:**  
 Uma empresa está desenvolvendo um novo aplicativo móvel. A empresa deve implementar filtros de tráfego adequados para proteger seu Application Load Balancer (ALB) contra ataques comuns em nível de aplicação, como cross-site scripting ou SQL injection. A empresa tem uma equipe de infraestrutura e operação mínima. A empresa precisa reduzir sua responsabilidade no gerenciamento, atualização e segurança de servidores para seu ambiente AWS.  
 O que um arquiteto de soluções deve recomendar para atender a esses requisitos?  
 A. Configurar regras do AWS WAF e associá-las ao ALB.  
@@ -4966,11 +3750,6 @@ D. Criar um novo ALB que direciona o tráfego para uma instância EC2 executando
 ---
 
 ### Question #214
-
-**Texto original:**  
-A company’s reporting system delivers hundreds of .csv files to an Amazon S3 bucket each day. The company must convert these files to Apache Parquet format and must store the files in a transformed data bucket.
-
-**Tradução:**  
 O sistema de relatórios de uma empresa entrega centenas de arquivos .csv para um bucket Amazon S3 todos os dias. A empresa deve converter esses arquivos para o formato Apache Parquet e armazená-los em um bucket de dados transformados.  
 Qual solução atenderá a esses requisitos com o MENOR esforço de desenvolvimento?  
 A. Criar um cluster Amazon EMR com Apache Spark instalado. Escrever um aplicativo Spark para transformar os dados. Usar o EMR File System (EMRFS) para gravar os arquivos no bucket de dados transformados.  
@@ -4993,11 +3772,6 @@ D. Criar uma função AWS Lambda para transformar os dados e enviá-los para o b
 ---
 
 ### Question #215
-
-**Texto original:**  
-A company has 700 TB of backup data stored in network-attached storage (NAS) in its data center. This backup data needs to be accessible for infrequent regulatory requests and must be retained for 7 years. The company has decided to migrate this backup data from its data center to AWS. The migration must be complete within 1 month. The company has 500 Mbps of dedicated bandwidth on its public internet connection available for data transfer.
-
-**Tradução:**  
 Uma empresa possui 700 TB de dados de backup armazenados em um NAS (Network-Attached Storage) em seu data center. Esses dados de backup precisam estar acessíveis para solicitações regulatórias infrequentes e devem ser retidos por 7 anos. A empresa decidiu migrar esses dados de backup do data center para a AWS. A migração deve ser concluída dentro de 1 mês. A empresa tem 500 Mbps de largura de banda dedicada disponível em sua conexão pública de internet para transferência de dados.  
 O que um arquiteto de soluções deve fazer para migrar e armazenar os dados com o MENOR custo?  
 A. Solicitar dispositivos AWS Snowball para transferir os dados. Usar uma política de ciclo de vida para transicionar os arquivos para o Amazon S3 Glacier Deep Archive.  
@@ -5018,18 +3792,7 @@ D. Usar o AWS DataSync para transferir os dados e implantar um agente DataSync n
 
 ---
 
-Caso queira, posso continuar com mais questões. Avise-me!```
 ### Question #216
-
-**Texto original:**  
-A company has a serverless website with millions of objects in an Amazon S3 bucket. The company uses the S3 bucket as the origin for an Amazon CloudFront distribution. The company did not set encryption on the S3 bucket before the objects were loaded. A solutions architect needs to enable encryption for all existing objects and for all objects that are added to the S3 bucket in the future.  
-Which solution will meet these requirements with the LEAST amount of effort?  
-A. Create a new S3 bucket. Turn on the default encryption settings for the new S3 bucket. Download all existing objects to temporary local storage. Upload the objects to the new S3 bucket.  
-B. Turn on the default encryption settings for the S3 bucket. Use the S3 Inventory feature to create a .csv file that lists the unencrypted objects. Run an S3 Batch Operations job that uses the copy command to encrypt those objects.  
-C. Create a new encryption key by using AWS Key Management Service (AWS KMS). Change the settings on the S3 bucket to use server-side encryption with AWS KMS managed encryption keys (SSE-KMS). Turn on versioning for the S3 bucket.  
-D. Navigate to Amazon S3 in the AWS Management Console. Browse the S3 bucket’s objects. Sort by the encryption field. Select each unencrypted object. Use the Modify button to apply default encryption settings to every unencrypted object in the S3 bucket.
-
-**Tradução:**  
 Uma empresa possui um site sem servidor com milhões de objetos em um bucket Amazon S3. A empresa usa o bucket S3 como origem para uma distribuição Amazon CloudFront. A empresa não configurou a criptografia no bucket S3 antes de carregar os objetos. Um arquiteto de soluções precisa habilitar a criptografia para todos os objetos existentes e para todos os objetos que forem adicionados ao bucket S3 no futuro.  
 Qual solução atenderá a esses requisitos com o MENOR esforço?  
 A. Criar um novo bucket S3. Ativar as configurações padrão de criptografia para o novo bucket S3. Baixar todos os objetos existentes para um armazenamento local temporário. Fazer upload dos objetos para o novo bucket S3.  
@@ -5052,16 +3815,6 @@ D. Navegar no console do Amazon S3. Navegar pelos objetos do bucket S3. Ordenar 
 ---
 
 ### Question #217
-
-**Texto original:**  
-A company runs a global web application on Amazon EC2 instances behind an Application Load Balancer. The application stores data in Amazon Aurora. The company needs to create a disaster recovery solution and can tolerate up to 30 minutes of downtime and potential data loss. The solution does not need to handle the load when the primary infrastructure is healthy.  
-What should a solutions architect do to meet these requirements?  
-A. Deploy the application with the required infrastructure elements in place. Use Amazon Route 53 to configure active-passive failover. Create an Aurora Replica in a second AWS Region.  
-B. Host a scaled-down deployment of the application in a second AWS Region. Use Amazon Route 53 to configure active-active failover. Create an Aurora Replica in the second Region.  
-C. Replicate the primary infrastructure in a second AWS Region. Use Amazon Route 53 to configure active-active failover. Create an Aurora database that is restored from the latest snapshot.  
-D. Back up data with AWS Backup. Use the backup to create the required infrastructure in a second AWS Region. Use Amazon Route 53 to configure active-passive failover. Create an Aurora second primary instance in the second Region.
-
-**Tradução:**  
 Uma empresa executa um aplicativo global na web em instâncias Amazon EC2 atrás de um Application Load Balancer. O aplicativo armazena dados no Amazon Aurora. A empresa precisa criar uma solução de recuperação de desastres e pode tolerar até 30 minutos de inatividade e possível perda de dados. A solução não precisa lidar com a carga quando a infraestrutura primária está saudável.  
 O que um arquiteto de soluções deve fazer para atender a esses requisitos?  
 A. Implantar o aplicativo com os elementos de infraestrutura necessários. Usar o Amazon Route 53 para configurar failover ativo-passivo. Criar uma réplica do Aurora em uma segunda região da AWS.  
@@ -5083,19 +3836,7 @@ D. Fazer backup dos dados com o AWS Backup. Usar o backup para criar a infraestr
 
 ---
 
-Se desejar, posso continuar a sequência com as questões subsequentes. Avise-me!```
 ### Question #218
-
-**Texto original:**  
-A company has a web server running on an Amazon EC2 instance in a public subnet with an Elastic IP address. The default security group is assigned to the EC2 instance. The default network ACL has been modified to block all traffic. A solutions architect needs to make the web server accessible from everywhere on port 443.  
-Which combination of steps will accomplish this task? (Choose two.)  
-A. Create a security group with a rule to allow TCP port 443 from source 0.0.0.0/0.  
-B. Create a security group with a rule to allow TCP port 443 to destination 0.0.0.0/0.  
-C. Update the network ACL to allow TCP port 443 from source 0.0.0.0/0.  
-D. Update the network ACL to allow inbound/outbound TCP port 443 from source 0.0.0.0/0 and to destination 0.0.0.0/0.  
-E. Update the network ACL to allow inbound TCP port 443 from source 0.0.0.0/0 and outbound TCP port 32768-65535 to destination 0.0.0.0/0.
-
-**Tradução:**  
 Uma empresa possui um servidor web executando em uma instância Amazon EC2 em uma sub-rede pública com um endereço IP elástico. O grupo de segurança padrão está atribuído à instância EC2. A ACL de rede padrão foi modificada para bloquear todo o tráfego. Um arquiteto de soluções precisa tornar o servidor web acessível de qualquer lugar na porta 443.  
 Quais combinações de etapas realizarão essa tarefa? (Escolha duas.)  
 A. Criar um grupo de segurança com uma regra para permitir TCP na porta 443 da origem 0.0.0.0/0.  
@@ -5117,18 +3858,7 @@ E. Atualizar a ACL de rede para permitir TCP de entrada na porta 443 da origem 0
   - **B:** Permitir tráfego para o destino 0.0.0.0/0 no grupo de segurança não é apropriado neste caso.  
   - **C/D:** Configurações incompletas de ACLs podem impedir a conectividade correta.  
 
-Posso continuar com as próximas questões, caso você deseje!```
 ### Question #219
-
-**Texto original:**  
-A company’s application is having performance issues. The application is stateful and needs to complete in-memory tasks on Amazon EC2 instances. The company used AWS CloudFormation to deploy infrastructure and used the M5 EC2 instance family. As traffic increased, the application performance degraded. Users are reporting delays when the users attempt to access the application.  
-Which solution will resolve these issues in the MOST operationally efficient way?  
-A. Replace the EC2 instances with T3 EC2 instances that run in an Auto Scaling group. Make the changes by using the AWS Management Console.  
-B. Modify the CloudFormation templates to run the EC2 instances in an Auto Scaling group. Increase the desired capacity and the maximum capacity of the Auto Scaling group manually when an increase is necessary.  
-C. Modify the CloudFormation templates. Replace the EC2 instances with R5 EC2 instances. Use Amazon CloudWatch built-in EC2 memory metrics to track the application performance for future capacity planning.  
-D. Modify the CloudFormation templates. Replace the EC2 instances with R5 EC2 instances. Deploy the Amazon CloudWatch agent on the EC2 instances to generate custom application latency metrics for future capacity planning.
-
-**Tradução:**  
 O aplicativo de uma empresa está enfrentando problemas de desempenho. O aplicativo é stateful e precisa concluir tarefas em memória em instâncias Amazon EC2. A empresa usou o AWS CloudFormation para implantar a infraestrutura e utilizou a família de instâncias M5 do EC2. À medida que o tráfego aumentou, o desempenho do aplicativo diminuiu. Os usuários estão relatando atrasos ao tentar acessar o aplicativo.  
 Qual solução resolverá esses problemas da maneira MAIS eficiente operacionalmente?  
 A. Substituir as instâncias EC2 por instâncias T3 que operam em um grupo de Auto Scaling. Fazer as alterações usando o Console de Gerenciamento da AWS.  
@@ -5150,18 +3880,7 @@ D. Modificar os modelos do CloudFormation. Substituir as instâncias EC2 por ins
 
 ---
 
-Se desejar, posso continuar a sequência a partir da questão **#220**. Avise-me!```
-
 ### Question #220
-**Texto original:**  
-A solutions architect is designing a new API using Amazon API Gateway that will receive requests from users. The volume of requests is highly variable; several hours can pass without receiving a single request. The data processing will take place asynchronously, but should be completed within a few seconds after a request is made.  
-Which compute service should the solutions architect have the API invoke to deliver the requirements at the lowest cost?  
-A. An AWS Glue job  
-B. An AWS Lambda function  
-C. A containerized service hosted in Amazon Elastic Kubernetes Service (Amazon EKS)  
-D. A containerized service hosted in Amazon ECS with Amazon EC2  
-
-**Tradução:**  
 Um arquiteto de soluções está projetando uma nova API usando Amazon API Gateway para receber solicitações de usuários. O volume de solicitações é altamente variável; várias horas podem passar sem receber uma única solicitação. O processamento de dados será realizado de forma assíncrona, mas deve ser concluído em poucos segundos após uma solicitação ser feita.  
 Qual serviço de computação o arquiteto de soluções deve configurar para a API para atender aos requisitos com o menor custo?  
 A. Um trabalho do AWS Glue  
@@ -5183,15 +3902,6 @@ D. Um serviço conteinerizado hospedado no Amazon ECS com Amazon EC2
 
 
 ### Question #221
-**Texto original:**  
-A company runs an application on a group of Amazon Linux EC2 instances. For compliance reasons, the company must retain all application log files for 7 years. The log files will be analyzed by a reporting tool that must be able to access all the files concurrently.  
-Which storage solution meets these requirements MOST cost-effectively?  
-A. Amazon Elastic Block Store (Amazon EBS)  
-B. Amazon Elastic File System (Amazon EFS)  
-C. Amazon EC2 instance store  
-D. Amazon S3  
-
-**Tradução:**  
 Uma empresa executa um aplicativo em um grupo de instâncias Amazon Linux EC2. Por razões de conformidade, a empresa deve reter todos os arquivos de log do aplicativo por 7 anos. Os arquivos de log serão analisados por uma ferramenta de relatórios que deve ser capaz de acessar todos os arquivos simultaneamente.  
 Qual solução de armazenamento atende a esses requisitos da maneira MAIS econômica?  
 A. Amazon Elastic Block Store (Amazon EBS)  
@@ -5212,16 +3922,6 @@ D. Amazon S3
   - **C:** O armazenamento de instância EC2 é volátil e não persiste após o término da instância, tornando-o inadequado para retenção de dados.  
 
 ### Question #222
-
-**Texto original:**  
-A company has hired an external vendor to perform work in the company’s AWS account. The vendor uses an automated tool that is hosted in an AWS account that the vendor owns. The vendor does not have IAM access to the company’s AWS account.  
-How should a solutions architect grant this access to the vendor?  
-A. Create an IAM role in the company’s account to delegate access to the vendor’s IAM role. Attach the appropriate IAM policies to the role for the permissions that the vendor requires.  
-B. Create an IAM user in the company’s account with a password that meets the password complexity requirements. Attach the appropriate IAM policies to the user for the permissions that the vendor requires.  
-C. Create an IAM group in the company’s account. Add the tool’s IAM user from the vendor account to the group. Attach the appropriate IAM policies to the group for the permissions that the vendor requires.  
-D. Create a new identity provider by choosing “AWS account” as the provider type in the IAM console. Supply the vendor’s AWS account ID and user name. Attach the appropriate IAM policies to the new provider for the permissions that the vendor requires.
-
-**Tradução:**  
 Uma empresa contratou um fornecedor externo para realizar trabalhos na conta AWS da empresa. O fornecedor usa uma ferramenta automatizada que está hospedada em uma conta AWS pertencente ao fornecedor. O fornecedor não possui acesso IAM à conta AWS da empresa.  
 Como um arquiteto de soluções deve conceder esse acesso ao fornecedor?  
 A. Criar uma função IAM na conta da empresa para delegar acesso à função IAM do fornecedor. Anexar as políticas IAM apropriadas à função para as permissões necessárias ao fornecedor.  
@@ -5244,15 +3944,6 @@ D. Criar um novo provedor de identidade, escolhendo “Conta AWS” como o tipo 
 ### Question #223
 
 **Texto original:**  
-A company has deployed a Java Spring Boot application as a pod that runs on Amazon Elastic Kubernetes Service (Amazon EKS) in private subnets. The application needs to write data to an Amazon DynamoDB table. A solutions architect must ensure that the application can interact with the DynamoDB table without exposing traffic to the internet.  
-Which combination of steps should the solutions architect take to accomplish this goal? (Choose two.)  
-A. Attach an IAM role that has sufficient privileges to the EKS pod.  
-B. Attach an IAM user that has sufficient privileges to the EKS pod.  
-C. Allow outbound connectivity to the DynamoDB table through the private subnets’ network ACLs.  
-D. Create a VPC endpoint for DynamoDB.  
-E. Embed the access keys in the Java Spring Boot code.
-
-**Tradução:**  
 Uma empresa implantou um aplicativo Java Spring Boot como um pod que é executado no Amazon Elastic Kubernetes Service (Amazon EKS) em sub-redes privadas. O aplicativo precisa gravar dados em uma tabela Amazon DynamoDB. Um arquiteto de soluções deve garantir que o aplicativo possa interagir com a tabela DynamoDB sem expor o tráfego à internet.  
 Quais combinações de etapas o arquiteto de soluções deve realizar para alcançar esse objetivo? (Escolha duas.)  
 A. Anexar uma função IAM com privilégios suficientes ao pod do EKS.  
@@ -5276,17 +3967,6 @@ E. Incorporar as chaves de acesso no código Java Spring Boot.
   - **E:** Incorporar as chaves de acesso no código Java é uma prática insegura que pode levar à exposição de credenciais.  
 
 ### Question #224
-
-**Texto original:**  
-A company recently migrated its web application to AWS by rehosting the application on Amazon EC2 instances in a single AWS Region. The company wants to redesign its application architecture to be highly available and fault tolerant. Traffic must reach all running EC2 instances randomly.  
-Which combination of steps should the company take to meet these requirements? (Choose two.)  
-A. Create an Amazon Route 53 failover routing policy.  
-B. Create an Amazon Route 53 weighted routing policy.  
-C. Create an Amazon Route 53 multivalue answer routing policy.  
-D. Launch three EC2 instances: two instances in one Availability Zone and one instance in another Availability Zone.  
-E. Launch four EC2 instances: two instances in one Availability Zone and two instances in another Availability Zone.
-
-**Tradução:**  
 Uma empresa recentemente migrou seu aplicativo web para a AWS, hospedando-o em instâncias Amazon EC2 em uma única região da AWS. A empresa deseja redesenhar a arquitetura de seu aplicativo para ser altamente disponível e tolerante a falhas. O tráfego deve alcançar todas as instâncias EC2 em execução de forma aleatória.  
 Quais combinações de etapas a empresa deve realizar para atender a esses requisitos? (Escolha duas.)  
 A. Criar uma política de roteamento de failover no Amazon Route 53.  
@@ -5311,16 +3991,6 @@ E. Lançar quatro instâncias EC2: duas instâncias em uma zona de disponibilida
 
 
 ### Question #225
-
-**Texto original:**  
-A media company collects and analyzes user activity data on premises. The company wants to migrate this capability to AWS. The user activity data store will continue to grow and will be petabytes in size. The company needs to build a highly available data ingestion solution that facilitates on-demand analytics of existing data and new data with SQL.  
-Which solution will meet these requirements with the LEAST operational overhead?  
-A. Send activity data to an Amazon Kinesis data stream. Configure the stream to deliver the data to an Amazon S3 bucket.  
-B. Send activity data to an Amazon Kinesis Data Firehose delivery stream. Configure the stream to deliver the data to an Amazon Redshift cluster.  
-C. Place activity data in an Amazon S3 bucket. Configure Amazon S3 to run an AWS Lambda function on the data as the data arrives in the S3 bucket.  
-D. Create an ingestion service on Amazon EC2 instances that are spread across multiple Availability Zones. Configure the service to forward data to an Amazon RDS Multi-AZ database.
-
-**Tradução:**  
 Uma empresa de mídia coleta e analisa dados de atividade de usuários localmente. A empresa deseja migrar essa capacidade para a AWS. O repositório de dados de atividade dos usuários continuará a crescer e atingirá petabytes de tamanho. A empresa precisa criar uma solução de ingestão de dados altamente disponível que facilite análises sob demanda de dados existentes e novos com SQL.  
 Qual solução atenderá a esses requisitos com a MENOR sobrecarga operacional?  
 A. Enviar os dados de atividade para um stream de dados do Amazon Kinesis. Configurar o stream para entregar os dados a um bucket Amazon S3.  
@@ -5341,17 +4011,6 @@ D. Criar um serviço de ingestão em instâncias Amazon EC2 distribuídas em vá
   - **D:** Gerenciar um serviço de ingestão em instâncias EC2 distribui a carga manualmente e requer mais esforço operacional, além de não ser ideal para tamanhos de dados em petabytes.  
 
 ### Question #226
-
-**Texto original:**  
-A company collects data from thousands of remote devices by using a RESTful web services application that runs on an Amazon EC2 instance. The EC2 instance receives the raw data, transforms the raw data, and stores all the data in an Amazon S3 bucket. The number of remote devices will increase into the millions soon. The company needs a highly scalable solution that minimizes operational overhead.  
-Which combination of steps should a solutions architect take to meet these requirements? (Choose two.)  
-A. Use AWS Glue to process the raw data in Amazon S3.  
-B. Use Amazon Route 53 to route traffic to different EC2 instances.  
-C. Add more EC2 instances to accommodate the increasing amount of incoming data.  
-D. Send the raw data to Amazon Simple Queue Service (Amazon SQS). Use EC2 instances to process the data.  
-E. Use Amazon API Gateway to send the raw data to an Amazon Kinesis data stream. Configure Amazon Kinesis Data Firehose to use the data stream as a source to deliver the data to Amazon S3.
-
-**Tradução:**  
 Uma empresa coleta dados de milhares de dispositivos remotos usando um aplicativo de serviços web RESTful que é executado em uma instância Amazon EC2. A instância EC2 recebe os dados brutos, transforma os dados brutos e armazena todos os dados em um bucket Amazon S3. O número de dispositivos remotos aumentará para milhões em breve. A empresa precisa de uma solução altamente escalável que minimize a sobrecarga operacional.  
 Quais combinações de etapas o arquiteto de soluções deve tomar para atender a esses requisitos? (Escolha duas.)  
 A. Usar o AWS Glue para processar os dados brutos no Amazon S3.  
@@ -5375,17 +4034,6 @@ E. Usar o Amazon API Gateway para enviar os dados brutos para um stream de dados
   - **C:** Adicionar mais instâncias EC2 aumenta a complexidade operacional e não é uma solução escalável para lidar com milhões de dispositivos.  
 
 ### Question #227
-
-**Texto original:**  
-A company needs to retain its AWS CloudTrail logs for 3 years. The company is enforcing CloudTrail across a set of AWS accounts by using AWS Organizations from the parent account. The CloudTrail target S3 bucket is configured with S3 Versioning enabled. An S3 Lifecycle policy is in place to delete current objects after 3 years.  
-After the fourth year of use of the S3 bucket, the S3 bucket metrics show that the number of objects has continued to rise. However, the number of new CloudTrail logs that are delivered to the S3 bucket has remained consistent.  
-Which solution will delete objects that are older than 3 years in the MOST cost-effective manner?  
-A. Configure the organization’s centralized CloudTrail trail to expire objects after 3 years.  
-B. Configure the S3 Lifecycle policy to delete previous versions as well as current versions.  
-C. Create an AWS Lambda function to enumerate and delete objects from Amazon S3 that are older than 3 years.  
-D. Configure the parent account as the owner of all objects that are delivered to the S3 bucket.
-
-**Tradução:**  
 Uma empresa precisa reter seus logs do AWS CloudTrail por 3 anos. A empresa está aplicando o CloudTrail em um conjunto de contas AWS usando o AWS Organizations a partir da conta principal. O bucket S3 de destino do CloudTrail está configurado com o S3 Versioning habilitado. Uma política de ciclo de vida do S3 está em vigor para excluir objetos atuais após 3 anos.  
 Após o quarto ano de uso do bucket S3, as métricas do bucket S3 mostram que o número de objetos continua a aumentar. No entanto, o número de novos logs do CloudTrail entregues ao bucket S3 permanece consistente.  
 Qual solução excluirá objetos com mais de 3 anos da maneira MAIS econômica?  
@@ -5408,17 +4056,6 @@ D. Configurar a conta principal como proprietária de todos os objetos entregues
 
 
 ### Question #228
-
-**Texto original:**  
-A company has an API that receives real-time data from a fleet of monitoring devices. The API stores this data in an Amazon RDS DB instance for later analysis. The amount of data that the monitoring devices send to the API fluctuates. During periods of heavy traffic, the API often returns timeout errors.  
-After an inspection of the logs, the company determines that the database is not capable of processing the volume of write traffic that comes from the API. A solutions architect must minimize the number of connections to the database and must ensure that data is not lost during periods of heavy traffic.  
-Which solution will meet these requirements?  
-A. Increase the size of the DB instance to an instance type that has more available memory.  
-B. Modify the DB instance to be a Multi-AZ DB instance. Configure the application to write to all active RDS DB instances.  
-C. Modify the API to write incoming data to an Amazon Simple Queue Service (Amazon SQS) queue. Use an AWS Lambda function that Amazon SQS invokes to write data from the queue to the database.  
-D. Modify the API to write incoming data to an Amazon Simple Notification Service (Amazon SNS) topic. Use an AWS Lambda function that Amazon SNS invokes to write data from the topic to the database.
-
-**Tradução:**  
 Uma empresa possui uma API que recebe dados em tempo real de uma frota de dispositivos de monitoramento. A API armazena esses dados em uma instância Amazon RDS para análise posterior. A quantidade de dados que os dispositivos de monitoramento enviam para a API é flutuante. Durante períodos de tráfego intenso, a API frequentemente retorna erros de timeout.  
 Após uma inspeção dos logs, a empresa determinou que o banco de dados não é capaz de processar o volume de tráfego de gravação vindo da API. Um arquiteto de soluções deve minimizar o número de conexões ao banco de dados e garantir que os dados não sejam perdidos durante períodos de tráfego intenso.  
 Qual solução atenderá a esses requisitos?  
@@ -5440,16 +4077,6 @@ D. Modificar a API para gravar os dados recebidos em um tópico do Amazon Simple
   - **D:** O SNS é projetado para notificação e publicação-assinatura, não para buffering de dados para processamento.  
 
 ### Question #229
-
-**Texto original:**  
-A company manages its own Amazon EC2 instances that run MySQL databases. The company is manually managing replication and scaling as demand increases or decreases. The company needs a new solution that simplifies the process of adding or removing compute capacity to or from its database tier as needed. The solution also must offer improved performance, scaling, and durability with minimal effort from operations.  
-Which solution meets these requirements?  
-A. Migrate the databases to Amazon Aurora Serverless for Aurora MySQL.  
-B. Migrate the databases to Amazon Aurora Serverless for Aurora PostgreSQL.  
-C. Combine the databases into one larger MySQL database. Run the larger database on larger EC2 instances.  
-D. Create an EC2 Auto Scaling group for the database tier. Migrate the existing databases to the new environment.
-
-**Tradução:**  
 Uma empresa gerencia suas próprias instâncias Amazon EC2 que executam bancos de dados MySQL. A empresa está gerenciando manualmente a replicação e o escalonamento à medida que a demanda aumenta ou diminui. A empresa precisa de uma nova solução que simplifique o processo de adicionar ou remover capacidade computacional no tier de banco de dados conforme necessário. A solução também deve oferecer desempenho, escalabilidade e durabilidade aprimorados com o mínimo de esforço operacional.  
 Qual solução atende a esses requisitos?  
 A. Migrar os bancos de dados para Amazon Aurora Serverless para Aurora MySQL.  
@@ -5471,16 +4098,6 @@ D. Criar um grupo de Auto Scaling do EC2 para o tier de banco de dados. Migrar o
 
 
 ### Question #230
-
-**Texto original:**  
-A company is concerned that two NAT instances in use will no longer be able to support the traffic needed for the company’s application. A solutions architect wants to implement a solution that is highly available, fault tolerant, and automatically scalable.  
-What should the solutions architect recommend?  
-A. Remove the two NAT instances and replace them with two NAT gateways in the same Availability Zone.  
-B. Use Auto Scaling groups with Network Load Balancers for the NAT instances in different Availability Zones.  
-C. Remove the two NAT instances and replace them with two NAT gateways in different Availability Zones.  
-D. Replace the two NAT instances with Spot Instances in different Availability Zones and deploy a Network Load Balancer.
-
-**Tradução:**  
 Uma empresa está preocupada que duas instâncias NAT em uso não sejam mais capazes de suportar o tráfego necessário para o aplicativo da empresa. Um arquiteto de soluções deseja implementar uma solução altamente disponível, tolerante a falhas e escalável automaticamente.  
 O que o arquiteto de soluções deve recomendar?  
 A. Remover as duas instâncias NAT e substituí-las por dois gateways NAT na mesma zona de disponibilidade.  
@@ -5501,17 +4118,7 @@ D. Substituir as duas instâncias NAT por instâncias Spot em diferentes zonas d
   - **D:** Instâncias Spot não são adequadas para NAT devido à sua natureza temporária e à possibilidade de serem interrompidas.  
 
 
-### Question #231
-
-**Texto original:**  
-An application runs on an Amazon EC2 instance that has an Elastic IP address in VPC A. The application requires access to a database in VPC B. Both VPCs are in the same AWS account.  
-Which solution will provide the required access MOST securely?  
-A. Create a DB instance security group that allows all traffic from the public IP address of the application server in VPC A.  
-B. Configure a VPC peering connection between VPC A and VPC B.  
-C. Make the DB instance publicly accessible. Assign a public IP address to the DB instance.  
-D. Launch an EC2 instance with an Elastic IP address into VPC B. Proxy all requests through the new EC2 instance.
-
-**Tradução:**  
+### Question #231 
 Um aplicativo é executado em uma instância Amazon EC2 que possui um Elastic IP address na VPC A. O aplicativo precisa acessar um banco de dados na VPC B. Ambas as VPCs estão na mesma conta AWS.  
 Qual solução fornecerá o acesso necessário de forma MAIS segura?  
 A. Criar um grupo de segurança para a instância do banco de dados que permita todo o tráfego do endereço IP público do servidor de aplicativos na VPC A.  
@@ -5533,16 +4140,6 @@ D. Lançar uma instância EC2 com um Elastic IP address na VPC B. Usar a nova in
 
 
 ### Question #232
-
-**Texto original:**  
-A company runs demonstration environments for its customers on Amazon EC2 instances. Each environment is isolated in its own VPC. The company’s operations team needs to be notified when RDP or SSH access to an environment has been established.  
-Which solution will meet this requirement?  
-A. Configure Amazon CloudWatch Application Insights to create AWS Systems Manager OpsItems when RDP or SSH access is detected.  
-B. Configure the EC2 instances with an IAM instance profile that has an IAM role with the AmazonSSMManagedInstanceCore policy attached.  
-C. Publish VPC flow logs to Amazon CloudWatch Logs. Create required metric filters. Create an Amazon CloudWatch metric alarm with a notification action for when the alarm is in the ALARM state.  
-D. Configure an Amazon EventBridge rule to listen for events of type EC2 Instance State-change Notification. Configure an Amazon Simple Notification Service (Amazon SNS) topic as a target. Subscribe the operations team to the topic.
-
-**Tradução:**  
 Uma empresa opera ambientes de demonstração para seus clientes em instâncias Amazon EC2. Cada ambiente está isolado em sua própria VPC. A equipe de operações da empresa precisa ser notificada quando o acesso RDP ou SSH a um ambiente for estabelecido.  
 Qual solução atenderá a esse requisito?  
 A. Configurar o Amazon CloudWatch Application Insights para criar AWS Systems Manager OpsItems quando o acesso RDP ou SSH for detectado.  
@@ -5564,17 +4161,6 @@ D. Configurar uma regra do Amazon EventBridge para escutar eventos do tipo EC2 I
 
 
 ### Question #233
-
-**Texto original:**  
-A solutions architect has created a new AWS account and must secure AWS account root user access.  
-Which combination of actions will accomplish this? (Choose two.)  
-A. Ensure the root user uses a strong password.  
-B. Enable multi-factor authentication to the root user.  
-C. Store root user access keys in an encrypted Amazon S3 bucket.  
-D. Add the root user to a group containing administrative permissions.  
-E. Apply the required permissions to the root user with an inline policy document.
-
-**Tradução:**  
 Um arquiteto de soluções criou uma nova conta AWS e deve proteger o acesso do usuário root da conta AWS.  
 Quais combinações de ações realizarão essa tarefa? (Escolha duas.)  
 A. Garantir que o usuário root use uma senha forte.  
@@ -5598,16 +4184,6 @@ E. Aplicar as permissões necessárias ao usuário root com um documento de pol�
   - **E:** Não é necessário aplicar políticas ao usuário root, já que ele já possui todas as permissões inerentemente.  
 
 ### Question #234
-
-**Texto original:**  
-A company is building a new web-based customer relationship management application. The application will use several Amazon EC2 instances that are backed by Amazon Elastic Block Store (Amazon EBS) volumes behind an Application Load Balancer (ALB). The application will also use an Amazon Aurora database. All data for the application must be encrypted at rest and in transit.  
-Which solution will meet these requirements?  
-A. Use AWS Key Management Service (AWS KMS) certificates on the ALB to encrypt data in transit. Use AWS Certificate Manager (ACM) to encrypt the EBS volumes and Aurora database storage at rest.  
-B. Use the AWS root account to log in to the AWS Management Console. Upload the company’s encryption certificates. While in the root account, select the option to turn on encryption for all data at rest and in transit for the account.  
-C. Use AWS Key Management Service (AWS KMS) to encrypt the EBS volumes and Aurora database storage at rest. Attach an AWS Certificate Manager (ACM) certificate to the ALB to encrypt data in transit.  
-D. Use BitLocker to encrypt all data at rest. Import the company’s TLS certificate keys to AWS Key Management Service (AWS KMS). Attach the KMS keys to the ALB to encrypt data in transit.
-
-**Tradução:**  
 Uma empresa está desenvolvendo um novo aplicativo web de gerenciamento de relacionamento com clientes. O aplicativo usará várias instâncias Amazon EC2 com volumes Amazon Elastic Block Store (Amazon EBS) por trás de um Application Load Balancer (ALB). O aplicativo também usará um banco de dados Amazon Aurora. Todos os dados do aplicativo devem ser criptografados em repouso e em trânsito.  
 Qual solução atenderá a esses requisitos?  
 A. Usar certificados do AWS Key Management Service (AWS KMS) no ALB para criptografar dados em trânsito. Usar o AWS Certificate Manager (ACM) para criptografar os volumes EBS e o armazenamento do banco de dados Aurora em repouso.  
@@ -5629,16 +4205,6 @@ D. Usar o BitLocker para criptografar todos os dados em repouso. Importar as cha
 
 
 ### Question #235
-
-**Texto original:**  
-A company is moving its on-premises Oracle database to Amazon Aurora PostgreSQL. The database has several applications that write to the same tables. The applications need to be migrated one by one with a month in between each migration. Management has expressed concerns that the database has a high number of reads and writes. The data must be kept in sync across both databases throughout the migration.  
-What should a solutions architect recommend?  
-A. Use AWS DataSync for the initial migration. Use AWS Database Migration Service (AWS DMS) to create a change data capture (CDC) replication task and a table mapping to select all tables.  
-B. Use AWS DataSync for the initial migration. Use AWS Database Migration Service (AWS DMS) to create a full load plus change data capture (CDC) replication task and a table mapping to select all tables.  
-C. Use the AWS Schema Conversion Tool with AWS Database Migration Service (AWS DMS) using a memory optimized replication instance. Create a full load plus change data capture (CDC) replication task and a table mapping to select all tables.  
-D. Use the AWS Schema Conversion Tool with AWS Database Migration Service (AWS DMS) using a compute optimized replication instance. Create a full load plus change data capture (CDC) replication task and a table mapping to select the largest tables.
-
-**Tradução:**  
 Uma empresa está migrando seu banco de dados Oracle on-premises para o Amazon Aurora PostgreSQL. O banco de dados possui várias aplicações que gravam nas mesmas tabelas. As aplicações precisam ser migradas uma a uma, com um mês de intervalo entre cada migração. A gerência expressou preocupação de que o banco de dados tenha um alto número de leituras e gravações. Os dados devem ser mantidos em sincronia entre os dois bancos de dados durante a migração.  
 O que o arquiteto de soluções deve recomendar?  
 A. Usar o AWS DataSync para a migração inicial. Usar o AWS Database Migration Service (AWS DMS) para criar uma tarefa de replicação com captura de dados alterados (CDC) e um mapeamento de tabelas para selecionar todas as tabelas.  
@@ -5660,16 +4226,6 @@ D. Usar a AWS Schema Conversion Tool com o AWS Database Migration Service (AWS D
 
 
 ### Question #236
-
-**Texto original:**  
-A company has a three-tier application for image sharing. The application uses an Amazon EC2 instance for the front-end layer, another EC2 instance for the application layer, and a third EC2 instance for a MySQL database. A solutions architect must design a scalable and highly available solution that requires the least amount of change to the application.  
-Which solution meets these requirements?  
-A. Use Amazon S3 to host the front-end layer. Use AWS Lambda functions for the application layer. Move the database to an Amazon DynamoDB table. Use Amazon S3 to store and serve users’ images.  
-B. Use load-balanced Multi-AZ AWS Elastic Beanstalk environments for the front-end layer and the application layer. Move the database to an Amazon RDS DB instance with multiple read replicas to serve users’ images.  
-C. Use Amazon S3 to host the front-end layer. Use a fleet of EC2 instances in an Auto Scaling group for the application layer. Move the database to a memory optimized instance type to store and serve users’ images.  
-D. Use load-balanced Multi-AZ AWS Elastic Beanstalk environments for the front-end layer and the application layer. Move the database to an Amazon RDS Multi-AZ DB instance. Use Amazon S3 to store and serve users’ images.
-
-**Tradução:**  
 Uma empresa possui um aplicativo de três camadas para compartilhamento de imagens. O aplicativo utiliza uma instância Amazon EC2 para a camada de front-end, outra instância EC2 para a camada de aplicativo e uma terceira instância EC2 para um banco de dados MySQL. Um arquiteto de soluções deve projetar uma solução escalável e altamente disponível que exija o menor número de alterações no aplicativo.  
 Qual solução atende a esses requisitos?  
 A. Usar o Amazon S3 para hospedar a camada de front-end. Usar funções AWS Lambda para a camada de aplicativo. Migrar o banco de dados para uma tabela do Amazon DynamoDB. Usar o Amazon S3 para armazenar e servir as imagens dos usuários.  
@@ -5691,16 +4247,6 @@ D. Usar ambientes AWS Elastic Beanstalk balanceados em Multi-AZ para as camadas 
 
 
 ### Question #237
-
-**Texto original:**  
-An application running on an Amazon EC2 instance in VPC-A needs to access files in another EC2 instance in VPC-B. Both VPCs are in separate AWS accounts. The network administrator needs to design a solution to configure secure access to the EC2 instance in VPC-B from VPC-A. The connectivity should not have a single point of failure or bandwidth concerns.  
-Which solution will meet these requirements?  
-A. Set up a VPC peering connection between VPC-A and VPC-B.  
-B. Set up VPC gateway endpoints for the EC2 instance running in VPC-B.  
-C. Attach a virtual private gateway to VPC-B and set up routing from VPC-A.  
-D. Create a private virtual interface (VIF) for the EC2 instance running in VPC-B and add appropriate routes from VPC-A.
-
-**Tradução:**  
 Um aplicativo executado em uma instância Amazon EC2 na VPC-A precisa acessar arquivos em outra instância EC2 na VPC-B. Ambas as VPCs estão em contas AWS separadas. O administrador de rede precisa projetar uma solução para configurar o acesso seguro à instância EC2 na VPC-B a partir da VPC-A. A conectividade não deve ter um único ponto de falha ou problemas de largura de banda.  
 Qual solução atenderá a esses requisitos?  
 A. Configurar uma conexão de emparelhamento de VPC entre a VPC-A e a VPC-B.  
@@ -5722,16 +4268,6 @@ D. Criar uma interface virtual privada (VIF) para a instância EC2 executada na 
 
 
 ### Question #238
-
-**Texto original:**  
-A company wants to experiment with individual AWS accounts for its engineer team. The company wants to be notified as soon as the Amazon EC2 instance usage for a given month exceeds a specific threshold for each account.  
-What should a solutions architect do to meet this requirement MOST cost-effectively?  
-A. Use Cost Explorer to create a daily report of costs by service. Filter the report by EC2 instances. Configure Cost Explorer to send an Amazon Simple Email Service (Amazon SES) notification when a threshold is exceeded.  
-B. Use Cost Explorer to create a monthly report of costs by service. Filter the report by EC2 instances. Configure Cost Explorer to send an Amazon Simple Email Service (Amazon SES) notification when a threshold is exceeded.  
-C. Use AWS Budgets to create a cost budget for each account. Set the period to monthly. Set the scope to EC2 instances. Set an alert threshold for the budget. Configure an Amazon Simple Notification Service (Amazon SNS) topic to receive a notification when a threshold is exceeded.  
-D. Use AWS Cost and Usage Reports to create a report with hourly granularity. Integrate the report data with Amazon Athena. Use Amazon EventBridge to schedule an Athena query. Configure an Amazon Simple Notification Service (Amazon SNS) topic to receive a notification when a threshold is exceeded.
-
-**Tradução:**  
 Uma empresa deseja experimentar contas AWS individuais para sua equipe de engenheiros. A empresa quer ser notificada assim que o uso de instâncias Amazon EC2 em um determinado mês exceder um limite específico para cada conta.  
 O que um arquiteto de soluções deve fazer para atender a esse requisito de forma MAIS econômica?  
 A. Usar o Cost Explorer para criar um relatório diário de custos por serviço. Filtrar o relatório por instâncias EC2. Configurar o Cost Explorer para enviar uma notificação do Amazon Simple Email Service (Amazon SES) quando um limite for excedido.  
@@ -5752,16 +4288,6 @@ D. Usar os Relatórios de Custo e Uso da AWS para criar um relatório com granul
 
 
 ### Question #239
-
-**Texto original:**  
-A solutions architect needs to design a new microservice for a company’s application. Clients must be able to call an HTTPS endpoint to reach the microservice. The microservice also must use AWS Identity and Access Management (IAM) to authenticate calls. The solutions architect will write the logic for this microservice by using a single AWS Lambda function that is written in Go 1.x.  
-Which solution will deploy the function in the MOST operationally efficient way?  
-A. Create an Amazon API Gateway REST API. Configure the method to use the Lambda function. Enable IAM authentication on the API.  
-B. Create a Lambda function URL for the function. Specify AWS_IAM as the authentication type.  
-C. Create an Amazon CloudFront distribution. Deploy the function to Lambda@Edge. Integrate IAM authentication logic into the Lambda@Edge function.  
-D. Create an Amazon CloudFront distribution. Deploy the function to CloudFront Functions. Specify AWS_IAM as the authentication type.
-
-**Tradução:**  
 Um arquiteto de soluções precisa projetar um novo microsserviço para o aplicativo de uma empresa. Os clientes devem ser capazes de chamar um endpoint HTTPS para acessar o microsserviço. O microsserviço também deve usar AWS Identity and Access Management (IAM) para autenticar chamadas. O arquiteto de soluções escreverá a lógica para este microsserviço usando uma única função AWS Lambda escrita em Go 1.x.  
 Qual solução implantará a função da maneira MAIS eficiente operacionalmente?  
 A. Criar uma API REST no Amazon API Gateway. Configurar o método para usar a função Lambda. Habilitar autenticação IAM na API.  
@@ -5783,16 +4309,6 @@ D. Criar uma distribuição Amazon CloudFront. Implantar a função no CloudFron
 
 
 ### Question #240
-
-**Texto original:**  
-A company previously migrated its data warehouse solution to AWS. The company also has an AWS Direct Connect connection. Corporate office users query the data warehouse using a visualization tool. The average size of a query returned by the data warehouse is 50 MB, and each webpage sent by the visualization tool is approximately 500 KB. Result sets returned by the data warehouse are not cached.  
-Which solution provides the LOWEST data transfer egress cost for the company?  
-A. Host the visualization tool on premises and query the data warehouse directly over the internet.  
-B. Host the visualization tool in the same AWS Region as the data warehouse. Access it over the internet.  
-C. Host the visualization tool on premises and query the data warehouse directly over a Direct Connect connection at a location in the same AWS Region.  
-D. Host the visualization tool in the same AWS Region as the data warehouse and access it over a Direct Connect connection at a location in the same Region.
-
-**Tradução:**  
 Uma empresa migrou anteriormente sua solução de data warehouse para a AWS. A empresa também possui uma conexão AWS Direct Connect. Os usuários do escritório corporativo consultam o data warehouse usando uma ferramenta de visualização. O tamanho médio de uma consulta retornada pelo data warehouse é de 50 MB, e cada página da web enviada pela ferramenta de visualização tem aproximadamente 500 KB. Os conjuntos de resultados retornados pelo data warehouse não são armazenados em cache.  
 Qual solução fornece o menor custo de saída de transferência de dados para a empresa?  
 A. Hospedar a ferramenta de visualização no local e consultar o data warehouse diretamente pela internet.  
