@@ -3858,6 +3858,8 @@ E. Atualizar a ACL de rede para permitir TCP de entrada na porta 443 da origem 0
   - **B:** Permitir tráfego para o destino 0.0.0.0/0 no grupo de segurança não é apropriado neste caso.  
   - **C/D:** Configurações incompletas de ACLs podem impedir a conectividade correta.  
 
+---
+
 ### Question #219
 O aplicativo de uma empresa está enfrentando problemas de desempenho. O aplicativo é stateful e precisa concluir tarefas em memória em instâncias Amazon EC2. A empresa usou o AWS CloudFormation para implantar a infraestrutura e utilizou a família de instâncias M5 do EC2. À medida que o tráfego aumentou, o desempenho do aplicativo diminuiu. Os usuários estão relatando atrasos ao tentar acessar o aplicativo.  
 Qual solução resolverá esses problemas da maneira MAIS eficiente operacionalmente?  
@@ -3900,6 +3902,7 @@ D. Um serviço conteinerizado hospedado no Amazon ECS com Amazon EC2
   - **C:** Serviços conteinerizados no EKS são mais caros e envolvem maior sobrecarga operacional para configurar e manter.  
   - **D:** O ECS com EC2 exige o gerenciamento das instâncias subjacentes, o que aumenta os custos operacionais e não é eficiente para cargas variáveis.  
 
+---
 
 ### Question #221
 Uma empresa executa um aplicativo em um grupo de instâncias Amazon Linux EC2. Por razões de conformidade, a empresa deve reter todos os arquivos de log do aplicativo por 7 anos. Os arquivos de log serão analisados por uma ferramenta de relatórios que deve ser capaz de acessar todos os arquivos simultaneamente.  
@@ -3921,6 +3924,8 @@ D. Amazon S3
   - **B:** O EFS é otimizado para sistemas de arquivos compartilhados, mas seu custo é significativamente maior do que o do S3 para armazenamento de logs a longo prazo.  
   - **C:** O armazenamento de instância EC2 é volátil e não persiste após o término da instância, tornando-o inadequado para retenção de dados.  
 
+---
+
 ### Question #222
 Uma empresa contratou um fornecedor externo para realizar trabalhos na conta AWS da empresa. O fornecedor usa uma ferramenta automatizada que está hospedada em uma conta AWS pertencente ao fornecedor. O fornecedor não possui acesso IAM à conta AWS da empresa.  
 Como um arquiteto de soluções deve conceder esse acesso ao fornecedor?  
@@ -3941,9 +3946,9 @@ D. Criar um novo provedor de identidade, escolhendo “Conta AWS” como o tipo 
   - **C:** Não é possível adicionar usuários IAM de uma conta externa diretamente a um grupo IAM na conta da empresa.  
   - **D:** Criar um provedor de identidade para outro AWS Account ID é desnecessário e não corresponde ao caso de uso descrito.  
 
-### Question #223
+---
 
-**Texto original:**  
+### Question #223
 Uma empresa implantou um aplicativo Java Spring Boot como um pod que é executado no Amazon Elastic Kubernetes Service (Amazon EKS) em sub-redes privadas. O aplicativo precisa gravar dados em uma tabela Amazon DynamoDB. Um arquiteto de soluções deve garantir que o aplicativo possa interagir com a tabela DynamoDB sem expor o tráfego à internet.  
 Quais combinações de etapas o arquiteto de soluções deve realizar para alcançar esse objetivo? (Escolha duas.)  
 A. Anexar uma função IAM com privilégios suficientes ao pod do EKS.  
@@ -3965,6 +3970,8 @@ E. Incorporar as chaves de acesso no código Java Spring Boot.
   - **B:** Anexar um usuário IAM diretamente ao pod não segue as práticas recomendadas de segurança e gerenciamento de identidades.  
   - **C:** Configurar ACLs de rede ajuda, mas por si só não garante que o tráfego não passe pela internet.  
   - **E:** Incorporar as chaves de acesso no código Java é uma prática insegura que pode levar à exposição de credenciais.  
+
+---
 
 ### Question #224
 Uma empresa recentemente migrou seu aplicativo web para a AWS, hospedando-o em instâncias Amazon EC2 em uma única região da AWS. A empresa deseja redesenhar a arquitetura de seu aplicativo para ser altamente disponível e tolerante a falhas. O tráfego deve alcançar todas as instâncias EC2 em execução de forma aleatória.  
@@ -3989,6 +3996,7 @@ E. Lançar quatro instâncias EC2: duas instâncias em uma zona de disponibilida
   - **B:** A política de roteamento ponderado direciona o tráfego com base em pesos definidos, o que não atende ao requisito de tráfego aleatório.  
   - **D:** Usar apenas três instâncias em uma configuração assimétrica não otimiza a disponibilidade nem a tolerância a falhas de forma adequada.  
 
+---
 
 ### Question #225
 Uma empresa de mídia coleta e analisa dados de atividade de usuários localmente. A empresa deseja migrar essa capacidade para a AWS. O repositório de dados de atividade dos usuários continuará a crescer e atingirá petabytes de tamanho. A empresa precisa criar uma solução de ingestão de dados altamente disponível que facilite análises sob demanda de dados existentes e novos com SQL.  
@@ -4009,6 +4017,8 @@ D. Criar um serviço de ingestão em instâncias Amazon EC2 distribuídas em vá
   - **B:** Redshift é uma solução de data warehouse e envolve maior sobrecarga operacional, além de custos mais altos para ingestão de dados em grande escala contínua.  
   - **C:** Configurar o Lambda para processar dados diretamente do S3 não é ideal para petabytes de dados, pois pode gerar problemas de escalabilidade e custos adicionais.  
   - **D:** Gerenciar um serviço de ingestão em instâncias EC2 distribui a carga manualmente e requer mais esforço operacional, além de não ser ideal para tamanhos de dados em petabytes.  
+
+---
 
 ### Question #226
 Uma empresa coleta dados de milhares de dispositivos remotos usando um aplicativo de serviços web RESTful que é executado em uma instância Amazon EC2. A instância EC2 recebe os dados brutos, transforma os dados brutos e armazena todos os dados em um bucket Amazon S3. O número de dispositivos remotos aumentará para milhões em breve. A empresa precisa de uma solução altamente escalável que minimize a sobrecarga operacional.  
@@ -4033,6 +4043,8 @@ E. Usar o Amazon API Gateway para enviar os dados brutos para um stream de dados
   - **B:** O Amazon Route 53 não é projetado para balancear carga em tempo real para cenários como esse.  
   - **C:** Adicionar mais instâncias EC2 aumenta a complexidade operacional e não é uma solução escalável para lidar com milhões de dispositivos.  
 
+---
+
 ### Question #227
 Uma empresa precisa reter seus logs do AWS CloudTrail por 3 anos. A empresa está aplicando o CloudTrail em um conjunto de contas AWS usando o AWS Organizations a partir da conta principal. O bucket S3 de destino do CloudTrail está configurado com o S3 Versioning habilitado. Uma política de ciclo de vida do S3 está em vigor para excluir objetos atuais após 3 anos.  
 Após o quarto ano de uso do bucket S3, as métricas do bucket S3 mostram que o número de objetos continua a aumentar. No entanto, o número de novos logs do CloudTrail entregues ao bucket S3 permanece consistente.  
@@ -4054,6 +4066,7 @@ D. Configurar a conta principal como proprietária de todos os objetos entregues
   - **C:** Usar uma função AWS Lambda para gerenciar objetos é uma solução mais complexa e custosa em comparação com uma política de ciclo de vida do S3.  
   - **D:** Configurar a conta principal como proprietária dos objetos não afeta a retenção ou exclusão de versões de objetos.  
 
+---
 
 ### Question #228
 Uma empresa possui uma API que recebe dados em tempo real de uma frota de dispositivos de monitoramento. A API armazena esses dados em uma instância Amazon RDS para análise posterior. A quantidade de dados que os dispositivos de monitoramento enviam para a API é flutuante. Durante períodos de tráfego intenso, a API frequentemente retorna erros de timeout.  
@@ -4076,6 +4089,8 @@ D. Modificar a API para gravar os dados recebidos em um tópico do Amazon Simple
   - **B:** Multi-AZ melhora a disponibilidade, mas não aumenta a capacidade de processamento de gravações.  
   - **D:** O SNS é projetado para notificação e publicação-assinatura, não para buffering de dados para processamento.  
 
+---
+
 ### Question #229
 Uma empresa gerencia suas próprias instâncias Amazon EC2 que executam bancos de dados MySQL. A empresa está gerenciando manualmente a replicação e o escalonamento à medida que a demanda aumenta ou diminui. A empresa precisa de uma nova solução que simplifique o processo de adicionar ou remover capacidade computacional no tier de banco de dados conforme necessário. A solução também deve oferecer desempenho, escalabilidade e durabilidade aprimorados com o mínimo de esforço operacional.  
 Qual solução atende a esses requisitos?  
@@ -4096,6 +4111,7 @@ D. Criar um grupo de Auto Scaling do EC2 para o tier de banco de dados. Migrar o
   - **C:** Combinar bancos de dados em um único MySQL maior não resolve os problemas de escalabilidade automática e aumenta os riscos de pontos únicos de falha.  
   - **D:** Criar um grupo de Auto Scaling para bancos de dados em EC2 aumenta a complexidade operacional e não oferece os benefícios de escalabilidade e durabilidade automática do Aurora Serverless.  
 
+---
 
 ### Question #230
 Uma empresa está preocupada que duas instâncias NAT em uso não sejam mais capazes de suportar o tráfego necessário para o aplicativo da empresa. Um arquiteto de soluções deseja implementar uma solução altamente disponível, tolerante a falhas e escalável automaticamente.  
@@ -4117,6 +4133,7 @@ D. Substituir as duas instâncias NAT por instâncias Spot em diferentes zonas d
   - **B:** Usar Auto Scaling com balanceadores de carga para instâncias NAT adiciona complexidade operacional e não é tão eficiente quanto os NAT gateways gerenciados.  
   - **D:** Instâncias Spot não são adequadas para NAT devido à sua natureza temporária e à possibilidade de serem interrompidas.  
 
+---
 
 ### Question #231 
 Um aplicativo é executado em uma instância Amazon EC2 que possui um Elastic IP address na VPC A. O aplicativo precisa acessar um banco de dados na VPC B. Ambas as VPCs estão na mesma conta AWS.  
@@ -4138,6 +4155,7 @@ D. Lançar uma instância EC2 com um Elastic IP address na VPC B. Usar a nova in
   - **C:** Tornar o banco de dados publicamente acessível apresenta sérios riscos de segurança desnecessários.  
   - **D:** Usar uma instância EC2 como proxy adiciona complexidade desnecessária e não é tão seguro quanto o VPC Peering.  
 
+---
 
 ### Question #232
 Uma empresa opera ambientes de demonstração para seus clientes em instâncias Amazon EC2. Cada ambiente está isolado em sua própria VPC. A equipe de operações da empresa precisa ser notificada quando o acesso RDP ou SSH a um ambiente for estabelecido.  
@@ -4159,6 +4177,7 @@ D. Configurar uma regra do Amazon EventBridge para escutar eventos do tipo EC2 I
   - **B:** Configurar a política AmazonSSMManagedInstanceCore habilita o Systems Manager, mas não atende diretamente ao requisito de notificar sobre conexões RDP ou SSH.  
   - **D:** As notificações de mudança de estado do EC2 monitoram alterações no estado da instância (como iniciar ou parar), mas não capturam conexões RDP ou SSH.  
 
+---
 
 ### Question #233
 Um arquiteto de soluções criou uma nova conta AWS e deve proteger o acesso do usuário root da conta AWS.  
@@ -4183,6 +4202,8 @@ E. Aplicar as permissões necessárias ao usuário root com um documento de pol�
   - **D:** O usuário root não pode ser adicionado a grupos IAM, pois ele possui permissões irrestritas inerentes.  
   - **E:** Não é necessário aplicar políticas ao usuário root, já que ele já possui todas as permissões inerentemente.  
 
+---
+
 ### Question #234
 Uma empresa está desenvolvendo um novo aplicativo web de gerenciamento de relacionamento com clientes. O aplicativo usará várias instâncias Amazon EC2 com volumes Amazon Elastic Block Store (Amazon EBS) por trás de um Application Load Balancer (ALB). O aplicativo também usará um banco de dados Amazon Aurora. Todos os dados do aplicativo devem ser criptografados em repouso e em trânsito.  
 Qual solução atenderá a esses requisitos?  
@@ -4203,6 +4224,7 @@ D. Usar o BitLocker para criptografar todos os dados em repouso. Importar as cha
   - **B:** Não existe uma configuração global para criptografar automaticamente todos os dados em uma conta AWS. Usar a conta root é uma prática insegura.  
   - **D:** BitLocker não é uma solução nativa da AWS e não se aplica ao ambiente AWS. Importar chaves TLS para o KMS não é necessário, pois o ACM já gerencia essa funcionalidade.  
 
+---
 
 ### Question #235
 Uma empresa está migrando seu banco de dados Oracle on-premises para o Amazon Aurora PostgreSQL. O banco de dados possui várias aplicações que gravam nas mesmas tabelas. As aplicações precisam ser migradas uma a uma, com um mês de intervalo entre cada migração. A gerência expressou preocupação de que o banco de dados tenha um alto número de leituras e gravações. Os dados devem ser mantidos em sincronia entre os dois bancos de dados durante a migração.  
@@ -4224,6 +4246,7 @@ D. Usar a AWS Schema Conversion Tool com o AWS Database Migration Service (AWS D
   - **B:** O DataSync é desnecessário neste caso, pois o AWS DMS já pode lidar com a carga inicial e a replicação contínua.  
   - **D:** Focar apenas nas maiores tabelas não garante que todas as tabelas estejam sincronizadas, o que pode causar inconsistências de dados.  
 
+---
 
 ### Question #236
 Uma empresa possui um aplicativo de três camadas para compartilhamento de imagens. O aplicativo utiliza uma instância Amazon EC2 para a camada de front-end, outra instância EC2 para a camada de aplicativo e uma terceira instância EC2 para um banco de dados MySQL. Um arquiteto de soluções deve projetar uma solução escalável e altamente disponível que exija o menor número de alterações no aplicativo.  
@@ -4245,6 +4268,7 @@ D. Usar ambientes AWS Elastic Beanstalk balanceados em Multi-AZ para as camadas 
   - **B:** Usar múltiplas réplicas de leitura do RDS para armazenar imagens não é eficiente para grandes volumes de dados estáticos; o S3 é mais adequado para isso.  
   - **C:** Usar instâncias otimizadas para memória não resolve problemas de escalabilidade e alta disponibilidade da camada de banco de dados.  
 
+---
 
 ### Question #237
 Um aplicativo executado em uma instância Amazon EC2 na VPC-A precisa acessar arquivos em outra instância EC2 na VPC-B. Ambas as VPCs estão em contas AWS separadas. O administrador de rede precisa projetar uma solução para configurar o acesso seguro à instância EC2 na VPC-B a partir da VPC-A. A conectividade não deve ter um único ponto de falha ou problemas de largura de banda.  
@@ -4266,6 +4290,7 @@ D. Criar uma interface virtual privada (VIF) para a instância EC2 executada na 
   - **C:** Anexar um gateway privado virtual requer configuração de uma VPN ou Direct Connect, que não é necessário neste caso e adiciona complexidade desnecessária.  
   - **D:** Criar uma interface virtual privada (VIF) é apropriado para conectividade Direct Connect, mas não é adequado para comunicação entre VPCs.  
 
+---
 
 ### Question #238
 Uma empresa deseja experimentar contas AWS individuais para sua equipe de engenheiros. A empresa quer ser notificada assim que o uso de instâncias Amazon EC2 em um determinado mês exceder um limite específico para cada conta.  
@@ -4286,6 +4311,7 @@ D. Usar os Relatórios de Custo e Uso da AWS para criar um relatório com granul
   - **A/B:** O Cost Explorer não suporta notificações automáticas diretamente; ele é usado para análise manual de custos.  
   - **D:** Os Relatórios de Custo e Uso com integração ao Athena e EventBridge adicionam complexidade e custos desnecessários para este caso de uso simples.  
 
+---
 
 ### Question #239
 Um arquiteto de soluções precisa projetar um novo microsserviço para o aplicativo de uma empresa. Os clientes devem ser capazes de chamar um endpoint HTTPS para acessar o microsserviço. O microsserviço também deve usar AWS Identity and Access Management (IAM) para autenticar chamadas. O arquiteto de soluções escreverá a lógica para este microsserviço usando uma única função AWS Lambda escrita em Go 1.x.  
@@ -4307,6 +4333,7 @@ D. Criar uma distribuição Amazon CloudFront. Implantar a função no CloudFron
   - **C:** O Lambda@Edge é projetado para processamento no nível da borda, o que é desnecessário para um microsserviço que não requer distribuição global.  
   - **D:** O CloudFront Functions é mais adequado para manipulações simples de solicitações e não suporta a execução de lógica complexa como a necessária para o microsserviço.  
 
+---
 
 ### Question #240
 Uma empresa migrou anteriormente sua solução de data warehouse para a AWS. A empresa também possui uma conexão AWS Direct Connect. Os usuários do escritório corporativo consultam o data warehouse usando uma ferramenta de visualização. O tamanho médio de uma consulta retornada pelo data warehouse é de 50 MB, e cada página da web enviada pela ferramenta de visualização tem aproximadamente 500 KB. Os conjuntos de resultados retornados pelo data warehouse não são armazenados em cache.  
