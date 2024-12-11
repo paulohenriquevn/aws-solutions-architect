@@ -1,6 +1,12 @@
 ### Questão 1
-Uma empresa coleta dados de temperatura, umidade e pressão atmosférica em cidades de vários continentes. O volume médio de dados coletados diariamente de cada local é de 500 GB. Cada local possui uma conexão de Internet de alta velocidade.  
-A empresa deseja agregar os dados de todos esses locais globais o mais rápido possível em um único bucket do Amazon S3. A solução deve minimizar a complexidade operacional.  
+Uma empresa coleta dados de temperatura, umidade e pressão atmosférica em cidades de vários continentes. O volume médio de dados coletados diariamente de cada local é de 500 GB. Cada local tem uma conexão de Internet de alta velocidade.
+A empresa deseja agregar os dados de todos esses locais globais o mais rápido possível em um único bucket do Amazon S3. A solução deve minimizar a complexidade operacional.
+Qual solução atende a esses requisitos?
+
+A. Ative o S3 Transfer Acceleration no bucket de destino do S3. Use uploads multipart para carregar os dados do local diretamente no bucket de destino do S3.
+B. Carregue os dados de cada local em um bucket do S3 na região mais próxima. Use a replicação entre regiões do S3 para copiar os objetos para o bucket de destino. Em seguida, remova os dados do bucket de origem.
+C. Agende tarefas diárias de dispositivos AWS Snowball Edge Storage Optimized para transferir dados de cada local para a região mais próxima. Use a replicação entre regiões do S3 para copiar os objetos para o bucket de destino.
+D. Carregue os dados de cada local em uma instância do Amazon EC2 na região mais próxima. Armazene os dados em um volume do Amazon Elastic Block Store (Amazon EBS). Em intervalos regulares, tire um snapshot do EBS e copie-o para a região que contém o bucket de destino do S3.
 
 **Resposta correta:**  
 **A.** Ative o S3 Transfer Acceleration no bucket de destino do S3. Use uploads em várias partes para carregar diretamente os dados do local no bucket de destino do S3.
@@ -16,7 +22,13 @@ A empresa deseja agregar os dados de todos esses locais globais o mais rápido p
 
 ---
 ### Questão 2
-Uma empresa precisa analisar os arquivos de log de sua aplicação proprietária. Os logs estão armazenados no formato JSON em um bucket do Amazon S3. As consultas serão simples e executadas sob demanda.  
+Uma empresa precisa da capacidade de analisar os arquivos de log de seu aplicativo proprietário. Os logs são armazenados no formato JSON em um bucket do Amazon S3. As consultas serão simples e executadas sob demanda. Um arquiteto de soluções precisa realizar a análise com mínimas alterações na arquitetura existente.
+O que o arquiteto de soluções deve fazer para atender a esses requisitos com o menor esforço operacional?
+
+A. Use o Amazon Redshift para carregar todo o conteúdo em um único local e executar as consultas SQL conforme necessário.
+B. Use o Amazon CloudWatch Logs para armazenar os logs. Execute as consultas SQL conforme necessário a partir do console do Amazon CloudWatch.
+C. Use o Amazon Athena diretamente com o Amazon S3 para executar as consultas conforme necessário.
+D. Use o AWS Glue para catalogar os logs. Use um cluster transitório do Apache Spark no Amazon EMR para executar as consultas SQL conforme necessário.
 
 **Resposta correta:**  
 **C.** Use Amazon Athena diretamente com o Amazon S3 para executar as consultas conforme necessário.
@@ -33,7 +45,13 @@ Uma empresa precisa analisar os arquivos de log de sua aplicação proprietária
 ---
 
 ### Questão 3
-Uma empresa usa AWS Organizations para gerenciar várias contas AWS de diferentes departamentos. A conta de gerenciamento possui um bucket do Amazon S3 contendo relatórios de projetos.  
+Uma empresa usa o AWS Organizations para gerenciar várias contas da AWS para diferentes departamentos. A conta de gerenciamento tem um bucket do Amazon S3 que contém relatórios de projetos. A empresa deseja limitar o acesso a esse bucket do S3 apenas aos usuários de contas dentro da organização no AWS Organizations.
+Qual solução atende a esses requisitos com o menor esforço operacional?
+
+A. Adicione a chave de condição global aws:PrincipalOrgID com uma referência ao ID da organização na política do bucket do S3.
+B. Crie uma unidade organizacional (OU) para cada departamento. Adicione a chave de condição global aws:PrincipalOrgPaths à política do bucket do S3.
+C. Use o AWS CloudTrail para monitorar os eventos CreateAccount, InviteAccountToOrganization, LeaveOrganization e RemoveAccountFromOrganization. Atualize a política do bucket do S3 conforme necessário.
+D. Etiquete cada usuário que precisa de acesso ao bucket do S3. Adicione a chave de condição global aws:PrincipalTag à política do bucket do S3.
 
 **Resposta correta:**  
 **A.** Adicione a chave global `aws:PrincipalOrgID` com referência ao ID da organização na política do bucket S3.
@@ -50,7 +68,13 @@ Uma empresa usa AWS Organizations para gerenciar várias contas AWS de diferente
 ---
 
 ### Questão 4
-Uma aplicação roda em uma instância Amazon EC2 em uma VPC. A aplicação processa logs armazenados em um bucket do Amazon S3.  
+Um aplicativo executado em uma instância do Amazon EC2 em uma VPC processa logs armazenados em um bucket do Amazon S3. A instância do EC2 precisa acessar o bucket do S3 sem conectividade com a Internet.
+Qual solução fornecerá conectividade de rede privada ao Amazon S3?
+
+A. Crie um endpoint de gateway da VPC para o bucket do S3.
+B. Transmita os logs para o Amazon CloudWatch Logs. Exporte os logs para o bucket do S3.
+C. Crie um perfil de instância no Amazon EC2 para permitir o acesso ao S3.
+D. Crie uma API Gateway do Amazon com um link privado para acessar o endpoint do S3.
 
 **Resposta correta:**  
 **A.** Crie um endpoint VPC Gateway para o bucket S3.
@@ -67,7 +91,13 @@ Uma aplicação roda em uma instância Amazon EC2 em uma VPC. A aplicação proc
 ---
 
 ### Questão 5
-Uma empresa hospeda uma aplicação web no AWS usando uma instância Amazon EC2 que armazena documentos enviados por usuários.  
+Uma empresa está hospedando um aplicativo web na AWS usando uma única instância do Amazon EC2 que armazena documentos enviados por usuários em um volume do Amazon EBS. Para melhor escalabilidade e disponibilidade, a empresa duplicou a arquitetura e criou uma segunda instância do EC2 e um volume do EBS em outra zona de disponibilidade, colocando ambos atrás de um Application Load Balancer. Após concluir essa alteração, os usuários relataram que, cada vez que atualizavam o site, podiam ver um subconjunto de seus documentos ou outro, mas nunca todos os documentos ao mesmo tempo.
+O que um arquiteto de soluções deve propor para garantir que os usuários vejam todos os seus documentos de uma só vez?
+
+A. Copie os dados para que ambos os volumes do EBS contenham todos os documentos.
+B. Configure o Application Load Balancer para direcionar o usuário ao servidor com os documentos.
+C. Copie os dados de ambos os volumes do EBS para o Amazon EFS. Modifique o aplicativo para salvar novos documentos no Amazon EFS.
+D. Configure o Application Load Balancer para enviar a solicitação para ambos os servidores. Retorne cada documento do servidor correto.
 
 **Resposta correta:**  
 **C.** Copie os dados de ambos os volumes EBS para o Amazon EFS. Modifique a aplicação para salvar novos documentos no Amazon EFS.
@@ -84,7 +114,16 @@ Uma empresa hospeda uma aplicação web no AWS usando uma instância Amazon EC2 
 ---
 
 ### Questão 6
-Uma empresa usa NFS para armazenar vídeos grandes em um NAS local. Cada vídeo varia de 1 MB a 500 GB.  
+Uma empresa usa o NFS para armazenar grandes arquivos de vídeo em armazenamento anexado à rede (NAS) no local. Cada arquivo de vídeo varia em tamanho de 1 MB a 500 GB. O armazenamento total é de 70 TB e não está mais crescendo. A empresa decide migrar os arquivos de vídeo para o Amazon S3. A empresa deve migrar os arquivos de vídeo o mais rápido possível enquanto usa o menor consumo possível de largura de banda de rede.
+Qual solução atenderá a esses requisitos?
+
+A. Crie um bucket do S3. Crie uma função IAM com permissões para gravar no bucket do S3. Use a AWS CLI para copiar todos os arquivos localmente para o bucket do S3.
+
+B. Crie uma tarefa AWS Snowball Edge. Receba um dispositivo Snowball Edge no local. Use o cliente Snowball Edge para transferir dados para o dispositivo. Retorne o dispositivo para que a AWS possa importar os dados para o Amazon S3.
+
+C. Implemente um S3 File Gateway no local. Crie um endpoint de serviço público para conectar-se ao S3 File Gateway. Crie um bucket do S3. Crie um novo compartilhamento de arquivos NFS no S3 File Gateway. Direcione o novo compartilhamento de arquivos para o bucket do S3. Transfira os dados do compartilhamento de arquivos NFS existente para o S3 File Gateway.
+
+D. Configure uma conexão AWS Direct Connect entre a rede local e a AWS. Implante um S3 File Gateway no local. Crie uma interface virtual pública (VIF) para conectar-se ao S3 File Gateway. Crie um bucket do S3. Crie um novo compartilhamento de arquivos NFS no S3 File Gateway. Direcione o novo compartilhamento de arquivos para o bucket do S3. Transfira os dados do compartilhamento de arquivos NFS existente para o S3 File Gateway.
 
 **Resposta correta:**  
 **B.** Crie um trabalho AWS Snowball Edge. Receba um dispositivo Snowball Edge no local e use o cliente para transferir os dados para o dispositivo.
@@ -100,7 +139,16 @@ Uma empresa usa NFS para armazenar vídeos grandes em um NAS local. Cada vídeo 
 
 ---
 ### Questão 7
-Uma empresa possui uma aplicação que consome mensagens recebidas. Dezenas de outras aplicações e microsserviços consomem essas mensagens rapidamente.
+Uma empresa possui um aplicativo que ingere mensagens recebidas. Dezenas de outros aplicativos e microsserviços então consomem rapidamente essas mensagens. O número de mensagens varia drasticamente e, às vezes, aumenta repentinamente para 100.000 por segundo. A empresa deseja desacoplar a solução e aumentar a escalabilidade.
+Qual solução atende a esses requisitos?
+
+A. Persistir as mensagens no Amazon Kinesis Data Analytics. Configurar os aplicativos consumidores para ler e processar as mensagens.
+
+B. Implantar o aplicativo de ingestão em instâncias Amazon EC2 em um grupo de Auto Scaling para escalar o número de instâncias EC2 com base em métricas de CPU.
+
+C. Gravar as mensagens no Amazon Kinesis Data Streams com um único shard. Usar uma função AWS Lambda para pré-processar as mensagens e armazená-las no Amazon DynamoDB. Configurar os aplicativos consumidores para ler do DynamoDB e processar as mensagens.
+
+D. Publicar as mensagens em um tópico do Amazon Simple Notification Service (Amazon SNS) com várias assinaturas do Amazon Simple Queue Service (Amazon SQS). Configurar os aplicativos 
 
 **Resposta correta:**  
 **D.** Publique as mensagens em um tópico do Amazon SNS com várias assinaturas do Amazon SQS. Configure os consumidores para processar as mensagens das filas.
@@ -117,7 +165,16 @@ Uma empresa possui uma aplicação que consome mensagens recebidas. Dezenas de o
 ---
 
 ### Questão 8
-Uma empresa está migrando uma aplicação distribuída para a AWS. A aplicação possui cargas de trabalho variáveis.
+Uma empresa está migrando um aplicativo distribuído para a AWS. O aplicativo atende a cargas de trabalho variáveis. A plataforma legada consiste em um servidor principal que coordena trabalhos entre vários nós de computação. A empresa deseja modernizar o aplicativo com uma solução que maximize a resiliência e a escalabilidade.
+Como um arquiteto de soluções deve projetar a arquitetura para atender a esses requisitos?
+
+A. Configurar uma fila do Amazon Simple Queue Service (Amazon SQS) como destino para os trabalhos. Implementar os nós de computação com instâncias Amazon EC2 gerenciadas em um grupo de Auto Scaling. Configurar o Auto Scaling do EC2 para usar escalonamento programado.
+
+B. Configurar uma fila do Amazon Simple Queue Service (Amazon SQS) como destino para os trabalhos. Implementar os nós de computação com instâncias Amazon EC2 gerenciadas em um grupo de Auto Scaling. Configurar o Auto Scaling do EC2 com base no tamanho da fila.
+
+C. Implementar o servidor principal e os nós de computação com instâncias Amazon EC2 gerenciadas em um grupo de Auto Scaling. Configurar o AWS CloudTrail como destino para os trabalhos. Configurar o Auto Scaling do EC2 com base na carga do servidor principal.
+
+D. Implementar o servidor principal e os nós de computação com instâncias Amazon EC2 gerenciadas em um grupo de Auto Scaling. Configurar o Amazon EventBridge (Amazon CloudWatch Events) como destino para os trabalhos. Configurar o Auto Scaling do EC2 com base na carga dos nós de computação.
 
 **Resposta correta:**  
 **B.** Configure uma fila Amazon SQS como destino para os jobs. Implemente os nós de computação em uma Auto Scaling group de EC2.
@@ -134,7 +191,17 @@ Uma empresa está migrando uma aplicação distribuída para a AWS. A aplicaçã
 ---
 
 ### Questão 9
-Uma empresa opera um servidor de arquivos SMB em seu data center. Os arquivos são acessados frequentemente nos primeiros 7 dias após a criação.  
+Uma empresa está operando um servidor de arquivos SMB em seu data center. O servidor armazena grandes arquivos que são frequentemente acessados nos primeiros dias após sua criação. Após 7 dias, os arquivos raramente são acessados.
+O volume total de dados está aumentando e está próximo à capacidade total de armazenamento da empresa. Um arquiteto de soluções deve aumentar o espaço de armazenamento disponível da empresa sem perder o acesso de baixa latência aos arquivos acessados recentemente. O arquiteto de soluções também deve fornecer um gerenciamento do ciclo de vida dos arquivos para evitar problemas futuros de armazenamento.
+Qual solução atenderá a esses requisitos?
+
+A. Usar o AWS DataSync para copiar dados com mais de 7 dias do servidor de arquivos SMB para a AWS.
+
+B. Criar um Amazon S3 File Gateway para estender o espaço de armazenamento da empresa. Criar uma política de ciclo de vida do S3 para fazer a transição dos dados para o S3 Glacier Deep Archive após 7 dias.
+
+C. Criar um sistema de arquivos Amazon FSx for Windows File Server para estender o espaço de armazenamento da empresa.
+
+D. Instalar um utilitário em cada computador de usuário para acessar o Amazon S3. Criar uma política de ciclo de vida do S3 para fazer a transição dos dados para o S3 Glacier Flexible Retrieval após 7 dias.
 
 **Resposta correta:**  
 **B.** Crie um Amazon S3 File Gateway para expandir o espaço de armazenamento. Configure uma política de ciclo de vida no S3 para mover os dados para o S3 Glacier Deep Archive após 7 dias.
@@ -151,7 +218,16 @@ Uma empresa opera um servidor de arquivos SMB em seu data center. Os arquivos s�
 ---
 
 ### Questão 10
-Uma empresa está construindo uma aplicação de ecommerce que envia informações de pedidos para uma API REST do Amazon API Gateway.
+Uma empresa está criando um aplicativo web de comércio eletrônico na AWS. O aplicativo envia informações sobre novos pedidos para uma API REST do Amazon API Gateway para processamento. A empresa deseja garantir que os pedidos sejam processados na ordem em que são recebidos.
+Qual solução atenderá a esses requisitos?
+
+A. Usar uma integração do API Gateway para publicar uma mensagem em um tópico do Amazon Simple Notification Service (Amazon SNS) quando o aplicativo receber um pedido. Inscrever uma função AWS Lambda no tópico para realizar o processamento.
+
+B. Usar uma integração do API Gateway para enviar uma mensagem para uma fila FIFO do Amazon Simple Queue Service (Amazon SQS) quando o aplicativo receber um pedido. Configurar a fila FIFO do SQS para invocar uma função AWS Lambda para processamento.
+
+C. Usar um autorizador do API Gateway para bloquear quaisquer solicitações enquanto o aplicativo processa um pedido.
+
+D. Usar uma integração do API Gateway para enviar uma mensagem para uma fila padrão do Amazon Simple Queue Service (Amazon SQS) quando o aplicativo receber um pedido. Configurar a fila padrão do SQS para invocar uma função AWS Lambda para processamento.
 
 **Resposta correta:**  
 **B.** Use uma integração com o API Gateway para enviar mensagens para uma fila FIFO do Amazon SQS ao receber pedidos.
@@ -168,7 +244,16 @@ Uma empresa está construindo uma aplicação de ecommerce que envia informaçõ
 ---
 
 ### Questão 11
-Uma empresa possui uma aplicação que roda em instâncias Amazon EC2 e usa um banco de dados Amazon Aurora.
+Uma empresa tem um aplicativo que é executado em instâncias Amazon EC2 e utiliza um banco de dados Amazon Aurora. As instâncias EC2 conectam-se ao banco de dados utilizando nomes de usuários e senhas armazenados localmente em um arquivo. A empresa deseja minimizar o esforço operacional relacionado ao gerenciamento de credenciais.
+O que um arquiteto de soluções deve fazer para alcançar esse objetivo?
+
+A. Usar o AWS Secrets Manager. Ativar a rotação automática.
+
+B. Usar o AWS Systems Manager Parameter Store. Ativar a rotação automática.
+
+C. Criar um bucket Amazon S3 para armazenar objetos criptografados com uma chave de criptografia do AWS Key Management Service (AWS KMS). Migrar o arquivo de credenciais para o bucket S3. Apontar o aplicativo para o bucket S3.
+
+D. Criar um volume criptografado Amazon Elastic Block Store (Amazon EBS) para cada instância EC2. Anexar o novo volume EBS a cada instância EC2. Migrar o arquivo de credenciais para o novo volume EBS. Apontar o aplicativo para o novo volume EBS.
 
 **Resposta correta:**  
 **A.** Use o AWS Secrets Manager. Ative a rotação automática.
@@ -185,7 +270,16 @@ Uma empresa possui uma aplicação que roda em instâncias Amazon EC2 e usa um b
 ---
 
 ### Questão 12
-Uma empresa global hospeda sua aplicação web em instâncias Amazon EC2 atrás de um Application Load Balancer (ALB).
+Uma empresa global hospeda seu aplicativo web em instâncias Amazon EC2 atrás de um Application Load Balancer (ALB). O aplicativo web possui dados estáticos e dinâmicos. A empresa armazena seus dados estáticos em um bucket do Amazon S3. A empresa deseja melhorar o desempenho e reduzir a latência para os dados estáticos e dinâmicos. A empresa utiliza seu próprio nome de domínio registrado no Amazon Route 53.
+O que um arquiteto de soluções deve fazer para atender a esses requisitos?
+
+A. Criar uma distribuição Amazon CloudFront que tenha o bucket S3 e o ALB como origens. Configurar o Route 53 para rotear o tráfego para a distribuição CloudFront.
+
+B. Criar uma distribuição Amazon CloudFront que tenha o ALB como origem. Criar um acelerador padrão do AWS Global Accelerator que tenha o bucket S3 como endpoint. Configurar o Route 53 para rotear o tráfego para a distribuição CloudFront.
+
+C. Criar uma distribuição Amazon CloudFront que tenha o bucket S3 como origem. Criar um acelerador padrão do AWS Global Accelerator que tenha o ALB e a distribuição CloudFront como endpoints. Criar um nome de domínio personalizado que aponte para o nome DNS do acelerador. Usar o nome de domínio personalizado como um endpoint para o aplicativo web.
+
+D. Criar uma distribuição Amazon CloudFront que tenha o ALB como origem. Criar um acelerador padrão do AWS Global Accelerator que tenha o bucket S3 como endpoint. Criar dois nomes de domínio. Apontar um nome de domínio para o nome DNS do CloudFront para conteúdo dinâmico. Apontar o outro nome de domínio para o nome DNS do acelerador para conteúdo estático. Usar os nomes de domínio como endpoints para o aplicativo web.
 
 **Resposta correta:**  
 **A.** Crie uma distribuição Amazon CloudFront com o bucket S3 e o ALB como origens. Configure o Route 53 para rotear o tráfego para a distribuição CloudFront.
@@ -202,7 +296,16 @@ Uma empresa global hospeda sua aplicação web em instâncias Amazon EC2 atrás 
 ---
 
 ### Questão 13
-Uma empresa realiza manutenção mensal em sua infraestrutura AWS. Durante essas atividades, as credenciais RDS devem ser rotacionadas.
+Uma empresa realiza manutenção mensal em sua infraestrutura AWS. Durante essas atividades de manutenção, a empresa precisa rodar as credenciais de seus bancos de dados Amazon RDS para MySQL em várias Regiões da AWS.
+Qual solução atenderá a esses requisitos com o MENOR esforço operacional?
+
+A. Armazenar as credenciais como segredos no AWS Secrets Manager. Usar a replicação de segredos multi-Região para as Regiões necessárias. Configurar o Secrets Manager para rodar os segredos em um cronograma.
+
+B. Armazenar as credenciais como segredos no AWS Systems Manager criando um parâmetro de string segura. Usar a replicação de segredos multi-Região para as Regiões necessárias. Configurar o Systems Manager para rodar os segredos em um cronograma.
+
+C. Armazenar as credenciais em um bucket Amazon S3 com criptografia do lado do servidor (SSE) ativada. Usar o Amazon EventBridge (Amazon CloudWatch Events) para invocar uma função AWS Lambda para rodar as credenciais.
+
+D. Criptografar as credenciais como segredos usando chaves gerenciadas pelo cliente multi-Região do AWS Key Management Service (AWS KMS). Armazenar os segredos em uma tabela global do Amazon DynamoDB. Usar uma função AWS Lambda para recuperar os segredos do DynamoDB e usar a API do RDS para rodar os segredos.
 
 **Resposta correta:**  
 **A.** Armazene as credenciais como segredos no AWS Secrets Manager. Use replicação multi-região e configure a rotação automática.
@@ -219,7 +322,17 @@ Uma empresa realiza manutenção mensal em sua infraestrutura AWS. Durante essas
 ---
 
 ### Questão 14
-Uma empresa opera uma aplicação de ecommerce em instâncias Amazon EC2 atrás de um ALB. O banco de dados é MySQL.
+Uma empresa executa um aplicativo de comércio eletrônico em instâncias Amazon EC2 atrás de um Application Load Balancer. As instâncias operam em um grupo de Auto Scaling do Amazon EC2 em várias Zonas de Disponibilidade. O grupo de Auto Scaling escala com base nas métricas de utilização de CPU. O aplicativo de comércio eletrônico armazena os dados de transação em um banco de dados MySQL 8.0 hospedado em uma instância EC2 grande.
+O desempenho do banco de dados degrada rapidamente à medida que a carga do aplicativo aumenta. O aplicativo lida com mais solicitações de leitura do que transações de gravação. A empresa deseja uma solução que escale automaticamente o banco de dados para atender à demanda de cargas de trabalho de leitura imprevisíveis enquanto mantém alta disponibilidade.
+Qual solução atenderá a esses requisitos?
+
+A. Usar o Amazon Redshift com um único nó para funcionalidades de líder e computação.
+
+B. Usar o Amazon RDS com uma implantação de Zona Única (Single-AZ). Configurar o Amazon RDS para adicionar instâncias de leitura em uma Zona de Disponibilidade diferente.
+
+C. Usar o Amazon Aurora com uma implantação Multi-AZ. Configurar o Aurora Auto Scaling com Réplicas Aurora.
+
+D. Usar o Amazon ElastiCache para Memcached com instâncias Spot do EC2.
 
 **Resposta correta:**  
 **C.** Use Amazon Aurora com uma implantação Multi-AZ. Configure Auto Scaling com réplicas Aurora.
@@ -236,7 +349,16 @@ Uma empresa opera uma aplicação de ecommerce em instâncias Amazon EC2 atrás 
 ---
 
 ### Questão 15
-Uma empresa recentemente migrou para a AWS e deseja inspecionar e filtrar o tráfego na VPC de produção.
+Uma empresa recentemente migrou para a AWS e deseja implementar uma solução para proteger o tráfego que entra e sai da VPC de produção. A empresa tinha um servidor de inspeção em seu data center on-premises que realizava operações específicas, como inspeção e filtragem de tráfego. A empresa deseja ter as mesmas funcionalidades na AWS.
+Qual solução atenderá a esses requisitos?
+
+A. Usar o Amazon GuardDuty para inspeção e filtragem de tráfego na VPC de produção.
+
+B. Usar o Traffic Mirroring para espelhar o tráfego da VPC de produção para inspeção e filtragem de tráfego.
+
+C. Usar o AWS Network Firewall para criar as regras necessárias para inspeção e filtragem de tráfego na VPC de produção.
+
+D. Usar o AWS Firewall Manager para criar as regras necessárias para inspeção e filtragem de tráfego na VPC de produção.
 
 **Resposta correta:**  
 **C.** Use o AWS Network Firewall para criar as regras necessárias para inspeção e filtragem de tráfego.
@@ -253,7 +375,16 @@ Uma empresa recentemente migrou para a AWS e deseja inspecionar e filtrar o trá
 ---
 
 ### Questão 16
-Uma empresa hospeda um data lake no AWS com dados no Amazon S3 e no RDS PostgreSQL.
+Uma empresa hospeda um data lake na AWS. O data lake consiste em dados no Amazon S3 e no Amazon RDS para PostgreSQL. A empresa precisa de uma solução de relatórios que forneça visualização de dados e inclua todas as fontes de dados no data lake. Somente a equipe de gestão da empresa deve ter acesso total a todas as visualizações. O restante da empresa deve ter apenas acesso limitado.
+Qual solução atenderá a esses requisitos?
+
+A. Criar uma análise no Amazon QuickSight. Conectar todas as fontes de dados e criar novos conjuntos de dados. Publicar dashboards para visualizar os dados. Compartilhar os dashboards com as funções (IAM roles) apropriadas.
+
+B. Criar uma análise no Amazon QuickSight. Conectar todas as fontes de dados e criar novos conjuntos de dados. Publicar dashboards para visualizar os dados. Compartilhar os dashboards com os usuários e grupos apropriados.
+
+C. Criar uma tabela e um crawler no AWS Glue para os dados no Amazon S3. Criar um trabalho de ETL no AWS Glue para produzir relatórios. Publicar os relatórios no Amazon S3. Usar políticas de bucket S3 para limitar o acesso aos relatórios.
+
+D. Criar uma tabela e um crawler no AWS Glue para os dados no Amazon S3. Usar o Amazon Athena Federated Query para acessar dados no Amazon RDS para PostgreSQL. Gerar relatórios usando o Amazon Athena. Publicar os relatórios no Amazon S3. Usar políticas de bucket S3 para limitar o acesso aos relatórios.
 
 **Resposta correta:**  
 **A.** Crie uma análise no Amazon QuickSight. Conecte todas as fontes de dados e compartilhe os dashboards com os papéis apropriados do IAM.
@@ -270,7 +401,16 @@ Uma empresa hospeda um data lake no AWS com dados no Amazon S3 e no RDS PostgreS
 ---
 
 ### Questão 17
-Uma empresa implementa uma nova aplicação que roda em duas instâncias Amazon EC2 e usa um bucket do Amazon S3.
+Uma empresa está implementando um novo aplicativo de negócios. O aplicativo é executado em duas instâncias Amazon EC2 e utiliza um bucket do Amazon S3 para armazenamento de documentos. Um arquiteto de soluções precisa garantir que as instâncias EC2 possam acessar o bucket S3.
+O que o arquiteto de soluções deve fazer para atender a esse requisito?
+
+A. Criar uma função IAM (IAM role) que concede acesso ao bucket S3. Anexar a função às instâncias EC2.
+
+B. Criar uma política IAM (IAM policy) que concede acesso ao bucket S3. Anexar a política às instâncias EC2.
+
+C. Criar um grupo IAM (IAM group) que concede acesso ao bucket S3. Anexar o grupo às instâncias EC2.
+
+D. Criar um usuário IAM (IAM user) que concede acesso ao bucket S3. Anexar a conta de usuário às instâncias EC2.
 
 **Resposta correta:**  
 **A.** Crie uma role IAM que conceda acesso ao bucket S3 e anexe às instâncias EC2.
@@ -287,7 +427,19 @@ Uma empresa implementa uma nova aplicação que roda em duas instâncias Amazon 
 ---
 
 ### Questão 18
-Uma equipe de desenvolvimento está projetando um microsserviço para converter imagens grandes em versões compactadas.
+A equipe de desenvolvimento de aplicativos está projetando um microsserviço que converterá imagens grandes em imagens menores e comprimidas. Quando um usuário carrega uma imagem por meio da interface web, o microsserviço deve armazenar a imagem em um bucket do Amazon S3, processá-la e comprimi-la com uma função AWS Lambda e armazenar a imagem comprimida em um bucket S3 diferente.
+Um arquiteto de soluções precisa projetar uma solução que use componentes duráveis e sem estado para processar automaticamente as imagens.
+Quais combinações de ações atenderão a esses requisitos? (Escolha duas.)
+
+A. Criar uma fila do Amazon Simple Queue Service (Amazon SQS). Configurar o bucket S3 para enviar uma notificação para a fila SQS quando uma imagem for carregada no bucket S3.
+
+B. Configurar a função Lambda para usar a fila do Amazon Simple Queue Service (Amazon SQS) como a origem de invocação. Quando a mensagem SQS for processada com sucesso, excluir a mensagem da fila.
+
+C. Configurar a função Lambda para monitorar o bucket S3 em busca de novos carregamentos. Quando uma imagem carregada for detectada, escrever o nome do arquivo em um arquivo de texto na memória e usar o arquivo de texto para acompanhar as imagens processadas.
+
+D. Iniciar uma instância Amazon EC2 para monitorar uma fila do Amazon Simple Queue Service (Amazon SQS). Quando itens forem adicionados à fila, registrar o nome do arquivo em um arquivo de texto na instância EC2 e invocar a função Lambda.
+
+E. Configurar um evento do Amazon EventBridge (Amazon CloudWatch Events) para monitorar o bucket S3. Quando uma imagem for carregada, enviar um alerta para um tópico do Amazon Simple Notification Service (Amazon SNS) com o endereço de email do proprietário do aplicativo para processamento adicional.
 
 **Resposta correta:**  
 **A e B.** Crie uma fila Amazon SQS. Configure a função Lambda para usar a fila como fonte de invocação.
@@ -304,7 +456,17 @@ Uma equipe de desenvolvimento está projetando um microsserviço para converter 
 ---
 
 ### Questão 19
-Uma empresa possui uma aplicação web de três camadas implantada no AWS com um appliance de firewall virtual.
+Uma empresa possui um aplicativo web de três camadas implantado na AWS. Os servidores web estão implantados em uma sub-rede pública em uma VPC. Os servidores de aplicação e os servidores de banco de dados estão em sub-redes privadas na mesma VPC. A empresa implantou um appliance de firewall virtual de terceiros do AWS Marketplace em uma VPC de inspeção. O appliance está configurado com uma interface IP que pode aceitar pacotes IP.
+Um arquiteto de soluções precisa integrar o aplicativo web ao appliance para inspecionar todo o tráfego do aplicativo antes que ele chegue ao servidor web.
+Qual solução atenderá a esses requisitos com o MENOR esforço operacional?
+
+A. Criar um Network Load Balancer na sub-rede pública da VPC do aplicativo para rotear o tráfego para o appliance para inspeção de pacotes.
+
+B. Criar um Application Load Balancer na sub-rede pública da VPC do aplicativo para rotear o tráfego para o appliance para inspeção de pacotes.
+
+C. Implantar um transit gateway na VPC de inspeção. Configurar tabelas de rotas para rotear os pacotes recebidos por meio do transit gateway.
+
+D. Implantar um Gateway Load Balancer na VPC de inspeção. Criar um endpoint do Gateway Load Balancer para receber os pacotes recebidos e encaminhá-los para o appliance.
 
 **Resposta correta:**  
 **D.** Implemente um Gateway Load Balancer na VPC de inspeção para rotear os pacotes ao appliance.
@@ -320,7 +482,17 @@ Uma empresa possui uma aplicação web de três camadas implantada no AWS com um
 ---
 
 ### Questão 20
-Uma empresa deseja clonar grandes volumes de dados de produção para um ambiente de teste na mesma região AWS.
+Uma empresa deseja melhorar sua capacidade de clonar grandes quantidades de dados de produção em um ambiente de teste na mesma região da AWS. Os dados estão armazenados em instâncias Amazon EC2 em volumes do Amazon Elastic Block Store (Amazon EBS). As modificações nos dados clonados não devem afetar o ambiente de produção. O software que acessa esses dados requer desempenho de I/O consistentemente alto.
+Um arquiteto de soluções precisa minimizar o tempo necessário para clonar os dados de produção no ambiente de teste.
+Qual solução atenderá a esses requisitos?
+
+A. Tirar snapshots EBS dos volumes EBS de produção. Restaurar os snapshots em volumes de armazenamento de instâncias EC2 no ambiente de teste.
+
+B. Configurar os volumes EBS de produção para usar o recurso EBS Multi-Attach. Tirar snapshots EBS dos volumes EBS de produção. Anexar os volumes EBS de produção às instâncias EC2 no ambiente de teste.
+
+C. Tirar snapshots EBS dos volumes EBS de produção. Criar e inicializar novos volumes EBS. Anexar os novos volumes EBS às instâncias EC2 no ambiente de teste antes de restaurar os volumes dos snapshots EBS de produção.
+
+D. Tirar snapshots EBS dos volumes EBS de produção. Ativar o recurso de restauração rápida de snapshots EBS (EBS fast snapshot restore) nos snapshots EBS. Restaurar os snapshots em novos volumes EBS. Anexar os novos volumes EBS às instâncias EC2 no ambiente de teste.
 
 **Resposta correta:**  
 **D.** Ative o recurso de restauração rápida de snapshots no EBS e restaure os snapshots em novos volumes.
@@ -336,7 +508,16 @@ Uma empresa deseja clonar grandes volumes de dados de produção para um ambient
 ---
 
 ### Questão 21
-Uma empresa quer lançar um site com uma promoção por dia na AWS, lidando com milhões de requisições por hora.
+Uma empresa de comércio eletrônico deseja lançar um site "uma oferta por dia" na AWS. Cada dia apresentará exatamente um produto em oferta por um período de 24 horas. A empresa deseja ser capaz de lidar com milhões de solicitações por hora com latência em milissegundos durante os horários de pico.
+Qual solução atenderá a esses requisitos com o MENOR esforço operacional?
+
+A. Usar o Amazon S3 para hospedar todo o site em diferentes buckets S3. Adicionar distribuições do Amazon CloudFront. Configurar os buckets S3 como origens para as distribuições. Armazenar os dados dos pedidos no Amazon S3.
+
+B. Implantar todo o site em instâncias Amazon EC2 que operam em grupos de Auto Scaling em várias Zonas de Disponibilidade. Adicionar um Application Load Balancer (ALB) para distribuir o tráfego do site. Adicionar outro ALB para as APIs de backend. Armazenar os dados no Amazon RDS for MySQL.
+
+C. Migrar todo o aplicativo para execução em contêineres. Hospedar os contêineres no Amazon Elastic Kubernetes Service (Amazon EKS). Usar o Kubernetes Cluster Autoscaler para aumentar e diminuir o número de pods para processar picos de tráfego. Armazenar os dados no Amazon RDS for MySQL.
+
+D. Usar um bucket do Amazon S3 para hospedar o conteúdo estático do site. Implantar uma distribuição do Amazon CloudFront. Configurar o bucket S3 como a origem. Usar o Amazon API Gateway e funções AWS Lambda para as APIs de backend. Armazenar os dados no Amazon DynamoDB.
 
 **Resposta correta:**  
 **D.** Use um bucket Amazon S3 para hospedar o conteúdo estático, Amazon CloudFront para distribuição e API Gateway com AWS Lambda para backend.
@@ -353,7 +534,16 @@ Uma empresa quer lançar um site com uma promoção por dia na AWS, lidando com 
 ---
 
 ### Questão 22
-Um arquiteto de soluções está projetando a arquitetura de armazenamento para uma aplicação de mídia digital no Amazon S3.
+Um arquiteto de soluções está usando o Amazon S3 para projetar a arquitetura de armazenamento de um novo aplicativo de mídia digital. Os arquivos de mídia devem ser resilientes à perda de uma Zona de Disponibilidade. Alguns arquivos são acessados com frequência, enquanto outros são raramente acessados em um padrão imprevisível. O arquiteto de soluções deve minimizar os custos de armazenamento e recuperação dos arquivos de mídia.
+Qual opção de armazenamento atende a esses requisitos?
+
+A. S3 Standard
+
+B. S3 Intelligent-Tiering
+
+C. S3 Standard-Infrequent Access (S3 Standard-IA)
+
+D. S3 One Zone-Infrequent Access (S3 One Zone-IA)
 
 **Resposta correta:**  
 **B.** S3 Intelligent-Tiering.
@@ -370,7 +560,16 @@ Um arquiteto de soluções está projetando a arquitetura de armazenamento para 
 ---
 
 ### Questão 23
-Uma empresa armazena backups no S3 Standard e precisa de uma solução econômica para dados raramente acessados.
+Uma empresa está armazenando arquivos de backup usando o armazenamento Amazon S3 Standard. Os arquivos são acessados frequentemente por 1 mês, mas não são acessados após esse período. A empresa deve manter os arquivos indefinidamente.
+Qual solução de armazenamento atenderá a esses requisitos de forma mais econômica?
+
+A. Configurar o S3 Intelligent-Tiering para migrar automaticamente os objetos.
+
+B. Criar uma configuração de ciclo de vida (Lifecycle) no S3 para fazer a transição dos objetos do S3 Standard para o S3 Glacier Deep Archive após 1 mês.
+
+C. Criar uma configuração de ciclo de vida (Lifecycle) no S3 para fazer a transição dos objetos do S3 Standard para o S3 Standard-Infrequent Access (S3 Standard-IA) após 1 mês.
+
+D. Criar uma configuração de ciclo de vida (Lifecycle) no S3 para fazer a transição dos objetos do S3 Standard para o S3 One Zone-Infrequent Access (S3 One Zone-IA) após 1 mês.
 
 **Resposta correta:**  
 **B.** Configure uma política de ciclo de vida no S3 para mover objetos para o S3 Glacier Deep Archive após 1 mês.
@@ -386,7 +585,16 @@ Uma empresa armazena backups no S3 Standard e precisa de uma solução econômic
 ---
 
 ### Questão 24
-Uma empresa observa um aumento nos custos do Amazon EC2 devido a escalonamento vertical indesejado.
+Uma empresa observou um aumento nos custos do Amazon EC2 em sua fatura mais recente. A equipe de faturamento notou escalonamento vertical indesejado nos tipos de instâncias para algumas instâncias EC2. Um arquiteto de soluções precisa criar um gráfico comparando os custos do EC2 dos últimos 2 meses e realizar uma análise detalhada para identificar a causa raiz do escalonamento vertical.
+Como o arquiteto de soluções deve gerar essas informações com o MENOR esforço operacional?
+
+A. Usar o AWS Budgets para criar um relatório de orçamento e comparar os custos do EC2 com base nos tipos de instância.
+
+B. Usar o recurso de filtragem granular do Cost Explorer para realizar uma análise detalhada dos custos do EC2 com base nos tipos de instância.
+
+C. Usar os gráficos do painel AWS Billing and Cost Management para comparar os custos do EC2 com base nos tipos de instância nos últimos 2 meses.
+
+D. Usar o AWS Cost and Usage Reports para criar um relatório e enviá-lo para um bucket do Amazon S3. Usar o Amazon QuickSight com o S3 como origem para gerar um gráfico interativo com base nos tipos de instância.
 
 **Resposta correta:**  
 **B.** Use o recurso de filtragem granular do Cost Explorer para analisar os custos do EC2 com base nos tipos de instância.
@@ -403,7 +611,16 @@ Uma empresa observa um aumento nos custos do Amazon EC2 devido a escalonamento v
 ---
 
 ### Questão 25
-Uma empresa está projetando uma aplicação que usa AWS Lambda para processar dados em alta escala e armazená-los no Amazon Aurora.
+Uma empresa está projetando um aplicativo que usa uma função AWS Lambda para receber informações por meio do Amazon API Gateway e armazená-las em um banco de dados Amazon Aurora PostgreSQL. Durante a etapa de prova de conceito, a empresa precisou aumentar significativamente as cotas do Lambda para lidar com os altos volumes de dados que precisam ser carregados no banco de dados. Um arquiteto de soluções deve recomendar um novo design para melhorar a escalabilidade e minimizar o esforço de configuração.
+Qual solução atenderá a esses requisitos?
+
+A. Refatorar o código da função Lambda para código Apache Tomcat que será executado em instâncias Amazon EC2. Conectar-se ao banco de dados usando drivers nativos Java Database Connectivity (JDBC).
+
+B. Alterar a plataforma de Aurora para Amazon DynamoDB. Provisionar um cluster do DynamoDB Accelerator (DAX). Usar o cliente SDK do DAX para direcionar as chamadas de API existentes do DynamoDB para o cluster DAX.
+
+C. Configurar duas funções Lambda. Configurar uma função para receber as informações e outra para carregar as informações no banco de dados. Integrar as funções Lambda usando o Amazon Simple Notification Service (Amazon SNS).
+
+D. Configurar duas funções Lambda. Configurar uma função para receber as informações e outra para carregar as informações no banco de dados. Integrar as funções Lambda usando uma fila do Amazon Simple Queue Service (Amazon SQS).
 
 **Resposta correta:**  
 **D.** Configure duas funções Lambda: uma para receber dados e outra para carregá-los no banco de dados. Integre-as com uma fila Amazon SQS.
@@ -420,7 +637,16 @@ Uma empresa está projetando uma aplicação que usa AWS Lambda para processar d
 ---
 
 ### Questão 26
-Uma empresa precisa revisar sua implantação na AWS para evitar alterações não autorizadas em seus buckets do S3.
+Uma empresa precisa revisar sua implantação na AWS para garantir que seus buckets do Amazon S3 não tenham alterações de configuração não autorizadas.
+O que um arquiteto de soluções deve fazer para alcançar esse objetivo?
+
+A. Ativar o AWS Config com as regras apropriadas.
+
+B. Ativar o AWS Trusted Advisor com as verificações apropriadas.
+
+C. Ativar o Amazon Inspector com o modelo de avaliação apropriado.
+
+D. Ativar o Amazon S3 Server Access Logging. Configurar o Amazon EventBridge (Amazon CloudWatch Events).
 
 **Resposta correta:**  
 **A.** Ative o AWS Config com as regras apropriadas.
@@ -437,7 +663,16 @@ Uma empresa precisa revisar sua implantação na AWS para evitar alterações n�
 ---
 
 ### Questão 27
-Uma empresa quer disponibilizar um dashboard do CloudWatch para um gerente de produto sem conta AWS.
+Uma empresa está lançando um novo aplicativo e exibirá métricas do aplicativo em um painel do Amazon CloudWatch. O gerente de produto da empresa precisa acessar esse painel periodicamente. O gerente de produto não possui uma conta da AWS. Um arquiteto de soluções deve fornecer acesso ao painel seguindo o princípio de privilégio mínimo.
+Qual solução atenderá a esses requisitos?
+
+A. Compartilhar o painel a partir do console do CloudWatch. Inserir o endereço de e-mail do gerente de produto e concluir as etapas de compartilhamento. Fornecer um link compartilhável para o painel ao gerente de produto.
+
+B. Criar um usuário IAM especificamente para o gerente de produto. Anexar a política gerenciada AWS CloudWatchReadOnlyAccess ao usuário. Compartilhar as novas credenciais de login com o gerente de produto. Compartilhar a URL do navegador do painel correto com o gerente de produto.
+
+C. Criar um usuário IAM para os funcionários da empresa. Anexar a política gerenciada AWS ViewOnlyAccess ao usuário IAM. Compartilhar as novas credenciais de login com o gerente de produto. Pedir ao gerente de produto para navegar até o console do CloudWatch e localizar o painel pelo nome na seção Dashboards.
+
+D. Implantar um servidor bastion em uma sub-rede pública. Quando o gerente de produto precisar acessar o painel, iniciar o servidor e compartilhar as credenciais RDP. No servidor bastion, garantir que o navegador esteja configurado para abrir a URL do painel com credenciais AWS em cache que tenham permissões apropriadas para visualizar o painel.
 
 **Resposta correta:**  
 **A.** Compartilhe o dashboard a partir do console do CloudWatch e forneça um link compartilhável.
@@ -454,7 +689,16 @@ Uma empresa quer disponibilizar um dashboard do CloudWatch para um gerente de pr
 ---
 
 ### Questão 28
-Uma empresa está migrando aplicativos para AWS e precisa de SSO entre contas usando Active Directory local.
+Uma empresa está migrando aplicativos para a AWS. Os aplicativos estão implantados em diferentes contas. A empresa gerencia as contas centralmente usando o AWS Organizations. A equipe de segurança da empresa precisa de uma solução de Single Sign-On (SSO) para todas as contas da empresa. A empresa deve continuar gerenciando os usuários e grupos no Microsoft Active Directory autogerenciado local.
+Qual solução atenderá a esses requisitos?
+
+A. Ativar o AWS Single Sign-On (AWS SSO) no console do AWS SSO. Criar uma confiança unidirecional de floresta (forest trust) ou confiança de domínio (domain trust) para conectar o Microsoft Active Directory autogerenciado da empresa ao AWS SSO usando o AWS Directory Service para Microsoft Active Directory.
+
+B. Ativar o AWS Single Sign-On (AWS SSO) no console do AWS SSO. Criar uma confiança bidirecional de floresta (forest trust) para conectar o Microsoft Active Directory autogerenciado da empresa ao AWS SSO usando o AWS Directory Service para Microsoft Active Directory.
+
+C. Usar o AWS Directory Service. Criar uma relação de confiança bidirecional com o Microsoft Active Directory autogerenciado da empresa.
+
+D. Implantar um provedor de identidade (IdP) local. Ativar o AWS Single Sign-On (AWS SSO) no console do AWS SSO.
 
 **Resposta correta:**  
 **A.** Ative o AWS SSO e conecte-se ao Active Directory local usando AWS Directory Service.
@@ -471,7 +715,17 @@ Uma empresa está migrando aplicativos para AWS e precisa de SSO entre contas us
 ---
 
 ### Questão 29
-Uma empresa oferece serviços VoIP usando UDP e precisa de roteamento baseado em menor latência.
+Uma empresa fornece um serviço de Voz sobre IP (VoIP) que usa conexões UDP. O serviço consiste em instâncias Amazon EC2 que operam em um grupo de Auto Scaling. A empresa tem implantações em várias regiões da AWS.
+A empresa precisa rotear os usuários para a região com a menor latência e também requer failover automatizado entre as regiões.
+Qual solução atenderá a esses requisitos?
+
+A. Implantar um Network Load Balancer (NLB) e um grupo de destino associado. Associar o grupo de destino ao grupo de Auto Scaling. Usar o NLB como um endpoint do AWS Global Accelerator em cada região.
+
+B. Implantar um Application Load Balancer (ALB) e um grupo de destino associado. Associar o grupo de destino ao grupo de Auto Scaling. Usar o ALB como um endpoint do AWS Global Accelerator em cada região.
+
+C. Implantar um Network Load Balancer (NLB) e um grupo de destino associado. Associar o grupo de destino ao grupo de Auto Scaling. Criar um registro de latência do Amazon Route 53 que aponta para aliases de cada NLB. Criar uma distribuição do Amazon CloudFront que usa o registro de latência como uma origem.
+
+D. Implantar um Application Load Balancer (ALB) e um grupo de destino associado. Associar o grupo de destino ao grupo de Auto Scaling. Criar um registro ponderado do Amazon Route 53 que aponta para aliases de cada ALB. Implantar uma distribuição do Amazon CloudFront que usa o registro ponderado como uma origem.
 
 **Resposta correta:**  
 **A.** Use um Network Load Balancer (NLB) associado ao AWS Global Accelerator em cada região.
@@ -488,7 +742,16 @@ Uma empresa oferece serviços VoIP usando UDP e precisa de roteamento baseado em
 ---
 
 ### Questão 30
-Uma equipe executa testes intensivos mensais em um banco RDS MySQL e deseja reduzir custos.
+A equipe de desenvolvimento executa testes mensais que consomem muitos recursos em sua instância de banco de dados Amazon RDS for MySQL de uso geral, com o Performance Insights ativado. Os testes duram 48 horas por mês e são o único processo que utiliza o banco de dados. A equipe deseja reduzir o custo de execução dos testes sem reduzir os atributos de computação e memória da instância do banco de dados.
+Qual solução atende a esses requisitos de forma mais econômica?
+
+A. Parar a instância do banco de dados quando os testes forem concluídos. Reiniciar a instância do banco de dados quando necessário.
+
+B. Usar uma política de Auto Scaling com a instância do banco de dados para escalá-la automaticamente quando os testes forem concluídos.
+
+C. Criar um snapshot quando os testes forem concluídos. Encerrar a instância do banco de dados e restaurar o snapshot quando necessário.
+
+D. Modificar a instância do banco de dados para uma instância de baixa capacidade quando os testes forem concluídos. Modificar novamente a instância do banco de dados quando necessário.
 
 **Resposta correta:**  
 **C.** Crie um snapshot após os testes e restaure o banco de dados somente quando necessário.
@@ -505,7 +768,16 @@ Uma equipe executa testes intensivos mensais em um banco RDS MySQL e deseja redu
 ---
 
 ### Questão 31
-Uma empresa deseja garantir que todas as instâncias Amazon EC2, Amazon RDS e clusters Amazon Redshift sejam configurados com tags.
+Uma empresa que hospeda seu aplicativo web na AWS deseja garantir que todas as instâncias Amazon EC2, instâncias Amazon RDS e clusters Amazon Redshift sejam configurados com tags. A empresa deseja minimizar o esforço para configurar e operar essa verificação.
+O que um arquiteto de soluções deve fazer para alcançar isso?
+
+A. Usar regras do AWS Config para definir e detectar recursos que não estão devidamente etiquetados.
+
+B. Usar o Cost Explorer para exibir recursos que não estão devidamente etiquetados. Etiquetar esses recursos manualmente.
+
+C. Escrever chamadas de API para verificar todos os recursos quanto à alocação adequada de tags. Executar periodicamente o código em uma instância EC2.
+
+D. Escrever chamadas de API para verificar todos os recursos quanto à alocação adequada de tags. Agendar uma função AWS Lambda por meio do Amazon CloudWatch para executar periodicamente o código.
 
 **Resposta correta:**  
 **A.** Use regras do AWS Config para definir e detectar recursos que não estão devidamente etiquetados.
@@ -521,7 +793,16 @@ Uma empresa deseja garantir que todas as instâncias Amazon EC2, Amazon RDS e cl
 ---
 
 ### Questão 32
-Uma equipe de desenvolvimento precisa hospedar um site acessado por outras equipes, com HTML, CSS, JavaScript e imagens.
+A equipe de desenvolvimento precisa hospedar um site que será acessado por outras equipes. O conteúdo do site consiste em HTML, CSS, JavaScript no lado do cliente e imagens.
+Qual método é o mais econômico para hospedar o site?
+
+A. Containerizar o site e hospedá-lo no AWS Fargate.
+
+B. Criar um bucket do Amazon S3 e hospedar o site nele.
+
+C. Implantar um servidor web em uma instância Amazon EC2 para hospedar o site.
+
+D. Configurar um Application Load Balancer com um destino AWS Lambda que use o framework Express.js.
 
 **Resposta correta:**  
 **B.** Crie um bucket Amazon S3 e hospede o site nele.
@@ -538,7 +819,16 @@ Uma equipe de desenvolvimento precisa hospedar um site acessado por outras equip
 ---
 
 ### Questão 33
-Uma empresa opera um marketplace online e precisa processar milhões de transações financeiras quase em tempo real.
+Uma empresa executa um aplicativo web de marketplace online na AWS. O aplicativo atende centenas de milhares de usuários durante os horários de pico. A empresa precisa de uma solução escalável e quase em tempo real para compartilhar os detalhes de milhões de transações financeiras com vários outros aplicativos internos. As transações também precisam ser processadas para remover dados sensíveis antes de serem armazenadas em um banco de dados de documentos para recuperação de baixa latência.
+O que um arquiteto de soluções deve recomendar para atender a esses requisitos?
+
+A. Armazenar os dados das transações no Amazon DynamoDB. Configurar uma regra no DynamoDB para remover os dados sensíveis de cada transação ao gravar. Usar o DynamoDB Streams para compartilhar os dados das transações com outros aplicativos.
+
+B. Transmitir os dados das transações para o Amazon Kinesis Data Firehose para armazenar os dados no Amazon DynamoDB e no Amazon S3. Usar a integração do AWS Lambda com o Kinesis Data Firehose para remover dados sensíveis. Outros aplicativos podem consumir os dados armazenados no Amazon S3.
+
+C. Transmitir os dados das transações para o Amazon Kinesis Data Streams. Usar a integração do AWS Lambda para remover os dados sensíveis de cada transação e, em seguida, armazenar os dados das transações no Amazon DynamoDB. Outros aplicativos podem consumir os dados das transações diretamente do fluxo de dados do Kinesis.
+
+D. Armazenar os dados das transações em lotes no Amazon S3 como arquivos. Usar o AWS Lambda para processar cada arquivo e remover os dados sensíveis antes de atualizar os arquivos no Amazon S3. A função Lambda então armazena os dados no Amazon DynamoDB. Outros aplicativos podem consumir os arquivos de transações armazenados no Amazon S3.
 
 **Resposta correta:**  
 **C.** Transmita os dados das transações para o Amazon Kinesis Data Streams e use AWS Lambda para remover dados sensíveis.
@@ -554,7 +844,16 @@ Uma empresa opera um marketplace online e precisa processar milhões de transaç
 ---
 
 ### Questão 34
-Uma empresa hospeda aplicações em várias camadas na AWS e precisa rastrear mudanças de configuração e histórico de chamadas de API.
+Uma empresa hospeda seus aplicativos de múltiplas camadas na AWS. Por motivos de conformidade, governança, auditoria e segurança, a empresa deve rastrear alterações de configuração em seus recursos AWS e registrar um histórico de chamadas de API feitas a esses recursos.
+O que um arquiteto de soluções deve fazer para atender a esses requisitos?
+
+A. Usar o AWS CloudTrail para rastrear alterações de configuração e o AWS Config para registrar chamadas de API.
+
+B. Usar o AWS Config para rastrear alterações de configuração e o AWS CloudTrail para registrar chamadas de API.
+
+C. Usar o AWS Config para rastrear alterações de configuração e o Amazon CloudWatch para registrar chamadas de API.
+
+D. Usar o AWS CloudTrail para rastrear alterações de configuração e o Amazon CloudWatch para registrar chamadas de API.
 
 **Resposta correta:**  
 **B.** Use AWS Config para rastrear mudanças de configuração e AWS CloudTrail para registrar chamadas de API.
@@ -570,7 +869,16 @@ Uma empresa hospeda aplicações em várias camadas na AWS e precisa rastrear mu
 ---
 
 ### Questão 35
-Uma empresa está lançando uma aplicação pública na AWS e precisa se proteger contra ataques DDoS em grande escala.
+Uma empresa está se preparando para lançar um aplicativo web voltado para o público na AWS Cloud. A arquitetura consiste em instâncias Amazon EC2 dentro de uma VPC atrás de um Elastic Load Balancer (ELB). Um serviço de terceiros é usado para o DNS. O arquiteto de soluções da empresa deve recomendar uma solução para detectar e proteger contra ataques DDoS em larga escala.
+Qual solução atende a esses requisitos?
+
+A. Ativar o Amazon GuardDuty na conta.
+
+B. Ativar o Amazon Inspector nas instâncias EC2.
+
+C. Ativar o AWS Shield e atribuir o Amazon Route 53 a ele.
+
+D. Ativar o AWS Shield Advanced e atribuir o ELB a ele.
 
 **Resposta correta:**  
 **D.** Ative o AWS Shield Advanced e associe-o ao ELB.
@@ -586,7 +894,16 @@ Uma empresa está lançando uma aplicação pública na AWS e precisa se protege
 ---
 
 ### Questão 36
-Uma empresa precisa armazenar dados criptografados em buckets S3 em duas regiões, usando a mesma chave KMS.
+Uma empresa está desenvolvendo um aplicativo na AWS Cloud. O aplicativo armazenará dados em buckets do Amazon S3 em duas regiões da AWS. A empresa deve usar uma chave gerenciada pelo cliente do AWS Key Management Service (AWS KMS) para criptografar todos os dados armazenados nos buckets do S3. Os dados em ambos os buckets do S3 devem ser criptografados e descriptografados com a mesma chave KMS. Os dados e a chave devem estar armazenados em cada uma das duas regiões.
+Qual solução atenderá a esses requisitos com o menor esforço operacional?
+
+A. Criar um bucket S3 em cada região. Configurar os buckets S3 para usar criptografia do lado do servidor com chaves de criptografia gerenciadas pelo Amazon S3 (SSE-S3). Configurar a replicação entre os buckets S3.
+
+B. Criar uma chave KMS gerenciada pelo cliente e multi-regional. Criar um bucket S3 em cada região. Configurar a replicação entre os buckets S3. Configurar o aplicativo para usar a chave KMS com criptografia do lado do cliente.
+
+C. Criar uma chave KMS gerenciada pelo cliente e um bucket S3 em cada região. Configurar os buckets S3 para usar criptografia do lado do servidor com chaves de criptografia gerenciadas pelo Amazon S3 (SSE-S3). Configurar a replicação entre os buckets S3.
+
+D. Criar uma chave KMS gerenciada pelo cliente e um bucket S3 em cada região. Configurar os buckets S3 para usar criptografia do lado do servidor com chaves KMS (SSE-KMS). Configurar a replicação entre os buckets S3.
 
 **Resposta correta:**  
 **B.** Crie uma chave KMS multi-região gerenciada. Configure replicação entre os buckets S3.
@@ -602,7 +919,16 @@ Uma empresa precisa armazenar dados criptografados em buckets S3 em duas regiõe
 ---
 
 ### Questão 37
-Uma empresa precisa acessar e administrar instâncias EC2 de forma remota e segura, seguindo o AWS Well-Architected Framework.
+Uma empresa lançou recentemente uma variedade de novas cargas de trabalho em instâncias Amazon EC2 em sua conta AWS. A empresa precisa criar uma estratégia para acessar e administrar as instâncias remotamente e de forma segura. A solução deve implementar um processo repetível que funcione com serviços nativos da AWS e siga o AWS Well-Architected Framework.
+Qual solução atenderá a esses requisitos com o menor esforço operacional?
+
+A. Usar o console serial do EC2 para acessar diretamente a interface de terminal de cada instância para administração.
+
+B. Anexar a função IAM apropriada a cada instância existente e nova. Usar o AWS Systems Manager Session Manager para estabelecer uma sessão SSH remota.
+
+C. Criar um par de chaves SSH administrativas. Carregar a chave pública em cada instância EC2. Implantar um host bastion em uma sub-rede pública para fornecer um túnel para a administração de cada instância.
+
+D. Estabelecer uma conexão VPN Site-to-Site da AWS. Instruir os administradores a usarem suas máquinas locais on-premises para se conectarem diretamente às instâncias usando chaves SSH por meio do túnel VPN.
 
 **Resposta correta:**  
 **B.** Anexe a role IAM apropriada às instâncias e use o AWS Systems Manager Session Manager.
@@ -619,24 +945,38 @@ Uma empresa precisa acessar e administrar instâncias EC2 de forma remota e segu
 ---
 
 ### Questão 38
-Uma empresa hospeda um site estático no S3 e deseja reduzir a latência global para os usuários.
+Uma empresa lançou recentemente uma variedade de novas cargas de trabalho em instâncias Amazon EC2 em sua conta AWS. A empresa precisa criar uma estratégia para acessar e administrar as instâncias remotamente e de forma segura. A solução deve implementar um processo repetível que funcione com serviços nativos da AWS e siga o AWS Well-Architected Framework.
+Qual solução atenderá a esses requisitos com o **menor esforço operacional**?
+
+**A.** Usar o console serial do EC2 para acessar diretamente a interface de terminal de cada instância para administração.  
+
+**B.** Anexar a função IAM apropriada a cada instância existente e nova. Usar o AWS Systems Manager Session Manager para estabelecer uma sessão SSH remota.  
+
+**C.** Criar um par de chaves SSH administrativas. Carregar a chave pública em cada instância EC2. Implantar um host bastion em uma sub-rede pública para fornecer um túnel para a administração de cada instância.  
+
+**D.** Estabelecer uma conexão VPN Site-to-Site da AWS. Instruir os administradores a usarem suas máquinas locais on-premises para se conectarem diretamente às instâncias usando chaves SSH por meio do túnel VPN.  
 
 **Resposta correta:**  
-**C.** Adicione uma distribuição do Amazon CloudFront em frente ao bucket S3. Edite as entradas do Route 53 para apontar para o CloudFront.
+**B.** Anexar a função IAM apropriada a cada instância existente e nova. Usar o AWS Systems Manager Session Manager para estabelecer uma sessão SSH remota.
 
 **Justificativa:**  
 - **Por que essa opção?**  
-  O CloudFront reduz a latência distribuindo o conteúdo estático em seus pontos de presença global.  
-
-- **Por que as outras opções não são adequadas?**  
-  - **A:** Replicação S3 não reduz latência diretamente para acesso global.  
-  - **B:** Global Accelerator não é necessário para sites estáticos no S3.  
-  - **D:** Transfer Acceleration melhora uploads, não acessos globais.  
+  Configuração simples e suporte a acessos seguros em escala. 
 
 ---
 
 ### Questão 39
-Uma empresa armazena dados em um banco RDS MySQL, enfrentando problemas de performance para inserções.
+Uma empresa mantém um repositório pesquisável de itens em seu site. Os dados são armazenados em uma tabela de banco de dados Amazon RDS for MySQL que contém mais de 10 milhões de linhas. O banco de dados possui 2 TB de armazenamento SSD de propósito geral (General Purpose SSD). Há milhões de atualizações nesses dados todos os dias por meio do site da empresa.
+A empresa percebeu que algumas operações de inserção estão levando 10 segundos ou mais. Foi determinado que o desempenho do armazenamento do banco de dados é o problema.
+Qual solução resolve esse problema de desempenho?
+
+**A.** Alterar o tipo de armazenamento para Provisioned IOPS SSD.  
+
+**B.** Alterar a instância de banco de dados para uma classe de instância otimizada para memória.  
+
+**C.** Alterar a instância de banco de dados para uma classe de instância de desempenho burstável.  
+
+**D.** Habilitar réplicas de leitura Multi-AZ RDS com replicação assíncrona nativa do MySQL.  
 
 **Resposta correta:**  
 **A.** Altere o tipo de armazenamento para Provisioned IOPS SSD.
@@ -652,7 +992,17 @@ Uma empresa armazena dados em um banco RDS MySQL, enfrentando problemas de perfo
 ---
 
 ### Questão 40
-Uma empresa precisa ingerir e armazenar 1 TB diário de alertas de status, mantendo 14 dias disponíveis para análise.
+Uma empresa possui milhares de dispositivos de borda que, juntos, geram 1 TB de alertas de status por dia. Cada alerta tem aproximadamente 2 KB de tamanho. Um arquiteto de soluções precisa implementar uma solução para ingerir e armazenar os alertas para análise futura.
+A empresa deseja uma solução altamente disponível. No entanto, a empresa precisa minimizar os custos e não quer gerenciar infraestrutura adicional. Além disso, a empresa quer manter 14 dias de dados disponíveis para análise imediata e arquivar dados mais antigos que 14 dias.
+Qual é a solução mais eficiente operacionalmente que atende a esses requisitos?
+
+A. Criar um stream de entrega do Amazon Kinesis Data Firehose para ingerir os alertas. Configurar o stream do Kinesis Data Firehose para entregar os alertas a um bucket do Amazon S3. Configurar uma política de ciclo de vida (S3 Lifecycle) para transferir os dados para o Amazon S3 Glacier após 14 dias.
+
+B. Lançar instâncias Amazon EC2 em duas Zonas de Disponibilidade e colocá-las atrás de um Elastic Load Balancer para ingerir os alertas. Criar um script nas instâncias EC2 que armazene os alertas em um bucket do Amazon S3. Configurar uma política de ciclo de vida (S3 Lifecycle) para transferir os dados para o Amazon S3 Glacier após 14 dias.
+
+C. Criar um stream de entrega do Amazon Kinesis Data Firehose para ingerir os alertas. Configurar o stream do Kinesis Data Firehose para entregar os alertas a um cluster do Amazon OpenSearch Service (Amazon Elasticsearch Service). Configurar o cluster do Amazon OpenSearch Service para criar snapshots manuais diariamente e excluir dados do cluster com mais de 14 dias.
+
+D. Criar uma fila padrão do Amazon Simple Queue Service (Amazon SQS) para ingerir os alertas e configurar o período de retenção de mensagens para 14 dias. Configurar consumidores para consultar a fila SQS, verificar a idade da mensagem e analisar os dados conforme necessário. Se a mensagem tiver 14 dias, o consumidor deve copiar a mensagem para um bucket do Amazon S3 e excluí-la da fila SQS.
 
 **Resposta correta:**  
 **A.** Crie um Kinesis Data Firehose para ingerir os alertas. Configure o Firehose para entregá-los a um bucket S3 e aplique políticas de ciclo de vida para arquivar os dados no Glacier após 14 dias.
