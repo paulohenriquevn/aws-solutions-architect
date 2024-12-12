@@ -11,6 +11,11 @@ C. Agende tarefas diárias de dispositivos AWS Snowball Edge Storage Optimized p
 
 D. Carregue os dados de cada local em uma instância do Amazon EC2 na região mais próxima. Armazene os dados em um volume do Amazon Elastic Block Store (Amazon EBS). Em intervalos regulares, tire um snapshot do EBS e copie-o para a região que contém o bucket de destino do S3.
 
+<details>
+
+<summary>Resposta</summary>
+
+
 **Resposta correta:**  
 **A.** Ative o S3 Transfer Acceleration no bucket de destino do S3. Use uploads em várias partes para carregar diretamente os dados do local no bucket de destino do S3.
 
@@ -23,7 +28,10 @@ D. Carregue os dados de cada local em uma instância do Amazon EC2 na região ma
   - **C:** O AWS Snowball é eficiente para grandes volumes offline, mas aqui o requisito é rapidez com conectividade de alta velocidade.  
   - **D:** Usar instâncias EC2 e snapshots de EBS é desnecessariamente complexo para um problema resolvível com recursos do S3.
 
+</details>
+
 ---
+
 ### Questão 2
 Uma empresa precisa da capacidade de analisar os arquivos de log de seu aplicativo proprietário. Os logs são armazenados no formato JSON em um bucket do Amazon S3. As consultas serão simples e executadas sob demanda. Um arquiteto de soluções precisa realizar a análise com mínimas alterações na arquitetura existente.
 O que o arquiteto de soluções deve fazer para atender a esses requisitos com o menor esforço operacional?
@@ -36,6 +44,10 @@ C. Use o Amazon Athena diretamente com o Amazon S3 para executar as consultas co
 
 D. Use o AWS Glue para catalogar os logs. Use um cluster transitório do Apache Spark no Amazon EMR para executar as consultas SQL conforme necessário.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Use Amazon Athena diretamente com o Amazon S3 para executar as consultas conforme necessário.
 
@@ -47,8 +59,10 @@ D. Use o AWS Glue para catalogar os logs. Use um cluster transitório do Apache 
   - **A:** Redshift é excessivo para consultas simples e adiciona complexidade desnecessária.  
   - **B:** O Amazon CloudWatch Logs não suporta diretamente consultas SQL nos dados do S3.  
   - **D:** O AWS Glue com EMR é uma solução mais complexa e cara para o caso apresentado.  
+</details>
 
 ---
+
 
 ### Questão 3
 Uma empresa usa o AWS Organizations para gerenciar várias contas da AWS para diferentes departamentos. A conta de gerenciamento tem um bucket do Amazon S3 que contém relatórios de projetos. A empresa deseja limitar o acesso a esse bucket do S3 apenas aos usuários de contas dentro da organização no AWS Organizations.
@@ -62,6 +76,10 @@ C. Use o AWS CloudTrail para monitorar os eventos CreateAccount, InviteAccountTo
 
 D. Etiquete cada usuário que precisa de acesso ao bucket do S3. Adicione a chave de condição global aws:PrincipalTag à política do bucket do S3.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Adicione a chave global `aws:PrincipalOrgID` com referência ao ID da organização na política do bucket S3.
 
@@ -73,6 +91,9 @@ D. Etiquete cada usuário que precisa de acesso ao bucket do S3. Adicione a chav
   - **B:** `aws:PrincipalOrgPaths` exige uma estrutura complexa de OUs desnecessária.  
   - **C:** Monitorar eventos com CloudTrail é uma abordagem reativa, não preventiva.  
   - **D:** Usar tags de usuários adiciona mais complexidade para gerenciar acessos.  
+
+
+</details>
 
 ---
 
@@ -88,6 +109,10 @@ C. Crie um perfil de instância no Amazon EC2 para permitir o acesso ao S3.
 
 D. Crie uma API Gateway do Amazon com um link privado para acessar o endpoint do S3.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Crie um endpoint VPC Gateway para o bucket S3.
 
@@ -99,6 +124,9 @@ D. Crie uma API Gateway do Amazon com um link privado para acessar o endpoint do
   - **B:** CloudWatch Logs não substitui o acesso privado ao S3.  
   - **C:** Um perfil de instância fornece permissões, mas não conectividade privada.  
   - **D:** API Gateway com PrivateLink é excessivo e mais caro.  
+
+
+</details>
 
 ---
 
@@ -114,6 +142,10 @@ C. Copie os dados de ambos os volumes do EBS para o Amazon EFS. Modifique o apli
 
 D. Configure o Application Load Balancer para enviar a solicitação para ambos os servidores. Retorne cada documento do servidor correto.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Copie os dados de ambos os volumes EBS para o Amazon EFS. Modifique a aplicação para salvar novos documentos no Amazon EFS.
 
@@ -125,6 +157,9 @@ D. Configure o Application Load Balancer para enviar a solicitação para ambos 
   - **A:** Copiar manualmente os dados não resolve o problema de consistência em tempo real.  
   - **B:** Configurar o ALB para direcionar solicitações não resolve a inconsistência de dados.  
   - **D:** Direcionar solicitações para servidores específicos aumenta a complexidade e não consolida os documentos.  
+
+
+</details>
 
 ---
 
@@ -140,6 +175,10 @@ C. Implemente um S3 File Gateway no local. Crie um endpoint de serviço público
 
 D. Configure uma conexão AWS Direct Connect entre a rede local e a AWS. Implante um S3 File Gateway no local. Crie uma interface virtual pública (VIF) para conectar-se ao S3 File Gateway. Crie um bucket do S3. Crie um novo compartilhamento de arquivos NFS no S3 File Gateway. Direcione o novo compartilhamento de arquivos para o bucket do S3. Transfira os dados do compartilhamento de arquivos NFS existente para o S3 File Gateway.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Crie um trabalho AWS Snowball Edge. Receba um dispositivo Snowball Edge no local e use o cliente para transferir os dados para o dispositivo.
 
@@ -152,7 +191,10 @@ D. Configure uma conexão AWS Direct Connect entre a rede local e a AWS. Implant
   - **C:** S3 File Gateway não é ideal para transferências massivas.  
   - **D:** Direct Connect exige mais tempo para configuração e custos contínuos.  
 
+</details>
+
 ---
+
 ### Questão 7
 Uma empresa possui um aplicativo que ingere mensagens recebidas. Dezenas de outros aplicativos e microsserviços então consomem rapidamente essas mensagens. O número de mensagens varia drasticamente e, às vezes, aumenta repentinamente para 100.000 por segundo. A empresa deseja desacoplar a solução e aumentar a escalabilidade.
 Qual solução atende a esses requisitos?
@@ -165,6 +207,10 @@ C. Gravar as mensagens no Amazon Kinesis Data Streams com um único shard. Usar 
 
 D. Publicar as mensagens em um tópico do Amazon Simple Notification Service (Amazon SNS) com várias assinaturas do Amazon Simple Queue Service (Amazon SQS). Configurar os aplicativos 
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **D.** Publique as mensagens em um tópico do Amazon SNS com várias assinaturas do Amazon SQS. Configure os consumidores para processar as mensagens das filas.
 
@@ -176,6 +222,9 @@ D. Publicar as mensagens em um tópico do Amazon Simple Notification Service (Am
   - **A:** O Kinesis Data Analytics não é projetado para gerenciar picos de ingestão massiva.  
   - **B:** Escalar instâncias EC2 manualmente é menos eficiente e mais custoso.  
   - **C:** Um único shard no Kinesis limita o throughput.  
+
+
+</details>
 
 ---
 
@@ -191,6 +240,10 @@ C. Implementar o servidor principal e os nós de computação com instâncias Am
 
 D. Implementar o servidor principal e os nós de computação com instâncias Amazon EC2 gerenciadas em um grupo de Auto Scaling. Configurar o Amazon EventBridge (Amazon CloudWatch Events) como destino para os trabalhos. Configurar o Auto Scaling do EC2 com base na carga dos nós de computação.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Configure uma fila Amazon SQS como destino para os jobs. Implemente os nós de computação em uma Auto Scaling group de EC2.
 
@@ -202,6 +255,9 @@ D. Implementar o servidor principal e os nós de computação com instâncias Am
   - **A:** O agendamento fixo de escala não responde a mudanças de carga.  
   - **C:** CloudTrail não é adequado como destino de jobs.  
   - **D:** EventBridge é mais indicado para eventos, não para filas de processamento massivo.  
+
+
+</details>
 
 ---
 
@@ -218,6 +274,10 @@ C. Criar um sistema de arquivos Amazon FSx for Windows File Server para estender
 
 D. Instalar um utilitário em cada computador de usuário para acessar o Amazon S3. Criar uma política de ciclo de vida do S3 para fazer a transição dos dados para o S3 Glacier Flexible Retrieval após 7 dias.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Crie um Amazon S3 File Gateway para expandir o espaço de armazenamento. Configure uma política de ciclo de vida no S3 para mover os dados para o S3 Glacier Deep Archive após 7 dias.
 
@@ -229,6 +289,9 @@ D. Instalar um utilitário em cada computador de usuário para acessar o Amazon 
   - **A:** O DataSync é útil para migração de dados, mas não suporta acesso contínuo e eficiente.  
   - **C:** FSx oferece alta disponibilidade, mas com maior custo em comparação ao S3.  
   - **D:** Um utilitário direto não é suficiente para gerenciar o ciclo de vida dos arquivos.  
+
+
+</details>
 
 ---
 
@@ -244,6 +307,10 @@ C. Usar um autorizador do API Gateway para bloquear quaisquer solicitações enq
 
 D. Usar uma integração do API Gateway para enviar uma mensagem para uma fila padrão do Amazon Simple Queue Service (Amazon SQS) quando o aplicativo receber um pedido. Configurar a fila padrão do SQS para invocar uma função AWS Lambda para processamento.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Use uma integração com o API Gateway para enviar mensagens para uma fila FIFO do Amazon SQS ao receber pedidos.
 
@@ -255,6 +322,9 @@ D. Usar uma integração do API Gateway para enviar uma mensagem para uma fila p
   - **A:** O SNS não garante a ordenação das mensagens.  
   - **C:** Bloquear requisições durante o processamento adiciona latência desnecessária.  
   - **D:** Uma fila SQS padrão não oferece garantia de ordenação.  
+
+
+</details>
 
 ---
 
@@ -270,6 +340,10 @@ C. Criar um bucket Amazon S3 para armazenar objetos criptografados com uma chave
 
 D. Criar um volume criptografado Amazon Elastic Block Store (Amazon EBS) para cada instância EC2. Anexar o novo volume EBS a cada instância EC2. Migrar o arquivo de credenciais para o novo volume EBS. Apontar o aplicativo para o novo volume EBS.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Use o AWS Secrets Manager. Ative a rotação automática.
 
@@ -281,6 +355,9 @@ D. Criar um volume criptografado Amazon Elastic Block Store (Amazon EBS) para ca
   - **B:** O Parameter Store não inclui rotação automática de credenciais.  
   - **C:** Usar o S3 para armazenamento é menos seguro e complexo para integração.  
   - **D:** Volumes EBS não gerenciam credenciais automaticamente.  
+
+
+</details>
 
 ---
 
@@ -296,6 +373,10 @@ C. Criar uma distribuição Amazon CloudFront que tenha o bucket S3 como origem.
 
 D. Criar uma distribuição Amazon CloudFront que tenha o ALB como origem. Criar um acelerador padrão do AWS Global Accelerator que tenha o bucket S3 como endpoint. Criar dois nomes de domínio. Apontar um nome de domínio para o nome DNS do CloudFront para conteúdo dinâmico. Apontar o outro nome de domínio para o nome DNS do acelerador para conteúdo estático. Usar os nomes de domínio como endpoints para o aplicativo web.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Crie uma distribuição Amazon CloudFront com o bucket S3 e o ALB como origens. Configure o Route 53 para rotear o tráfego para a distribuição CloudFront.
 
@@ -307,6 +388,9 @@ D. Criar uma distribuição Amazon CloudFront que tenha o ALB como origem. Criar
   - **B:** O Global Accelerator não é necessário quando o CloudFront já gerencia desempenho.  
   - **C:** Configurar múltiplos endpoints adiciona complexidade desnecessária.  
   - **D:** Dividir origens dinâmicas e estáticas não garante latência otimizada.  
+
+
+</details>
 
 ---
 
@@ -322,6 +406,10 @@ C. Armazenar as credenciais em um bucket Amazon S3 com criptografia do lado do s
 
 D. Criptografar as credenciais como segredos usando chaves gerenciadas pelo cliente multi-Região do AWS Key Management Service (AWS KMS). Armazenar os segredos em uma tabela global do Amazon DynamoDB. Usar uma função AWS Lambda para recuperar os segredos do DynamoDB e usar a API do RDS para rodar os segredos.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Armazene as credenciais como segredos no AWS Secrets Manager. Use replicação multi-região e configure a rotação automática.
 
@@ -333,6 +421,9 @@ D. Criptografar as credenciais como segredos usando chaves gerenciadas pelo clie
   - **B:** O Parameter Store não possui suporte direto para rotação automática de segredos em várias regiões.  
   - **C:** Usar S3 com eventos EventBridge adiciona complexidade desnecessária.  
   - **D:** DynamoDB e Lambda introduzem mais componentes sem vantagens significativas.  
+
+
+</details>
 
 ---
 
@@ -349,6 +440,10 @@ C. Usar o Amazon Aurora com uma implantação Multi-AZ. Configurar o Aurora Auto
 
 D. Usar o Amazon ElastiCache para Memcached com instâncias Spot do EC2.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Use Amazon Aurora com uma implantação Multi-AZ. Configure Auto Scaling com réplicas Aurora.
 
@@ -360,6 +455,9 @@ D. Usar o Amazon ElastiCache para Memcached com instâncias Spot do EC2.
   - **A:** O Redshift não é projetado para cargas OLTP.  
   - **B:** Uma implantação Single-AZ não garante alta disponibilidade.  
   - **D:** ElastiCache não substitui o banco de dados relacional.  
+
+
+</details>
 
 ---
 
@@ -375,6 +473,10 @@ C. Usar o AWS Network Firewall para criar as regras necessárias para inspeção
 
 D. Usar o AWS Firewall Manager para criar as regras necessárias para inspeção e filtragem de tráfego na VPC de produção.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Use o AWS Network Firewall para criar as regras necessárias para inspeção e filtragem de tráfego.
 
@@ -386,6 +488,9 @@ D. Usar o AWS Firewall Manager para criar as regras necessárias para inspeção
   - **A:** GuardDuty apenas detecta ameaças, mas não filtra tráfego.  
   - **B:** Traffic Mirroring não implementa inspeção ativa.  
   - **D:** Firewall Manager gerencia políticas, mas depende de outros serviços para inspeção.  
+
+
+</details>
 
 ---
 
@@ -401,6 +506,10 @@ C. Criar uma tabela e um crawler no AWS Glue para os dados no Amazon S3. Criar u
 
 D. Criar uma tabela e um crawler no AWS Glue para os dados no Amazon S3. Usar o Amazon Athena Federated Query para acessar dados no Amazon RDS para PostgreSQL. Gerar relatórios usando o Amazon Athena. Publicar os relatórios no Amazon S3. Usar políticas de bucket S3 para limitar o acesso aos relatórios.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Crie uma análise no Amazon QuickSight. Conecte todas as fontes de dados e compartilhe os dashboards com os papéis apropriados do IAM.
 
@@ -412,6 +521,9 @@ D. Criar uma tabela e um crawler no AWS Glue para os dados no Amazon S3. Usar o 
   - **B:** A opção é redundante, pois sugere usuários e grupos ao invés de papéis IAM.  
   - **C:** Relatórios ETL no S3 não atendem ao requisito de visualização.  
   - **D:** Athena sozinho não gerencia visualizações e acesso restrito.  
+
+
+</details>
 
 ---
 
@@ -427,6 +539,10 @@ C. Criar um grupo IAM (IAM group) que concede acesso ao bucket S3. Anexar o grup
 
 D. Criar um usuário IAM (IAM user) que concede acesso ao bucket S3. Anexar a conta de usuário às instâncias EC2.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Crie uma role IAM que conceda acesso ao bucket S3 e anexe às instâncias EC2.
 
@@ -438,6 +554,9 @@ D. Criar um usuário IAM (IAM user) que concede acesso ao bucket S3. Anexar a co
   - **B:** Políticas IAM não podem ser diretamente anexadas a instâncias.  
   - **C:** Grupos IAM não são aplicáveis a instâncias EC2.  
   - **D:** Usuários IAM são menos seguros e não recomendados para esse caso.  
+
+
+</details>
 
 ---
 
@@ -456,6 +575,10 @@ D. Iniciar uma instância Amazon EC2 para monitorar uma fila do Amazon Simple Qu
 
 E. Configurar um evento do Amazon EventBridge (Amazon CloudWatch Events) para monitorar o bucket S3. Quando uma imagem for carregada, enviar um alerta para um tópico do Amazon Simple Notification Service (Amazon SNS) com o endereço de email do proprietário do aplicativo para processamento adicional.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A e B.** Crie uma fila Amazon SQS. Configure a função Lambda para usar a fila como fonte de invocação.
 
@@ -467,6 +590,9 @@ E. Configurar um evento do Amazon EventBridge (Amazon CloudWatch Events) para mo
   - **C:** Monitorar uploads diretamente é menos eficiente do que usar filas.  
   - **D:** Usar EC2 para monitorar filas é desnecessário com Lambda.  
   - **E:** Notificações do SNS não automatizam o processamento.  
+
+
+</details>
 
 ---
 
@@ -483,6 +609,10 @@ C. Implantar um transit gateway na VPC de inspeção. Configurar tabelas de rota
 
 D. Implantar um Gateway Load Balancer na VPC de inspeção. Criar um endpoint do Gateway Load Balancer para receber os pacotes recebidos e encaminhá-los para o appliance.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **D.** Implemente um Gateway Load Balancer na VPC de inspeção para rotear os pacotes ao appliance.
 
@@ -493,6 +623,9 @@ D. Implantar um Gateway Load Balancer na VPC de inspeção. Criar um endpoint do
 - **Por que as outras opções não são adequadas?**  
   - **A e B:** NLB e ALB não oferecem integração direta para inspeção.  
   - **C:** Transit Gateway é desnecessário para este fluxo específico.  
+
+
+</details>
 
 ---
 
@@ -509,6 +642,10 @@ C. Tirar snapshots EBS dos volumes EBS de produção. Criar e inicializar novos 
 
 D. Tirar snapshots EBS dos volumes EBS de produção. Ativar o recurso de restauração rápida de snapshots EBS (EBS fast snapshot restore) nos snapshots EBS. Restaurar os snapshots em novos volumes EBS. Anexar os novos volumes EBS às instâncias EC2 no ambiente de teste.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **D.** Ative o recurso de restauração rápida de snapshots no EBS e restaure os snapshots em novos volumes.
 
@@ -519,6 +656,9 @@ D. Tirar snapshots EBS dos volumes EBS de produção. Ativar o recurso de restau
 - **Por que as outras opções não são adequadas?**  
   - **A e C:** Restaurar sem o recurso de rápida restauração aumenta o tempo de indisponibilidade.  
   - **B:** Multi-Attach é inadequado para separar ambientes de teste e produção.  
+
+
+</details>
 
 ---
 
@@ -534,6 +674,10 @@ C. Migrar todo o aplicativo para execução em contêineres. Hospedar os contêi
 
 D. Usar um bucket do Amazon S3 para hospedar o conteúdo estático do site. Implantar uma distribuição do Amazon CloudFront. Configurar o bucket S3 como a origem. Usar o Amazon API Gateway e funções AWS Lambda para as APIs de backend. Armazenar os dados no Amazon DynamoDB.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **D.** Use um bucket Amazon S3 para hospedar o conteúdo estático, Amazon CloudFront para distribuição e API Gateway com AWS Lambda para backend.
 
@@ -545,6 +689,9 @@ D. Usar um bucket do Amazon S3 para hospedar o conteúdo estático do site. Impl
   - **A:** Usar apenas S3 não gerencia a lógica de backend.  
   - **B:** Instâncias EC2 e ALB têm maior complexidade e custos.  
   - **C:** Containers em EKS introduzem mais sobrecarga operacional.  
+
+
+</details>
 
 ---
 
@@ -560,6 +707,10 @@ C. S3 Standard-Infrequent Access (S3 Standard-IA)
 
 D. S3 One Zone-Infrequent Access (S3 One Zone-IA)
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** S3 Intelligent-Tiering.
 
@@ -571,6 +722,9 @@ D. S3 One Zone-Infrequent Access (S3 One Zone-IA)
   - **A:** S3 Standard é mais caro para dados raramente acessados.  
   - **C:** S3 Standard-IA não ajusta dinamicamente os níveis de armazenamento.  
   - **D:** S3 One Zone-IA não oferece resiliência para múltiplas zonas.  
+
+
+</details>
 
 ---
 
@@ -586,6 +740,10 @@ C. Criar uma configuração de ciclo de vida (Lifecycle) no S3 para fazer a tran
 
 D. Criar uma configuração de ciclo de vida (Lifecycle) no S3 para fazer a transição dos objetos do S3 Standard para o S3 One Zone-Infrequent Access (S3 One Zone-IA) após 1 mês.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Configure uma política de ciclo de vida no S3 para mover objetos para o S3 Glacier Deep Archive após 1 mês.
 
@@ -596,6 +754,9 @@ D. Criar uma configuração de ciclo de vida (Lifecycle) no S3 para fazer a tran
 - **Por que as outras opções não são adequadas?**  
   - **A:** Intelligent-Tiering não é tão econômico quanto Glacier para dados arquivados.  
   - **C e D:** Standard-IA e One Zone-IA têm custos mais altos para armazenamento de longo prazo.  
+
+
+</details>
 
 ---
 
@@ -611,6 +772,10 @@ C. Usar os gráficos do painel AWS Billing and Cost Management para comparar os 
 
 D. Usar o AWS Cost and Usage Reports para criar um relatório e enviá-lo para um bucket do Amazon S3. Usar o Amazon QuickSight com o S3 como origem para gerar um gráfico interativo com base nos tipos de instância.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Use o recurso de filtragem granular do Cost Explorer para analisar os custos do EC2 com base nos tipos de instância.
 
@@ -622,6 +787,9 @@ D. Usar o AWS Cost and Usage Reports para criar um relatório e enviá-lo para u
   - **A:** AWS Budgets não fornece visualizações detalhadas de custos.  
   - **C:** O dashboard de Billing é limitado para análises detalhadas.  
   - **D:** Usar QuickSight adiciona complexidade desnecessária.  
+
+
+</details>
 
 ---
 
@@ -637,6 +805,10 @@ C. Configurar duas funções Lambda. Configurar uma função para receber as inf
 
 D. Configurar duas funções Lambda. Configurar uma função para receber as informações e outra para carregar as informações no banco de dados. Integrar as funções Lambda usando uma fila do Amazon Simple Queue Service (Amazon SQS).
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **D.** Configure duas funções Lambda: uma para receber dados e outra para carregá-los no banco de dados. Integre-as com uma fila Amazon SQS.
 
@@ -648,6 +820,9 @@ D. Configurar duas funções Lambda. Configurar uma função para receber as inf
   - **A:** EC2 introduz complexidade e custos elevados.  
   - **B:** DynamoDB não é mencionado como requisito no caso.  
   - **C:** SNS não gerencia filas para processamento ordenado.  
+
+
+</details>
 
 ---
 
@@ -663,6 +838,10 @@ C. Ativar o Amazon Inspector com o modelo de avaliação apropriado.
 
 D. Ativar o Amazon S3 Server Access Logging. Configurar o Amazon EventBridge (Amazon CloudWatch Events).
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Ative o AWS Config com as regras apropriadas.
 
@@ -674,6 +853,9 @@ D. Ativar o Amazon S3 Server Access Logging. Configurar o Amazon EventBridge (Am
   - **B:** Trusted Advisor não monitora configurações de buckets.  
   - **C:** Amazon Inspector é usado para vulnerabilidades, não configuração de buckets.  
   - **D:** Logs de acesso não previnem mudanças, apenas registram eventos.  
+
+
+</details>
 
 ---
 
@@ -689,6 +871,10 @@ C. Criar um usuário IAM para os funcionários da empresa. Anexar a política ge
 
 D. Implantar um servidor bastion em uma sub-rede pública. Quando o gerente de produto precisar acessar o painel, iniciar o servidor e compartilhar as credenciais RDP. No servidor bastion, garantir que o navegador esteja configurado para abrir a URL do painel com credenciais AWS em cache que tenham permissões apropriadas para visualizar o painel.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Compartilhe o dashboard a partir do console do CloudWatch e forneça um link compartilhável.
 
@@ -700,6 +886,9 @@ D. Implantar um servidor bastion em uma sub-rede pública. Quando o gerente de p
   - **B:** Criar usuários IAM adiciona complexidade e supera o escopo necessário.  
   - **C:** O acesso ViewOnlyAccess permite mais permissões do que o necessário.  
   - **D:** Usar um bastion server é excessivamente complexo.  
+
+
+</details>
 
 ---
 
@@ -715,6 +904,10 @@ C. Usar o AWS Directory Service. Criar uma relação de confiança bidirecional 
 
 D. Implantar um provedor de identidade (IdP) local. Ativar o AWS Single Sign-On (AWS SSO) no console do AWS SSO.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Ative o AWS SSO e conecte-se ao Active Directory local usando AWS Directory Service.
 
@@ -726,6 +919,9 @@ D. Implantar um provedor de identidade (IdP) local. Ativar o AWS Single Sign-On 
   - **B:** Two-way trust adiciona complexidade desnecessária.  
   - **C:** AWS Directory Service sozinho não oferece SSO para múltiplas contas.  
   - **D:** Usar um IdP local é menos eficiente e requer mais configuração.  
+
+
+</details>
 
 ---
 
@@ -742,6 +938,10 @@ C. Implantar um Network Load Balancer (NLB) e um grupo de destino associado. Ass
 
 D. Implantar um Application Load Balancer (ALB) e um grupo de destino associado. Associar o grupo de destino ao grupo de Auto Scaling. Criar um registro ponderado do Amazon Route 53 que aponta para aliases de cada ALB. Implantar uma distribuição do Amazon CloudFront que usa o registro ponderado como uma origem.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Use um Network Load Balancer (NLB) associado ao AWS Global Accelerator em cada região.
 
@@ -753,6 +953,9 @@ D. Implantar um Application Load Balancer (ALB) e um grupo de destino associado.
   - **B:** ALB não suporta tráfego UDP.  
   - **C:** Route 53 sozinho não fornece failover automático eficiente.  
   - **D:** ALB com Route 53 não é otimizado para UDP.  
+
+
+</details>
 
 ---
 
@@ -768,6 +971,10 @@ C. Criar um snapshot quando os testes forem concluídos. Encerrar a instância d
 
 D. Modificar a instância do banco de dados para uma instância de baixa capacidade quando os testes forem concluídos. Modificar novamente a instância do banco de dados quando necessário.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Crie um snapshot após os testes e restaure o banco de dados somente quando necessário.
 
@@ -779,6 +986,9 @@ D. Modificar a instância do banco de dados para uma instância de baixa capacid
   - **A:** Parar o banco é menos eficiente do que restaurar snapshots.  
   - **B:** Auto Scaling não aplica-se diretamente ao RDS.  
   - **D:** Alterar a capacidade manualmente adiciona complexidade.  
+
+
+</details>
 
 ---
 
@@ -794,6 +1004,10 @@ C. Escrever chamadas de API para verificar todos os recursos quanto à alocaçã
 
 D. Escrever chamadas de API para verificar todos os recursos quanto à alocação adequada de tags. Agendar uma função AWS Lambda por meio do Amazon CloudWatch para executar periodicamente o código.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Use regras do AWS Config para definir e detectar recursos que não estão devidamente etiquetados.
 
@@ -804,6 +1018,9 @@ D. Escrever chamadas de API para verificar todos os recursos quanto à alocaçã
 - **Por que as outras opções não são adequadas?**  
   - **B:** Cost Explorer apenas exibe os recursos, sem capacidade de correção.  
   - **C e D:** Criar APIs personalizadas adiciona complexidade operacional desnecessária.  
+
+
+</details>
 
 ---
 
@@ -819,6 +1036,10 @@ C. Implantar um servidor web em uma instância Amazon EC2 para hospedar o site.
 
 D. Configurar um Application Load Balancer com um destino AWS Lambda que use o framework Express.js.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Crie um bucket Amazon S3 e hospede o site nele.
 
@@ -830,6 +1051,9 @@ D. Configurar um Application Load Balancer com um destino AWS Lambda que use o f
   - **A:** Fargate é projetado para microsserviços, não para sites estáticos.  
   - **C:** Usar EC2 é mais caro e desnecessário para este caso.  
   - **D:** ALB e Lambda introduzem complexidade sem benefícios adicionais.  
+
+
+</details>
 
 ---
 
@@ -845,6 +1069,10 @@ C. Transmitir os dados das transações para o Amazon Kinesis Data Streams. Usar
 
 D. Armazenar os dados das transações em lotes no Amazon S3 como arquivos. Usar o AWS Lambda para processar cada arquivo e remover os dados sensíveis antes de atualizar os arquivos no Amazon S3. A função Lambda então armazena os dados no Amazon DynamoDB. Outros aplicativos podem consumir os arquivos de transações armazenados no Amazon S3.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Transmita os dados das transações para o Amazon Kinesis Data Streams e use AWS Lambda para remover dados sensíveis.
 
@@ -855,6 +1083,9 @@ D. Armazenar os dados das transações em lotes no Amazon S3 como arquivos. Usar
 - **Por que as outras opções não são adequadas?**  
   - **A e D:** Processar em DynamoDB ou S3 diretamente não é ideal para grandes volumes em tempo real.  
   - **B:** Kinesis Firehose não oferece processamento detalhado como o Lambda.  
+
+
+</details>
 
 ---
 
@@ -870,6 +1101,10 @@ C. Usar o AWS Config para rastrear alterações de configuração e o Amazon Clo
 
 D. Usar o AWS CloudTrail para rastrear alterações de configuração e o Amazon CloudWatch para registrar chamadas de API.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Use AWS Config para rastrear mudanças de configuração e AWS CloudTrail para registrar chamadas de API.
 
@@ -880,6 +1115,9 @@ D. Usar o AWS CloudTrail para rastrear alterações de configuração e o Amazon
 - **Por que as outras opções não são adequadas?**  
   - **A e C:** Misturam serviços que não são adequados para todas as necessidades.  
   - **D:** CloudWatch não é usado para rastrear mudanças de configuração.  
+
+
+</details>
 
 ---
 
@@ -895,6 +1133,10 @@ C. Ativar o AWS Shield e atribuir o Amazon Route 53 a ele.
 
 D. Ativar o AWS Shield Advanced e atribuir o ELB a ele.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **D.** Ative o AWS Shield Advanced e associe-o ao ELB.
 
@@ -905,6 +1147,9 @@ D. Ativar o AWS Shield Advanced e atribuir o ELB a ele.
 - **Por que as outras opções não são adequadas?**  
   - **A e B:** GuardDuty e Inspector detectam, mas não mitigam ataques DDoS.  
   - **C:** Shield padrão não inclui suporte avançado ou resposta a incidentes.  
+
+
+</details>
 
 ---
 
@@ -920,6 +1165,10 @@ C. Criar uma chave KMS gerenciada pelo cliente e um bucket S3 em cada região. C
 
 D. Criar uma chave KMS gerenciada pelo cliente e um bucket S3 em cada região. Configurar os buckets S3 para usar criptografia do lado do servidor com chaves KMS (SSE-KMS). Configurar a replicação entre os buckets S3.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Crie uma chave KMS multi-região gerenciada. Configure replicação entre os buckets S3.
 
@@ -930,6 +1179,9 @@ D. Criar uma chave KMS gerenciada pelo cliente e um bucket S3 em cada região. C
 - **Por que as outras opções não são adequadas?**  
   - **A e C:** Usar SSE-S3 não atende ao requisito de chaves KMS consistentes.  
   - **D:** Chaves gerenciadas por região não oferecem interoperabilidade.  
+
+
+</details>
 
 ---
 
@@ -945,6 +1197,10 @@ C. Criar um par de chaves SSH administrativas. Carregar a chave pública em cada
 
 D. Estabelecer uma conexão VPN Site-to-Site da AWS. Instruir os administradores a usarem suas máquinas locais on-premises para se conectarem diretamente às instâncias usando chaves SSH por meio do túnel VPN.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Anexe a role IAM apropriada às instâncias e use o AWS Systems Manager Session Manager.
 
@@ -956,6 +1212,9 @@ D. Estabelecer uma conexão VPN Site-to-Site da AWS. Instruir os administradores
   - **A:** O console serial não suporta conectividade remota comum.  
   - **C:** Bastion hosts introduzem complexidade e riscos adicionais.  
   - **D:** VPNs não são necessárias com o Session Manager.  
+
+
+</details>
 
 ---
 
@@ -971,12 +1230,19 @@ Qual solução atenderá a esses requisitos com o **menor esforço operacional**
 
 **D.** Estabelecer uma conexão VPN Site-to-Site da AWS. Instruir os administradores a usarem suas máquinas locais on-premises para se conectarem diretamente às instâncias usando chaves SSH por meio do túnel VPN.  
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Anexar a função IAM apropriada a cada instância existente e nova. Usar o AWS Systems Manager Session Manager para estabelecer uma sessão SSH remota.
 
 **Justificativa:**  
 - **Por que essa opção?**  
   Configuração simples e suporte a acessos seguros em escala. 
+
+
+</details>
 
 ---
 
@@ -993,6 +1259,10 @@ Qual solução resolve esse problema de desempenho?
 
 **D.** Habilitar réplicas de leitura Multi-AZ RDS com replicação assíncrona nativa do MySQL.  
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Altere o tipo de armazenamento para Provisioned IOPS SSD.
 
@@ -1003,6 +1273,9 @@ Qual solução resolve esse problema de desempenho?
 - **Por que as outras opções não são adequadas?**  
   - **B e C:** Alterar a classe da instância não resolve problemas de armazenamento.  
   - **D:** Réplicas de leitura não impactam a performance de gravações.  
+
+
+</details>
 
 ---
 
@@ -1019,6 +1292,10 @@ C. Criar um stream de entrega do Amazon Kinesis Data Firehose para ingerir os al
 
 D. Criar uma fila padrão do Amazon Simple Queue Service (Amazon SQS) para ingerir os alertas e configurar o período de retenção de mensagens para 14 dias. Configurar consumidores para consultar a fila SQS, verificar a idade da mensagem e analisar os dados conforme necessário. Se a mensagem tiver 14 dias, o consumidor deve copiar a mensagem para um bucket do Amazon S3 e excluí-la da fila SQS.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Crie um Kinesis Data Firehose para ingerir os alertas. Configure o Firehose para entregá-los a um bucket S3 e aplique políticas de ciclo de vida para arquivar os dados no Glacier após 14 dias.
 
@@ -1030,6 +1307,9 @@ D. Criar uma fila padrão do Amazon Simple Queue Service (Amazon SQS) para inger
   - **B:** EC2 com script adiciona mais complexidade e custos.  
   - **C:** OpenSearch Service tem custos maiores para dados de longo prazo.  
   - **D:** O SQS não é ideal para ingestão massiva e arquivamento.  
+
+
+</details>
 
 ---
 
@@ -1045,6 +1325,10 @@ Qual solução atenderá a esses requisitos com o **menor esforço operacional**
 
 **D.** Criar um contêiner Docker para substituir uma instância EC2. Hospedar o aplicativo contêinerizado no Amazon Elastic Container Service (Amazon ECS). Configurar o Amazon CloudWatch Container Insights para enviar eventos para um tópico do Amazon Simple Notification Service (Amazon SNS) quando o upload para o bucket S3 for concluído.  
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Use Amazon AppFlow para transferir dados entre fontes SaaS e o bucket S3. Configure notificações S3 para enviar eventos ao SNS após o upload.
 
@@ -1055,6 +1339,9 @@ Qual solução atenderá a esses requisitos com o **menor esforço operacional**
 - **Por que as outras opções não são adequadas?**  
   - **A:** EC2 com Auto Scaling adiciona complexidade sem melhorar significativamente o desempenho.  
   - **C e D:** EventBridge e ECS não são tão eficientes para este caso.  
+
+
+</details>
 
 ---
 
@@ -1070,6 +1357,10 @@ C. Implantar um endpoint de gateway VPC para o Amazon S3.
 
 D. Provisionar um host dedicado EC2 (EC2 Dedicated Host) para executar as instâncias EC2.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Implemente um endpoint VPC Gateway para o S3.
 
@@ -1081,6 +1372,9 @@ D. Provisionar um host dedicado EC2 (EC2 Dedicated Host) para executar as instâ
   - **A:** Lançar múltiplos NAT Gateways aumenta os custos.  
   - **B:** NAT Instance não oferece a mesma escalabilidade de um endpoint.  
   - **D:** EC2 Dedicated Host não resolve problemas de transferência de dados.  
+
+
+</details>
 
 ---
 
@@ -1096,6 +1390,10 @@ C. Solicitar dispositivos AWS Snowball diariamente, carregar os dados nesses dis
 
 D. Submeter um ticket de suporte pelo console de gerenciamento da AWS, solicitando a remoção dos limites de serviço do S3 na conta.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Estabeleça uma conexão AWS Direct Connect e direcione o tráfego de backup por esta conexão.
 
@@ -1107,6 +1405,9 @@ D. Submeter um ticket de suporte pelo console de gerenciamento da AWS, solicitan
   - **A:** AWS VPN não oferece o mesmo desempenho de largura de banda que o Direct Connect.  
   - **C:** Snowball não é adequado para backups contínuos.  
   - **D:** Pedir remoção de limites de serviço não resolve problemas de conectividade.  
+
+
+</details>
 
 ---
 
@@ -1124,6 +1425,10 @@ D. Ativar a criptografia padrão no bucket S3.
 
 E. Criar uma política de ciclo de vida (lifecycle policy) para os objetos no bucket S3.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A e B.** Ative o versionamento no bucket S3 e habilite a exclusão MFA.
 
@@ -1134,6 +1439,9 @@ E. Criar uma política de ciclo de vida (lifecycle policy) para os objetos no bu
 - **Por que as outras opções não são adequadas?**  
   - **C:** Políticas de bucket não impedem completamente exclusões acidentais.  
   - **D e E:** Criptografia e políticas de ciclo de vida não evitam exclusões.  
+
+
+</details>
 
 ---
 
@@ -1156,6 +1464,10 @@ D. Aumentar a capacidade provisionada para a função Lambda.
 
 E. Modificar a função Lambda para ler de uma fila do Amazon Simple Queue Service (Amazon SQS).
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B e E.** Subcreva um SQS à SNS e modifique a função Lambda para ler da fila SQS.
 
@@ -1166,6 +1478,9 @@ E. Modificar a função Lambda para ler de uma fila do Amazon Simple Queue Servi
 - **Por que as outras opções não são adequadas?**  
   - **A:** Múltiplas zonas de disponibilidade não resolvem problemas de conectividade.  
   - **C e D:** Ajustar CPU/memória ou throughput não resolve falhas transitórias de rede.  
+
+
+</details>
 
 ---
 
@@ -1182,6 +1497,10 @@ C. Implemente algoritmos de verificação personalizados em uma função AWS Lam
 
 D. Implemente algoritmos de verificação personalizados em uma função AWS Lambda. Acione a função quando os objetos forem carregados no bucket. Se os objetos contiverem PII, use o Amazon Simple Email Service (Amazon SES) para acionar uma notificação para os administradores e acionar uma política do S3 Lifecycle para remover os objetos que contenham PII.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Use um bucket S3 como ponto de transferência e Amazon Macie para identificar PII.
 
@@ -1192,6 +1511,9 @@ D. Implemente algoritmos de verificação personalizados em uma função AWS Lam
 - **Por que as outras opções não são adequadas?**  
   - **A:** O Inspector não suporta diretamente detecção de PII em dados S3.  
   - **C e D:** Algoritmos personalizados adicionam desenvolvimento desnecessário.  
+
+
+</details>
 
 ---
 
@@ -1207,6 +1529,10 @@ C. Comprar Reserved Instances que especifiquem a região e as três Zonas de Dis
 
 D. Criar uma On-Demand Capacity Reservation que especifique a região e as três Zonas de Disponibilidade necessárias.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **D.** Crie uma reserva de capacidade sob demanda que especifica a região e as três zonas de disponibilidade.
 
@@ -1217,6 +1543,9 @@ D. Criar uma On-Demand Capacity Reservation que especifique a região e as três
 - **Por que as outras opções não são adequadas?**  
   - **A e C:** Instâncias reservadas não garantem capacidade específica por zona. Não é apropriado para eventos de curta duração.
   - **B:** Reservar capacidade sem zonas definidas não atende ao requisito.   
+
+
+</details>
 
 ---
 
@@ -1232,6 +1561,10 @@ C. Mover o catálogo do armazenamento de instância para o Amazon S3 Glacier Dee
 
 D. Mover o catálogo para um sistema de arquivos Amazon Elastic File System (Amazon EFS).
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **D.** Mova o catálogo para um sistema de arquivos Amazon EFS.
 
@@ -1243,6 +1576,9 @@ D. Mover o catálogo para um sistema de arquivos Amazon Elastic File System (Ama
   - **A:** ElastiCache não é ideal para armazenamento de longo prazo.  
   - **B:** Aumentar a capacidade da instância não resolve durabilidade.  
   - **C:** S3 Glacier é para arquivamento, não para acesso frequente.  
+
+
+</details>
 
 ---
 
@@ -1258,6 +1594,10 @@ C. Armazenar arquivos individuais com tags no armazenamento Amazon S3 Standard. 
 
 D. Armazenar arquivos individuais no armazenamento Amazon S3 Standard. Usar políticas do S3 Lifecycle para mover os arquivos para o S3 Glacier Deep Archive após 1 ano. Armazenar os metadados de busca no Amazon RDS. Consultar os arquivos no Amazon RDS. Recuperar os arquivos do S3 Glacier Deep Archive.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Use S3 Intelligent-Tiering com políticas de ciclo de vida para mover os arquivos para Glacier após 1 ano.
 
@@ -1271,6 +1611,9 @@ A: S3 Glacier Instant Retrieval oferece acesso rápido, mas é mais caro do que 
 C: Usar Amazon S3 Standard para armazenar metadados e S3 Glacier Instant Retrieval para arquivos antigos não é tão custo-efetivo quanto S3 Intelligent-Tiering combinado com S3 Glacier Flexible Retrieval.
 
 D: S3 Glacier Deep Archive é mais barato, mas é projetado para arquivamento a longo prazo. Atrasos significativos na recuperação não são ideais para casos onde os dados ainda podem ser acessados eventualmente.
+
+
+</details>
 
 ---
 
@@ -1286,6 +1629,10 @@ C. Agendar uma janela de manutenção no AWS Systems Manager para aplicar o patc
 
 D. Usar o AWS Systems Manager Run Command para executar um comando personalizado que aplica o patch em todas as instâncias EC2.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **D.** Usar o AWS Systems Manager Run Command para executar um comando personalizado que aplica o patch em todas as instâncias EC2.
 
@@ -1300,7 +1647,10 @@ B: O AWS Systems Manager Patch Manager é projetado para aplicar patches do sist
 
 C: Agendar uma janela de manutenção é útil para operações planejadas, mas introduz atrasos desnecessários em uma situação que requer resposta imediata. 
 
+</details>
+
 ---
+
 ### Questão 51
 A empresa está desenvolvendo um aplicativo que fornece estatísticas de envio de pedidos por meio de uma API REST. A empresa deseja extrair as estatísticas de envio, organizar os dados em um formato HTML de fácil leitura e enviar o relatório para vários endereços de e-mail ao mesmo tempo, todas as manhãs.
 Quais passos combinados um arquiteto de soluções deve tomar para atender a esses requisitos? (Escolha duas)
@@ -1316,6 +1666,10 @@ D. Criar um evento agendado no Amazon EventBridge (Amazon CloudWatch Events) que
 E. Armazenar os dados do aplicativo no Amazon S3. Criar um tópico do Amazon Simple Notification Service (Amazon SNS) como destino de evento do S3 para enviar 
 o relatório por e-mail.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **D.** Crie um evento agendado do Amazon EventBridge (Amazon CloudWatch Events) que invoque uma função AWS Lambda para consultar os dados da API da aplicação.  
 **B.** Use o Amazon Simple Email Service (Amazon SES) para formatar os dados e enviar o relatório por e-mail.
@@ -1329,6 +1683,9 @@ o relatório por e-mail.
   - **A:** O Kinesis Data Firehose não é necessário, pois os dados não estão sendo transmitidos em tempo real.  
   - **C:** O AWS Glue é mais complexo do que o necessário para extrair dados simples de uma API REST.  
   - **E:** O SNS não fornece funcionalidades suficientes para formatar e-mails em HTML.
+
+
+</details>
 
 ---
 
@@ -1344,6 +1701,10 @@ C. Migrar o aplicativo para instâncias Amazon EC2 em um grupo de Auto Scaling M
 
 D. Migrar o aplicativo para instâncias Amazon EC2 em um grupo de Auto Scaling Multi-AZ. Usar o Amazon Elastic Block Store (Amazon EBS) para armazenamento.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Migrar o aplicativo para instâncias Amazon EC2 em um grupo de Auto Scaling Multi-AZ. Usar o Amazon Elastic File System (Amazon EFS) para armazenamento.
 
@@ -1356,7 +1717,10 @@ D. Migrar o aplicativo para instâncias Amazon EC2 em um grupo de Auto Scaling M
 - **B:**  O Amazon EBS não é compartilhado entre instâncias por padrão e não suporta Multi-AZ sem configuração adicional, o que limita a escalabilidade e a alta disponibilidade.
 - **D:**  O Amazon EBS é adequado para armazenamento de bloco de alta performance, mas não para um sistema de arquivos distribuído e escalável. Ele requer gerenciamento manual para compartilhar dados entre instâncias e não escala automaticamente.
 
+</details>
+
 ---
+
 ### Questão 53
 Uma empresa precisa armazenar seus registros contábeis no Amazon S3. Os registros devem estar acessíveis imediatamente por 1 ano e, em seguida, devem ser arquivados por mais 9 anos. Ninguém na empresa, incluindo usuários administrativos e o usuário root, pode excluir os registros durante todo o período de 10 anos. Os registros devem ser armazenados com a máxima resiliência.
 Qual solução atenderá a esses requisitos?
@@ -1369,6 +1733,10 @@ C. Usar uma política de ciclo de vida do S3 (S3 Lifecycle) para transicionar os
 
 D. Usar uma política de ciclo de vida do S3 (S3 Lifecycle) para transicionar os registros do S3 Standard para o S3 One Zone-Infrequent Access (S3 One Zone-IA) após 1 ano. Usar o S3 Object Lock no modo de governança (governance mode) por um período de 10 anos.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Use uma política de ciclo de vida do S3 para transferir os registros do S3 Standard para o S3 Glacier Deep Archive após 1 ano. Use S3 Object Lock em modo de conformidade por um período de 10 anos.
 
@@ -1380,6 +1748,9 @@ D. Usar uma política de ciclo de vida do S3 (S3 Lifecycle) para transicionar os
   - **A:** S3 Glacier sozinho não garante acessibilidade imediata no primeiro ano.  
   - **B:** S3 Intelligent-Tiering não é necessário e não bloqueia a exclusão.  
   - **D:** S3 One Zone-IA não atende aos requisitos de resiliência.  Não oferece alta durabilidade, pois armazena dados em apenas uma zona de disponibilidade (AZ). 
+
+
+</details>
 
 ---
 
@@ -1395,6 +1766,10 @@ C. Expandir o ambiente de compartilhamento de arquivos para o Amazon FSx for Win
 
 D. Expandir o ambiente de compartilhamento de arquivos para o Amazon Elastic File System (Amazon EFS) com uma configuração Multi-AZ. Migrar todos os dados para o Amazon EFS.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Expanda o ambiente de compartilhamento de arquivos para o Amazon FSx para Windows File Server com uma configuração Multi-AZ. Migre todos os dados para o FSx.
 
@@ -1406,6 +1781,9 @@ D. Expandir o ambiente de compartilhamento de arquivos para o Amazon Elastic Fil
   - **A:** O S3 não suporta diretamente compartilhamentos de arquivos no Windows.  
   - **B:** S3 File Gateway adiciona latência e não é adequado para acesso de arquivos nativo no Windows.  
   - **D:** O EFS não é compatível com protocolos de arquivos do Windows.  
+
+
+</details>
 
 ---
 
@@ -1421,6 +1799,10 @@ C. Criar um grupo de segurança que permita tráfego de entrada do grupo de segu
 
 D. Criar uma nova conexão de emparelhamento entre as sub-redes públicas e as sub-redes privadas. Criar uma conexão de emparelhamento diferente entre as sub-redes privadas e as sub-redes de banco de dados.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Crie um grupo de segurança que permita tráfego de entrada do grupo de segurança atribuído às instâncias nas sub-redes privadas. Anexe o grupo de segurança às instâncias de banco de dados.
 
@@ -1435,6 +1817,9 @@ permitir tráfego apenas do grupo de segurança associado às instâncias EC2 na
   - **B:** Bloquear tráfego das sub-redes públicas pode impactar funcionalidades legítimas.  
   - **D:** Conexões de emparelhamento não são necessárias nesse caso.  
 
+
+</details>
+
 ---
 
 ### Questão 56
@@ -1448,6 +1833,10 @@ B. Criar registros DNS no Route 53 com o domínio da empresa. Apontar o registro
 C. Criar um endpoint Regional do API Gateway. Associar o endpoint do API Gateway ao domínio da empresa. Importar o certificado público associado ao domínio da empresa no AWS Certificate Manager (ACM) na mesma região. Anexar o certificado ao endpoint do API Gateway. Configurar o Route 53 para rotear o tráfego para o endpoint do API Gateway.
 
 D. Criar um endpoint Regional do API Gateway. Associar o endpoint do API Gateway ao domínio da empresa. Importar o certificado público associado ao domínio da empresa no AWS Certificate Manager (ACM) na região us-east-1. Anexar o certificado às APIs do API Gateway. Criar registros DNS no Route 53 com o domínio da empresa. Apontar um registro A para o domínio da empresa.
+
+<details>
+
+<summary>Resposta</summary>
 
 **Resposta correta:**  
 **C.** Crie um endpoint Regional no API Gateway. Associe-o ao domínio da empresa. Importe o certificado público associado ao domínio no AWS Certificate Manager (ACM) na mesma região e configure o Route 53 para rotear o tráfego.
@@ -1467,6 +1856,9 @@ D. Criar um endpoint Regional do API Gateway. Associar o endpoint do API Gateway
   - **A e B:** Não atendem ao requisito de configuração na mesma região do API Gateway.  
   - **D:** Usar ACM na região us-east-1 é desnecessário neste caso.  
 
+
+</details>
+
 ---
 
 ### Questão 57
@@ -1481,6 +1873,10 @@ C. Usar o Amazon SageMaker para detectar conteúdo impróprio. Usar ground truth
 
 D. Usar o AWS Fargate para implantar um modelo de aprendizado de máquina personalizado para detectar conteúdo impróprio. Usar ground truth para rotular previsões com baixa confiança.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Use o Amazon Rekognition para detectar conteúdo impróprio. Use revisão humana para previsões com baixa confiança.
 
@@ -1491,6 +1887,9 @@ D. Usar o AWS Fargate para implantar um modelo de aprendizado de máquina person
 - **Por que as outras opções não são adequadas?**  
   - **A:** O Amazon Comprehend é voltado para análise de texto, não imagens.  
   - **C e D:** Usar SageMaker ou modelos personalizados adiciona complexidade desnecessária.  
+
+
+</details>
 
 ---
 
@@ -1506,6 +1905,10 @@ C. Usar Amazon Elastic Container Service (Amazon ECS) no AWS Fargate.
 
 D. Usar instâncias Amazon EC2 com uma Amazon Machine Image (AMI) otimizada para o Amazon Elastic Container Service (Amazon ECS).
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Use o Amazon ECS no AWS Fargate.
 
@@ -1516,6 +1919,9 @@ D. Usar instâncias Amazon EC2 com uma Amazon Machine Image (AMI) otimizada para
 - **Por que as outras opções não são adequadas?**  
   - **A e D:** EC2 requer gerenciamento da infraestrutura.  
   - **B:** ECS com EC2 worker nodes ainda exige manutenção da infraestrutura.  
+
+
+</details>
 
 ---
 
@@ -1531,6 +1937,10 @@ C. Armazenar os dados no Amazon CloudFront como cache. Armazenar os dados em um 
 
 D. Coletar os dados com Amazon Kinesis Data Streams. Usar Amazon Kinesis Data Firehose para transmitir os dados para um data lake no Amazon S3. Carregar os dados no Amazon Redshift para análise.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **D.** Colete os dados do Amazon Kinesis Data Streams. Use o Amazon Kinesis Data Firehose para transmitir os dados para um data lake no Amazon S3. Carregue os dados no Amazon Redshift para análise.
 
@@ -1542,6 +1952,9 @@ D. Coletar os dados com Amazon Kinesis Data Streams. Usar Amazon Kinesis Data Fi
   - **A:** O AWS Data Pipeline é mais complexo e menos eficiente para ingestão em tempo real.  
   - **B:** EC2 é menos escalável e mais caro para lidar com grandes volumes de dados.  
   - **C:** CloudFront não é adequado para análise de dados clickstream.  
+
+
+</details>
 
 ---
 
@@ -1557,6 +1970,10 @@ C. Criar uma regra de ouvinte no ALB para redirecionar o tráfego HTTP para HTTP
 
 D. Substituir o ALB por um Network Load Balancer configurado para usar Server Name Indication (SNI).
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Crie uma regra de listener no ALB para redirecionar o tráfego HTTP para HTTPS.
 
@@ -1568,6 +1985,9 @@ D. Substituir o ALB por um Network Load Balancer configurado para usar Server Na
   - **A:** Configurar a ACL da rede não realiza redirecionamento.  
   - **B:** Substituir HTTP por HTTPS na URL requer alterações adicionais no lado do cliente.  
   - **D:** Um Network Load Balancer não é necessário para este caso.  
+
+
+</details>
 
 ---
 
@@ -1583,6 +2003,10 @@ C. Armazenar as credenciais do banco de dados como um segredo no AWS Secrets Man
 
 D. Armazenar as credenciais do banco de dados como parâmetros criptografados no AWS Systems Manager Parameter Store. Ativar a rotação automática para os parâmetros criptografados. Anexar a permissão necessária à função da instância EC2 para conceder acesso aos parâmetros criptografados.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Armazene as credenciais do banco como um segredo no AWS Secrets Manager. Ative a rotação automática para o segredo. Anexe a permissão necessária ao role da instância EC2 para acessar o segredo.
 
@@ -1594,6 +2018,9 @@ D. Armazenar as credenciais do banco de dados como parâmetros criptografados no
   - **A:** Armazenar credenciais nos metadados da instância não é seguro.  
   - **B:** Armazenar credenciais em arquivos de configuração no S3 adiciona complexidade e reduz a segurança.  
   - **D:** O Parameter Store não possui rotação automática nativa como o Secrets Manager.  
+
+
+</details>
 
 ---
 
@@ -1609,6 +2036,10 @@ C. Usar o AWS Certificate Manager (ACM) Private Certificate Authority para emiti
 
 D. Usar o AWS Certificate Manager (ACM) para importar um certificado SSL/TLS. Aplicar o certificado ao ALB. Usar o Amazon EventBridge (Amazon CloudWatch Events) para enviar uma notificação quando o certificado estiver próximo de expirar. Rotacionar o certificado manualmente.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **D.** Use o AWS Certificate Manager (ACM) para importar um certificado SSL/TLS. Aplique o certificado ao ALB. Use o Amazon EventBridge (Amazon CloudWatch Events) para enviar notificações quando o certificado estiver próximo do vencimento. Faça a rotação do certificado manualmente.
 
@@ -1620,6 +2051,9 @@ D. Usar o AWS Certificate Manager (ACM) para importar um certificado SSL/TLS. Ap
   - **A:**  O ACM não pode emitir certificados SSL/TLS de uma autoridade certificadora externa.
   - **B:**  Não há suporte para importar material de chave para certificados gerados pelo ACM. Além disso, a renovação gerenciada não funciona para certificados importados.
   - **C:** O ACM Private Certificate Authority é usado para criar CAs privadas internas. Ele não atende ao requisito de utilizar uma autoridade certificadora externa.
+
+</details>
+
 ---
 
 ### Questão 63
@@ -1634,6 +2068,10 @@ C. Fazer o upload dos arquivos .pdf para uma aplicação AWS Elastic Beanstalk q
 
 D. Fazer o upload dos arquivos .pdf para uma aplicação AWS Elastic Beanstalk que inclui instâncias Amazon EC2, armazenamento Amazon Elastic File System (Amazon EFS) e um grupo Auto Scaling. Usar um programa nas instâncias EC2 para converter os arquivos para o formato .jpg. Salvar os arquivos .pdf e .jpg no armazenamento EBS.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Salve os arquivos PDF no Amazon S3. Configure um evento PUT no S3 para invocar uma função AWS Lambda que converte os arquivos para o formato JPG e os armazena novamente no S3.
 
@@ -1644,6 +2082,9 @@ D. Fazer o upload dos arquivos .pdf para uma aplicação AWS Elastic Beanstalk q
 - **Por que as outras opções não são adequadas?**  
   - **B:** DynamoDB Streams não é projetado para processar arquivos grandes como PDFs.  
   - **C e D:** Elastic Beanstalk e EC2 aumentam a complexidade e o custo operacional.  
+
+
+</details>
 
 ---
 
@@ -1659,6 +2100,10 @@ C. Implantar e configurar um Amazon S3 File Gateway no local. Mover os dados de 
 
 D. Implantar e configurar o Amazon FSx for Windows File Server na AWS. Implantar e configurar um Amazon FSx File Gateway no local. Mover os dados de arquivos locais para o FSx File Gateway. Configurar as cargas de trabalho na nuvem para usar o FSx for Windows File Server na AWS. Configurar as cargas de trabalho locais para usar o FSx File Gateway.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **D.** Implante e configure Amazon FSx for Windows File Server na AWS. Implante e configure um Amazon FSx File Gateway no local. Mova os dados locais para o FSx File Gateway.
 
@@ -1669,6 +2114,9 @@ D. Implantar e configurar o Amazon FSx for Windows File Server na AWS. Implantar
 - **Por que as outras opções não são adequadas?**  
   - **A e C:** Apenas o FSx ou o S3 File Gateway não atendem ao requisito de baixa latência para acessos locais e na nuvem.  
   - **B:** O S3 File Gateway sozinho não é compatível com os padrões de compartilhamento de arquivos do Windows.  
+
+
+</details>
 
 ---
 
@@ -1684,6 +2132,10 @@ C. Usar o Amazon Textract para extrair o texto dos relatórios. Usar o Amazon Co
 
 D. Usar o Amazon Rekognition para extrair o texto dos relatórios. Usar o Amazon Comprehend Medical para identificar as PHI a partir do texto extraído.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Use Amazon Textract para extrair texto dos relatórios. Use Amazon Comprehend Medical para identificar PHI no texto extraído.
 
@@ -1694,6 +2146,9 @@ D. Usar o Amazon Rekognition para extrair o texto dos relatórios. Usar o Amazon
 - **Por que as outras opções não são adequadas?**  
   - **A:** Bibliotecas Python exigem mais desenvolvimento e manutenção manual.  
   - **B e D:** SageMaker e Rekognition adicionam complexidade desnecessária para o caso específico de PHI.  
+
+
+</details>
 
 ---
 
@@ -1709,6 +2164,10 @@ C. Criar uma política de ciclo de vida do S3 para mover arquivos do S3 Standard
 
 D. Criar uma política de ciclo de vida do S3 para mover arquivos do S3 Standard para o S3 Standard-Infrequent Access (S3 Standard-IA) 30 dias após a criação do objeto. Mover os arquivos para o S3 Glacier 4 anos após a criação do objeto.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Crie uma política de ciclo de vida para mover arquivos do S3 Standard para S3 Standard-Infrequent Access (S3 Standard-IA) após 30 dias. Exclua os arquivos após 4 anos.
 
@@ -1720,6 +2179,9 @@ D. Criar uma política de ciclo de vida do S3 para mover arquivos do S3 Standard
   - **A:** Glacier não é adequado para acessos frequentes nos primeiros 30 dias.  
   - **B:** One Zone-IA compromete a resiliência.  
   - **D:** Mover para Glacier depois de 4 anos adiciona complexidade desnecessária.  
+
+
+</details>
 
 ---
 
@@ -1735,6 +2197,10 @@ C. Usar a chamada da API ReceiveMessage para definir um tempo de espera apropria
 
 D. Usar a chamada da API ChangeMessageVisibility para aumentar o visibility timeout.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **D.** Use a chamada ChangeMessageVisibility API para aumentar o timeout de visibilidade.
 
@@ -1746,6 +2212,9 @@ D. Usar a chamada da API ChangeMessageVisibility para aumentar o visibility time
   - **A:** Criar uma nova fila não resolve o problema.  
   - **B:** Adicionar permissões não impacta duplicidade de mensagens.  
   - **C:** Ajustar o tempo de espera na API ReceiveMessage não evita o problema de timeout.  O ReceiveMessage com um tempo de espera (wait time) adequado é útil para diminuir chamadas desnecessárias à API, mas não afeta o comportamento do visibility timeout.
+
+
+</details>
 
 ---
 
@@ -1761,6 +2230,10 @@ C. Provisionar uma conexão AWS Direct Connect para uma região. Provisionar uma
 
 D. Provisionar uma conexão AWS Direct Connect para uma região. Usar o atributo de failover do Direct Connect no AWS CLI para criar automaticamente uma conexão de backup caso a conexão principal Direct Connect falhe.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Configure uma conexão AWS Direct Connect para a região. Configure uma conexão VPN como backup.
 
@@ -1772,6 +2245,9 @@ D. Provisionar uma conexão AWS Direct Connect para uma região. Usar o atributo
   - **B:** VPNs não oferecem a mesma consistência de latência que o Direct Connect.  
   - **C:** Usar duas conexões Direct Connect aumenta os custos desnecessariamente.  
   - **D:** O atributo failover não cria automaticamente uma conexão de backup.  
+
+
+</details>
 
 ---
 
@@ -1787,6 +2263,10 @@ C. Configurar o grupo de Auto Scaling para usar uma única Zona de Disponibilida
 
 D. Configurar o grupo de Auto Scaling para usar várias regiões da AWS. Escrever os dados do aplicativo no Amazon S3. Usar notificações de eventos do S3 para acionar uma função AWS Lambda para gravar os dados no banco de dados.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Configure o Auto Scaling Group para usar múltiplas zonas de disponibilidade. Configure o banco de dados como Multi-AZ. Configure uma instância Amazon RDS Proxy para o banco de dados.
 
@@ -1799,6 +2279,9 @@ D. Configurar o grupo de Auto Scaling para usar várias regiões da AWS. Escreve
   - **A:** Usar múltiplas regiões e replicação cross-region aumenta complexidade e latência.  
   - **C:** Backups por snapshots não garantem alta disponibilidade ou recuperação rápida.  
   - **D:** Usar múltiplas regiões para dados críticos adiciona desafios de sincronização e latência.  
+
+
+</details>
 
 ---
 
@@ -1815,6 +2298,10 @@ C. Substituir o NLB por um Application Load Balancer (ALB). Ativar verificaçõe
 
 D. Criar um alarme do Amazon CloudWatch que monitore a métrica UnhealthyHostCount para o NLB. Configurar uma ação de Auto Scaling para substituir instâncias não saudáveis quando o alarme estiver no estado ALARM.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Substitua o NLB por um Application Load Balancer. Habilite verificações de integridade HTTP fornecendo o URL da aplicação. Configure uma ação de Auto Scaling para substituir instâncias não saudáveis.
 
@@ -1826,6 +2313,9 @@ D. Criar um alarme do Amazon CloudWatch que monitore a métrica UnhealthyHostCou
   - **A:** O NLB não oferece suporte a verificações de integridade baseadas em HTTP.  
   - **B:** Adicionar um cron job aumenta a complexidade sem resolver o problema da detecção automática.  
   - **D:** Alarmes do CloudWatch monitoram, mas não substituem o NLB inadequado para HTTP.  
+
+
+</details>
 
 ---
 
@@ -1841,6 +2331,10 @@ C. Exportar os dados do DynamoDB para o Amazon S3 Glacier diariamente. Para recu
 
 D. Agendar snapshots do Amazon Elastic Block Store (Amazon EBS) para a tabela do DynamoDB a cada 15 minutos. Para recuperação de RPO, restaurar a tabela do DynamoDB usando o snapshot do EBS.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Configure a recuperação point-in-time (PITR) do DynamoDB. Para recuperação, restaure para o ponto desejado no tempo.
 
@@ -1852,6 +2346,9 @@ D. Agendar snapshots do Amazon Elastic Block Store (Amazon EBS) para a tabela do
   - **A:** Global tables não são projetadas para recuperação de dados corrompidos.  
   - **C:** Exportar para Glacier não atende ao RTO de 1 hora devido ao tempo de recuperação.  
   - **D:** Snapshots do EBS não são uma funcionalidade nativa do DynamoDB.  
+
+
+</details>
 
 ---
 
@@ -1867,6 +2364,10 @@ C. Implantar o aplicativo em uma sub-rede pública e permitir que ele roteie por
 
 D. Implantar um endpoint de gateway S3 para a VPC e anexar uma política de endpoint que permita acesso aos buckets S3.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **D.** Implemente um endpoint de gateway S3 VPC na VPC e anexe uma política de endpoint que permita acesso aos buckets S3.
 
@@ -1877,6 +2378,9 @@ D. Implantar um endpoint de gateway S3 para a VPC e anexar uma política de endp
 - **Por que as outras opções não são adequadas?**  
   - **A e B:** O uso de NAT ou API Gateway adiciona complexidade e custos desnecessários.  
   - **C:** Encaminhar pelo internet gateway não resolve os custos de transferência dentro da mesma região.  
+
+
+</details>
 
 ---
 
@@ -1894,6 +2398,10 @@ D. Substituir o grupo de segurança atual das instâncias de aplicação por um 
 
 E. Substituir o grupo de segurança atual das instâncias de aplicação por um que permita acesso SSH de entrada somente a partir do endereço IP público do bastion host.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C, D.** Substitua o grupo de segurança do bastion host para permitir acesso apenas do IP interno da empresa. Configure o grupo de segurança das instâncias de aplicação para permitir acesso SSH apenas do IP privado do bastion host.
 
@@ -1906,6 +2414,9 @@ E. Substituir o grupo de segurança atual das instâncias de aplicação por um 
  **A**  Restringir o acesso ao bastion host apenas às instâncias de aplicação é desnecessário. O bastion host precisa permitir acesso da rede externa para que o administrador se conecte.
  **B**  Permitir acesso ao bastion host a partir do intervalo de IP interno da empresa não funcionaria porque a conexão é feita através da internet pública.
  **E:**  Permitir acesso às instâncias de aplicação a partir do endereço IP público do bastion host é inseguro e não reflete as práticas recomendadas para sub-redes privadas.
+
+
+</details>
 
 ---
 
@@ -1923,6 +2434,10 @@ D. Configurar o grupo de segurança para o nível de banco de dados para permiti
 
 E. Configurar o grupo de segurança para o nível de banco de dados para permitir tráfego de entrada nas portas 443 e 1433 a partir do grupo de segurança do nível web.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A, C.** Configure o grupo de segurança da camada web para permitir tráfego de entrada na porta 443 de 0.0.0.0/0. Configure o grupo de segurança da camada de banco de dados para permitir tráfego de entrada na porta 1433 do grupo de segurança da camada web.
 
@@ -1932,6 +2447,9 @@ E. Configurar o grupo de segurança para o nível de banco de dados para permiti
 
 - **Por que as outras opções não são adequadas?**  
   - **B, D, E:** Configurações de saída não atendem ao requisito principal de tráfego controlado entre as camadas.  
+
+
+</details>
 
 ---
 
@@ -1947,6 +2465,10 @@ C. Usar o Amazon Simple Notification Service (Amazon SNS) para gerenciar a comun
 
 D. Usar o Amazon Simple Queue Service (Amazon SQS) para gerenciar a comunicação entre servidores de aplicação executados no Amazon EC2 em um grupo de Auto Scaling. Usar o Amazon CloudWatch para monitorar o comprimento da fila SQS e escalar quando falhas de comunicação forem detectadas.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Use o Amazon API Gateway para direcionar transações para funções AWS Lambda como camada de aplicação. Use o SQS como camada de comunicação entre os serviços de aplicação.
 
@@ -1956,6 +2478,9 @@ D. Usar o Amazon Simple Queue Service (Amazon SQS) para gerenciar a comunicaçã
 
 - **Por que as outras opções não são adequadas?**  
   - **B, C, D:** Soluções baseadas em EC2 ou SNS adicionam complexidade e não otimizam a eficiência operacional.  
+
+
+</details>
 
 ---
 
@@ -1971,6 +2496,10 @@ C. AWS Database Migration Service (AWS DMS) via internet pública
 
 D. AWS Database Migration Service (AWS DMS) via AWS Direct Connect
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Use o AWS DataSync sobre AWS Direct Connect.
 
@@ -1980,6 +2509,9 @@ D. AWS Database Migration Service (AWS DMS) via AWS Direct Connect
 
 - **Por que as outras opções não são adequadas?**  
   - **A, C, D:** Usar a internet pública ou DMS não oferece o nível de segurança e desempenho exigido para esse volume de dados.  
+
+
+</details>
 
 ---
 
@@ -1995,6 +2527,10 @@ C. Configurar uma API do Amazon API Gateway para enviar dados para um stream de 
 
 D. Configurar uma API do Amazon API Gateway para enviar dados para o AWS Glue. Usar funções AWS Lambda para transformar os dados. Usar o AWS Glue para enviar os dados ao Amazon S3.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Configure uma API no Amazon API Gateway para enviar dados para um fluxo de dados do Amazon Kinesis. Crie um fluxo de entrega do Amazon Kinesis Data Firehose que use o fluxo de dados do Kinesis como fonte de dados. Use funções AWS Lambda para transformar os dados. Use o Kinesis Data Firehose para enviar os dados para o Amazon S3.
 
@@ -2006,6 +2542,9 @@ D. Configurar uma API do Amazon API Gateway para enviar dados para o AWS Glue. U
   - **A:** Usar EC2 aumenta o custo e a complexidade em relação à solução serverless.  
   - **B:** O AWS Glue é mais adequado para ETL em grande escala, mas não é ideal para transformações em tempo real.  
   - **D:** A solução de Lambda com Glue adiciona complexidade sem necessidade de integração com Firehose.  
+
+
+</details>
 
 ---
 
@@ -2021,6 +2560,10 @@ C. Crie um backup sob demanda da tabela usando o console do DynamoDB. Armazene o
 
 D. Crie uma regra do Amazon EventBridge (Amazon CloudWatch Events) para invocar uma função AWS Lambda. Configure a função Lambda para fazer o backup da tabela e armazená-lo em um bucket do Amazon S3. Configure uma política de ciclo de vida no bucket do S3.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Use o AWS Backup para criar agendamentos de backup e políticas de retenção para a tabela.
 
@@ -2032,6 +2575,9 @@ D. Crie uma regra do Amazon EventBridge (Amazon CloudWatch Events) para invocar 
   - **A:** O DynamoDB point-in-time recovery (PITR) não é uma solução de backup de longo prazo.  
   - **C:** Armazenar backups em S3 não é automatizado e adiciona complexidade.  
   - **D:** Usar Lambda para backups manualmente exigiria mais configuração e não é tão eficiente quanto o AWS Backup.  
+
+
+</details>
 
 ---
 
@@ -2046,6 +2592,10 @@ B. Criar uma tabela DynamoDB com um índice secundário global (global secondary
 C. Criar uma tabela DynamoDB com capacidade provisionada e auto scaling.
 
 D. Criar uma tabela DynamoDB no modo de capacidade provisionada, configurando-a como uma tabela global.
+
+<details>
+
+<summary>Resposta</summary>
 
 **Resposta correta:**  
 **A.** Criar uma tabela DynamoDB no modo de capacidade sob demanda (on-demand).
@@ -2062,6 +2612,9 @@ D. Criar uma tabela DynamoDB no modo de capacidade provisionada, configurando-a 
   - **C:** Funciona, mas não é a solução mais eficiente para este caso.
   - **D:** Global tables não são necessárias para este cenário, já que não há exigência de múltiplas regiões.  
 
+
+</details>
+
 ---
 
 ### Questão 80
@@ -2076,6 +2629,10 @@ C. Modifique a propriedade launchPermission da AMI. Compartilhe a AMI apenas com
 
 D. Exporte a AMI da conta de origem para um bucket Amazon S3 na conta AWS do parceiro MSP. Criptografe o bucket S3 com uma nova chave KMS de propriedade do parceiro MSP. Copie e inicie a AMI na conta AWS do parceiro MSP.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Modifique a propriedade launchPermission da AMI. Compartilhe a AMI apenas com a conta AWS do parceiro MSP. Modifique a política da chave para confiar em uma nova chave KMS de propriedade do parceiro MSP para criptografia.
 
@@ -2087,6 +2644,9 @@ D. Exporte a AMI da conta de origem para um bucket Amazon S3 na conta AWS do par
   - **B:** Permitir que a conta do parceiro use a chave original (gerenciada pelo cliente) mantém dependências entre as contas e não transfere o controle total para o parceiro MSP.
   - **C:** Usar uma chave do MSP comprometeria o controle sobre a criptografia.  
   - **D:** Exportar a AMI para S3 não é a abordagem mais eficiente para compartilhar uma AMI.  
+
+
+</details>
 
 ---
 
@@ -2102,6 +2662,10 @@ C. Crie uma fila do Amazon SQS para armazenar os trabalhos que precisam ser proc
 
 D. Crie um tópico do Amazon SNS para enviar os trabalhos que precisam ser processados. Crie uma Amazon Machine Image (AMI) que contenha o aplicativo de processamento. Crie um modelo de inicialização usando a AMI. Crie um grupo de Auto Scaling usando o modelo de inicialização. Defina a política de escalabilidade do grupo de Auto Scaling para adicionar e remover nós com base no número de mensagens publicadas no tópico SNS.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Crie uma fila SQS para armazenar os trabalhos a serem processados. Crie uma Amazon Machine Image (AMI) que consista na aplicação de processamento. Crie um modelo de lançamento que use a AMI. Crie um Auto Scaling group usando o modelo de lançamento. Defina a política de escalabilidade do Auto Scaling para adicionar e remover nós com base no número de itens na fila SQS.
 
@@ -2113,6 +2677,9 @@ D. Crie um tópico do Amazon SNS para enviar os trabalhos que precisam ser proce
   - **A:** O SNS não é adequado para filas duráveis como o SQS.  
   - **B:** Usar o tráfego de rede como base para escalabilidade não é eficaz para garantir que os trabalhos sejam processados.  
   - **D:** Usar o SNS e a política de escalabilidade baseada no número de mensagens não é tão eficaz quanto o SQS.  
+
+
+</details>
 
 ---
 
@@ -2128,6 +2695,10 @@ C. Usar o AWS Trusted Advisor para verificar certificados que irão expirar em a
 
 D. Criar uma regra do Amazon EventBridge (Amazon CloudWatch Events) para detectar certificados que irão expirar em até 30 dias. Configurar a regra para invocar uma função AWS Lambda. Configurar a função Lambda para enviar um alerta personalizado por meio do Amazon SNS.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **D.** Crie uma regra do Amazon EventBridge (Amazon CloudWatch Events) para detectar qualquer certificado que vá expirar dentro de 30 dias. Configure a regra para invocar uma função AWS Lambda. Configure a função Lambda para enviar um alerta personalizado por meio do Amazon Simple Notification Service (Amazon SNS).
 
@@ -2139,6 +2710,9 @@ D. Criar uma regra do Amazon EventBridge (Amazon CloudWatch Events) para detecta
   - **A:** O ACM não tem suporte nativo para criar regras personalizadas ou enviar notificações diretamente para o SNS. Isso não é tecnicamente viável. 
   - **B:** Embora o AWS Config possa detectar recursos não conformes, ele não é ideal para monitorar eventos de expiração de certificados no ACM. A configuração seria complexa e menos eficiente. 
   - **C:** O Trusted Advisor não monitora diretamente a expiração de certificados no ACM. Criar um alarme do CloudWatch baseado no Trusted Advisor também não atende ao requisito.
+
+
+</details>
 
 ---
 
@@ -2154,6 +2728,10 @@ C. Usar o Amazon CloudFront com uma origem personalizada apontando para os servi
 
 D. Usar uma política de roteamento geoproximidade do Amazon Route 53 apontando para os servidores locais.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Use o Amazon CloudFront com uma origem personalizada apontando para os servidores locais.
 
@@ -2165,6 +2743,9 @@ D. Usar uma política de roteamento geoproximidade do Amazon Route 53 apontando 
   - **A:** Mover a aplicação para outra região não é uma solução rápida.  
   - **B:**  O Amazon S3 é ideal para hospedar sites estáticos, mas o site descrito na questão é dinâmico, o que torna o S3 inadequado para este caso. Além disso, configurar replicação entre regiões não seria imediato.
   - **D:** Uma política de geoproximidade apenas direciona os usuários para o endpoint mais próximo, mas os servidores ainda estariam localizados nos EUA, sem redução da latência. Além disso, o Route 53 não oferece caching ou aceleração de conteúdo.  
+
+
+</details>
 
 ---
 
@@ -2181,6 +2762,10 @@ C. Usar Spot blocks para as instâncias de produção EC2. Usar Reserved Instanc
 
 D. Usar On-Demand Instances para as instâncias de produção EC2. Usar Spot blocks para as instâncias de desenvolvimento e teste EC2.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Use Reserved Instances para as instâncias EC2 de produção. Use instâncias sob demanda para os ambientes de desenvolvimento e teste.
 
@@ -2193,6 +2778,9 @@ D. Usar On-Demand Instances para as instâncias de produção EC2. Usar Spot blo
   - **A** As Spot Instances são apropriadas para cargas de trabalho tolerantes a interrupções, mas as instâncias de produção precisam de alta disponibilidade e confiabilidade.
   - **C**  Spot blocks podem ser usados para tarefas de longa duração, mas ainda assim têm uma janela limitada e podem ser encerrados. Isso não atende ao requisito de alta disponibilidade para produção.
   - **D** Usar On-Demand Instances para produção é mais caro do que Reserved Instances, já que a produção funciona 24/7.
+
+
+</details>
 
 ---
 
@@ -2208,6 +2796,10 @@ C. Armazenar os documentos enviados em um bucket do Amazon S3 com o S3 Versionin
 
 D. Armazenar os documentos enviados em um volume do Amazon Elastic File System (Amazon EFS). Acessar os dados montando o volume no modo somente leitura.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Armazene os documentos carregados em um bucket Amazon S3 com versionamento e S3 Object Lock habilitado.
 
@@ -2219,6 +2811,9 @@ D. Armazenar os documentos enviados em um volume do Amazon Elastic File System (
   - **B:** A política de ciclo de vida do S3 não garante que os documentos não possam ser excluídos ou modificados.  
   - **C:** As ACLs de somente leitura restringem o acesso, mas não impedem a modificação ou exclusão de objetos no bucket. Além disso, o Versioning por si só não garante imutabilidade.
   - **D:** O EFS é um sistema de arquivos, mas não oferece as funcionalidades necessárias para impedir alterações ou exclusões.  
+
+
+</details>
 
 ---
 
@@ -2234,6 +2829,10 @@ C. Armazenar as credenciais do banco de dados em um bucket seguro do Amazon S3. 
 
 D. Armazenar as credenciais do banco de dados em arquivos criptografados com o AWS Key Management Service (AWS KMS) no sistema de arquivos dos servidores web. Os servidores web devem ser capazes de descriptografar os arquivos e acessar o banco de dados.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Armazene as credenciais do banco de dados no AWS Secrets Manager. Conceda as permissões IAM necessárias para permitir que os servidores web acessem o AWS Secrets Manager.
 
@@ -2245,6 +2844,9 @@ D. Armazenar as credenciais do banco de dados em arquivos criptografados com o A
   - **B:** O OpsCenter não é uma solução projetada para gerenciar credenciais. É usado para operações de gerenciamento e análise de incidentes.
   - **C:** Usar um bucket S3 não é uma prática recomendada para armazenar credenciais de banco de dados, pois pode comprometer a segurança.  
   - **D:** Armazenar credenciais criptografadas localmente nas instâncias pode ser inseguro e difícil de gerenciar em escala.  
+
+
+</details>
 
 ---
 
@@ -2261,6 +2863,10 @@ C. Persistir os dados dos clientes no armazenamento local da Lambda. Configurar 
 
 D. Armazenar os dados dos clientes em uma fila FIFO do Amazon Simple Queue Service (Amazon SQS). Criar uma nova função Lambda que consulte a fila e armazene os dados dos clientes no banco de dados.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Provisione um proxy Amazon RDS para ficar entre as funções Lambda e o banco de dados. Configure as funções Lambda para se conectarem ao proxy RDS.
 
@@ -2274,6 +2880,9 @@ D. Armazenar os dados dos clientes em uma fila FIFO do Amazon Simple Queue Servi
   - **A:** O RDS Proxy melhora a eficiência de conexões e gerenciamento, mas não resolve o problema de indisponibilidade do banco de dados durante as atualizações.
   - **B:** Prolongar o tempo de execução não garante que o banco estará disponível antes do tempo limite.
   - **C:** O armazenamento local em funções Lambda é temporário e não é compartilhado entre invocações. 
+
+</details>
+
 ---
 
 ### Questão 88
@@ -2288,6 +2897,10 @@ C. Configurar acesso entre contas para a empresa de marketing para que ela tenha
 
 D. Configurar o bucket S3 da empresa para usar S3 Intelligent-Tiering. Sincronizar o bucket S3 com um dos buckets S3 da empresa de marketing.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Configure o recurso Requester Pays no bucket S3 da empresa.
 
@@ -2299,6 +2912,9 @@ D. Configurar o bucket S3 da empresa para usar S3 Intelligent-Tiering. Sincroniz
   - **B:** A replicação cross-region resulta em custos adicionais de armazenamento e transferência.  
   - **C:** O acesso cross-account não resolve diretamente os custos de transferência de dados.  
   - **D:** O uso do S3 Intelligent-Tiering não reduz custos de transferência de dados entre contas e regiões.  
+
+
+</details>
 
 ---
 
@@ -2314,6 +2930,10 @@ C. Adicionar uma política de ciclo de vida do S3 às contas de usuário IAM da 
 
 D. Usar o AWS Key Management Service (AWS KMS) para criptografar o bucket S3 e restringir as contas de usuário IAM da equipe de auditoria de acessar a chave KMS.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Habilite as funcionalidades de versionamento e MFA Delete no bucket S3.
 
@@ -2325,6 +2945,9 @@ D. Usar o AWS Key Management Service (AWS KMS) para criptografar o bucket S3 e r
   - **B:** O MFA em credenciais IAM não impede a exclusão acidental de documentos.  
   - **C:** A política de Lifecycle não impede exclusões acidentais.  
   - **D:** O KMS não impede a exclusão de objetos no S3.  
+
+
+</details>
 
 ---
 
@@ -2341,6 +2964,10 @@ C. Instruir a equipe de desenvolvimento a exportar manualmente as entradas no ba
 
 D. Usar o Amazon ElastiCache para armazenar em cache as consultas comuns que o script executa no banco de dados.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **B.** Crie uma réplica de leitura do banco de dados. Configure o script para consultar apenas a réplica de leitura.
 
@@ -2352,6 +2979,9 @@ D. Usar o Amazon ElastiCache para armazenar em cache as consultas comuns que o s
   - **A:** Modificar para Multi-AZ não resolve o problema de sobrecarga de leitura.  
   - **C:** Exportar manualmente é uma solução menos eficiente e mais trabalhosa.  
   - **D:** O ElastiCache não é necessário para consultas simples e frequentes em um banco de dados SQL.  
+
+
+</details>
 
 ---
 
@@ -2367,6 +2997,10 @@ C. Criar um bucket S3 na mesma região da AWS que as instâncias EC2.
 
 D. Configurar um NAT gateway na mesma sub-rede que as instâncias EC2.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 * **A.*** Configurar um endpoint de gateway do S3.
 
@@ -2378,6 +3012,9 @@ D. Configurar um NAT gateway na mesma sub-rede que as instâncias EC2.
   - **A:** Usar um internet gateway permitiria tráfego pela internet, o que viola as regulamentações de segurança.  
   - **C:** Usar um NAT Gateway também envolve tráfego pela internet, o que não é permitido.  
   - **D:** Um VPC Peering não resolveria o problema de acessar o S3 de forma segura dentro da mesma VPC.  
+
+
+</details>
 
 ---
 
@@ -2395,6 +3032,10 @@ D. Criar um usuário IAM com uma política de acesso ao S3 e copiar as credencia
 
 E. Criar uma instância NAT e configurar as instâncias EC2 para usarem a instância NAT para acessar o bucket S3.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **A.** Configure um endpoint de gateway VPC para o Amazon S3 dentro da VPC.  
 **C.** Crie uma política de bucket que limita o acesso apenas à camada de aplicação em execução na VPC.
@@ -2407,6 +3048,9 @@ E. Criar uma instância NAT e configurar as instâncias EC2 para usarem a instâ
   - **B:** Tornar os objetos públicos comprometeria a segurança, permitindo que qualquer pessoa acessasse o conteúdo do S3.  
   - **D:** Usar uma instância NAT não é necessário para o acesso do EC2 ao S3 quando um endpoint VPC é configurado.  
   - **E:** A criação de um usuário IAM específico para as instâncias EC2 não é necessária se uma política de bucket adequada for configurada.
+
+
+</details>
 
 ---
 
@@ -2424,6 +3068,10 @@ C. Use o Amazon RDS para MySQL com uma implantação Multi-AZ e réplicas de lei
 
 D. Use o Amazon RDS para MySQL com uma implantação Multi-AZ e réplicas de leitura para produção. Preencha o banco de dados de staging implementando um processo de backup e restauração que use o utilitário mysqldump.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
   **B.** Use o Amazon Aurora MySQL com réplicas Multi-AZ Aurora para produção. Use clonagem de banco de dados para criar o banco de dados de staging sob demanda.
 
@@ -2435,6 +3083,9 @@ D. Use o Amazon RDS para MySQL com uma implantação Multi-AZ e réplicas de lei
   - **A:** Usar o mysqldump para backup e restauração pode causar latência devido à interrupção de produção durante o processo.  
   - **C:** Usar instâncias standby para o ambiente de teste pode resultar em um processo de configuração mais complexo e menos eficiente.  
   - **D:** A replicação com mysqldump não resolve o problema de latência de maneira eficiente.  
+
+
+</details>
 
 ---
 
@@ -2451,6 +3102,10 @@ C. Configure o Amazon S3 para enviar uma notificação de evento para uma fila d
 
 D. Configure o Amazon EventBridge (Amazon CloudWatch Events) para enviar um evento para o Amazon Kinesis Data Streams quando um novo arquivo for carregado. Use uma função AWS Lambda para consumir o evento do stream e processar os dados. Armazene o arquivo JSON resultante em um cluster Amazon Aurora.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **C.** Configure o Amazon S3 para enviar uma notificação de evento para uma fila Amazon Simple Queue Service (Amazon SQS). Use uma função AWS Lambda para ler da fila e processar os dados. Armazene o arquivo JSON resultante no Amazon DynamoDB.
 
@@ -2462,6 +3117,9 @@ D. Configure o Amazon EventBridge (Amazon CloudWatch Events) para enviar um even
   - **A:** O Amazon EMR introduz complexidade operacional desnecessária para um processamento simples de arquivos.  
   - **B:** Usar EC2 não é escalável nem ideal para processar arquivos individualmente com alta variabilidade de demanda.  
   - **D:** O Kinesis Data Streams não é necessário para esse tipo de processamento, e a Lambda com SQS é uma solução mais simples.
+
+
+</details>
 
 ---
 
@@ -2477,6 +3135,10 @@ C. Criar réplicas de leitura para o banco de dados. Configurar as réplicas de 
 
 D. Criar réplicas de leitura para o banco de dados. Configurar as réplicas de leitura com os mesmos recursos de computação e armazenamento do banco de dados de origem.
 
+<details>
+
+<summary>Resposta</summary>
+
 **Resposta correta:**  
 **D.** Crie réplicas de leitura para o banco de dados. Configure as réplicas de leitura com os mesmos recursos de computação e armazenamento da instância de origem.
 
@@ -2489,11 +3151,18 @@ D. Criar réplicas de leitura para o banco de dados. Configurar as réplicas de 
   - **B** Em uma implantação Multi-AZ, a instância secundária é apenas para failover e não pode ser usada para leituras ativas.
   - **C:** Configurar réplicas de leitura com menos recursos pode criar gargalos durante períodos de alta demanda, resultando em um desempenho insatisfatório.
 
+
+</details>
+
 ---
 
 ### Questão 96
 Um administrador do Amazon EC2 criou a seguinte política associada a um grupo IAM contendo vários usuários:  
 Qual é o efeito dessa política?
+
+<details>
+
+<summary>Resposta</summary>
 
 **Resposta correta:**  
 **C.** Os usuários podem terminar uma instância EC2 na região us-east-1 quando o IP de origem do usuário for 10.100.100.254.
@@ -2507,11 +3176,18 @@ Qual é o efeito dessa política?
   - **B:** A política não permite a terminação de instâncias com o IP 10.100.100.1.  
   - **D:** A política não bloqueia a terminação de instâncias com o IP 10.100.100.254.
 
+
+</details>
+
 ---
 
 ### Questão 97
 Uma empresa tem uma grande implantação do Microsoft SharePoint em servidores locais, que requer armazenamento compartilhado de arquivos Windows. A empresa deseja migrar essa carga de trabalho para a AWS e está considerando várias opções de armazenamento. A solução de armazenamento deve ser altamente disponível e integrada ao Active Directory para controle de acesso.  
 Qual solução atenderá a esses requisitos?
+
+<details>
+
+<summary>Resposta</summary>
 
 **Resposta correta:**  
 **D.** Crie um sistema de arquivos Amazon FSx for Windows File Server na AWS e defina o domínio Active Directory para autenticação.
@@ -2525,12 +3201,19 @@ Qual solução atenderá a esses requisitos?
   - **B:** O Storage Gateway não é ideal para integrar com Active Directory.  
   - **C:** O S3 não oferece suporte nativo para arquivos compartilhados com o Windows.
 
+
+</details>
+
 ---
 
 ### Questão 98
 Uma empresa de processamento de imagens tem uma aplicação web que os usuários utilizam para carregar imagens. A aplicação carrega as imagens em um bucket Amazon S3. A empresa configurou notificações de eventos S3 para publicar os eventos de criação de objetos em uma fila padrão do Amazon SQS. A fila SQS serve como fonte de eventos para uma função AWS Lambda que processa as imagens e envia os resultados aos usuários por email.  
 Os usuários relatam que estão recebendo várias mensagens de email para cada imagem carregada. Um arquiteto de soluções determina que as mensagens SQS estão invocando a função Lambda mais de uma vez, resultando em mensagens duplicadas.  
 O que o arquiteto de soluções deve fazer para resolver esse problema com o MENOR overhead operacional?
+
+<details>
+
+<summary>Resposta</summary>
 
 **Resposta correta:**  
 **B.** Mude a fila SQS padrão para uma fila SQS FIFO. Use o ID de deduplicação da mensagem para descartar mensagens duplicadas.
@@ -2544,12 +3227,19 @@ O que o arquiteto de soluções deve fazer para resolver esse problema com o MEN
   - **C:** Aumentar o timeout de visibilidade não resolve a duplicação.  
   - **D:** A exclusão imediata das mensagens não elimina a duplicação e pode afetar o processamento de falhas.
 
----
 
 Posso continuar com mais questões ou fornecer mais detalhes?
+</details>
+
+---
+
 ### Questão 99
 Uma empresa está implementando uma solução de armazenamento compartilhado para uma aplicação de jogos que está hospedada em um data center local. A empresa precisa da capacidade de usar clientes Lustre para acessar dados. A solução deve ser totalmente gerenciada.  
 Qual solução atende a esses requisitos?
+
+<details>
+
+<summary>Resposta</summary>
 
 **Resposta correta:**  
 **D.** Crie um sistema de arquivos Amazon FSx for Lustre. Anexe o sistema de arquivos ao servidor de origem. Conecte o servidor de aplicação ao sistema de arquivos.
@@ -2563,11 +3253,18 @@ Qual solução atende a esses requisitos?
   - **B:** Usar uma instância EC2 não seria totalmente gerenciado e introduziria complexidade adicional.  
   - **C:** O Amazon EFS não suporta o Lustre como um protocolo de acesso.  
 
+
+</details>
+
 ---
 
 ### Questão 100
 A aplicação conteinerizada de uma empresa está sendo executada em uma instância Amazon EC2. A aplicação precisa baixar certificados de segurança antes que possa se comunicar com outros aplicativos de negócios. A empresa deseja uma solução altamente segura para criptografar e descriptografar os certificados em tempo real. A solução também precisa armazenar dados em armazenamento altamente disponível após a criptografia.  
 Qual solução atenderá a esses requisitos com o MENOR overhead operacional?
+
+<details>
+
+<summary>Resposta</summary>
 
 **Resposta correta:**  
 **C.** Crie uma chave gerenciada pelo cliente no AWS Key Management Service (AWS KMS). Permita que a função EC2 use a chave KMS para operações de criptografia. Armazene os dados criptografados no Amazon S3.
@@ -2581,4 +3278,4 @@ Qual solução atenderá a esses requisitos com o MENOR overhead operacional?
   - **B:** A Lambda não é necessária para criptografar e descriptografar dados em tempo real em um caso simples como este.  
   - **D:** Usar o Amazon EBS para armazenar os dados criptografados não oferece o mesmo nível de disponibilidade e simplicidade que o S3.  
 
----
+</details>
