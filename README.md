@@ -81,8 +81,11 @@ Um aplicativo executado em uma instância do Amazon EC2 em uma VPC processa logs
 Qual solução fornecerá conectividade de rede privada ao Amazon S3?
 
 A. Crie um endpoint de gateway da VPC para o bucket do S3.
+
 B. Transmita os logs para o Amazon CloudWatch Logs. Exporte os logs para o bucket do S3.
+
 C. Crie um perfil de instância no Amazon EC2 para permitir o acesso ao S3.
+
 D. Crie uma API Gateway do Amazon com um link privado para acessar o endpoint do S3.
 
 **Resposta correta:**  
