@@ -16,6 +16,8 @@ D. Carregue os dados de cada local em uma instância do Amazon EC2 na região ma
 
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Ative o S3 Transfer Acceleration no bucket de destino do S3. Use uploads em várias partes para carregar diretamente os dados do local no bucket de destino do S3.
 
 **Justificativa:**  
@@ -47,6 +49,8 @@ D. Use o AWS Glue para catalogar os logs. Use um cluster transitório do Apache 
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Use Amazon Athena diretamente com o Amazon S3 para executar as consultas conforme necessário.
 
 **Justificativa:**  
@@ -78,6 +82,8 @@ D. Etiquete cada usuário que precisa de acesso ao bucket do S3. Adicione a chav
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Adicione a chave global `aws:PrincipalOrgID` com referência ao ID da organização na política do bucket S3.
 
 **Justificativa:**  
@@ -110,6 +116,8 @@ D. Crie uma API Gateway do Amazon com um link privado para acessar o endpoint do
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Crie um endpoint VPC Gateway para o bucket S3.
 
 **Justificativa:**  
@@ -142,6 +150,8 @@ D. Configure o Application Load Balancer para enviar a solicitação para ambos 
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Copie os dados de ambos os volumes EBS para o Amazon EFS. Modifique a aplicação para salvar novos documentos no Amazon EFS.
 
 **Justificativa:**  
@@ -174,6 +184,8 @@ D. Configure uma conexão AWS Direct Connect entre a rede local e a AWS. Implant
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Crie um trabalho AWS Snowball Edge. Receba um dispositivo Snowball Edge no local e use o cliente para transferir os dados para o dispositivo.
 
 **Justificativa:**  
@@ -205,6 +217,8 @@ D. Publicar as mensagens em um tópico do Amazon Simple Notification Service (Am
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>D</resposta>
+
 **D.** Publique as mensagens em um tópico do Amazon SNS com várias assinaturas do Amazon SQS. Configure os consumidores para processar as mensagens das filas.
 
 **Justificativa:**  
@@ -237,6 +251,8 @@ D. Implementar o servidor principal e os nós de computação com instâncias Am
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Configure uma fila Amazon SQS como destino para os jobs. Implemente os nós de computação em uma Auto Scaling group de EC2.
 
 **Justificativa:**  
@@ -270,6 +286,8 @@ D. Instalar um utilitário em cada computador de usuário para acessar o Amazon 
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Crie um Amazon S3 File Gateway para expandir o espaço de armazenamento. Configure uma política de ciclo de vida no S3 para mover os dados para o S3 Glacier Deep Archive após 7 dias.
 
 **Justificativa:**  
@@ -302,6 +320,8 @@ D. Usar uma integração do API Gateway para enviar uma mensagem para uma fila p
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Use uma integração com o API Gateway para enviar mensagens para uma fila FIFO do Amazon SQS ao receber pedidos.
 
 **Justificativa:**  
@@ -334,6 +354,8 @@ D. Criar um volume criptografado Amazon Elastic Block Store (Amazon EBS) para ca
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Use o AWS Secrets Manager. Ative a rotação automática.
 
 **Justificativa:**  
@@ -366,6 +388,8 @@ D. Criar uma distribuição Amazon CloudFront que tenha o ALB como origem. Criar
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Crie uma distribuição Amazon CloudFront com o bucket S3 e o ALB como origens. Configure o Route 53 para rotear o tráfego para a distribuição CloudFront.
 
 **Justificativa:**  
@@ -398,6 +422,8 @@ D. Criptografar as credenciais como segredos usando chaves gerenciadas pelo clie
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Armazene as credenciais como segredos no AWS Secrets Manager. Use replicação multi-região e configure a rotação automática.
 
 **Justificativa:**  
@@ -431,6 +457,8 @@ D. Usar o Amazon ElastiCache para Memcached com instâncias Spot do EC2.
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Use Amazon Aurora com uma implantação Multi-AZ. Configure Auto Scaling com réplicas Aurora.
 
 **Justificativa:**  
@@ -463,6 +491,8 @@ D. Usar o AWS Firewall Manager para criar as regras necessárias para inspeção
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Use o AWS Network Firewall para criar as regras necessárias para inspeção e filtragem de tráfego.
 
 **Justificativa:**  
@@ -495,6 +525,8 @@ D. Criar uma tabela e um crawler no AWS Glue para os dados no Amazon S3. Usar o 
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Crie uma análise no Amazon QuickSight. Conecte todas as fontes de dados e compartilhe os dashboards com os papéis apropriados do IAM.
 
 **Justificativa:**  
@@ -527,6 +559,8 @@ D. Criar um usuário IAM (IAM user) que concede acesso ao bucket S3. Anexar a co
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Crie uma role IAM que conceda acesso ao bucket S3 e anexe às instâncias EC2.
 
 **Justificativa:**  
@@ -562,6 +596,8 @@ E. Configurar um evento do Amazon EventBridge (Amazon CloudWatch Events) para mo
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A,B</resposta>
+
 **A e B.** Crie uma fila Amazon SQS. Configure a função Lambda para usar a fila como fonte de invocação.
 
 **Justificativa:**  
@@ -595,6 +631,8 @@ D. Implantar um Gateway Load Balancer na VPC de inspeção. Criar um endpoint do
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>D</resposta>
+
 **D.** Implemente um Gateway Load Balancer na VPC de inspeção para rotear os pacotes ao appliance.
 
 **Justificativa:**  
@@ -627,6 +665,8 @@ D. Tirar snapshots EBS dos volumes EBS de produção. Ativar o recurso de restau
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>D</resposta>
+
 **D.** Ative o recurso de restauração rápida de snapshots no EBS e restaure os snapshots em novos volumes.
 
 **Justificativa:**  
@@ -658,6 +698,8 @@ D. Usar um bucket do Amazon S3 para hospedar o conteúdo estático do site. Impl
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>D</resposta>
+
 **D.** Use um bucket Amazon S3 para hospedar o conteúdo estático, Amazon CloudFront para distribuição e API Gateway com AWS Lambda para backend.
 
 **Justificativa:**  
@@ -690,6 +732,8 @@ D. S3 One Zone-Infrequent Access (S3 One Zone-IA)
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** S3 Intelligent-Tiering.
 
 **Justificativa:**  
@@ -722,6 +766,8 @@ D. Criar uma configuração de ciclo de vida (Lifecycle) no S3 para fazer a tran
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Configure uma política de ciclo de vida no S3 para mover objetos para o S3 Glacier Deep Archive após 1 mês.
 
 **Justificativa:**  
@@ -753,6 +799,8 @@ D. Usar o AWS Cost and Usage Reports para criar um relatório e enviá-lo para u
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Use o recurso de filtragem granular do Cost Explorer para analisar os custos do EC2 com base nos tipos de instância.
 
 **Justificativa:**  
@@ -785,6 +833,8 @@ D. Configurar duas funções Lambda. Configurar uma função para receber as inf
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>D</resposta>
+
 **D.** Configure duas funções Lambda: uma para receber dados e outra para carregá-los no banco de dados. Integre-as com uma fila Amazon SQS.
 
 **Justificativa:**  
@@ -817,6 +867,8 @@ D. Ativar o Amazon S3 Server Access Logging. Configurar o Amazon EventBridge (Am
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Ative o AWS Config com as regras apropriadas.
 
 **Justificativa:**  
@@ -849,6 +901,8 @@ D. Implantar um servidor bastion em uma sub-rede pública. Quando o gerente de p
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Compartilhe o dashboard a partir do console do CloudWatch e forneça um link compartilhável.
 
 **Justificativa:**  
@@ -881,6 +935,8 @@ D. Implantar um provedor de identidade (IdP) local. Ativar o AWS Single Sign-On 
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Ative o AWS SSO e conecte-se ao Active Directory local usando AWS Directory Service.
 
 **Justificativa:**  
@@ -914,6 +970,8 @@ D. Implantar um Application Load Balancer (ALB) e um grupo de destino associado.
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Use um Network Load Balancer (NLB) associado ao AWS Global Accelerator em cada região.
 
 **Justificativa:**  
@@ -946,6 +1004,8 @@ D. Modificar a instância do banco de dados para uma instância de baixa capacid
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Crie um snapshot após os testes e restaure o banco de dados somente quando necessário.
 
 **Justificativa:**  
@@ -978,6 +1038,8 @@ D. Escrever chamadas de API para verificar todos os recursos quanto à alocaçã
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Use regras do AWS Config para definir e detectar recursos que não estão devidamente etiquetados.
 
 **Justificativa:**  
@@ -1009,6 +1071,8 @@ D. Configurar um Application Load Balancer com um destino AWS Lambda que use o f
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Crie um bucket Amazon S3 e hospede o site nele.
 
 **Justificativa:**  
@@ -1041,6 +1105,8 @@ D. Armazenar os dados das transações em lotes no Amazon S3 como arquivos. Usar
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Transmita os dados das transações para o Amazon Kinesis Data Streams e use AWS Lambda para remover dados sensíveis.
 
 **Justificativa:**  
@@ -1072,6 +1138,8 @@ D. Usar o AWS CloudTrail para rastrear alterações de configuração e o Amazon
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Use AWS Config para rastrear mudanças de configuração e AWS CloudTrail para registrar chamadas de API.
 
 **Justificativa:**  
@@ -1103,6 +1171,8 @@ D. Ativar o AWS Shield Advanced e atribuir o ELB a ele.
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>D</resposta>
+
 **D.** Ative o AWS Shield Advanced e associe-o ao ELB.
 
 **Justificativa:**  
@@ -1134,6 +1204,8 @@ D. Criar uma chave KMS gerenciada pelo cliente e um bucket S3 em cada região. C
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Crie uma chave KMS multi-região gerenciada. Configure replicação entre os buckets S3.
 
 **Justificativa:**  
@@ -1165,6 +1237,8 @@ D. Estabelecer uma conexão VPN Site-to-Site da AWS. Instruir os administradores
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Anexe a role IAM apropriada às instâncias e use o AWS Systems Manager Session Manager.
 
 **Justificativa:**  
@@ -1197,6 +1271,8 @@ Qual solução atenderá a esses requisitos com o **menor esforço operacional**
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Anexar a função IAM apropriada a cada instância existente e nova. Usar o AWS Systems Manager Session Manager para estabelecer uma sessão SSH remota.
 
 **Justificativa:**  
@@ -1225,6 +1301,8 @@ Qual solução resolve esse problema de desempenho?
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Altere o tipo de armazenamento para Provisioned IOPS SSD.
 
 **Justificativa:**  
@@ -1257,6 +1335,8 @@ D. Criar uma fila padrão do Amazon Simple Queue Service (Amazon SQS) para inger
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Crie um Kinesis Data Firehose para ingerir os alertas. Configure o Firehose para entregá-los a um bucket S3 e aplique políticas de ciclo de vida para arquivar os dados no Glacier após 14 dias.
 
 **Justificativa:**  
@@ -1289,6 +1369,8 @@ Qual solução atenderá a esses requisitos com o **menor esforço operacional**
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Use Amazon AppFlow para transferir dados entre fontes SaaS e o bucket S3. Configure notificações S3 para enviar eventos ao SNS após o upload.
 
 **Justificativa:**  
@@ -1320,6 +1402,8 @@ D. Provisionar um host dedicado EC2 (EC2 Dedicated Host) para executar as instâ
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Implemente um endpoint VPC Gateway para o S3.
 
 **Justificativa:**  
@@ -1352,6 +1436,8 @@ D. Submeter um ticket de suporte pelo console de gerenciamento da AWS, solicitan
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Estabeleça uma conexão AWS Direct Connect e direcione o tráfego de backup por esta conexão.
 
 **Justificativa:**  
@@ -1386,6 +1472,8 @@ E. Criar uma política de ciclo de vida (lifecycle policy) para os objetos no bu
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A,B</resposta>
+
 **A e B.** Ative o versionamento no bucket S3 e habilite a exclusão MFA.
 
 **Justificativa:**  
@@ -1424,6 +1512,8 @@ E. Modificar a função Lambda para ler de uma fila do Amazon Simple Queue Servi
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B,E</resposta>
+
 **B e E.** Subcreva um SQS à SNS e modifique a função Lambda para ler da fila SQS.
 
 **Justificativa:**  
@@ -1456,6 +1546,8 @@ D. Implemente algoritmos de verificação personalizados em uma função AWS Lam
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Use um bucket S3 como ponto de transferência e Amazon Macie para identificar PII.
 
 **Justificativa:**  
@@ -1487,6 +1579,8 @@ D. Criar uma On-Demand Capacity Reservation que especifique a região e as três
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>D</resposta>
+
 **D.** Crie uma reserva de capacidade sob demanda que especifica a região e as três zonas de disponibilidade.
 
 **Justificativa:**  
@@ -1518,6 +1612,8 @@ D. Mover o catálogo para um sistema de arquivos Amazon Elastic File System (Ama
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>D</resposta>
+
 **D.** Mova o catálogo para um sistema de arquivos Amazon EFS.
 
 **Justificativa:**  
@@ -1550,6 +1646,8 @@ D. Armazenar arquivos individuais no armazenamento Amazon S3 Standard. Usar pol�
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Use S3 Intelligent-Tiering com políticas de ciclo de vida para mover os arquivos para Glacier após 1 ano.
 
 **Justificativa:**  
@@ -1584,6 +1682,8 @@ D. Usar o AWS Systems Manager Run Command para executar um comando personalizado
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>D</resposta>
+
 **D.** Usar o AWS Systems Manager Run Command para executar um comando personalizado que aplica o patch em todas as instâncias EC2.
 
 **Justificativa:**  
@@ -1620,6 +1720,8 @@ o relatório por e-mail.
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>D,E</resposta>
+
 **D.** Crie um evento agendado do Amazon EventBridge (Amazon CloudWatch Events) que invoque uma função AWS Lambda para consultar os dados da API da aplicação.  
 **B.** Use o Amazon Simple Email Service (Amazon SES) para formatar os dados e enviar o relatório por e-mail.
 
@@ -1654,6 +1756,8 @@ D. Migrar o aplicativo para instâncias Amazon EC2 em um grupo de Auto Scaling M
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Migrar o aplicativo para instâncias Amazon EC2 em um grupo de Auto Scaling Multi-AZ. Usar o Amazon Elastic File System (Amazon EFS) para armazenamento.
 
 **Justificativa:**  
@@ -1685,6 +1789,8 @@ D. Usar uma política de ciclo de vida do S3 (S3 Lifecycle) para transicionar os
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Use uma política de ciclo de vida do S3 para transferir os registros do S3 Standard para o S3 Glacier Deep Archive após 1 ano. Use S3 Object Lock em modo de conformidade por um período de 10 anos.
 
 **Justificativa:**  
@@ -1717,6 +1823,8 @@ D. Expandir o ambiente de compartilhamento de arquivos para o Amazon Elastic Fil
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Expanda o ambiente de compartilhamento de arquivos para o Amazon FSx para Windows File Server com uma configuração Multi-AZ. Migre todos os dados para o FSx.
 
 **Justificativa:**  
@@ -1749,6 +1857,8 @@ D. Criar uma nova conexão de emparelhamento entre as sub-redes públicas e as s
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Crie um grupo de segurança que permita tráfego de entrada do grupo de segurança atribuído às instâncias nas sub-redes privadas. Anexe o grupo de segurança às instâncias de banco de dados.
 
 **Justificativa:**  
@@ -1783,6 +1893,8 @@ D. Criar um endpoint Regional do API Gateway. Associar o endpoint do API Gateway
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Crie um endpoint Regional no API Gateway. Associe-o ao domínio da empresa. Importe o certificado público associado ao domínio no AWS Certificate Manager (ACM) na mesma região e configure o Route 53 para rotear o tráfego.
 
 **Justificativa:**  
@@ -1821,6 +1933,8 @@ D. Usar o AWS Fargate para implantar um modelo de aprendizado de máquina person
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Use o Amazon Rekognition para detectar conteúdo impróprio. Use revisão humana para previsões com baixa confiança.
 
 **Justificativa:**  
@@ -1852,6 +1966,8 @@ D. Usar instâncias Amazon EC2 com uma Amazon Machine Image (AMI) otimizada para
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Use o Amazon ECS no AWS Fargate.
 
 **Justificativa:**  
@@ -1883,6 +1999,8 @@ D. Coletar os dados com Amazon Kinesis Data Streams. Usar Amazon Kinesis Data Fi
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>D</resposta>
+
 **D.** Colete os dados do Amazon Kinesis Data Streams. Use o Amazon Kinesis Data Firehose para transmitir os dados para um data lake no Amazon S3. Carregue os dados no Amazon Redshift para análise.
 
 **Justificativa:**  
@@ -1915,6 +2033,8 @@ D. Substituir o ALB por um Network Load Balancer configurado para usar Server Na
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Crie uma regra de listener no ALB para redirecionar o tráfego HTTP para HTTPS.
 
 **Justificativa:**  
@@ -1947,6 +2067,8 @@ D. Armazenar as credenciais do banco de dados como parâmetros criptografados no
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Armazene as credenciais do banco como um segredo no AWS Secrets Manager. Ative a rotação automática para o segredo. Anexe a permissão necessária ao role da instância EC2 para acessar o segredo.
 
 **Justificativa:**  
@@ -1979,6 +2101,8 @@ D. Usar o AWS Certificate Manager (ACM) para importar um certificado SSL/TLS. Ap
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>D</resposta>
+
 **D.** Use o AWS Certificate Manager (ACM) para importar um certificado SSL/TLS. Aplique o certificado ao ALB. Use o Amazon EventBridge (Amazon CloudWatch Events) para enviar notificações quando o certificado estiver próximo do vencimento. Faça a rotação do certificado manualmente.
 
 **Justificativa:**  
@@ -2010,6 +2134,8 @@ D. Fazer o upload dos arquivos .pdf para uma aplicação AWS Elastic Beanstalk q
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Salve os arquivos PDF no Amazon S3. Configure um evento PUT no S3 para invocar uma função AWS Lambda que converte os arquivos para o formato JPG e os armazena novamente no S3.
 
 **Justificativa:**  
@@ -2041,6 +2167,8 @@ D. Implantar e configurar o Amazon FSx for Windows File Server na AWS. Implantar
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>D</resposta>
+
 **D.** Implante e configure Amazon FSx for Windows File Server na AWS. Implante e configure um Amazon FSx File Gateway no local. Mova os dados locais para o FSx File Gateway.
 
 **Justificativa:**  
@@ -2072,6 +2200,8 @@ D. Usar o Amazon Rekognition para extrair o texto dos relatórios. Usar o Amazon
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Use Amazon Textract para extrair texto dos relatórios. Use Amazon Comprehend Medical para identificar PHI no texto extraído.
 
 **Justificativa:**  
@@ -2103,6 +2233,8 @@ D. Criar uma política de ciclo de vida do S3 para mover arquivos do S3 Standard
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Crie uma política de ciclo de vida para mover arquivos do S3 Standard para S3 Standard-Infrequent Access (S3 Standard-IA) após 30 dias. Exclua os arquivos após 4 anos.
 
 **Justificativa:**  
@@ -2135,6 +2267,8 @@ D. Usar a chamada da API ChangeMessageVisibility para aumentar o visibility time
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>D</resposta>
+
 **D.** Use a chamada ChangeMessageVisibility API para aumentar o timeout de visibilidade.
 
 **Justificativa:**  
@@ -2167,6 +2301,8 @@ D. Provisionar uma conexão AWS Direct Connect para uma região. Usar o atributo
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Configure uma conexão AWS Direct Connect para a região. Configure uma conexão VPN como backup.
 
 **Justificativa:**  
@@ -2199,6 +2335,8 @@ D. Configurar o grupo de Auto Scaling para usar várias regiões da AWS. Escreve
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Configure o Auto Scaling Group para usar múltiplas zonas de disponibilidade. Configure o banco de dados como Multi-AZ. Configure uma instância Amazon RDS Proxy para o banco de dados.
 
 **Justificativa:**  
@@ -2233,6 +2371,8 @@ D. Criar um alarme do Amazon CloudWatch que monitore a métrica UnhealthyHostCou
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Substitua o NLB por um Application Load Balancer. Habilite verificações de integridade HTTP fornecendo o URL da aplicação. Configure uma ação de Auto Scaling para substituir instâncias não saudáveis.
 
 **Justificativa:**  
@@ -2265,6 +2405,8 @@ D. Agendar snapshots do Amazon Elastic Block Store (Amazon EBS) para a tabela do
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Configure a recuperação point-in-time (PITR) do DynamoDB. Para recuperação, restaure para o ponto desejado no tempo.
 
 **Justificativa:**  
@@ -2297,6 +2439,8 @@ D. Implantar um endpoint de gateway S3 para a VPC e anexar uma política de endp
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>D</resposta>
+
 **D.** Implemente um endpoint de gateway S3 VPC na VPC e anexe uma política de endpoint que permita acesso aos buckets S3.
 
 **Justificativa:**  
@@ -2330,6 +2474,8 @@ E. Substituir o grupo de segurança atual das instâncias de aplicação por um 
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C,D</resposta>
+
 **C, D.** Substitua o grupo de segurança do bastion host para permitir acesso apenas do IP interno da empresa. Configure o grupo de segurança das instâncias de aplicação para permitir acesso SSH apenas do IP privado do bastion host.
 
 **Justificativa:**  
@@ -2365,6 +2511,8 @@ E. Configurar o grupo de segurança para o nível de banco de dados para permiti
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A,C</resposta>
+
 **A, C.** Configure o grupo de segurança da camada web para permitir tráfego de entrada na porta 443 de 0.0.0.0/0. Configure o grupo de segurança da camada de banco de dados para permitir tráfego de entrada na porta 1433 do grupo de segurança da camada web.
 
 **Justificativa:**  
@@ -2395,6 +2543,8 @@ D. Usar o Amazon Simple Queue Service (Amazon SQS) para gerenciar a comunicaçã
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Use o Amazon API Gateway para direcionar transações para funções AWS Lambda como camada de aplicação. Use o SQS como camada de comunicação entre os serviços de aplicação.
 
 **Justificativa:**  
@@ -2425,6 +2575,8 @@ D. AWS Database Migration Service (AWS DMS) via AWS Direct Connect
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Use o AWS DataSync sobre AWS Direct Connect.
 
 **Justificativa:**  
@@ -2455,6 +2607,8 @@ D. Configurar uma API do Amazon API Gateway para enviar dados para o AWS Glue. U
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Configure uma API no Amazon API Gateway para enviar dados para um fluxo de dados do Amazon Kinesis. Crie um fluxo de entrega do Amazon Kinesis Data Firehose que use o fluxo de dados do Kinesis como fonte de dados. Use funções AWS Lambda para transformar os dados. Use o Kinesis Data Firehose para enviar os dados para o Amazon S3.
 
 **Justificativa:**  
@@ -2487,6 +2641,8 @@ D. Crie uma regra do Amazon EventBridge (Amazon CloudWatch Events) para invocar 
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Use o AWS Backup para criar agendamentos de backup e políticas de retenção para a tabela.
 
 **Justificativa:**  
@@ -2519,6 +2675,8 @@ D. Criar uma tabela DynamoDB no modo de capacidade provisionada, configurando-a 
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Criar uma tabela DynamoDB no modo de capacidade sob demanda (on-demand).
 
 **Justificativa:**  
@@ -2554,6 +2712,8 @@ D. Exporte a AMI da conta de origem para um bucket Amazon S3 na conta AWS do par
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Modifique a propriedade launchPermission da AMI. Compartilhe a AMI apenas com a conta AWS do parceiro MSP. Modifique a política da chave para confiar em uma nova chave KMS de propriedade do parceiro MSP para criptografia.
 
 **Justificativa:**  
@@ -2586,6 +2746,8 @@ D. Crie um tópico do Amazon SNS para enviar os trabalhos que precisam ser proce
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Crie uma fila SQS para armazenar os trabalhos a serem processados. Crie uma Amazon Machine Image (AMI) que consista na aplicação de processamento. Crie um modelo de lançamento que use a AMI. Crie um Auto Scaling group usando o modelo de lançamento. Defina a política de escalabilidade do Auto Scaling para adicionar e remover nós com base no número de itens na fila SQS.
 
 **Justificativa:**  
@@ -2618,6 +2780,8 @@ D. Criar uma regra do Amazon EventBridge (Amazon CloudWatch Events) para detecta
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>D</resposta>
+
 **D.** Crie uma regra do Amazon EventBridge (Amazon CloudWatch Events) para detectar qualquer certificado que vá expirar dentro de 30 dias. Configure a regra para invocar uma função AWS Lambda. Configure a função Lambda para enviar um alerta personalizado por meio do Amazon Simple Notification Service (Amazon SNS).
 
 **Justificativa:**  
@@ -2650,6 +2814,8 @@ D. Usar uma política de roteamento geoproximidade do Amazon Route 53 apontando 
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Use o Amazon CloudFront com uma origem personalizada apontando para os servidores locais.
 
 **Justificativa:**  
@@ -2683,6 +2849,8 @@ D. Usar On-Demand Instances para as instâncias de produção EC2. Usar Spot blo
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Use Reserved Instances para as instâncias EC2 de produção. Use instâncias sob demanda para os ambientes de desenvolvimento e teste.
 
 **Justificativa:**  
@@ -2716,6 +2884,8 @@ D. Armazenar os documentos enviados em um volume do Amazon Elastic File System (
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Armazene os documentos carregados em um bucket Amazon S3 com versionamento e S3 Object Lock habilitado.
 
 **Justificativa:**  
@@ -2748,6 +2918,8 @@ D. Armazenar as credenciais do banco de dados em arquivos criptografados com o A
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Armazene as credenciais do banco de dados no AWS Secrets Manager. Conceda as permissões IAM necessárias para permitir que os servidores web acessem o AWS Secrets Manager.
 
 **Justificativa:**  
@@ -2781,6 +2953,8 @@ D. Armazenar os dados dos clientes em uma fila FIFO do Amazon Simple Queue Servi
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Provisione um proxy Amazon RDS para ficar entre as funções Lambda e o banco de dados. Configure as funções Lambda para se conectarem ao proxy RDS.
 
 **Justificativa:**  
@@ -2814,6 +2988,8 @@ D. Configurar o bucket S3 da empresa para usar S3 Intelligent-Tiering. Sincroniz
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Configure o recurso Requester Pays no bucket S3 da empresa.
 
 **Justificativa:**  
@@ -2846,6 +3022,8 @@ D. Usar o AWS Key Management Service (AWS KMS) para criptografar o bucket S3 e r
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A</resposta>
+
 **A.** Habilite as funcionalidades de versionamento e MFA Delete no bucket S3.
 
 **Justificativa:**  
@@ -2879,6 +3057,8 @@ D. Usar o Amazon ElastiCache para armazenar em cache as consultas comuns que o s
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
 **B.** Crie uma réplica de leitura do banco de dados. Configure o script para consultar apenas a réplica de leitura.
 
 **Justificativa:**  
@@ -2911,7 +3091,9 @@ D. Configurar um NAT gateway na mesma sub-rede que as instâncias EC2.
 <summary>Resposta</summary>
 
 **Resposta correta:**  
-* **A.*** Configurar um endpoint de gateway do S3.
+<resposta>A</resposta>
+
+**A.*** Configurar um endpoint de gateway do S3.
 
 **Justificativa:**  
 - **Por que essa opção?**  
@@ -2945,6 +3127,8 @@ E. Criar uma instância NAT e configurar as instâncias EC2 para usarem a instâ
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>A,C</resposta>
+
 **A.** Configure um endpoint de gateway VPC para o Amazon S3 dentro da VPC.  
 **C.** Crie uma política de bucket que limita o acesso apenas à camada de aplicação em execução na VPC.
 
@@ -2980,6 +3164,8 @@ D. Use o Amazon RDS para MySQL com uma implantação Multi-AZ e réplicas de lei
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>B</resposta>
+
   **B.** Use o Amazon Aurora MySQL com réplicas Multi-AZ Aurora para produção. Use clonagem de banco de dados para criar o banco de dados de staging sob demanda.
 
 **Justificativa:**  
@@ -3013,6 +3199,8 @@ D. Configure o Amazon EventBridge (Amazon CloudWatch Events) para enviar um even
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Configure o Amazon S3 para enviar uma notificação de evento para uma fila Amazon Simple Queue Service (Amazon SQS). Use uma função AWS Lambda para ler da fila e processar os dados. Armazene o arquivo JSON resultante no Amazon DynamoDB.
 
 **Justificativa:**  
@@ -3045,6 +3233,8 @@ D. Criar réplicas de leitura para o banco de dados. Configurar as réplicas de 
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>D</resposta>
+
 **D.** Crie réplicas de leitura para o banco de dados. Configure as réplicas de leitura com os mesmos recursos de computação e armazenamento da instância de origem.
 
 **Justificativa:**  
@@ -3077,6 +3267,8 @@ D. Os usuários não podem encerrar uma instância EC2 na região us-east-1 quan
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Os usuários podem encerrar uma instância EC2 na região us-east-1 quando o IP de origem do usuário for 10.100.100.254.
 
 **Justificativa:**  
@@ -3103,6 +3295,8 @@ D. Crie um sistema de arquivos do Amazon FSx for Windows File Server na AWS e co
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>D</resposta>
+
 **D.** Crie um sistema de arquivos do Amazon FSx for Windows File Server na AWS e configure o domínio do Active Directory para autenticação.
 
 **Justificativa:**  
@@ -3132,6 +3326,8 @@ D. Modifique a função Lambda para excluir cada mensagem da fila SQS imediatame
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Aumente o tempo de visibilidade na fila SQS para um valor maior que a soma do tempo limite da função e o tempo limite da janela de lote.
 
 **Justificativa:**  
@@ -3162,6 +3358,8 @@ D. Crie um sistema de arquivos Amazon FSx for Lustre. Anexe o sistema de arquivo
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>D</resposta>
+
 **D.** Crie um sistema de arquivos Amazon FSx for Lustre. Anexe o sistema de arquivos ao servidor de origem. Conecte o servidor do aplicativo ao sistema de arquivos.
 
 **Justificativa:**  
@@ -3193,6 +3391,8 @@ D. Crie uma chave gerenciada pelo cliente no AWS Key Management Service (AWS KMS
 <summary>Resposta</summary>
 
 **Resposta correta:**  
+<resposta>C</resposta>
+
 **C.** Crie uma chave gerenciada pelo cliente no AWS Key Management Service (AWS KMS). Permita que a função da instância EC2 use a chave KMS para operações de criptografia. Armazene os dados criptografados no Amazon S3.
 
 **Justificativa:**  
