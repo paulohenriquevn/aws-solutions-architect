@@ -146,8 +146,6 @@
 - **Dica**: Use para sincronizar dados entre Salesforce e S3.
 - **Exemplo**: Transferir leads do Salesforce para análise em Redshift.
 
-# AWS Services - Descrição, Dicas e Exemplos de Uso
-
 ## Rede e Conexões
 
 ### AWS Transit Gateway
