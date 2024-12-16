@@ -146,6 +146,143 @@
 - **Dica**: Use para sincronizar dados entre Salesforce e S3.
 - **Exemplo**: Transferir leads do Salesforce para análise em Redshift.
 
+# AWS Services - Descrição, Dicas e Exemplos de Uso
+
+## Rede e Conexões
+
+### AWS Transit Gateway
+- **Descrição**: Serviço que conecta VPCs e redes locais em uma malha de rede centralizada.
+- **Dica**: Ideal para organizações com várias VPCs em diferentes regiões.
+- **Exemplo**: Conectar múltiplas VPCs regionais e uma rede local via VPN ou Direct Connect.
+
+### AWS Direct Connect (DX)
+- **Descrição**: Conexão privada dedicada entre sua infraestrutura local e a AWS.
+- **Dica**: Use para reduzir latência e aumentar a segurança de conexões híbridas.
+- **Exemplo**: Estabelecer uma conexão segura e de alta largura de banda para workloads corporativos.
+
+### AWS Network Firewall
+- **Descrição**: Firewall gerenciado para proteger redes VPC.
+- **Dica**: Use para inspeções profundas de tráfego e políticas de segurança centralizadas.
+- **Exemplo**: Implementar regras avançadas de segurança entre diferentes redes VPC.
+
+---
+
+## Armazenamento e Migração
+
+### AWS DataSync
+- **Descrição**: Automatiza a transferência de dados entre sistemas locais e a AWS.
+- **Dica**: Ideal para migrações e sincronizações recorrentes de grandes volumes de dados.
+- **Exemplo**: Sincronizar backups locais para o Amazon S3 ou EFS.
+
+### AWS Snowball
+- **Descrição**: Dispositivo físico para transferir grandes volumes de dados para a AWS.
+- **Dica**: Use quando o upload via internet seria inviável devido ao volume de dados.
+- **Exemplo**: Migrar 100 TB de dados de uma organização para o S3.
+
+### AWS Snowball Edge
+- **Descrição**: Dispositivo físico com capacidade de computação para processar dados localmente antes de migrar para a AWS.
+- **Dica**: Use em locais remotos ou para cenários de pré-processamento de dados.
+- **Exemplo**: Coletar e processar dados em um local remoto de exploração de petróleo.
+
+### AWS Data Lifecycle Manager
+- **Descrição**: Gerencia o ciclo de vida de snapshots do Amazon EBS.
+- **Dica**: Use para automação de backups e retenção baseada em políticas.
+- **Exemplo**: Configurar políticas para excluir automaticamente snapshots antigos.
+
+---
+
+## Segurança e Governança
+
+### AWS KMS (Key Management Service)
+- **Descrição**: Serviço gerenciado para criar e gerenciar chaves de criptografia.
+- **Dica**: Integre com outros serviços AWS para proteger dados sensíveis.
+- **Exemplo**: Criptografar objetos armazenados no S3.
+
+### AWS Certificate Manager
+- **Descrição**: Gerencia e provisiona certificados SSL/TLS para aplicações AWS.
+- **Dica**: Use para gerenciar automaticamente a renovação de certificados.
+- **Exemplo**: Habilitar HTTPS em um Application Load Balancer.
+
+### AWS GuardDuty
+- **Descrição**: Serviço de detecção de ameaças que monitora contas e redes AWS.
+- **Dica**: Ative em todas as regiões para detecção de comportamento suspeito.
+- **Exemplo**: Identificar acessos não autorizados a buckets S3.
+
+### AWS Macie
+- **Descrição**: Serviço que descobre e protege dados confidenciais no S3.
+- **Dica**: Use para detectar dados sensíveis como informações de cartão de crédito.
+- **Exemplo**: Identificar arquivos contendo dados pessoais em buckets S3.
+
+### AWS Shield
+- **Descrição**: Protege contra ataques DDoS em aplicações hospedadas na AWS.
+- **Dica**: Ative o Shield Advanced para proteção aprimorada e resposta a incidentes.
+- **Exemplo**: Proteger um website de comércio eletrônico contra ataques volumétricos.
+
+### AWS Detective
+- **Descrição**: Serviço de análise para investigar problemas de segurança.
+- **Dica**: Use em conjunto com o GuardDuty para identificar a causa raiz de ameaças.
+- **Exemplo**: Analisar logs de tráfego incomum para determinar a origem de um ataque.
+
+### AWS WAF
+- **Descrição**: Firewall de aplicação web que protege contra ameaças comuns como SQL Injection.
+- **Dica**: Combine com IP sets para gerenciar listas de bloqueio e permissão.
+- **Exemplo**: Proteger APIs hospedadas em API Gateway contra ataques de bots.
+
+---
+
+## Gerenciamento e Integração
+
+### AWS Config
+- **Descrição**: Serviço de monitoramento de conformidade de recursos AWS.
+- **Dica**: Use para verificar automaticamente se os recursos seguem padrões definidos.
+- **Exemplo**: Garantir que todos os buckets S3 estejam configurados com criptografia habilitada.
+
+### AWS Control Tower
+- **Descrição**: Gerencia a criação e governança de contas AWS em larga escala.
+- **Dica**: Use para automatizar a conformidade em organizações com múltiplas contas.
+- **Exemplo**: Configurar políticas de segurança consistentes para novas contas na organização.
+
+### AWS Resource Access Manager
+- **Descrição**: Compartilha recursos entre contas da AWS dentro de uma organização.
+- **Dica**: Ideal para economizar custos ao compartilhar VPCs e sub-redes.
+- **Exemplo**: Compartilhar um Transit Gateway entre múltiplas contas.
+
+### AWS Resource Groups Tag Editor
+- **Descrição**: Permite gerenciar e editar tags de recursos AWS.
+- **Dica**: Use para organizar recursos com base em tags para facilitar relatórios e faturamento.
+- **Exemplo**: Atualizar tags de instâncias EC2 para alinhar com centros de custo.
+
+---
+
+## Aplicações e Análise
+
+### AWS Batch
+- **Descrição**: Serviço gerenciado para execução de workloads batch em escala.
+- **Dica**: Use para processar grandes volumes de dados em ambientes sem servidor.
+- **Exemplo**: Executar análises de log em milhões de registros.
+
+### AWS AppSync
+- **Descrição**: Serviço para criação de APIs GraphQL em tempo real.
+- **Dica**: Combine com DynamoDB para dados em tempo real com baixa latência.
+- **Exemplo**: Criar uma API para um aplicativo de chat com mensagens em tempo real.
+
+---
+
+## Ferramentas de Monitoramento
+
+### AWS S3 Storage Lens
+- **Descrição**: Fornece insights sobre o uso do armazenamento S3.
+- **Dica**: Use para identificar custos e oportunidades de otimização.
+- **Exemplo**: Monitorar buckets com crescimento excessivo de dados.
+
+### AWS Inspector
+- **Descrição**: Serviço de avaliação de vulnerabilidades em instâncias EC2.
+- **Dica**: Automatize verificações regulares para manter as instâncias seguras.
+- **Exemplo**: Identificar problemas de configuração em servidores EC2.
+
+Se precisar de detalhes adicionais, é só pedir!
+
+
 ---
 
 # Dicas e Exemplos de Uso - AWS Networking, Armazenamento e Segurança
@@ -350,33 +487,150 @@
 
 ---
 
-## Tipos de Volumes EBS
+# Tipos de Volumes Amazon EBS
 
-### Amazon EBS General Purpose SSD (gp3/gp2)
-- **Descrição**: Volumes SSD de propósito geral com bom equilíbrio entre custo e performance.
-- **Dica**: Use gp3 para workloads de IOPS moderada com maior flexibilidade de custo.
-- **Exemplo**: Hospedar um banco de dados MySQL em uma instância EC2.
-
-### Amazon EBS Cold HDD (sc1)
-- **Descrição**: Volumes de HDD com menor custo para dados acessados raramente.
-- **Dica**: Use para grandes volumes de dados que não requerem alta performance.
-- **Exemplo**: Armazenar backups de logs ou arquivos de mídia antigos.
+## 1. General Purpose SSD (gp3/gp2)
+- **Descrição**: Volumes SSD de uso geral que oferecem boa performance para uma ampla gama de workloads.
+  - **gp3**: Mais econômico e com maior flexibilidade de provisionamento de IOPS e throughput.
+  - **gp2**: Provisão automática de IOPS com base no tamanho do volume.
+- **Dica**: Prefira gp3 para workloads que exigem performance consistente e redução de custo.
+- **Exemplo**: Hospedar bancos de dados MySQL, sistemas operacionais ou aplicações web.
 
 ---
 
-## Tipos de Instâncias EC2
+## 2. Provisioned IOPS SSD (io2/io1)
+- **Descrição**: Volumes SSD otimizados para workloads intensivas em I/O que requerem alta performance e baixa latência.
+  - **io2**: Maior durabilidade e confiabilidade, ideal para cargas críticas.
+  - **io1**: Permite configurar IOPS até 64.000 (dependendo da instância EC2).
+- **Dica**: Use para bancos de dados de missão crítica e workloads transacionais.
+- **Exemplo**: Suporte a Oracle, Microsoft SQL Server ou aplicações financeiras.
 
-### T3/T4
-- **Descrição**: Instâncias otimizadas para custo com capacidade de burst (explosão temporária de desempenho).
-- **Dica**: Use para aplicações que têm cargas variáveis e não demandam alta performance contínua.
-- **Exemplo**: Hospedar aplicações de desenvolvimento e servidores web de baixa utilização.
+---
 
-### C7
-- **Descrição**: Instâncias otimizadas para computação com processadores de última geração.
-- **Dica**: Ideal para aplicações que exigem alto desempenho de CPU, como análises financeiras ou simulações.
-- **Exemplo**: Executar processamento de imagem ou análise de dados intensiva.
+## 3. Throughput Optimized HDD (st1)
+- **Descrição**: Volumes HDD otimizados para throughput com grandes transferências de dados sequenciais.
+- **Dica**: Use para workloads que processam grandes volumes de dados sequencialmente, como data lakes e logs.
+- **Exemplo**: Armazenamento de grandes volumes de logs de servidor.
 
-### R7
-- **Descrição**: Instâncias otimizadas para memória, projetadas para workloads que consomem muita RAM.
-- **Dica**: Use para bancos de dados em memória e caches.
-- **Exemplo**: Hospedar bancos de dados Redis ou Apache Spark para big data.
+---
+
+## 4. Cold HDD (sc1)
+- **Descrição**: Volumes HDD de baixo custo projetados para dados acessados com pouca frequência.
+- **Dica**: Ideal para armazenamento de dados arquivados que não precisam de alta performance.
+- **Exemplo**: Armazenamento de backups de longo prazo ou arquivos raramente acessados.
+
+---
+
+## 5. Magnetic (Standard)
+- **Descrição**: Volumes legados baseados em HDD magnético, com custo baixo e desempenho limitado.
+- **Dica**: Não recomendado para novos projetos, substitua por outros tipos modernos (ex.: st1 ou sc1).
+- **Exemplo**: Instâncias legadas ou cargas de trabalho históricas com baixa demanda.
+
+---
+
+## 6. Boot Volumes
+- **Descrição**: Volumes EBS usados para armazenar sistemas operacionais.
+  - Suporta tanto SSD (gp2/gp3) quanto HDD dependendo do tipo de instância.
+- **Dica**: Escolha volumes SSD para tempos de inicialização rápidos.
+- **Exemplo**: Hospedar o sistema operacional de uma instância EC2.
+
+---
+
+## Comparação e Escolha:
+- **gp3**: Workloads gerais (sistemas operacionais, bancos de dados de baixa a média performance).
+- **io2/io1**: Workloads críticas (bancos de dados transacionais, ERP, aplicativos financeiros).
+- **st1**: Workloads de leitura/escrita sequencial (big data, analytics, logs).
+- **sc1**: Dados raramente acessados (backups, arquivos históricos).
+- **Magnetic**: Somente para cargas legadas; substitua por opções modernas.
+
+Se precisar de mais detalhes ou recomendações específicas, é só pedir!
+
+---
+
+# Tipos de Instâncias EC2 - Descrição, Dica e Exemplo
+
+## 1. **Instâncias Gerais (General Purpose)**
+### **t4g/t3/t2**
+- **Descrição**: Instâncias de baixo custo com capacidade de burst para workloads leves.
+- **Dica**: Use para aplicações que têm picos intermitentes de utilização, mas não demandam desempenho constante.
+- **Exemplo**: Hospedar sites estáticos, microsserviços ou servidores de desenvolvimento.
+
+### **m7g/m6g/m5/m4**
+- **Descrição**: Instâncias equilibradas em computação, memória e rede para workloads gerais.
+- **Dica**: Escolha para aplicativos com requisitos equilibrados, como bancos de dados pequenos ou médias aplicações web.
+- **Exemplo**: Executar bancos de dados MySQL ou PostgreSQL, aplicações corporativas ou servidores de API.
+
+---
+
+## 2. **Otimizadas para Computação (Compute Optimized)**
+### **c7g/c7/c6g/c6/c5/c4**
+- **Descrição**: Instâncias otimizadas para workloads intensivos em CPU.
+- **Dica**: Ideal para processamento de dados em grande escala ou análises computacionais intensivas.
+- **Exemplo**: Modelagem financeira, processamento de dados em tempo real ou servidores de jogos.
+
+---
+
+## 3. **Otimizadas para Memória (Memory Optimized)**
+### **r7g/r7/r6g/r6/r5/r4**
+- **Descrição**: Projetadas para aplicações que requerem alta capacidade de memória.
+- **Dica**: Use para bancos de dados em memória, caches ou aplicações com alta necessidade de memória.
+- **Exemplo**: Executar Redis, Memcached, SAP HANA ou bancos de dados big data.
+
+### **x2/x1e/x1**
+- **Descrição**: Instâncias com altíssima memória para cargas de trabalho intensivas.
+- **Dica**: Use para análises complexas, big data ou bancos de dados de grande escala.
+- **Exemplo**: Executar Oracle Database ou processamento de dados em clusters Hadoop.
+
+---
+
+## 4. **Otimizadas para Armazenamento (Storage Optimized)**
+### **i4/i3/i3en**
+- **Descrição**: Instâncias com armazenamento local NVMe ou SSD de alta performance.
+- **Dica**: Use para bancos de dados que exigem baixa latência ou processamento de dados local.
+- **Exemplo**: Executar Elasticsearch ou bancos de dados NoSQL, como Cassandra.
+
+### **d2/d3/h1**
+- **Descrição**: Instâncias com discos rígidos (HDD) de alta capacidade e throughput.
+- **Dica**: Use para workloads que processam grandes volumes de dados sequencialmente.
+- **Exemplo**: Data lakes, sistemas de arquivos distribuídos ou backups de grandes volumes.
+
+---
+
+## 5. **Otimizadas para Aceleração de Rede/GPU**
+### **g5/g4/g3**
+- **Descrição**: Instâncias com GPUs para processamento gráfico ou aprendizado de máquina.
+- **Dica**: Use para treinamento e inferência de modelos de machine learning ou renderização 3D.
+- **Exemplo**: Treinamento de redes neurais em TensorFlow ou renderização de vídeos em 4K.
+
+### **p4/p3/p2**
+- **Descrição**: Instâncias com GPUs otimizadas para aprendizado de máquina e HPC.
+- **Dica**: Escolha para deep learning, simulações científicas ou previsões meteorológicas.
+- **Exemplo**: Treinar modelos de IA para visão computacional ou análises genômicas.
+
+---
+
+## 6. **Instâncias Otimizadas para Alto Throughput de Rede**
+### **z1d**
+- **Descrição**: Instâncias com alta frequência de CPU e memória balanceada.
+- **Dica**: Ideal para cargas que exigem alto desempenho em thread único.
+- **Exemplo**: Bancos de dados relacionais com cargas computacionais pesadas.
+
+### **u-6tb/u-9tb/u-12tb**
+- **Descrição**: Instâncias otimizadas para aplicativos de altíssimo consumo de memória.
+- **Dica**: Use para data warehouses ou bancos de dados in-memory.
+- **Exemplo**: Executar clusters SAP HANA com grandes conjuntos de dados.
+
+---
+
+## 7. **Otimizadas para Alto Throughput de Armazenamento**
+### **hpc6a**
+- **Descrição**: Projetadas para computação de alta performance em redes avançadas.
+- **Dica**: Ideal para cargas com requisitos de baixa latência e alto throughput.
+- **Exemplo**: Simulações científicas, modelagem de engenharia ou previsão climática.
+
+---
+
+## 8. **Instâncias Spot**
+- **Descrição**: Instâncias sob demanda com custo reduzido para workloads tolerantes a interrupções.
+- **Dica**: Use para cargas transitórias ou secundárias que podem ser interrompidas.
+- **Exemplo**: Executar análises de big data em clusters temporários.
